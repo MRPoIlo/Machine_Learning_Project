@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+{% set active_page = 'methodology' %}
+{% set active_phase = 1 %}
+
+{% block title %}Phase 1 · Business &amp; Data Understanding — PotaML{% endblock %}
+
+{% block head_extra %}
+    <script src="{{ url_for('static', filename='js/datatable.js') }}" defer></script>
+{% endblock %}
+
+{% block content %}
+
+    <header class="phase-hero">
+        <div class="rain-layer" aria-hidden="true"></div>
+        <div class="section__container phase-hero__container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="{{ url_for('home') }}">Home</a>
+                <span aria-hidden="true">/</span>
+                <a href="{{ url_for('home') }}#phases">Methodology</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">Phase 1</span>
+            </nav>
+            <span class="phase-hero__eyebrow">CRISP-ML · Phase 01</span>
+            <h1 class="phase-hero__title">Business &amp; Data Understanding</h1>
+            <p class="phase-hero__lead">
+                Frame the public-health question, identify the right metrics and audit the
+                open data that describes drinking-water risk in rural Colombian municipalities.
+            </p>
+        </div>
+    </header>
+
+    <section class="section section--light">
+        <div class="section__container phase-grid">
+            <aside class="phase-toc">
+                <h4>On this page</h4>
+                <ul>
+                    <li><a href="#objectives">Objectives</a></li>
+                    <li><a href="#stakeholders">Stakeholders</a></li>
+                    <li><a href="#data-sources">Data sources</a></li>
+                    <li><a href="#dataset-snapshot">Dataset snapshot</a></li>
+                    <li><a href="#dataset-preview">Dataset preview</a></li>
+                    <li><a href="#deliverables">Deliverables</a></li>
+                </ul>
+                <div class="phase-toc__nav">
+                    <a href="{{ url_for('phase_2') }}" class="phase-toc__next">
+                        Next phase
+                        <strong>Data Engineering →</strong>
+                    </a>
+                </div>
+            </aside>
+
+            <div class="phase-body">
+                <article id="objectives" class="phase-block">
+                    <h2>Objectives</h2>
+                    <p>
+                        Translate a public-health question — <em>how risky is rural drinking water
+                        across Colombian municipalities?</em> — into a measurable Machine Learning target.
+                    </p>
+                    <p>
+                        The official <strong>IRCArural</strong> index (Índice de Riesgo de Calidad del
+                        Agua para Consumo Humano, rural) gives a numeric reading from 0 to 100.
+                        Each value is also mapped to a five-class label, which is the variable we
+                        plan to predict.
+                    </p>
+                </article>
+
+                <article id="stakeholders" class="phase-block">
+                    <h2>Stakeholders</h2>
+                    <ul class="phase-list">
+                        <li>Local sanitation authorities deciding where to direct treatment investments.</li>
+                        <li>The Ministry of Health and Social Protection, owner of the IRCA dataset.</li>
+                        <li>Rural communities affected by uneven access to safe drinking water.</li>
+                        <li>Academic and NGO teams researching water access in Colombia.</li>
+                    </ul>
+                </article>
+
+                <article id="data-sources" class="phase-block">
+                    <h2>Data sources</h2>
+                    <p>
+                        <strong>Primary dataset.</strong> IRCA rural by municipality, published on
+                        <a href="https://www.datos.gov.co" target="_blank" rel="noopener">datos.gov.co</a>.
+                        Already cleaned and filtered to 2021–2024 by the team.
+                    </p>
+                    <p>
+                        <strong>Secondary sources to integrate during Phase 2.</strong>
+                    </p>
+                    <ul class="phase-list">
+                        <li>
+                            Precipitation —
+                            <a href="https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Precipitaci-n/s54a-sgyg/about_data" target="_blank" rel="noopener">datos.gov.co/Precipitación</a>,
+                            same 2021–2024 window. Values in millimetres bucketed into four
+                            intensity classes: 0–2 light, 2–10 moderate, 10–30 strong, &gt;30 very strong.
+                        </li>
+                        <li>Water infrastructure indicators (treatment plants, coverage by municipality).</li>
+                    </ul>
+                </article>
+
+                <article id="dataset-snapshot" class="phase-block">
+                    <h2>Dataset snapshot</h2>
+                    <p>
+                        Numbers come straight from the cleaned CSV the team is working with.
+                    </p>
+
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "{:,}".format(stats.total_rows) }}</div>
+                            <div class="stat-card__label">Records</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.year_min }}–{{ stats.year_max }}</div>
+                            <div class="stat-card__label">Year range</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.municipalities }}</div>
+                            <div class="stat-card__label">Municipalities</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.departments }}</div>
+                            <div class="stat-card__label">Departments</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.irca_mean }}</div>
+                            <div class="stat-card__label">IRCA mean</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.irca_max }}</div>
+                            <div class="stat-card__label">IRCA max</div>
+                        </div>
+                    </div>
+
+                    <h3 class="phase-subtitle">Risk-level distribution</h3>
+                    <div class="risk-bars">
+                        {% for r in stats.risk_distribution %}
+                        {% set slug = r.label | lower | replace(' ', '-') %}
+                        <div class="risk-bar">
+                            <span class="risk-bar__label">{{ r.label }}</span>
+                            <span class="risk-bar__track">
+                                <span class="risk-bar__fill risk-bar__fill--{{ slug }}" style="width: {{ r.pct }}%"></span>
+                            </span>
+                            <span class="risk-bar__count">{{ r.count }} · {{ r.pct }}%</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </article>
+
+                <article id="dataset-preview" class="phase-block">
+                    <h2>Dataset preview</h2>
+                    <p>
+                        The full cleaned dataset is loaded below. Search any municipality or
+                        department, filter by year or risk level, and click a column header to sort.
+                    </p>
+                    <div id="phase1DataTable"></div>
+                </article>
+
+                <article id="deliverables" class="phase-block">
+                    <h2>Deliverables</h2>
+                    <ul class="phase-list">
+                        <li>Problem statement aligned to the business question.</li>
+                        <li>Initial dataset inventory and licensing notes.</li>
+                        <li>Risk and assumption log to revisit each iteration.</li>
+                    </ul>
+                </article>
+
+                <div class="phase-footer-nav">
+                    <a href="{{ url_for('home') }}#phases" class="btn btn--ghost-dark">← Back to methodology</a>
+                    <a href="{{ url_for('phase_2') }}" class="btn btn--primary">Phase 2 · Data Engineering →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        if (typeof createDataTable !== 'function') return;
+        createDataTable({
+            target: '#phase1DataTable',
+            dataUrl: "{{ url_for('api_water_quality') }}",
+            pageSize: 25,
+            columns: [
+                { key: 'Departamento',          label: 'Department' },
+                { key: 'Municipio',             label: 'Municipality' },
+                { key: 'Año',                   label: 'Year',  type: 'number' },
+                { key: 'IRCArural',             label: 'IRCA',  type: 'number' },
+                { key: 'Nivel de riesgo rural', label: 'Risk level' },
+            ],
+            filters: [
+                { key: 'Año', label: 'years', type: 'number' },
+                { key: 'Nivel de riesgo rural', label: 'risk levels', order: [
+                    'Sin riesgo', 'Bajo riesgo', 'Riesgo medio', 'Alto riesgo', 'Inviable sanitariamente'
+                ]},
+                { key: 'Departamento', label: 'departments' }
+            ]
+        });
+    });
+</script>
+{% endblock %}

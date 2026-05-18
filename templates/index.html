@@ -1,11 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% set active_page = 'home' %}
+
+{% block content %}
+
+    <header class="hero" id="hero">
+        <div class="rain-layer" aria-hidden="true"></div>
+        <div class="hero__content">
+            <span class="hero__eyebrow">Machine Learning · Final Project</span>
+            <h1 class="hero__title">
+                <span class="hero__title-line">Predicting Drinking Water</span>
+                <span class="hero__title-line hero__title-line--accent">Risk in Rural Colombia</span>
+            </h1>
+            <p class="hero__lead">
+                A Machine Learning study that combines the official IRCA rural index with
+                open climate and water infrastructure data to model drinking water risk
+                across Colombian municipalities — and support evidence-based public health
+                decisions.
+            </p>
+            <div class="hero__cta">
+                <a href="#about" class="btn btn--primary">Explore the project</a>
+                <a href="#team" class="btn btn--ghost">Meet the team</a>
+            </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+            <span>Scroll</span>
+            <span class="hero__scroll-line"></span>
+        </div>
+    </header>
+
+    <section class="section section--light" id="about">
+        <div class="section__container">
+            <div class="section__header">
+                <span class="section__tag">01 — Overview</span>
+                <h2 class="section__title">A data-driven look at rural drinking water in Colombia</h2>
+                <p class="section__subtitle">
+                    Many rural communities still face uneven access to safe drinking water.
+                    By combining the official IRCA rural index with climate and infrastructure
+                    data, we can map risk patterns and highlight where action is needed most.
+                </p>
+            </div>
+
+            <div class="about__grid">
+                <article class="about__card">
+                    <div class="about__icon">01</div>
+                    <h3 class="about__card-title">Problem</h3>
+                    <p>
+                        Across 2021–2024, roughly half of the rural municipalities sampled
+                        report some level of water-quality risk. Aggregating these signals
+                        by hand is slow and hides the patterns underneath.
+                    </p>
+                </article>
+                <article class="about__card">
+                    <div class="about__icon">02</div>
+                    <h3 class="about__card-title">Approach</h3>
+                    <p>
+                        We follow CRISP-ML to move from framing the public-health question
+                        through data engineering, modeling, evaluation and a working
+                        deployment on this Flask web app.
+                    </p>
+                </article>
+                <article class="about__card">
+                    <div class="about__icon">03</div>
+                    <h3 class="about__card-title">Outcome</h3>
+                    <p>
+                        A reproducible pipeline and a public-facing interface where anyone
+                        can explore the data, the cleaning steps and — once trained — the
+                        model's predictions.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--dark parallax-section" id="phases">
+        <div class="parallax-section__bg" data-parallax="0.2"></div>
+        <div class="section__container">
+            <div class="section__header section__header--light">
+                <span class="section__tag section__tag--light">02 — Methodology</span>
+                <h2 class="section__title section__title--light">CRISP-ML lifecycle</h2>
+                <p class="section__subtitle section__subtitle--light">
+                    Six iterative phases that keep modeling decisions anchored to the
+                    business question and the quality of the data.
+                </p>
+            </div>
+
+            <ol class="phases">
+                <li class="phases__item">
+                    <span class="phases__number">01</span>
+                    <h3 class="phases__title">Business &amp; Data Understanding</h3>
+                    <p>Frame the public health goal and audit available sources.</p>
+                    <a href="{{ url_for('phase_1') }}" class="phases__link">Open phase →</a>
+                </li>
+                <li class="phases__item">
+                    <span class="phases__number">02</span>
+                    <h3 class="phases__title">Data Engineering</h3>
+                    <p>Clean, integrate and document the water quality records.</p>
+                    <a href="{{ url_for('phase_2') }}" class="phases__link">Open phase →</a>
+                </li>
+                <li class="phases__item phases__item--soon">
+                    <span class="phases__number">03</span>
+                    <h3 class="phases__title">Modeling</h3>
+                    <p>Train and compare candidate models with clear baselines.</p>
+                    <span class="phases__status">Coming soon</span>
+                </li>
+                <li class="phases__item phases__item--soon">
+                    <span class="phases__number">04</span>
+                    <h3 class="phases__title">Evaluation</h3>
+                    <p>Validate performance, fairness and operational fit.</p>
+                    <span class="phases__status">Coming soon</span>
+                </li>
+                <li class="phases__item phases__item--soon">
+                    <span class="phases__number">05</span>
+                    <h3 class="phases__title">Deployment</h3>
+                    <p>Expose the model through this Flask interface.</p>
+                    <span class="phases__status">Coming soon</span>
+                </li>
+                <li class="phases__item phases__item--soon">
+                    <span class="phases__number">06</span>
+                    <h3 class="phases__title">Monitoring</h3>
+                    <p>Watch drift, retrain, and document every iteration.</p>
+                    <span class="phases__status">Coming soon</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="section section--light" id="team">
+        <div class="section__container">
+            <div class="section__header">
+                <span class="section__tag">03 — Team</span>
+                <h2 class="section__title">The people behind the project</h2>
+                <p class="section__subtitle">
+                    Four students from the Machine Learning course building this work together.
+                </p>
+            </div>
+
+            <div class="team__grid">
+                <article class="team__card">
+                    <div class="team__avatar" aria-hidden="true">DS</div>
+                    <h3 class="team__name">David Sanchez</h3>
+                    <p class="team__role">Data &amp; CRISP-ML lead</p>
+                </article>
+                <article class="team__card">
+                    <div class="team__avatar" aria-hidden="true">KC</div>
+                    <h3 class="team__name">Kevin Contreras</h3>
+                    <p class="team__role">Modeling &amp; evaluation</p>
+                </article>
+                <article class="team__card">
+                    <div class="team__avatar" aria-hidden="true">WO</div>
+                    <h3 class="team__name">Wilder Ortiz</h3>
+                    <p class="team__role">Data engineering</p>
+                </article>
+                <article class="team__card">
+                    <div class="team__avatar" aria-hidden="true">DL</div>
+                    <h3 class="team__name">Duvan Lozano</h3>
+                    <p class="team__role">Web app &amp; deployment</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
