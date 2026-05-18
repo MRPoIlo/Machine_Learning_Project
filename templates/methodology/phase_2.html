@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% set active_page = 'methodology' %}
+{% set active_phase = 2 %}
+
+{% block title %}Phase 2 · Data Engineering — PotaML{% endblock %}
+
+{% block head_extra %}
+    <script src="{{ url_for('static', filename='js/datatable.js') }}" defer></script>
+{% endblock %}
+
+{% block content %}
+
+    <header class="phase-hero">
+        <div class="rain-layer" aria-hidden="true"></div>
+        <div class="section__container phase-hero__container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="{{ url_for('home') }}">Home</a>
+                <span aria-hidden="true">/</span>
+                <a href="{{ url_for('home') }}#phases">Methodology</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">Phase 2</span>
+            </nav>
+            <span class="phase-hero__eyebrow">CRISP-ML · Phase 02</span>
+            <h1 class="phase-hero__title">Data Engineering</h1>
+            <p class="phase-hero__lead">
+                Clean and prepare the raw inputs so the modeling phase starts from a
+                trustworthy, well-described dataset.
+            </p>
+        </div>
+    </header>
+
+    <section class="section section--light">
+        <div class="section__container phase-grid">
+            <aside class="phase-toc">
+                <h4>On this page</h4>
+                <ul>
+                    <li><a href="#cleaning-rules">Cleaning rules</a></li>
+                    <li><a href="#variable-engineering">Variable engineering</a></li>
+                    <li><a href="#climate-features">Climate features</a></li>
+                    <li><a href="#cleaned-dataset">Cleaned dataset</a></li>
+                    <li><a href="#deliverables">Deliverables</a></li>
+                </ul>
+                <div class="phase-toc__nav">
+                    <a href="{{ url_for('phase_1') }}" class="phase-toc__next">
+                        Previous phase
+                        <strong>← Business &amp; Data</strong>
+                    </a>
+                </div>
+            </aside>
+
+            <div class="phase-body">
+                <article id="cleaning-rules" class="phase-block">
+                    <h2>Cleaning rules</h2>
+                    <p>
+                        The IRCA rural dataset published on datos.gov.co spans multiple years and
+                        comes with a mix of casing and trailing whitespace on categorical labels.
+                        Wilder applied the following rules to produce the working dataset.
+                    </p>
+                    <ul class="phase-list">
+                        <li>Filter to the <strong>2021–2024</strong> window — recent and complete enough to model.</li>
+                        <li>Trim whitespace on <code>Nivel de riesgo rural</code> labels so categories collapse correctly.</li>
+                        <li>Coerce <code>IRCArural</code> to a numeric type, dropping non-parseable rows.</li>
+                        <li>Cast <code>Año</code> to integer (source uses <code>2,024</code> formatting).</li>
+                    </ul>
+                </article>
+
+                <article id="variable-engineering" class="phase-block">
+                    <h2>Variable engineering</h2>
+                    <p>
+                        The dataset already ships with two views of the same signal:
+                    </p>
+                    <ul class="phase-list">
+                        <li><strong>IRCArural</strong> — continuous index, 0 (safe) to 100 (sanitarily unviable).</li>
+                        <li><strong>Nivel de riesgo rural</strong> — five-class label derived from the index.</li>
+                    </ul>
+                    <p>
+                        For modeling we'll keep both. The five-class label is the natural
+                        classification target; the numeric index supports regression baselines
+                        and ablation checks.
+                    </p>
+                </article>
+
+                <article id="climate-features" class="phase-block">
+                    <h2>Climate features (incoming)</h2>
+                    <p>
+                        Once we merge the precipitation dataset, each municipality–year row
+                        gets enriched with rainfall context. Values in millimetres get bucketed
+                        into four intensity classes that match how the team is describing rain:
+                    </p>
+                    <div class="rain-classes">
+                        <div class="rain-class">
+                            <span class="rain-class__range">0–2 mm</span>
+                            <span class="rain-class__label">Light</span>
+                        </div>
+                        <div class="rain-class">
+                            <span class="rain-class__range">2–10 mm</span>
+                            <span class="rain-class__label">Moderate</span>
+                        </div>
+                        <div class="rain-class">
+                            <span class="rain-class__range">10–30 mm</span>
+                            <span class="rain-class__label">Strong</span>
+                        </div>
+                        <div class="rain-class">
+                            <span class="rain-class__range">&gt;30 mm</span>
+                            <span class="rain-class__label">Very strong</span>
+                        </div>
+                    </div>
+                    <p class="phase-placeholder">
+                        Pending: pull the precipitation dataset, align on
+                        <code>Departamento</code> + <code>Municipio</code> + <code>Año</code>,
+                        compute per-row aggregates (mean rainfall, days in each intensity class).
+                    </p>
+                </article>
+
+                <article id="cleaned-dataset" class="phase-block">
+                    <h2>Cleaned dataset</h2>
+                    <p>
+                        Same view as Phase 1 — here the focus is verifying that the cleaning
+                        rules above produced a tidy table. Sort by IRCA to spot the most
+                        critical municipalities; filter to <em>Inviable sanitariamente</em> to
+                        see the worst cases.
+                    </p>
+                    <div id="phase2DataTable"></div>
+                </article>
+
+                <article id="deliverables" class="phase-block">
+                    <h2>Deliverables</h2>
+                    <ul class="phase-list">
+                        <li>Reproducible cleaning script (to be added to the repo).</li>
+                        <li>Cleaned dataset with documented schema (already in the project).</li>
+                        <li>Feature catalog ready for the modeling phase.</li>
+                        <li>Notes on integration plan for precipitation + infrastructure inputs.</li>
+                    </ul>
+                </article>
+
+                <div class="phase-footer-nav">
+                    <a href="{{ url_for('phase_1') }}" class="btn btn--ghost-dark">← Phase 1 · Business &amp; Data</a>
+                    <a href="{{ url_for('home') }}#phases" class="btn btn--primary">Back to methodology →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        if (typeof createDataTable !== 'function') return;
+        createDataTable({
+            target: '#phase2DataTable',
+            dataUrl: "{{ url_for('api_water_quality') }}",
+            pageSize: 25,
+            columns: [
+                { key: 'Departamento',          label: 'Department' },
+                { key: 'Municipio',             label: 'Municipality' },
+                { key: 'Año',                   label: 'Year',  type: 'number' },
+                { key: 'IRCArural',             label: 'IRCA',  type: 'number' },
+                { key: 'Nivel de riesgo rural', label: 'Risk level' },
+            ],
+            filters: [
+                { key: 'Año', label: 'years', type: 'number' },
+                { key: 'Nivel de riesgo rural', label: 'risk levels', order: [
+                    'Sin riesgo', 'Bajo riesgo', 'Riesgo medio', 'Alto riesgo', 'Inviable sanitariamente'
+                ]},
+                { key: 'Departamento', label: 'departments' }
+            ]
+        });
+    });
+</script>
+{% endblock %}
