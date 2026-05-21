@@ -1,0 +1,242 @@
+{% extends "base.html" %}
+{% set active_page = 'methodology' %}
+{% set active_phase = 3 %}
+
+{% block title %}Phase 3 · Unsupervised Learning — PotaML{% endblock %}
+
+{% block head_extra %}
+    <script src="{{ url_for('static', filename='js/datatable.js') }}" defer></script>
+{% endblock %}
+
+{% block content %}
+
+    <header class="phase-hero">
+        <div class="rain-layer" aria-hidden="true"></div>
+        <div class="section__container phase-hero__container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="{{ url_for('home') }}">Home</a>
+                <span aria-hidden="true">/</span>
+                <a href="{{ url_for('home') }}#phases">Methodology</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">Phase 3</span>
+            </nav>
+            <span class="phase-hero__eyebrow">CRISP-ML · Phase 03</span>
+            <h1 class="phase-hero__title">Unsupervised Learning</h1>
+            <p class="phase-hero__lead">
+                Discover natural groupings in Colombia's weather station network using
+                K-Means clustering on precipitation behaviour and geographic position.
+            </p>
+        </div>
+    </header>
+
+    <section class="section section--light">
+        <div class="section__container phase-grid">
+
+            <aside class="phase-toc">
+                <h4>On this page</h4>
+                <ul>
+                    <li><a href="#dataset">Dataset</a></li>
+                    <li><a href="#preprocessing">Preprocessing</a></li>
+                    <li><a href="#clustering">K-Means Clustering</a></li>
+                    <li><a href="#results">Results</a></li>
+                    <li><a href="#dataset-preview">Dataset preview</a></li>
+                    <li><a href="#deliverables">Deliverables</a></li>
+                </ul>
+                <div class="phase-toc__nav">
+                    <a href="{{ url_for('phase_2') }}" class="phase-toc__next">
+                        Previous phase
+                        <strong>← Data Engineering</strong>
+                    </a>
+                </div>
+            </aside>
+
+            <div class="phase-body">
+
+                <article id="dataset" class="phase-block">
+                    <h2>Dataset</h2>
+                    <p>
+                        The precipitation dataset comes from the Colombian open data portal
+                        (datos.gov.co) and contains rainfall measurements from weather stations
+                        spread across the country. Each record captures a single observation
+                        from a physical station along with its geographic coordinates, timestamp,
+                        and rainfall amount in millimetres.
+                    </p>
+
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "{:,}".format(stats.total_rows) }}</div>
+                            <div class="stat-card__label">Observations</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.stations }}</div>
+                            <div class="stat-card__label">Stations</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.municipalities }}</div>
+                            <div class="stat-card__label">Municipalities</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.departments }}</div>
+                            <div class="stat-card__label">Departments</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.precipitation_mean }}</div>
+                            <div class="stat-card__label">Mean rainfall (mm)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.precipitation_max }}</div>
+                            <div class="stat-card__label">Max rainfall (mm)</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="preprocessing" class="phase-block">
+                    <h2>Preprocessing</h2>
+                    <p>
+                        The raw CSV uses an unusual double-quote wrapping format and stores
+                        numeric values with Spanish locale decimal separators (commas instead
+                        of dots). The preprocessing script applied the following steps before
+                        any modelling could begin.
+                    </p>
+                    <ul class="phase-list">
+                        <li>Strip outer double-quotes from every row and unescape inner quotes.</li>
+                        <li>Convert <code>ValorObservado</code>, <code>Latitud</code> and <code>Longitud</code> from comma-decimal to dot-decimal format.</li>
+                        <li>Parse <code>FechaObservacion</code> timestamps into proper datetime objects.</li>
+                        <li>Extract <code>hour</code>, <code>month</code> and <code>day_of_week</code> as additional time features.</li>
+                        <li>Normalise text columns (strip whitespace, uppercase) for consistent grouping.</li>
+                        <li>Aggregate per station to produce a 33-row feature matrix — one row per physical station.</li>
+                    </ul>
+                </article>
+
+                <article id="clustering" class="phase-block">
+                    <h2>K-Means Clustering</h2>
+                    <p>
+                        K-Means partitions the 33 weather stations into K groups by minimising
+                        the distance between each station and its cluster centroid. We ran an
+                        elbow analysis evaluating inertia and silhouette score for K from 2 to 10.
+                        The silhouette score peaked at <strong>K = 2</strong>, confirming that two
+                        groups best describe the natural structure in this dataset.
+                    </p>
+                    <ul class="phase-list">
+                        <li><strong>Features used:</strong> mean precipitation, standard deviation, maximum precipitation, latitude, longitude, mean measurement hour.</li>
+                        <li><strong>Scaling:</strong> StandardScaler applied before training so no single feature dominates by magnitude.</li>
+                        <li><strong>Final K:</strong> 2, chosen by silhouette score (0.40).</li>
+                        <li><strong>Random state:</strong> 42, for reproducibility.</li>
+                    </ul>
+                </article>
+
+                <article id="results" class="phase-block">
+                    <h2>Results</h2>
+                    <p>
+                        With K = 2 the algorithm separated the 33 stations into two clearly
+                        distinct groups based on their precipitation behaviour and geographic position.
+                    </p>
+
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.n_clusters }}</div>
+                            <div class="stat-card__label">Clusters found</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">0.40</div>
+                            <div class="stat-card__label">Silhouette score</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ stats.stations }}</div>
+                            <div class="stat-card__label">Stations clustered</div>
+                        </div>
+                    </div>
+
+                    <h3 class="phase-subtitle" style="margin-top:2rem;">Cluster breakdown</h3>
+
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+
+                        {% set cluster0 = stats.clusters | selectattr("cluster", "equalto", 0) | list %}
+                        {% set cluster1 = stats.clusters | selectattr("cluster", "equalto", 1) | list %}
+
+                        <div class="about__card">
+                            <div class="about__icon">C0</div>
+                            <h3 class="about__card-title">Cluster 0 — Typical rainfall</h3>
+                            <p>{{ cluster0 | length }} stations with low to moderate average precipitation distributed across the country.</p>
+                            <ul class="phase-list" style="margin-top:0.75rem;">
+                                {% for s in cluster0 %}
+                                <li>
+                                    <strong>{{ s.name }}</strong><br>
+                                    <small>{{ s.municipality }}, {{ s.department }} &mdash; {{ s.mean_precipitation }} mm avg</small>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <div class="about__card">
+                            <div class="about__icon">C1</div>
+                            <h3 class="about__card-title">Cluster 1 — High rainfall</h3>
+                            <p>{{ cluster1 | length }} stations with significantly higher precipitation, located in historically wetter regions.</p>
+                            <ul class="phase-list" style="margin-top:0.75rem;">
+                                {% for s in cluster1 %}
+                                <li>
+                                    <strong>{{ s.name }}</strong><br>
+                                    <small>{{ s.municipality }}, {{ s.department }} &mdash; {{ s.mean_precipitation }} mm avg</small>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article id="dataset-preview" class="phase-block">
+                    <h2>Dataset preview</h2>
+                    <p>
+                        Raw precipitation observations loaded from the cleaned dataset.
+                        Search by department or municipality, and sort by any column.
+                    </p>
+                    <div id="phase3DataTable"></div>
+                </article>
+
+                <article id="deliverables" class="phase-block">
+                    <h2>Deliverables</h2>
+                    <ul class="phase-list">
+                        <li>Cleaned precipitation dataset (<code>data/precipitation_clean.csv</code>).</li>
+                        <li>Station-level feature matrix (<code>data/features.csv</code>).</li>
+                        <li>Trained K-Means model (<code>models/kmeans_model.pkl</code>).</li>
+                        <li>Cluster assignment results (<code>data/station_clusters.csv</code>).</li>
+                        <li>Elbow curve plot (<code>reports/elbow_curve.png</code>).</li>
+                    </ul>
+                </article>
+
+                <div class="phase-footer-nav">
+                    <a href="{{ url_for('phase_2') }}" class="btn btn--ghost-dark">← Phase 2 · Data Engineering</a>
+                    <a href="{{ url_for('home') }}#phases" class="btn btn--primary">Back to methodology →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block scripts_extra %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        if (typeof createDataTable !== 'function') return;
+        createDataTable({
+            target: '#phase3DataTable',
+            dataUrl: "{{ url_for('api_precipitation') }}",
+            pageSize: 25,
+            columns: [
+                { key: 'Departamento',     label: 'Department' },
+                { key: 'Municipio',        label: 'Municipality' },
+                { key: 'NombreEstacion',   label: 'Station' },
+                { key: 'FechaObservacion', label: 'Date' },
+                { key: 'ValorObservado',   label: 'Rainfall (mm)', type: 'number' },
+                { key: 'ZonaHidrografica', label: 'Hydrographic zone' },
+            ],
+            filters: [
+                { key: 'Departamento', label: 'departments' },
+                { key: 'Municipio',    label: 'municipalities' },
+            ]
+        });
+    });
+</script>
+{% endblock %}

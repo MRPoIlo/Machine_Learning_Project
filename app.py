@@ -2,6 +2,8 @@ from flask import Flask, jsonify, render_template
 
 from services import water_quality
 
+from services import precipitation
+
 app = Flask(__name__)
 
 
@@ -24,6 +26,14 @@ def phase_2():
 def api_water_quality():
     return jsonify(water_quality.records())
 
+@app.route('/unsupervised/phase-3')
+def phase_3():
+    return render_template('unsupervised/phase_3.html', stats=precipitation.stats())
+
+
+@app.route('/api/dataset/precipitation')
+def api_precipitation():
+    return jsonify(precipitation.records())
 
 if __name__ == '__main__':
     app.run(debug=True)
