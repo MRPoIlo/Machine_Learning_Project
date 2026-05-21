@@ -37,6 +37,7 @@
                     <li><a href="#objectives">Objectives</a></li>
                     <li><a href="#stakeholders">Stakeholders</a></li>
                     <li><a href="#data-sources">Data sources</a></li>
+                    <li><a href="#data-pipeline">Data pipeline</a></li>
                     <li><a href="#dataset-snapshot">Dataset snapshot</a></li>
                     <li><a href="#dataset-preview">Dataset preview</a></li>
                     <li><a href="#deliverables">Deliverables</a></li>
@@ -93,6 +94,56 @@
                         </li>
                         <li>Water infrastructure indicators (treatment plants, coverage by municipality).</li>
                     </ul>
+                </article>
+
+                <article id="data-pipeline" class="phase-block">
+                    <h2>Data pipeline — main steps</h2>
+                    <p>
+                        High-level outline of how raw open data becomes the modelling table.
+                        Each step is documented in versioned notebooks/scripts for reproducibility.
+                    </p>
+
+                    <ol class="phase-steps">
+                        <li>
+                            <h3 class="phase-subtitle">1. Source selection</h3>
+                            <p>
+                                Pull historical climate records (precipitation, temperature, streamflow)
+                                and infrastructure inventories (rural aqueducts, wells, intakes) from
+                                <strong>IDEAM</strong>, <strong>DANE</strong> and <strong>SIVICAP</strong>.
+                                Filter to municipalities classified as rural by DANE and fix the
+                                temporal window (at least 10 years of climate data).
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="phase-subtitle">2. Data cleaning</h3>
+                            <p>
+                                Handle missing values in climate series (stations with temporal gaps
+                                via IDW spatial interpolation). Reconcile inconsistencies in aqueduct
+                                coverage. Harmonise municipal codes across sources using
+                                <strong>DIVIPOLA</strong>. Drop duplicates, erroneous rows and values
+                                outside the statistical range.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="phase-subtitle">3. Transformation and feature creation</h3>
+                            <p>
+                                Compute water-deficit indices (accumulated precipitation vs. regional
+                                minimum threshold). Aggregate climate data by municipality and quarter.
+                                Cross with infrastructure coverage. Build the four-level water
+                                availability target variable. Normalise continuous numeric features.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="phase-subtitle">4. Pipeline documentation</h3>
+                            <p>
+                                Record every transformation: tools used
+                                (<code>Python</code> / <code>pandas</code> / <code>GeoPandas</code>),
+                                source file versions, cleaning criteria and decisions taken.
+                                Keep work in Jupyter Notebooks or scripts versioned in Git so the
+                                pipeline stays reproducible.
+                            </p>
+                        </li>
+                    </ol>
                 </article>
 
                 <article id="dataset-snapshot" class="phase-block">
