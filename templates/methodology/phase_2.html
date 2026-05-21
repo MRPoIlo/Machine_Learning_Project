@@ -36,7 +36,6 @@
                 <ul>
                     <li><a href="#cleaning-rules">Cleaning rules</a></li>
                     <li><a href="#variable-engineering">Variable engineering</a></li>
-                    <li><a href="#climate-features">Climate features</a></li>
                     <li><a href="#cleaned-dataset">Cleaned dataset</a></li>
                     <li><a href="#deliverables">Deliverables</a></li>
                 </ul>
@@ -80,37 +79,6 @@
                     </p>
                 </article>
 
-                <article id="climate-features" class="phase-block">
-                    <h2>Climate features (incoming)</h2>
-                    <p>
-                        Once we merge the precipitation dataset, each municipality–year row
-                        gets enriched with rainfall context. Values in millimetres get bucketed
-                        into four intensity classes that match how the team is describing rain:
-                    </p>
-                    <div class="rain-classes">
-                        <div class="rain-class">
-                            <span class="rain-class__range">0–2 mm</span>
-                            <span class="rain-class__label">Light</span>
-                        </div>
-                        <div class="rain-class">
-                            <span class="rain-class__range">2–10 mm</span>
-                            <span class="rain-class__label">Moderate</span>
-                        </div>
-                        <div class="rain-class">
-                            <span class="rain-class__range">10–30 mm</span>
-                            <span class="rain-class__label">Strong</span>
-                        </div>
-                        <div class="rain-class">
-                            <span class="rain-class__range">&gt;30 mm</span>
-                            <span class="rain-class__label">Very strong</span>
-                        </div>
-                    </div>
-                    <p class="phase-placeholder">
-                        Pending: pull the precipitation dataset, align on
-                        <code>Departamento</code> + <code>Municipio</code> + <code>Año</code>,
-                        compute per-row aggregates (mean rainfall, days in each intensity class).
-                    </p>
-                </article>
 
                 <article id="cleaned-dataset" class="phase-block">
                     <h2>Cleaned dataset</h2>
