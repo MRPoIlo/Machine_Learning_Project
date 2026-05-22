@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% set active_page = 'methodology' %}
+{% set active_phase = 5 %}
+
+{% block title %}Phase 5 · Prediction System — PotaML{% endblock %}
+
+{% block content %}
+
+    <header class="phase-hero">
+        <div class="rain-layer" aria-hidden="true"></div>
+        <div class="section__container phase-hero__container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="{{ url_for('home') }}">Home</a>
+                <span aria-hidden="true">/</span>
+                <a href="{{ url_for('home') }}#phases">Methodology</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">Phase 5</span>
+            </nav>
+            <span class="phase-hero__eyebrow">CRISP-ML · Phase 05</span>
+            <h1 class="phase-hero__title">Prediction System</h1>
+            <p class="phase-hero__lead">
+                Pick a Colombian department and a year and the deployed Logistic
+                Regression model will return the probability that the rural
+                drinking water falls in the High risk class.
+            </p>
+        </div>
+    </header>
+
+    <section class="section section--light">
+        <div class="section__container phase-grid">
+
+            <aside class="phase-toc">
+                <h4>On this page</h4>
+                <ul>
+                    <li><a href="#form">Make a prediction</a></li>
+                    <li><a href="#how-it-works">How it works</a></li>
+                    <li><a href="#model-card">Deployed model</a></li>
+                </ul>
+                <div class="phase-toc__nav">
+                    <a href="{{ url_for('phase_4') }}" class="phase-toc__next">
+                        Previous phase
+                        <strong>← Model Evaluation</strong>
+                    </a>
+                </div>
+            </aside>
+
+            <div class="phase-body">
+
+                <article id="form" class="phase-block">
+                    <h2>Make a prediction</h2>
+                    <p>
+                        Select a department and a year, then submit. The form
+                        validates inputs against the values the model was
+                        trained on and returns both the predicted class and the
+                        underlying probability.
+                    </p>
+
+                    {% if form_error %}
+                    <div class="about__card" style="background:#fee2e2; border-color:#dc2626;">
+                        <div class="about__icon">!</div>
+                        <h3 class="about__card-title">Could not run the prediction</h3>
+                        <p>{{ form_error }}</p>
+                    </div>
+                    {% endif %}
+
+                    <form method="post" action="{{ url_for('phase_5') }}"
+                          style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:1.5rem; margin-top:1rem;">
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem;">
+                            <label style="display:block;">
+                                <span style="display:block; font-weight:600; margin-bottom:.4rem;">Department</span>
+                                <select name="department_code" required
+                                        style="width:100%; padding:.6rem; border:1px solid #cbd5e1; border-radius:6px; font-size:1rem;">
+                                    <option value="">— Select a department —</option>
+                                    {% for d in departments %}
+                                    <option value="{{ d.code }}"
+                                            {% if selected.department_code|string == d.code|string %}selected{% endif %}>
+                                        {{ d.name }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </label>
+
+                            <label style="display:block;">
+                                <span style="display:block; font-weight:600; margin-bottom:.4rem;">Year</span>
+                                <select name="year" required
+                                        style="width:100%; padding:.6rem; border:1px solid #cbd5e1; border-radius:6px; font-size:1rem;">
+                                    <option value="">— Select a year —</option>
+                                    {% for y in years %}
+                                    <option value="{{ y }}"
+                                            {% if selected.year|string == y|string %}selected{% endif %}>
+                                        {{ y }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </label>
+                        </div>
+
+                        <div style="margin-top:1.25rem; display:flex; gap:.75rem;">
+                            <button type="submit" class="btn btn--primary">Predict risk →</button>
+                            <a href="{{ url_for('phase_5') }}" class="btn btn--ghost-dark">Reset</a>
+                        </div>
+                    </form>
+
+                    {% if prediction %}
+                    {% set is_risk = prediction.is_high_risk %}
+                    {% set proba_pct = (prediction.probability * 100) %}
+                    <div id="prediction-result" style="margin-top:1.5rem; border-radius:12px; padding:1.75rem; {% if is_risk %}background:#fef2f2; border:2px solid #dc2626;{% else %}background:#f0fdf4; border:2px solid #16a34a;{% endif %}">
+                        <div style="display:flex; gap:1rem; align-items:flex-start;">
+                            <div style="font-size:2.5rem; line-height:1;">
+                                {% if is_risk %}⚠️{% else %}✓{% endif %}
+                            </div>
+                            <div style="flex:1;">
+                                <span style="display:inline-block; font-size:.8rem; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:{% if is_risk %}#b91c1c{% else %}#15803d{% endif %};">
+                                    Prediction
+                                </span>
+                                <h3 style="margin:.25rem 0 .5rem 0; font-size:1.6rem;">
+                                    {{ prediction.prediction }}
+                                </h3>
+                                <p style="margin:0; color:#475569;">
+                                    For the
+                                    {% for d in departments %}{% if d.code == prediction.department_code %}<strong>{{ d.name }}</strong>{% endif %}{% endfor %}
+                                    department in <strong>{{ prediction.year }}</strong>,
+                                    the model estimates a
+                                    <strong>{{ "%.1f"|format(proba_pct) }}%</strong>
+                                    probability of being in the High risk class.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:1.25rem;">
+                            <div style="display:flex; justify-content:space-between; font-size:.85rem; color:#64748b; margin-bottom:.3rem;">
+                                <span>P(High risk)</span>
+                                <span><strong>{{ "%.1f"|format(proba_pct) }}%</strong> / threshold 50%</span>
+                            </div>
+                            <div style="position:relative; height:14px; background:#e2e8f0; border-radius:7px; overflow:hidden;">
+                                <div style="height:100%; width:{{ proba_pct }}%; background:{% if is_risk %}linear-gradient(90deg,#f97316,#dc2626){% else %}linear-gradient(90deg,#22c55e,#0ea5e9){% endif %}; transition:width .4s ease;"></div>
+                                <div style="position:absolute; top:-3px; left:50%; height:20px; width:2px; background:#475569;"></div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; font-size:.75rem; color:#94a3b8; margin-top:.25rem;">
+                                <span>0%</span>
+                                <span>50%</span>
+                                <span>100%</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:1.25rem; padding-top:1rem; border-top:1px dashed #cbd5e1; font-size:.85rem; color:#475569;">
+                            Disclaimer — this prediction reflects historical
+                            geographic patterns learned from the IRCA rural data
+                            (2021-2024). It is a decision-support signal, not a
+                            substitute for an on-site water quality measurement.
+                        </div>
+                    </div>
+                    {% endif %}
+                </article>
+
+                <article id="how-it-works" class="phase-block">
+                    <h2>How it works</h2>
+                    <ol class="phase-list" style="list-style: decimal; padding-left:1.25rem;">
+                        <li>The form posts the selected department code and year to <code>/methodology/phase-5</code>.</li>
+                        <li>The Flask handler validates that both values are in the set the model saw during training.</li>
+                        <li>The input is one-hot encoded the same way as during training and scaled with the persisted <code>StandardScaler</code>.</li>
+                        <li>The trained <code>LogisticRegression</code> model returns a probability between 0 and 1 for the High risk class.</li>
+                        <li>The page renders the predicted class, the probability, and a coloured indicator bar.</li>
+                    </ol>
+                </article>
+
+                <article id="model-card" class="phase-block">
+                    <h2>Deployed model</h2>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">Logistic Regression</div>
+                            <div class="stat-card__label">Model class</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(logistic_eval.accuracy * 100) }}%</div>
+                            <div class="stat-card__label">Test accuracy</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.3f"|format(logistic_eval.roc_auc) }}</div>
+                            <div class="stat-card__label">ROC AUC</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(logistic_eval.per_class[1].recall * 100) }}%</div>
+                            <div class="stat-card__label">Recall (High risk)</div>
+                        </div>
+                    </div>
+                    <p style="margin-top:1rem;">
+                        Full evaluation details and the rationale for selecting
+                        this model are documented on the
+                        <a href="{{ url_for('phase_4') }}">Model Evaluation page</a>.
+                    </p>
+                </article>
+
+                <div class="phase-footer-nav">
+                    <a href="{{ url_for('phase_4') }}" class="btn btn--ghost-dark">← Phase 4 · Model Evaluation</a>
+                    <a href="{{ url_for('home') }}#phases" class="btn btn--primary">Back to methodology →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block scripts_extra %}
+{% if prediction %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var el = document.getElementById('prediction-result');
+        if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
+</script>
+{% endif %}
+{% endblock %}

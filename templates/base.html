@@ -63,21 +63,18 @@
                             <span class="navbar__sublink-num">02</span>
                             <span>Data Engineering</span>
                         </a></li>
-                        <li><span class="navbar__sublink is-disabled" aria-disabled="true">
+                        <li><a href="{{ url_for('phase_3') }}" class="navbar__sublink {% if active_phase == 3 %}is-active{% endif %}">
                             <span class="navbar__sublink-num">03</span>
-                            <span>Modeling</span>
-                            <span class="navbar__pill">Soon</span>
-                        </span></li>
-                        <li><span class="navbar__sublink is-disabled" aria-disabled="true">
+                            <span>Model Engineering</span>
+                        </a></li>
+                        <li><a href="{{ url_for('phase_4') }}" class="navbar__sublink {% if active_phase == 4 %}is-active{% endif %}">
                             <span class="navbar__sublink-num">04</span>
-                            <span>Evaluation</span>
-                            <span class="navbar__pill">Soon</span>
-                        </span></li>
-                        <li><span class="navbar__sublink is-disabled" aria-disabled="true">
+                            <span>Model Evaluation</span>
+                        </a></li>
+                        <li><a href="{{ url_for('phase_5') }}" class="navbar__sublink {% if active_phase == 5 %}is-active{% endif %}">
                             <span class="navbar__sublink-num">05</span>
-                            <span>Deployment</span>
-                            <span class="navbar__pill">Soon</span>
-                        </span></li>
+                            <span>Prediction System</span>
+                        </a></li>
                         <li><span class="navbar__sublink is-disabled" aria-disabled="true">
                             <span class="navbar__sublink-num">06</span>
                             <span>Monitoring</span>
