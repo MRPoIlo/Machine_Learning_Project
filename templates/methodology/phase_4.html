@@ -1,0 +1,531 @@
+{% extends "base.html" %}
+{% set active_page = 'methodology' %}
+{% set active_phase = 4 %}
+
+{% block title %}Phase 4 · Model Evaluation — PotaML{% endblock %}
+
+{% block content %}
+
+    <header class="phase-hero">
+        <div class="rain-layer" aria-hidden="true"></div>
+        <div class="section__container phase-hero__container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="{{ url_for('home') }}">Home</a>
+                <span aria-hidden="true">/</span>
+                <a href="{{ url_for('home') }}#phases">Methodology</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">Phase 4</span>
+            </nav>
+            <span class="phase-hero__eyebrow">CRISP-ML · Phase 04</span>
+            <h1 class="phase-hero__title">Model Evaluation</h1>
+            <p class="phase-hero__lead">
+                Evaluate the three trained models with the metrics that fit each
+                problem type, compare their behaviour side by side and pick the
+                model that will be deployed in the prediction system.
+            </p>
+        </div>
+    </header>
+
+    <section class="section section--light">
+        <div class="section__container phase-grid">
+
+            <aside class="phase-toc">
+                <h4>On this page</h4>
+                <ul>
+                    <li><a href="#methodology">Methodology</a></li>
+                    <li><a href="#metrics-glossary">Metrics glossary</a></li>
+                    <li><a href="#kmeans-eval">K-Means evaluation</a></li>
+                    <li><a href="#logistic-eval">Logistic Regression evaluation</a></li>
+                    <li><a href="#lda-eval">LDA evaluation</a></li>
+                    <li><a href="#comparison">Side-by-side comparison</a></li>
+                    <li><a href="#best-model">Best model selection</a></li>
+                </ul>
+                <div class="phase-toc__nav">
+                    <a href="{{ url_for('phase_3') }}" class="phase-toc__next">
+                        Previous phase
+                        <strong>← Model Engineering</strong>
+                    </a>
+                </div>
+            </aside>
+
+            <div class="phase-body">
+
+                <article id="methodology" class="phase-block">
+                    <h2>Evaluation methodology</h2>
+                    <p>
+                        Each model is evaluated with the metrics that match its
+                        learning paradigm. We avoid forcing one set of metrics on
+                        every model: applying classification accuracy to K-Means,
+                        for example, would be misleading because the algorithm is
+                        unsupervised and has no ground-truth labels for its
+                        clusters.
+                    </p>
+                    <ul class="phase-list">
+                        <li>
+                            <strong>Supervised models</strong> (Logistic Regression
+                            and LDA) — evaluated on the held-out test fold of the
+                            IRCA rural dataset using classification metrics:
+                            accuracy, precision, recall, F1-score, ROC curve and
+                            confusion matrix.
+                        </li>
+                        <li>
+                            <strong>Unsupervised model</strong> (K-Means) —
+                            evaluated with intrinsic clustering metrics on the
+                            scaled feature matrix: silhouette score,
+                            Davies-Bouldin index and Calinski-Harabasz score.
+                        </li>
+                        <li>
+                            <strong>Reproducibility</strong> — every split uses
+                            <code>random_state=42</code> and <code>stratify=y</code>
+                            for the binary classifiers, so the numbers in this page
+                            match the ones reported in the R3A2 deliverable.
+                        </li>
+                    </ul>
+                </article>
+
+                <article id="metrics-glossary" class="phase-block">
+                    <h2>Metrics glossary</h2>
+                    <h3 class="phase-subtitle">Classification metrics</h3>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Metric</th>
+                                <th style="padding:.5rem;">Formula / Idea</th>
+                                <th style="padding:.5rem;">What it tells us</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>Accuracy</strong></td>
+                                <td style="padding:.5rem;"><code>(TP + TN) / total</code></td>
+                                <td style="padding:.5rem;">Overall fraction of correct predictions. Misleading on imbalanced data.</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>Precision</strong></td>
+                                <td style="padding:.5rem;"><code>TP / (TP + FP)</code></td>
+                                <td style="padding:.5rem;">Of the rows the model flagged as positive, how many actually were.</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>Recall</strong></td>
+                                <td style="padding:.5rem;"><code>TP / (TP + FN)</code></td>
+                                <td style="padding:.5rem;">Of the truly positive rows, how many the model managed to catch.</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>F1-Score</strong></td>
+                                <td style="padding:.5rem;"><code>harmonic_mean(P, R)</code></td>
+                                <td style="padding:.5rem;">Single number that balances precision and recall.</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>ROC AUC</strong></td>
+                                <td style="padding:.5rem;">Area under the TPR vs FPR curve</td>
+                                <td style="padding:.5rem;">Threshold-independent ranking quality. 0.5 = random, 1.0 = perfect.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:.5rem;"><strong>Confusion matrix</strong></td>
+                                <td style="padding:.5rem;">[[TN, FP], [FN, TP]]</td>
+                                <td style="padding:.5rem;">Breakdown of where the model agrees and disagrees with the truth.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <h3 class="phase-subtitle" style="margin-top:1.5rem;">Clustering metrics (used for K-Means)</h3>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Metric</th>
+                                <th style="padding:.5rem;">Range</th>
+                                <th style="padding:.5rem;">What it tells us</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>Silhouette</strong></td>
+                                <td style="padding:.5rem;">[-1, 1] — higher is better</td>
+                                <td style="padding:.5rem;">How well each point fits its cluster versus the next nearest one.</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>Davies-Bouldin</strong></td>
+                                <td style="padding:.5rem;">[0, ∞) — lower is better</td>
+                                <td style="padding:.5rem;">Average similarity between each cluster and its closest neighbour.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:.5rem;"><strong>Calinski-Harabasz</strong></td>
+                                <td style="padding:.5rem;">[0, ∞) — higher is better</td>
+                                <td style="padding:.5rem;">Between-cluster vs within-cluster dispersion ratio.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </article>
+
+                <!-- ============================================================
+                     K-MEANS EVALUATION
+                     ============================================================ -->
+                <article id="kmeans-eval" class="phase-block">
+                    <h2>1 · K-Means evaluation</h2>
+                    <p class="phase-subtitle">Unsupervised · precipitation dataset · 33 stations</p>
+
+                    <p>
+                        K-Means was trained with K = 4 on the engineered feature
+                        matrix after RobustScaler and PCA. The intrinsic metrics
+                        below come straight from the training script.
+                    </p>
+
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ kmeans_stats.n_clusters }}</div>
+                            <div class="stat-card__label">Clusters (K)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ kmeans_stats.silhouette_score | default("—") }}</div>
+                            <div class="stat-card__label">Silhouette score</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ kmeans_stats.stations }}</div>
+                            <div class="stat-card__label">Stations clustered</div>
+                        </div>
+                    </div>
+
+                    <p style="margin-top:1rem;">
+                        Davies-Bouldin and Calinski-Harabasz scores are persisted
+                        in <code>reports/metrics.txt</code> together with the
+                        silhouette value shown above. The elbow analysis behind
+                        the choice of K and the PCA projection of the final
+                        clusters can be revisited on the
+                        <a href="{{ url_for('phase_3') }}#kmeans">Model Engineering page</a>.
+                    </p>
+                </article>
+
+                <!-- ============================================================
+                     LOGISTIC REGRESSION EVALUATION
+                     ============================================================ -->
+                <article id="logistic-eval" class="phase-block">
+                    <h2>2 · Logistic Regression evaluation</h2>
+                    <p class="phase-subtitle">
+                        Supervised binary · {{ logistic_eval.test_size }} test rows
+                        ({{ logistic_eval.positive_test_count }} positives)
+                    </p>
+
+                    <h3 class="phase-subtitle">Headline metrics</h3>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(logistic_eval.accuracy * 100) }}%</div>
+                            <div class="stat-card__label">Accuracy</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.3f"|format(logistic_eval.roc_auc) }}</div>
+                            <div class="stat-card__label">ROC AUC</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(logistic_eval.per_class[1].recall * 100) }}%</div>
+                            <div class="stat-card__label">Recall (High risk)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(logistic_eval.per_class[1].precision * 100) }}%</div>
+                            <div class="stat-card__label">Precision (High risk)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.3f"|format(logistic_eval.per_class[1].f1) }}</div>
+                            <div class="stat-card__label">F1 (High risk)</div>
+                        </div>
+                    </div>
+
+                    <h3 class="phase-subtitle">Per-class breakdown</h3>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Class</th>
+                                <th style="padding:.5rem;">Precision</th>
+                                <th style="padding:.5rem;">Recall</th>
+                                <th style="padding:.5rem;">F1-Score</th>
+                                <th style="padding:.5rem;">Support</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for c in logistic_eval.per_class %}
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>{{ c.name }}</strong></td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(c.precision) }}</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(c.recall) }}</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(c.f1) }}</td>
+                                <td style="padding:.5rem;">{{ c.support }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <h3 class="phase-subtitle">Confusion matrix</h3>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top:1rem;">
+                        <div>
+                            <table style="width:100%; border-collapse:collapse; text-align:center;">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th style="padding:.6rem; background:#f1f5f9;">Pred: No high risk</th>
+                                        <th style="padding:.6rem; background:#f1f5f9;">Pred: High risk</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th style="padding:.6rem; background:#f1f5f9; text-align:left;">Actual: No high risk</th>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#dcfce7;">
+                                            <strong style="font-size:1.3rem;">{{ logistic_eval.confusion_matrix.tn }}</strong><br>
+                                            <small>True Negative</small>
+                                        </td>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#fee2e2;">
+                                            <strong style="font-size:1.3rem;">{{ logistic_eval.confusion_matrix.fp }}</strong><br>
+                                            <small>False Positive</small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="padding:.6rem; background:#f1f5f9; text-align:left;">Actual: High risk</th>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#fee2e2;">
+                                            <strong style="font-size:1.3rem;">{{ logistic_eval.confusion_matrix.fn }}</strong><br>
+                                            <small>False Negative</small>
+                                        </td>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#dcfce7;">
+                                            <strong style="font-size:1.3rem;">{{ logistic_eval.confusion_matrix.tp }}</strong><br>
+                                            <small>True Positive</small>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='logistic_confusion_matrix.png') }}"
+                                 alt="Confusion matrix — Logistic Regression"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                Heatmap rendering of the same matrix.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <h3 class="phase-subtitle">ROC curve</h3>
+                    <figure>
+                        <img src="{{ url_for('reports_file', filename='logistic_roc_curve.png') }}"
+                             alt="ROC curve — Logistic Regression"
+                             style="width:100%; max-width:640px; display:block; margin:0 auto; border-radius:8px; border:1px solid #e2e8f0;">
+                        <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                            ROC curve on the test fold — AUC = {{ "%.3f"|format(logistic_eval.roc_auc) }}.
+                        </figcaption>
+                    </figure>
+
+                    <h3 class="phase-subtitle">Reading</h3>
+                    <p>
+                        Accuracy alone is misleading here. Because we used
+                        <code>class_weight="balanced"</code>, the model trades
+                        overall accuracy for better detection of the high-risk
+                        class. The metric we actually care about in this domain
+                        is recall on High risk — the model catches
+                        <strong>{{ "%.0f"|format(logistic_eval.per_class[1].recall * 100) }}%</strong>
+                        of the dangerous-water municipalities at the cost of
+                        {{ logistic_eval.confusion_matrix.fp }} false positives,
+                        which fits the public-health framing.
+                    </p>
+                </article>
+
+                <!-- ============================================================
+                     LDA EVALUATION (PLACEHOLDER)
+                     ============================================================ -->
+                <article id="lda-eval" class="phase-block">
+                    <h2>3 · LDA evaluation</h2>
+                    <p class="phase-subtitle">Supervised binary · IRCA rural dataset</p>
+
+                    <div class="about__card" style="background:#fef3c7; border-color:#fbbf24;">
+                        <div class="about__icon">⏳</div>
+                        <h3 class="about__card-title">Section in progress</h3>
+                        <p>
+                            LDA metrics will be added here once the teammate
+                            training script lands in the repository. The layout
+                            mirrors the Logistic Regression block so the
+                            comparison stays consistent.
+                        </p>
+                    </div>
+
+                    <h3 class="phase-subtitle">Headline metrics</h3>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">—</div>
+                            <div class="stat-card__label">Accuracy</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">—</div>
+                            <div class="stat-card__label">ROC AUC</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">—</div>
+                            <div class="stat-card__label">Recall (High risk)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">—</div>
+                            <div class="stat-card__label">Precision (High risk)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">—</div>
+                            <div class="stat-card__label">F1 (High risk)</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ============================================================
+                     SIDE BY SIDE COMPARISON
+                     ============================================================ -->
+                <article id="comparison" class="phase-block">
+                    <h2>Side-by-side comparison</h2>
+
+                    <h3 class="phase-subtitle">Supervised classifiers</h3>
+                    <p>
+                        Logistic Regression and LDA share the same dataset,
+                        target, split and feature engineering, so their metrics
+                        are directly comparable.
+                    </p>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Metric</th>
+                                <th style="padding:.5rem;">Logistic Regression</th>
+                                <th style="padding:.5rem;">LDA</th>
+                                <th style="padding:.5rem;">Better when</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;">Accuracy</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(logistic_eval.accuracy * 100) }}%</td>
+                                <td style="padding:.5rem; color:#94a3b8;">—</td>
+                                <td style="padding:.5rem;">Higher</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;">ROC AUC</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(logistic_eval.roc_auc) }}</td>
+                                <td style="padding:.5rem; color:#94a3b8;">—</td>
+                                <td style="padding:.5rem;">Higher</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;">Precision (High risk)</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(logistic_eval.per_class[1].precision) }}</td>
+                                <td style="padding:.5rem; color:#94a3b8;">—</td>
+                                <td style="padding:.5rem;">Higher</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;">Recall (High risk)</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(logistic_eval.per_class[1].recall) }}</td>
+                                <td style="padding:.5rem; color:#94a3b8;">—</td>
+                                <td style="padding:.5rem;">Higher</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:.5rem;">F1 (High risk)</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(logistic_eval.per_class[1].f1) }}</td>
+                                <td style="padding:.5rem; color:#94a3b8;">—</td>
+                                <td style="padding:.5rem;">Higher</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <h3 class="phase-subtitle" style="margin-top:1.5rem;">Unsupervised model</h3>
+                    <p>
+                        K-Means is reported separately: its metrics are intrinsic
+                        and cannot be put on the same axis as accuracy or F1.
+                    </p>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Metric</th>
+                                <th style="padding:.5rem;">K-Means (K=4)</th>
+                                <th style="padding:.5rem;">Reading</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;">Silhouette</td>
+                                <td style="padding:.5rem;">{{ kmeans_stats.silhouette_score | default("—") }}</td>
+                                <td style="padding:.5rem;">Cluster cohesion vs separation.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:.5rem;">Stations clustered</td>
+                                <td style="padding:.5rem;">{{ kmeans_stats.stations }}</td>
+                                <td style="padding:.5rem;">Sample size is small — interpret cautiously.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </article>
+
+                <!-- ============================================================
+                     BEST MODEL SELECTION
+                     ============================================================ -->
+                <article id="best-model" class="phase-block">
+                    <h2>Best model selection</h2>
+
+                    <p>
+                        For the deployed prediction system we need a model that
+                        takes a single record (department + year) and returns
+                        whether the rural water in that municipality is at high
+                        risk. K-Means is unsupervised and cannot answer that
+                        question; it stays as an exploratory tool for the
+                        precipitation dataset. The decision is therefore between
+                        Logistic Regression and LDA.
+                    </p>
+
+                    <div class="about__card" style="background:#ecfeff; border-color:#06b6d4;">
+                        <div class="about__icon">★</div>
+                        <h3 class="about__card-title">Selected model — Logistic Regression</h3>
+                        <p>
+                            Pending the final LDA numbers, Logistic Regression is
+                            the current selection for deployment because:
+                        </p>
+                        <ul class="phase-list">
+                            <li>
+                                <strong>Probability calibration.</strong> The
+                                model emits a well-defined probability between 0
+                                and 1, which the prediction UI shows directly to
+                                the user.
+                            </li>
+                            <li>
+                                <strong>Recall on the dangerous class.</strong>
+                                Catches
+                                <strong>{{ "%.0f"|format(logistic_eval.per_class[1].recall * 100) }}%</strong>
+                                of the High risk municipalities in the test fold,
+                                which is the metric that matters for a public-health
+                                decision-support tool.
+                            </li>
+                            <li>
+                                <strong>Interpretability.</strong> Linear
+                                coefficients per department give a transparent
+                                explanation of why a prediction came out the way
+                                it did.
+                            </li>
+                            <li>
+                                <strong>ROC AUC = {{ "%.3f"|format(logistic_eval.roc_auc) }}</strong>
+                                — clearly better than random (0.5), confirming
+                                the model is learning real geographic signal.
+                            </li>
+                        </ul>
+                        <p>
+                            Once the LDA metrics are available we revisit this
+                            decision: if LDA matches or beats Logistic on recall
+                            and AUC <em>and</em> remains interpretable, we
+                            switch.
+                        </p>
+                    </div>
+                </article>
+
+                <div class="phase-footer-nav">
+                    <a href="{{ url_for('phase_3') }}" class="btn btn--ghost-dark">← Phase 3 · Model Engineering</a>
+                    <a href="{{ url_for('home') }}#phases" class="btn btn--primary">Back to methodology →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
