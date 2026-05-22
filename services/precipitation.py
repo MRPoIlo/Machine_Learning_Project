@@ -6,6 +6,7 @@ from pathlib import Path
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+REPORTS_DIR  = PROJECT_ROOT / "reports"
 DATA_DIR     = PROJECT_ROOT / "data"
 MODELS_DIR   = PROJECT_ROOT / "models"
 
@@ -13,11 +14,28 @@ CSV_PATH     = DATA_DIR   / "Precipitación_20260520.csv"
 
 FEATURE_COLS = [
     "mean_precipitation",
+    "median_precipitation",
     "std_precipitation",
+    "variance_precipitation",
+    "min_precipitation",
     "max_precipitation",
+    "p25_precipitation",
+    "p75_precipitation",
+    "observation_count",
+    "rainy_days_ratio",
     "latitude",
     "longitude",
     "mean_hour",
+    "hour_sin_mean",
+    "hour_cos_mean",
+    "month_sin_mean",
+    "month_cos_mean",
+    "unique_months",
+    "unique_years",
+    "precipitation_skewness",
+    "coefficient_variation",
+    "precipitation_range",
+    "iqr_precipitation",
 ]
 
 
@@ -99,6 +117,14 @@ def stats() -> dict:
                 "longitude":          round(float(row["longitude"]), 5),
             })
 
+    metrics_path = REPORTS_DIR / "metrics.txt"
+    silhouette = None
+    if metrics_path.exists():
+        for line in metrics_path.read_text().splitlines():
+            if "silhouette" in line.lower():
+                silhouette = line.split(":")[-1].strip()
+                break
+
     return {
         "total_rows":          int(len(df)),
         "stations":            int(df["CodigoEstacion"].nunique()),
@@ -112,4 +138,5 @@ def stats() -> dict:
         "precipitation_min":   round(float(df["ValorObservado"].min()), 3),
         "clusters":            cluster_info,
         "n_clusters":          len(set(c["cluster"] for c in cluster_info)),
+        "silhouette_score": silhouette,
     }

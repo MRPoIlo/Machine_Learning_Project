@@ -109,26 +109,80 @@
                 </article>
 
                 <article id="clustering" class="phase-block">
-                    <h2>K-Means Clustering</h2>
+                    <h2>Advanced K-Means Clustering</h2>
+
                     <p>
-                        K-Means partitions the 33 weather stations into K groups by minimising
-                        the distance between each station and its cluster centroid. We ran an
-                        elbow analysis evaluating inertia and silhouette score for K from 2 to 10.
-                        The silhouette score peaked at <strong>K = 2</strong>, confirming that two
-                        groups best describe the natural structure in this dataset.
+                        The clustering pipeline was substantially improved to achieve a more
+                        robust and machine-learning-oriented grouping of the 33 weather stations.
+                        The final model uses an advanced K-Means approach combined with
+                        feature engineering, reliability weighting, robust scaling, dimensionality
+                        reduction using PCA, and multiple validation metrics.
                     </p>
+
+                    <p>
+                        Instead of using only basic precipitation statistics, the new pipeline
+                        incorporates temporal, statistical, and spatial characteristics that allow
+                        the algorithm to better capture hidden precipitation patterns among stations.
+                        A total of <strong>4 clusters</strong> were selected to obtain more meaningful
+                        and interpretable environmental groupings.
+                    </p>
+
                     <ul class="phase-list">
-                        <li><strong>Features used:</strong> mean precipitation, standard deviation, maximum precipitation, latitude, longitude, mean measurement hour.</li>
-                        <li><strong>Scaling:</strong> StandardScaler applied before training so no single feature dominates by magnitude.</li>
-                        <li><strong>Final K:</strong> 2, chosen by silhouette score (0.40).</li>
-                        <li><strong>Random state:</strong> 42, for reproducibility.</li>
+                        <li>
+                            <strong>Advanced features used:</strong>
+                            mean, median, variance, standard deviation, precipitation range,
+                            interquartile range (IQR), skewness, rainy day ratio, latitude,
+                            longitude, temporal cyclic variables, seasonal behaviour,
+                            coefficient of variation, and observation reliability.
+                        </li>
+
+                        <li>
+                            <strong>Reliability weighting:</strong>
+                            stations with more observations receive higher influence during training,
+                            improving cluster stability and reducing noise from sparse stations.
+                        </li>
+
+                        <li>
+                            <strong>Scaling:</strong>
+                            RobustScaler was applied instead of StandardScaler to reduce the
+                            impact of extreme precipitation outliers.
+                        </li>
+
+                        <li>
+                            <strong>PCA dimensionality reduction:</strong>
+                            Principal Component Analysis (PCA) preserved 95% of the explained
+                            variance while reducing noise and redundant correlations between features.
+                        </li>
+
+                        <li>
+                            <strong>Clustering algorithm:</strong>
+                            MiniBatchKMeans was used for better computational efficiency and
+                            scalability while maintaining clustering quality.
+                        </li>
+
+                        <li>
+                            <strong>Final number of clusters:</strong>
+                            4 clusters were selected to achieve more detailed environmental
+                            segmentation and improved interpretability.
+                        </li>
+
+                        <li>
+                            <strong>Validation metrics:</strong>
+                            silhouette score, Davies–Bouldin index, and Calinski–Harabasz score
+                            were used to evaluate clustering quality and separation.
+                        </li>
+
+                        <li>
+                            <strong>Random state:</strong>
+                            42, ensuring reproducibility of the clustering process.
+                        </li>
                     </ul>
                 </article>
 
                 <article id="results" class="phase-block">
                     <h2>Results</h2>
                     <p>
-                        With K = 2 the algorithm separated the 33 stations into two clearly
+                        With K = 4 the algorithm separated the 33 stations into two clearly
                         distinct groups based on their precipitation behaviour and geographic position.
                     </p>
 
@@ -138,7 +192,7 @@
                             <div class="stat-card__label">Clusters found</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-card__value">0.40</div>
+                            <div class="stat-card__value">{{ stats.silhouette_score | default("—") }}</div>
                             <div class="stat-card__label">Silhouette score</div>
                         </div>
                         <div class="stat-card">
@@ -151,38 +205,33 @@
 
                     <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
 
-                        {% set cluster0 = stats.clusters | selectattr("cluster", "equalto", 0) | list %}
-                        {% set cluster1 = stats.clusters | selectattr("cluster", "equalto", 1) | list %}
+                        {% set cluster_labels = {
+                            0: "Precipitación típica",
+                            1: "Lluvia alta",
+                            2: "Lluvia extrema",
+                            3: "Zona seca"
+                        } %}
 
-                        <div class="about__card">
-                            <div class="about__icon">C0</div>
-                            <h3 class="about__card-title">Cluster 0 — Typical rainfall</h3>
-                            <p>{{ cluster0 | length }} stations with low to moderate average precipitation distributed across the country.</p>
-                            <ul class="phase-list" style="margin-top:0.75rem;">
-                                {% for s in cluster0 %}
-                                <li>
-                                    <strong>{{ s.name }}</strong><br>
-                                    <small>{{ s.municipality }}, {{ s.department }} &mdash; {{ s.mean_precipitation }} mm avg</small>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
+                        {% for cluster_id in range(stats.n_clusters) %}
+                            {% set stations = stats.clusters | selectattr("cluster", "equalto", cluster_id) | list %}
+                            <div class="about__card">
+                                <div class="about__icon">C{{ cluster_id }}</div>
+                                <h3 class="about__card-title">
+                                    Cluster {{ cluster_id }} — {{ cluster_labels[cluster_id] }}
+                                </h3>
+                                <p>{{ stations | length }} estaciones.</p>
+                                <ul class="phase-list" style="margin-top:0.75rem;">
+                                    {% for s in stations %}
+                                    <li>
+                                        <strong>{{ s.name }}</strong><br>
+                                        <small>{{ s.municipality }}, {{ s.department }} &mdash; {{ s.mean_precipitation }} mm avg</small>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endfor %}
 
-                        <div class="about__card">
-                            <div class="about__icon">C1</div>
-                            <h3 class="about__card-title">Cluster 1 — High rainfall</h3>
-                            <p>{{ cluster1 | length }} stations with significantly higher precipitation, located in historically wetter regions.</p>
-                            <ul class="phase-list" style="margin-top:0.75rem;">
-                                {% for s in cluster1 %}
-                                <li>
-                                    <strong>{{ s.name }}</strong><br>
-                                    <small>{{ s.municipality }}, {{ s.department }} &mdash; {{ s.mean_precipitation }} mm avg</small>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-
-                    </div>
+                    </div>                    
                 </article>
 
                 <article id="dataset-preview" class="phase-block">
