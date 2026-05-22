@@ -1,0 +1,1717 @@
+﻿DepartmentCode;Department;MunicipalityCode;Municipality;Year;IRCArural;Rural risk level
+11;Bogotá, D.C.;11001;Bogotá, D.C.;2024;14.8;Medium risk
+13;Bolívar;13001;Cartagena de Indias;2024;2.4;No risk
+13;Bolívar;13062;Arroyohondo;2024;6.3;Low risk
+13;Bolívar;13074;Barranco de Loba;2024;32.3;Medium risk
+13;Bolívar;13248;El Guamo;2024;0;No risk
+13;Bolívar;13430;Magangué;2024;13.9;Low risk
+13;Bolívar;13433;Mahates;2024;29.8;Medium risk
+13;Bolívar;13442;María La Baja;2024;1.2;No risk
+13;Bolívar;13458;Montecristo;2024;12.5;Low risk
+13;Bolívar;13657;San Juan Nepomuceno;2024;33.3;Medium risk
+13;Bolívar;13838;Turbana;2024;0;No risk
+13;Bolívar;13873;Villanueva;2024;0;No risk
+13;Bolívar;13894;Zambrano;2024;26.6;Medium risk
+15;Boyacá;15001;Tunja;2024;10.9;Low risk
+15;Boyacá;15022;Almeida;2024;32.5;Medium risk
+15;Boyacá;15047;Aquitania;2024;6.2;Low risk
+15;Boyacá;15090;Berbeo;2024;69.4;High risk
+15;Boyacá;15106;Briceño;2024;72.3;High risk
+15;Boyacá;15131;Caldas;2024;94.9;Sanitaryly not feasible
+15;Boyacá;15135;Campohermoso;2024;8.3;Low risk
+15;Boyacá;15183;Chita;2024;23.7;Medium risk
+15;Boyacá;15185;Chitaraque;2024;10.7;Low risk
+15;Boyacá;15187;Chivatá;2024;9.1;Low risk
+15;Boyacá;15212;Coper;2024;74.4;High risk
+15;Boyacá;15215;Corrales;2024;38;High risk
+15;Boyacá;15223;Cubará;2024;43.9;High risk
+15;Boyacá;15224;Cucaita;2024;24.3;Medium risk
+15;Boyacá;15226;Cuítiva;2024;9.3;Low risk
+15;Boyacá;15232;Chíquiza;2024;7.2;Low risk
+15;Boyacá;15238;Duitama;2024;0.4;No risk
+15;Boyacá;15244;El Cocuy;2024;0;No risk
+15;Boyacá;15276;Floresta;2024;12.6;Low risk
+15;Boyacá;15299;Garagoa;2024;0;No risk
+15;Boyacá;15325;Guayatá;2024;0;No risk
+15;Boyacá;15377;Labranzagrande;2024;56.7;High risk
+15;Boyacá;15401;La Victoria;2024;12.1;Low risk
+15;Boyacá;15407;Villa de Leyva;2024;7.2;Low risk
+15;Boyacá;15442;Maripí;2024;6.6;Low risk
+15;Boyacá;15476;Motavita;2024;12.1;Low risk
+15;Boyacá;15480;Muzo;2024;58.5;High risk
+15;Boyacá;15491;Nobsa;2024;4.4;No risk
+15;Boyacá;15500;Oicatá;2024;39.7;High risk
+15;Boyacá;15511;Pachavita;2024;87.2;Sanitaryly not feasible
+15;Boyacá;15516;Paipa;2024;6.5;Low risk
+15;Boyacá;15518;Pajarito;2024;14;Low risk
+15;Boyacá;15531;Pauna;2024;81.5;Sanitaryly not feasible
+15;Boyacá;15533;Paya;2024;8.5;Low risk
+15;Boyacá;15550;Pisba;2024;15.4;Medium risk
+15;Boyacá;15580;Quípama;2024;6.3;Low risk
+15;Boyacá;15599;Ramiriquí;2024;0.8;No risk
+15;Boyacá;15600;Ráquira;2024;10.6;Low risk
+15;Boyacá;15638;Sáchica;2024;8.7;Low risk
+15;Boyacá;15660;San Eduardo;2024;81;Sanitaryly not feasible
+15;Boyacá;15676;San Miguel de Sema;2024;10;Low risk
+15;Boyacá;15681;San Pablo de Borbur;2024;0;No risk
+15;Boyacá;15690;Santa María;2024;0;No risk
+15;Boyacá;15693;Santa Rosa de Viterbo;2024;4.2;No risk
+15;Boyacá;15723;Sativasur;2024;7.2;Low risk
+15;Boyacá;15740;Siachoque;2024;14.5;Medium risk
+15;Boyacá;15759;Sogamoso;2024;1.2;No risk
+15;Boyacá;15762;Sora;2024;30.1;Medium risk
+15;Boyacá;15764;Soracá;2024;23.6;Medium risk
+15;Boyacá;15776;Sutamarchán;2024;86.4;Sanitaryly not feasible
+15;Boyacá;15778;Sutatenza;2024;28.4;Medium risk
+15;Boyacá;15810;Tipacoque;2024;69.3;High risk
+15;Boyacá;15820;Tópaga;2024;40.8;High risk
+15;Boyacá;15822;Tota;2024;22;Medium risk
+15;Boyacá;15839;Tutazá;2024;45.2;High risk
+15;Boyacá;15879;Viracachá;2024;60;High risk
+17;Caldas;17001;Manizales;2024;62.9;High risk
+17;Caldas;17042;Anserma;2024;29;Medium risk
+17;Caldas;17050;Aranzazu;2024;78.7;High risk
+17;Caldas;17174;Chinchiná;2024;64.5;High risk
+17;Caldas;17272;Filadelfia;2024;38.7;High risk
+17;Caldas;17380;La Dorada;2024;7.6;Low risk
+17;Caldas;17388;La Merced;2024;85.5;Sanitaryly not feasible
+17;Caldas;17433;Manzanares;2024;71;High risk
+17;Caldas;17486;Neira;2024;6.8;Low risk
+17;Caldas;17513;Pácora;2024;71;High risk
+17;Caldas;17524;Palestina;2024;56.4;High risk
+17;Caldas;17541;Pensilvania;2024;63.3;High risk
+17;Caldas;17614;Riosucio;2024;72.9;High risk
+17;Caldas;17616;Risaralda;2024;64.5;High risk
+17;Caldas;17653;Salamina;2024;66.9;High risk
+17;Caldas;17662;Samaná;2024;71.6;High risk
+17;Caldas;17665;San José;2024;67.6;High risk
+17;Caldas;17777;Supía;2024;73.7;High risk
+17;Caldas;17867;Victoria;2024;35.1;High risk
+17;Caldas;17873;Villamaría;2024;54.8;High risk
+17;Caldas;17877;Viterbo;2024;74.4;High risk
+19;Cauca;19022;Almaguer;2024;0;No risk
+19;Cauca;19130;Cajibío;2024;0;No risk
+19;Cauca;19137;Caldono;2024;33.1;Medium risk
+19;Cauca;19256;El Tambo;2024;0;No risk
+19;Cauca;19300;Guachené;2024;0;No risk
+19;Cauca;19318;Guapi;2024;0;No risk
+19;Cauca;19355;Inzá;2024;24.8;Medium risk
+19;Cauca;19513;Padilla;2024;24.8;Medium risk
+19;Cauca;19548;Piendamó - Tunía;2024;0;No risk
+19;Cauca;19573;Puerto Tejada;2024;4;No risk
+19;Cauca;19585;Puracé;2024;12.3;Low risk
+19;Cauca;19698;Santander de Quilichao;2024;0;No risk
+19;Cauca;19807;Timbío;2024;3.2;No risk
+19;Cauca;19845;Villa Rica;2024;0.4;No risk
+20;Cesar;20011;Aguachica;2024;0;No risk
+20;Cesar;20032;Astrea;2024;39.8;High risk
+20;Cesar;20045;Becerril;2024;22.1;Medium risk
+20;Cesar;20060;Bosconia;2024;43.2;High risk
+20;Cesar;20295;Gamarra;2024;36.1;High risk
+20;Cesar;20710;San Alberto;2024;0;No risk
+23;Córdoba;23672;San Antero;2024;21.7;Medium risk
+25;Cundinamarca;25001;Agua de Dios;2024;3;No risk
+25;Cundinamarca;25019;Albán;2024;12.5;Low risk
+25;Cundinamarca;25035;Anapoima;2024;3.7;No risk
+25;Cundinamarca;25040;Anolaima;2024;14.1;Medium risk
+25;Cundinamarca;25053;Arbeláez;2024;23.8;Medium risk
+25;Cundinamarca;25086;Beltrán;2024;12.7;Low risk
+25;Cundinamarca;25120;Cabrera;2024;18.7;Medium risk
+25;Cundinamarca;25123;Cachipay;2024;8;Low risk
+25;Cundinamarca;25126;Cajicá;2024;3.1;No risk
+25;Cundinamarca;25175;Chía;2024;3.5;No risk
+25;Cundinamarca;25178;Chipaque;2024;9.9;Low risk
+25;Cundinamarca;25200;Cogua;2024;13.1;Low risk
+25;Cundinamarca;25214;Cota;2024;3.8;No risk
+25;Cundinamarca;25224;Cucunubá;2024;11.8;Low risk
+25;Cundinamarca;25245;El Colegio;2024;10.7;Low risk
+25;Cundinamarca;25258;El Peñón;2024;0;No risk
+25;Cundinamarca;25260;El Rosal;2024;0;No risk
+25;Cundinamarca;25269;Facatativá;2024;0;No risk
+25;Cundinamarca;25286;Funza;2024;1;No risk
+25;Cundinamarca;25290;Fusagasugá;2024;2.9;No risk
+25;Cundinamarca;25295;Gachancipá;2024;4.6;No risk
+25;Cundinamarca;25307;Girardot;2024;2.6;No risk
+25;Cundinamarca;25312;Granada;2024;1.4;No risk
+25;Cundinamarca;25317;Guachetá;2024;4.1;No risk
+25;Cundinamarca;25320;Guaduas;2024;7.7;Low risk
+25;Cundinamarca;25322;Guasca;2024;6.2;Low risk
+25;Cundinamarca;25324;Guataquí;2024;0;No risk
+25;Cundinamarca;25328;Guayabal de Síquima;2024;0;No risk
+25;Cundinamarca;25368;Jerusalén;2024;5.7;Low risk
+25;Cundinamarca;25372;Junín;2024;0.6;No risk
+25;Cundinamarca;25377;La Calera;2024;12.4;Low risk
+25;Cundinamarca;25386;La Mesa;2024;16.2;Medium risk
+25;Cundinamarca;25402;La Vega;2024;22.6;Medium risk
+25;Cundinamarca;25407;Lenguazaque;2024;73.1;High risk
+25;Cundinamarca;25426;Machetá;2024;14.7;Medium risk
+25;Cundinamarca;25430;Madrid;2024;1.4;No risk
+25;Cundinamarca;25486;Nemocón;2024;9.2;Low risk
+25;Cundinamarca;25488;Nilo;2024;4.6;No risk
+25;Cundinamarca;25489;Nimaima;2024;1.2;No risk
+25;Cundinamarca;25491;Nocaima;2024;31.3;Medium risk
+25;Cundinamarca;25513;Pacho;2024;0;No risk
+25;Cundinamarca;25524;Pandi;2024;6.2;Low risk
+25;Cundinamarca;25535;Pasca;2024;18.7;Medium risk
+25;Cundinamarca;25592;Quebradanegra;2024;14.4;Medium risk
+25;Cundinamarca;25612;Ricaurte;2024;0;No risk
+25;Cundinamarca;25645;San Antonio del Tequendama;2024;5.8;Low risk
+25;Cundinamarca;25658;San Francisco;2024;0.4;No risk
+25;Cundinamarca;25662;San Juan de Rioseco;2024;0;No risk
+25;Cundinamarca;25718;Sasaima;2024;3.1;No risk
+25;Cundinamarca;25736;Sesquilé;2024;11.6;Low risk
+25;Cundinamarca;25740;Sibaté;2024;10.7;Low risk
+25;Cundinamarca;25743;Silvania;2024;42.9;High risk
+25;Cundinamarca;25745;Simijaca;2024;27;Medium risk
+25;Cundinamarca;25754;Soacha;2024;4.2;No risk
+25;Cundinamarca;25758;Sopó;2024;4.9;No risk
+25;Cundinamarca;25769;Subachoque;2024;7.2;Low risk
+25;Cundinamarca;25772;Suesca;2024;3.9;No risk
+25;Cundinamarca;25777;Supatá;2024;0.2;No risk
+25;Cundinamarca;25781;Sutatausa;2024;4.6;No risk
+25;Cundinamarca;25785;Tabio;2024;2.2;No risk
+25;Cundinamarca;25793;Tausa;2024;21.1;Medium risk
+25;Cundinamarca;25797;Tena;2024;24.6;Medium risk
+25;Cundinamarca;25799;Tenjo;2024;8.1;Low risk
+25;Cundinamarca;25805;Tibacuy;2024;0.2;No risk
+25;Cundinamarca;25807;Tibirita;2024;8.6;Low risk
+25;Cundinamarca;25817;Tocancipá;2024;0.3;No risk
+25;Cundinamarca;25841;Ubaque;2024;6.8;Low risk
+25;Cundinamarca;25843;Villa de San Diego de Ubaté;2024;0;No risk
+25;Cundinamarca;25845;Une;2024;1.2;No risk
+25;Cundinamarca;25873;Villapinzón;2024;5.2;Low risk
+25;Cundinamarca;25875;Villeta;2024;9.3;Low risk
+25;Cundinamarca;25885;Yacopí;2024;64.1;High risk
+25;Cundinamarca;25898;Zipacón;2024;64.6;High risk
+25;Cundinamarca;25899;Zipaquirá;2024;7.6;Low risk
+41;Huila;41001;Neiva;2024;9.8;Low risk
+41;Huila;41013;Agrado;2024;90.3;Sanitaryly not feasible
+41;Huila;41026;Altamira;2024;9.7;Low risk
+41;Huila;41298;Garzón;2024;0;No risk
+41;Huila;41524;Palermo;2024;10.3;Low risk
+41;Huila;41530;Palestina;2024;1.2;No risk
+41;Huila;41615;Rivera;2024;0;No risk
+41;Huila;41660;Saladoblanco;2024;0;No risk
+44;La Guajira;44001;Riohacha;2024;6.3;Low risk
+44;La Guajira;44035;Albania;2024;29.5;Medium risk
+44;La Guajira;44090;Dibulla;2024;43.5;High risk
+44;La Guajira;44560;Manaure;2024;11.3;Low risk
+44;La Guajira;44847;Uribia;2024;39.7;High risk
+47;Magdalena;47030;Algarrobo;2024;37.5;High risk
+47;Magdalena;47058;Ariguaní;2024;7.5;Low risk
+47;Magdalena;47189;Ciénaga;2024;37.5;High risk
+47;Magdalena;47288;Fundación;2024;0;No risk
+47;Magdalena;47460;Nueva Granada;2024;0;No risk
+47;Magdalena;47570;Puebloviejo;2024;0;No risk
+47;Magdalena;47692;San Sebastián de Buenavista;2024;0;No risk
+47;Magdalena;47960;Zapayán;2024;18.8;Medium risk
+47;Magdalena;47980;Zona Bananera;2024;0;No risk
+50;Meta;50001;Villavicencio;2024;12.7;Low risk
+50;Meta;50006;Acacías;2024;10.6;Low risk
+50;Meta;50150;Castilla La Nueva;2024;19.9;Medium risk
+50;Meta;50251;El Castillo;2024;0;No risk
+50;Meta;50318;Guamal;2024;0;No risk
+52;Nariño;52001;Pasto;2024;1.5;No risk
+52;Nariño;52022;Aldana;2024;21.3;Medium risk
+52;Nariño;52036;Ancuya;2024;57.5;High risk
+52;Nariño;52051;Arboleda;2024;64.8;High risk
+52;Nariño;52215;Córdoba;2024;23.5;Medium risk
+52;Nariño;52227;Cumbal;2024;3.7;No risk
+52;Nariño;52240;Chachagüí;2024;35;Medium risk
+52;Nariño;52254;El Peñol;2024;19.4;Medium risk
+52;Nariño;52320;Guaitarilla;2024;76.7;High risk
+52;Nariño;52323;Gualmatán;2024;16;Medium risk
+52;Nariño;52356;Ipiales;2024;72.5;High risk
+52;Nariño;52381;La Florida;2024;1;No risk
+52;Nariño;52399;La Unión;2024;75.1;High risk
+52;Nariño;52411;Linares;2024;62.5;High risk
+52;Nariño;52427;Magüí;2024;24.8;Medium risk
+52;Nariño;52435;Mallama;2024;44.7;High risk
+52;Nariño;52480;Nariño;2024;11.2;Low risk
+52;Nariño;52585;Pupiales;2024;49.7;High risk
+52;Nariño;52612;Ricaurte;2024;28.5;Medium risk
+52;Nariño;52678;Samaniego;2024;62;High risk
+52;Nariño;52683;Sandoná;2024;12.4;Low risk
+52;Nariño;52696;Santa Bárbara;2024;53.5;High risk
+52;Nariño;52788;Tangua;2024;61.2;High risk
+52;Nariño;52835;San Andrés de Tumaco;2024;19.3;Medium risk
+54;Norte de Santander;54001;San José de Cúcuta;2024;0;No risk
+54;Norte de Santander;54099;Bochalema;2024;0;No risk
+54;Norte de Santander;54109;Bucarasica;2024;79.1;High risk
+54;Norte de Santander;54128;Cáchira;2024;46.5;High risk
+54;Norte de Santander;54172;Chinácota;2024;60.8;High risk
+54;Norte de Santander;54261;El Zulia;2024;0;No risk
+54;Norte de Santander;54673;San Cayetano;2024;0;No risk
+63;Quindío;63001;Armenia;2024;1.4;No risk
+63;Quindío;63130;Calarcá;2024;0;No risk
+66;Risaralda;66001;Pereira;2024;29.2;Medium risk
+66;Risaralda;66045;Apía;2024;67.5;High risk
+66;Risaralda;66075;Balboa;2024;76.3;High risk
+66;Risaralda;66088;Belén de Umbría;2024;22.5;Medium risk
+66;Risaralda;66318;Guática;2024;68.3;High risk
+66;Risaralda;66400;La Virginia;2024;0;No risk
+66;Risaralda;66440;Marsella;2024;32.8;Medium risk
+66;Risaralda;66456;Mistrató;2024;7.2;Low risk
+66;Risaralda;66594;Quinchía;2024;69;High risk
+66;Risaralda;66682;Santa Rosa de Cabal;2024;3.7;No risk
+66;Risaralda;66687;Santuario;2024;54.2;High risk
+68;Santander;68077;Barbosa;2024;0;No risk
+68;Santander;68079;Barichara;2024;94;Sanitaryly not feasible
+68;Santander;68092;Betulia;2024;0;No risk
+68;Santander;68190;Cimitarra;2024;0;No risk
+68;Santander;68229;Curití;2024;0;No risk
+68;Santander;68235;El Carmen de Chucurí;2024;46.9;High risk
+68;Santander;68255;El Playón;2024;84.9;Sanitaryly not feasible
+68;Santander;68266;Enciso;2024;1.5;No risk
+68;Santander;68276;Floridablanca;2024;0;No risk
+68;Santander;68307;Girón;2024;2.5;No risk
+68;Santander;68370;Jordán;2024;74.4;High risk
+68;Santander;68406;Lebrija;2024;13.6;Low risk
+68;Santander;68524;Palmas del Socorro;2024;32.3;Medium risk
+68;Santander;68572;Puente Nacional;2024;22.4;Medium risk
+68;Santander;68573;Puerto Parra;2024;11.4;Low risk
+68;Santander;68615;Rionegro;2024;67.4;High risk
+68;Santander;68655;Sabana de Torres;2024;0;No risk
+68;Santander;68689;San Vicente de Chucurí;2024;29.2;Medium risk
+68;Santander;68770;Suaita;2024;33.9;Medium risk
+68;Santander;68820;Tona;2024;52.6;High risk
+68;Santander;68872;Villanueva;2024;92.4;Sanitaryly not feasible
+68;Santander;68895;Zapatoca;2024;30.2;Medium risk
+70;Sucre;70001;Sincelejo;2024;6.3;Low risk
+70;Sucre;70110;Buenavista;2024;0;No risk
+73;Tolima;73001;Ibagué;2024;45.8;High risk
+73;Tolima;73268;Espinal;2024;0;No risk
+73;Tolima;73678;San Luis;2024;0;No risk
+76;Valle del Cauca;76001;Cali;2024;2.5;No risk
+76;Valle del Cauca;76020;Alcalá;2024;22.7;Medium risk
+76;Valle del Cauca;76036;Andalucía;2024;0;No risk
+76;Valle del Cauca;76041;Ansermanuevo;2024;17.6;Medium risk
+76;Valle del Cauca;76054;Argelia;2024;60.9;High risk
+76;Valle del Cauca;76100;Bolívar;2024;25.4;Medium risk
+76;Valle del Cauca;76109;Buenaventura;2024;0;No risk
+76;Valle del Cauca;76113;Bugalagrande;2024;11.7;Low risk
+76;Valle del Cauca;76122;Caicedonia;2024;0;No risk
+76;Valle del Cauca;76126;Calima;2024;50.8;High risk
+76;Valle del Cauca;76130;Candelaria;2024;12.1;Low risk
+76;Valle del Cauca;76233;Dagua;2024;10.3;Low risk
+76;Valle del Cauca;76243;El Águila;2024;13;Low risk
+76;Valle del Cauca;76248;El Cerrito;2024;1.7;No risk
+76;Valle del Cauca;76250;El Dovio;2024;0;No risk
+76;Valle del Cauca;76275;Florida;2024;0;No risk
+76;Valle del Cauca;76306;Ginebra;2024;10.5;Low risk
+76;Valle del Cauca;76318;Guacarí;2024;3.7;No risk
+76;Valle del Cauca;76364;Jamundí;2024;21.3;Medium risk
+76;Valle del Cauca;76377;La Cumbre;2024;6.2;Low risk
+76;Valle del Cauca;76400;La Unión;2024;11.2;Low risk
+76;Valle del Cauca;76403;La Victoria;2024;0;No risk
+76;Valle del Cauca;76497;Obando;2024;49.7;High risk
+76;Valle del Cauca;76520;Palmira;2024;8.4;Low risk
+76;Valle del Cauca;76563;Pradera;2024;0;No risk
+76;Valle del Cauca;76606;Restrepo;2024;0;No risk
+76;Valle del Cauca;76616;Riofrío;2024;18;Medium risk
+76;Valle del Cauca;76622;Roldanillo;2024;0.1;No risk
+76;Valle del Cauca;76670;San Pedro;2024;1.4;No risk
+76;Valle del Cauca;76736;Sevilla;2024;25.4;Medium risk
+76;Valle del Cauca;76823;Toro;2024;21.7;Medium risk
+76;Valle del Cauca;76828;Trujillo;2024;21.8;Medium risk
+76;Valle del Cauca;76834;Tuluá;2024;7.1;Low risk
+76;Valle del Cauca;76845;Ulloa;2024;0;No risk
+76;Valle del Cauca;76863;Versalles;2024;65;High risk
+76;Valle del Cauca;76890;Yotoco;2024;40.6;High risk
+76;Valle del Cauca;76892;Yumbo;2024;13;Low risk
+76;Valle del Cauca;76895;Zarzal;2024;3.8;No risk
+81;Arauca;81001;Arauca;2024;35.2;High risk
+81;Arauca;81065;Arauquita;2024;21.4;Medium risk
+81;Arauca;81736;Saravena;2024;49.5;High risk
+85;Casanare;85001;Yopal;2024;3.2;No risk
+85;Casanare;85325;San Luis de Palenque;2024;0.5;No risk
+85;Casanare;85410;Tauramena;2024;20.7;Medium risk
+86;Putumayo;86571;Puerto Guzmán;2024;20.7;Medium risk
+88;Archipiélago de San Andrés, Providencia Y Santa Catalina;88001;San Andrés;2024;8.5;Low risk
+91;Amazonas;91540;Puerto Nariño;2024;2.4;No risk
+95;Guaviare;95025;El Retorno;2024;12.9;Low risk
+5;Antioquia;5001;Medellín;2024;3;No risk
+5;Antioquia;5030;Amagá;2024;62;High risk
+5;Antioquia;5034;Andes;2024;8.4;Low risk
+5;Antioquia;5036;Angelópolis;2024;61;High risk
+5;Antioquia;5038;Angostura;2024;16.3;Medium risk
+5;Antioquia;5040;Anorí;2024;0.6;No risk
+5;Antioquia;5042;Santa Fé de Antioquia;2024;19.8;Medium risk
+5;Antioquia;5044;Anzá;2024;96.4;Sanitaryly not feasible
+5;Antioquia;5045;Apartadó;2024;13.8;Low risk
+5;Antioquia;5055;Argelia;2024;0;No risk
+5;Antioquia;5079;Barbosa;2024;49;High risk
+5;Antioquia;5086;Belmira;2024;38.5;High risk
+5;Antioquia;5091;Betania;2024;26.9;Medium risk
+5;Antioquia;5093;Betulia;2024;26.9;Medium risk
+5;Antioquia;5101;Ciudad Bolívar;2024;42.7;High risk
+5;Antioquia;5129;Caldas;2024;57.6;High risk
+5;Antioquia;5145;Caramanta;2024;89.4;Sanitaryly not feasible
+5;Antioquia;5147;Carepa;2024;32;Medium risk
+5;Antioquia;5148;El Carmen de Viboral;2024;5.9;Low risk
+5;Antioquia;5197;Cocorná;2024;29.3;Medium risk
+5;Antioquia;5212;Copacabana;2024;14;Low risk
+5;Antioquia;5237;Donmatías;2024;97.4;Sanitaryly not feasible
+5;Antioquia;5240;Ebéjico;2024;24.1;Medium risk
+5;Antioquia;5250;El Bagre;2024;100;Sanitaryly not feasible
+5;Antioquia;5264;Entrerríos;2024;11.4;Low risk
+5;Antioquia;5266;Envigado;2024;7.3;Low risk
+5;Antioquia;5282;Fredonia;2024;0;No risk
+5;Antioquia;5284;Frontino;2024;32.5;Medium risk
+5;Antioquia;5306;Giraldo;2024;97.4;Sanitaryly not feasible
+5;Antioquia;5308;Girardota;2024;27.9;Medium risk
+5;Antioquia;5315;Guadalupe;2024;0;No risk
+5;Antioquia;5318;Guarne;2024;0.2;No risk
+5;Antioquia;5321;Guatapé;2024;0;No risk
+5;Antioquia;5347;Heliconia;2024;97.4;Sanitaryly not feasible
+5;Antioquia;5353;Hispania;2024;13.4;Low risk
+5;Antioquia;5360;Itagüí;2024;15.2;Medium risk
+5;Antioquia;5364;Jardín;2024;0;No risk
+5;Antioquia;5368;Jericó;2024;13.3;Low risk
+5;Antioquia;5376;La Ceja;2024;38.1;High risk
+5;Antioquia;5380;La Estrella;2024;1.5;No risk
+5;Antioquia;5400;La Unión;2024;25.2;Medium risk
+5;Antioquia;5411;Liborina;2024;79.1;High risk
+5;Antioquia;5425;Maceo;2024;53.1;High risk
+5;Antioquia;5440;Marinilla;2024;6.2;Low risk
+5;Antioquia;5490;Necoclí;2024;0;No risk
+5;Antioquia;5501;Olaya;2024;1.5;No risk
+5;Antioquia;5585;Puerto Nare;2024;16;Medium risk
+5;Antioquia;5591;Puerto Triunfo;2024;13.9;Low risk
+5;Antioquia;5604;Remedios;2024;0;No risk
+5;Antioquia;5607;Retiro;2024;16.3;Medium risk
+5;Antioquia;5615;Rionegro;2024;6.8;Low risk
+5;Antioquia;5631;Sabaneta;2024;7.4;Low risk
+5;Antioquia;5642;Salgar;2024;84.2;Sanitaryly not feasible
+5;Antioquia;5652;San Francisco;2024;0;No risk
+5;Antioquia;5656;San Jerónimo;2024;53.2;High risk
+5;Antioquia;5660;San Luis;2024;42;High risk
+5;Antioquia;5664;San Pedro de Los Milagros;2024;5.6;Low risk
+5;Antioquia;5674;San Vicente Ferrer;2024;12.5;Low risk
+5;Antioquia;5679;Santa Bárbara;2024;32.5;Medium risk
+5;Antioquia;5686;Santa Rosa de Osos;2024;0;No risk
+5;Antioquia;5756;Sonsón;2024;35.4;High risk
+5;Antioquia;5761;Sopetrán;2024;0;No risk
+5;Antioquia;5789;Támesis;2024;63.9;High risk
+5;Antioquia;5790;Tarazá;2024;0;No risk
+5;Antioquia;5792;Tarso;2024;0;No risk
+5;Antioquia;5809;Titiribí;2024;88.3;Sanitaryly not feasible
+5;Antioquia;5837;Turbo;2024;0;No risk
+5;Antioquia;5847;Urrao;2024;70.8;High risk
+5;Antioquia;5858;Vegachí;2024;35.4;High risk
+5;Antioquia;5861;Venecia;2024;0;No risk
+5;Antioquia;5887;Yarumal;2024;29.5;Medium risk
+8;Atlántico;8001;Barranquilla;2024;0;No risk
+8;Atlántico;8078;Baranoa;2024;36.1;High risk
+8;Atlántico;8137;Campo de La Cruz;2024;9.2;Low risk
+8;Atlántico;8141;Candelaria;2024;0;No risk
+8;Atlántico;8296;Galapa;2024;0;No risk
+8;Atlántico;8372;Juan de Acosta;2024;0;No risk
+8;Atlántico;8421;Luruaco;2024;9.4;Low risk
+8;Atlántico;8433;Malambo;2024;33.6;Medium risk
+8;Atlántico;8436;Manatí;2024;0;No risk
+8;Atlántico;8549;Piojó;2024;0;No risk
+8;Atlántico;8558;Polonuevo;2024;0;No risk
+8;Atlántico;8560;Ponedera;2024;13.7;Low risk
+8;Atlántico;8573;Puerto Colombia;2024;0;No risk
+8;Atlántico;8606;Repelón;2024;6.5;Low risk
+8;Atlántico;8638;Sabanalarga;2024;4.9;No risk
+8;Atlántico;8675;Santa Lucía;2024;0;No risk
+8;Atlántico;8832;Tubará;2024;9.8;Low risk
+5;Antioquia;5001;Medellín;2021;4.2;No risk
+5;Antioquia;5001;Medellín;2022;6.8;Low risk
+5;Antioquia;5001;Medellín;2023;2.9;No risk
+5;Antioquia;5030;Amagá;2021;66.8;High risk
+5;Antioquia;5030;Amagá;2022;64.9;High risk
+5;Antioquia;5030;Amagá;2023;61.9;High risk
+5;Antioquia;5034;Andes;2021;0.0;No risk
+5;Antioquia;5034;Andes;2022;1.4;No risk
+5;Antioquia;5034;Andes;2023;0.0;No risk
+5;Antioquia;5036;Angelópolis;2021;82.8;Sanitaryly not feasible
+5;Antioquia;5036;Angelópolis;2022;78.7;High risk
+5;Antioquia;5036;Angelópolis;2023;65.8;High risk
+5;Antioquia;5038;Angostura;2021;29.9;Medium risk
+5;Antioquia;5038;Angostura;2022;27.7;Medium risk
+5;Antioquia;5038;Angostura;2023;26.4;Medium risk
+5;Antioquia;5040;Anorí;2021;0.0;No risk
+5;Antioquia;5040;Anorí;2022;0.0;No risk
+5;Antioquia;5040;Anorí;2023;0.8;No risk
+5;Antioquia;5042;Santa Fé de Antioquia;2021;96.4;Sanitaryly not feasible
+5;Antioquia;5042;Santa Fé de Antioquia;2023;12.9;Low risk
+5;Antioquia;5044;Anzá;2022;87.3;Sanitaryly not feasible
+5;Antioquia;5044;Anzá;2023;90.3;Sanitaryly not feasible
+5;Antioquia;5045;Apartadó;2021;8.6;Low risk
+5;Antioquia;5045;Apartadó;2022;11.2;Low risk
+5;Antioquia;5045;Apartadó;2023;0.0;No risk
+5;Antioquia;5055;Argelia;2021;2.4;No risk
+5;Antioquia;5055;Argelia;2022;1.6;No risk
+5;Antioquia;5055;Argelia;2023;0.0;No risk
+5;Antioquia;5079;Barbosa;2021;54.4;High risk
+5;Antioquia;5079;Barbosa;2022;39.9;High risk
+5;Antioquia;5079;Barbosa;2023;50.8;High risk
+5;Antioquia;5086;Belmira;2021;54.1;High risk
+5;Antioquia;5086;Belmira;2022;24.0;Medium risk
+5;Antioquia;5086;Belmira;2023;33.3;Medium risk
+5;Antioquia;5091;Betania;2021;14.1;Medium risk
+5;Antioquia;5091;Betania;2022;12.5;Low risk
+5;Antioquia;5091;Betania;2023;10.8;Low risk
+5;Antioquia;5093;Betulia;2022;13.1;Low risk
+5;Antioquia;5093;Betulia;2023;17.9;Medium risk
+5;Antioquia;5101;Ciudad Bolívar;2021;5.3;Low risk
+5;Antioquia;5101;Ciudad Bolívar;2022;18.6;Medium risk
+5;Antioquia;5101;Ciudad Bolívar;2023;22.0;Medium risk
+5;Antioquia;5113;Buriticá;2021;78.9;High risk
+5;Antioquia;5120;Cáceres;2021;97.4;Sanitaryly not feasible
+5;Antioquia;5120;Cáceres;2022;97.4;Sanitaryly not feasible
+5;Antioquia;5120;Cáceres;2023;70.8;High risk
+5;Antioquia;5125;Caicedo;2021;100.0;Sanitaryly not feasible
+5;Antioquia;5125;Caicedo;2022;68.8;High risk
+5;Antioquia;5125;Caicedo;2023;68.8;High risk
+5;Antioquia;5129;Caldas;2021;11.0;Low risk
+5;Antioquia;5129;Caldas;2022;6.5;Low risk
+5;Antioquia;5129;Caldas;2023;1.6;No risk
+5;Antioquia;5145;Caramanta;2022;86.2;Sanitaryly not feasible
+5;Antioquia;5145;Caramanta;2023;97.0;Sanitaryly not feasible
+5;Antioquia;5148;El Carmen de Viboral;2021;5.5;Low risk
+5;Antioquia;5148;El Carmen de Viboral;2022;8.7;Low risk
+5;Antioquia;5148;El Carmen de Viboral;2023;5.9;Low risk
+5;Antioquia;5197;Cocorná;2021;55.0;High risk
+5;Antioquia;5197;Cocorná;2022;48.0;High risk
+5;Antioquia;5197;Cocorná;2023;12.8;Low risk
+5;Antioquia;5209;Concordia;2021;96.4;Sanitaryly not feasible
+5;Antioquia;5209;Concordia;2022;70.8;High risk
+5;Antioquia;5212;Copacabana;2021;6.5;Low risk
+5;Antioquia;5212;Copacabana;2022;22.0;Medium risk
+5;Antioquia;5212;Copacabana;2023;14.4;Medium risk
+5;Antioquia;5237;Donmatías;2021;100.0;Sanitaryly not feasible
+5;Antioquia;5237;Donmatías;2022;100.0;Sanitaryly not feasible
+5;Antioquia;5237;Donmatías;2023;98.2;Sanitaryly not feasible
+5;Antioquia;5240;Ebéjico;2021;79.2;High risk
+5;Antioquia;5240;Ebéjico;2022;80.3;Sanitaryly not feasible
+5;Antioquia;5240;Ebéjico;2023;49.5;High risk
+5;Antioquia;5250;El Bagre;2021;9.0;Low risk
+5;Antioquia;5250;El Bagre;2023;99.0;Sanitaryly not feasible
+5;Antioquia;5264;Entrerríos;2021;14.8;Medium risk
+5;Antioquia;5264;Entrerríos;2022;11.3;Low risk
+5;Antioquia;5264;Entrerríos;2023;21.9;Medium risk
+5;Antioquia;5266;Envigado;2021;8.4;Low risk
+5;Antioquia;5266;Envigado;2022;7.8;Low risk
+5;Antioquia;5266;Envigado;2023;6.0;Low risk
+5;Antioquia;5282;Fredonia;2021;0.0;No risk
+5;Antioquia;5282;Fredonia;2022;64.0;High risk
+5;Antioquia;5282;Fredonia;2023;0.0;No risk
+5;Antioquia;5284;Frontino;2023;100.0;Sanitaryly not feasible
+5;Antioquia;5306;Giraldo;2021;25.0;Medium risk
+5;Antioquia;5306;Giraldo;2023;48.7;High risk
+5;Antioquia;5308;Girardota;2021;23.2;Medium risk
+5;Antioquia;5308;Girardota;2022;26.8;Medium risk
+5;Antioquia;5308;Girardota;2023;21.3;Medium risk
+5;Antioquia;5310;Gómez Plata;2021;0.0;No risk
+5;Antioquia;5310;Gómez Plata;2022;0.0;No risk
+5;Antioquia;5310;Gómez Plata;2023;0.0;No risk
+5;Antioquia;5315;Guadalupe;2022;0.0;No risk
+5;Antioquia;5315;Guadalupe;2023;0.0;No risk
+5;Antioquia;5318;Guarne;2021;5.1;Low risk
+5;Antioquia;5318;Guarne;2022;4.2;No risk
+5;Antioquia;5318;Guarne;2023;9.9;Low risk
+5;Antioquia;5321;Guatapé;2022;0.0;No risk
+5;Antioquia;5321;Guatapé;2023;28.9;Medium risk
+5;Antioquia;5347;Heliconia;2021;64.9;High risk
+5;Antioquia;5347;Heliconia;2022;79.7;High risk
+5;Antioquia;5347;Heliconia;2023;64.9;High risk
+5;Antioquia;5353;Hispania;2021;38.3;High risk
+5;Antioquia;5353;Hispania;2022;24.6;Medium risk
+5;Antioquia;5353;Hispania;2023;29.8;Medium risk
+5;Antioquia;5360;Itagüí;2022;22.5;Medium risk
+5;Antioquia;5360;Itagüí;2023;21.4;Medium risk
+5;Antioquia;5364;Jardín;2021;0.0;No risk
+5;Antioquia;5364;Jardín;2022;13.2;Low risk
+5;Antioquia;5364;Jardín;2023;4.5;No risk
+5;Antioquia;5368;Jericó;2021;26.6;Medium risk
+5;Antioquia;5368;Jericó;2022;38.5;High risk
+5;Antioquia;5368;Jericó;2023;49.0;High risk
+5;Antioquia;5376;La Ceja;2021;46.5;High risk
+5;Antioquia;5376;La Ceja;2022;59.1;High risk
+5;Antioquia;5376;La Ceja;2023;21.1;Medium risk
+5;Antioquia;5380;La Estrella;2021;0.0;No risk
+5;Antioquia;5380;La Estrella;2022;12.5;Low risk
+5;Antioquia;5380;La Estrella;2023;2.5;No risk
+5;Antioquia;5400;La Unión;2022;31.8;Medium risk
+5;Antioquia;5400;La Unión;2023;21.1;Medium risk
+5;Antioquia;5411;Liborina;2021;88.0;Sanitaryly not feasible
+5;Antioquia;5411;Liborina;2022;50.1;High risk
+5;Antioquia;5411;Liborina;2023;80.0;High risk
+5;Antioquia;5425;Maceo;2021;66.3;High risk
+5;Antioquia;5425;Maceo;2022;49.4;High risk
+5;Antioquia;5425;Maceo;2023;42.9;High risk
+5;Antioquia;5440;Marinilla;2021;7.7;Low risk
+5;Antioquia;5440;Marinilla;2022;6.3;Low risk
+5;Antioquia;5440;Marinilla;2023;0.5;No risk
+5;Antioquia;5490;Necoclí;2021;0.0;No risk
+5;Antioquia;5490;Necoclí;2022;0.0;No risk
+5;Antioquia;5501;Olaya;2022;0.0;No risk
+5;Antioquia;5541;Peñol;2021;13.6;Low risk
+5;Antioquia;5541;Peñol;2022;13.3;Low risk
+5;Antioquia;5541;Peñol;2023;12.0;Low risk
+5;Antioquia;5585;Puerto Nare;2021;3.2;No risk
+5;Antioquia;5585;Puerto Nare;2023;0.0;No risk
+5;Antioquia;5591;Puerto Triunfo;2021;7.5;Low risk
+5;Antioquia;5591;Puerto Triunfo;2022;6.0;Low risk
+5;Antioquia;5591;Puerto Triunfo;2023;24.0;Medium risk
+5;Antioquia;5604;Remedios;2021;2.1;No risk
+5;Antioquia;5604;Remedios;2022;0.0;No risk
+5;Antioquia;5604;Remedios;2023;1.0;No risk
+5;Antioquia;5607;Retiro;2021;14.8;Medium risk
+5;Antioquia;5607;Retiro;2022;20.5;Medium risk
+5;Antioquia;5607;Retiro;2023;7.0;Low risk
+5;Antioquia;5615;Rionegro;2021;7.0;Low risk
+5;Antioquia;5615;Rionegro;2022;7.9;Low risk
+5;Antioquia;5615;Rionegro;2023;3.4;No risk
+5;Antioquia;5631;Sabaneta;2021;14.9;Medium risk
+5;Antioquia;5631;Sabaneta;2022;1.3;No risk
+5;Antioquia;5631;Sabaneta;2023;3.8;No risk
+5;Antioquia;5642;Salgar;2023;31.6;Medium risk
+5;Antioquia;5652;San Francisco;2022;0.0;No risk
+5;Antioquia;5652;San Francisco;2023;0.0;No risk
+5;Antioquia;5656;San Jerónimo;2021;35.5;High risk
+5;Antioquia;5656;San Jerónimo;2022;38.8;High risk
+5;Antioquia;5656;San Jerónimo;2023;39.8;High risk
+5;Antioquia;5660;San Luis;2021;53.1;High risk
+5;Antioquia;5660;San Luis;2022;53.1;High risk
+5;Antioquia;5660;San Luis;2023;42.0;High risk
+5;Antioquia;5664;San Pedro de Los Milagros;2021;25.7;Medium risk
+5;Antioquia;5664;San Pedro de Los Milagros;2022;31.8;Medium risk
+5;Antioquia;5664;San Pedro de Los Milagros;2023;12.0;Low risk
+5;Antioquia;5670;San Roque;2021;92.1;Sanitaryly not feasible
+5;Antioquia;5670;San Roque;2022;96.4;Sanitaryly not feasible
+5;Antioquia;5674;San Vicente Ferrer;2021;0.0;No risk
+5;Antioquia;5674;San Vicente Ferrer;2022;7.6;Low risk
+5;Antioquia;5674;San Vicente Ferrer;2023;16.4;Medium risk
+5;Antioquia;5679;Santa Bárbara;2021;8.3;Low risk
+5;Antioquia;5679;Santa Bárbara;2022;9.1;Low risk
+5;Antioquia;5679;Santa Bárbara;2023;14.7;Medium risk
+5;Antioquia;5686;Santa Rosa de Osos;2021;23.6;Medium risk
+5;Antioquia;5686;Santa Rosa de Osos;2022;0.0;No risk
+5;Antioquia;5686;Santa Rosa de Osos;2023;12.6;Low risk
+5;Antioquia;5756;Sonsón;2021;14.6;Medium risk
+5;Antioquia;5756;Sonsón;2022;100.0;Sanitaryly not feasible
+5;Antioquia;5756;Sonsón;2023;70.8;High risk
+5;Antioquia;5761;Sopetrán;2021;6.3;Low risk
+5;Antioquia;5761;Sopetrán;2022;3.0;No risk
+5;Antioquia;5761;Sopetrán;2023;0.0;No risk
+5;Antioquia;5789;Támesis;2021;48.2;High risk
+5;Antioquia;5789;Támesis;2022;54.0;High risk
+5;Antioquia;5789;Támesis;2023;57.1;High risk
+5;Antioquia;5790;Tarazá;2021;1.8;No risk
+5;Antioquia;5790;Tarazá;2022;0.0;No risk
+5;Antioquia;5790;Tarazá;2023;0.0;No risk
+5;Antioquia;5792;Tarso;2022;0.0;No risk
+5;Antioquia;5792;Tarso;2023;0.0;No risk
+5;Antioquia;5809;Titiribí;2021;78.0;High risk
+5;Antioquia;5809;Titiribí;2022;85.1;Sanitaryly not feasible
+5;Antioquia;5809;Titiribí;2023;96.8;Sanitaryly not feasible
+5;Antioquia;5837;Turbo;2021;1.6;No risk
+5;Antioquia;5837;Turbo;2022;0.0;No risk
+5;Antioquia;5837;Turbo;2023;5.3;Low risk
+5;Antioquia;5847;Urrao;2022;96.4;Sanitaryly not feasible
+5;Antioquia;5847;Urrao;2023;85.4;Sanitaryly not feasible
+5;Antioquia;5858;Vegachí;2021;48.2;High risk
+5;Antioquia;5858;Vegachí;2022;18.8;Medium risk
+5;Antioquia;5858;Vegachí;2023;27.3;Medium risk
+5;Antioquia;5861;Venecia;2021;0.0;No risk
+5;Antioquia;5861;Venecia;2022;6.0;Low risk
+5;Antioquia;5861;Venecia;2023;0.0;No risk
+5;Antioquia;5887;Yarumal;2021;14.6;Medium risk
+5;Antioquia;5887;Yarumal;2022;14.3;Medium risk
+5;Antioquia;5887;Yarumal;2023;22.3;Medium risk
+5;Antioquia;5893;Yondó;2021;82.6;Sanitaryly not feasible
+5;Antioquia;5893;Yondó;2022;97.4;Sanitaryly not feasible
+5;Antioquia;5893;Yondó;2023;88.0;Sanitaryly not feasible
+8;Atlántico;8001;Barranquilla;2021;0.0;No risk
+8;Atlántico;8001;Barranquilla;2022;0.0;No risk
+8;Atlántico;8001;Barranquilla;2023;0.0;No risk
+8;Atlántico;8078;Baranoa;2021;35.1;High risk
+8;Atlántico;8078;Baranoa;2022;38.6;High risk
+8;Atlántico;8078;Baranoa;2023;38.3;High risk
+8;Atlántico;8137;Campo de La Cruz;2021;4.1;No risk
+8;Atlántico;8137;Campo de La Cruz;2022;1.8;No risk
+8;Atlántico;8137;Campo de La Cruz;2023;0.0;No risk
+8;Atlántico;8141;Candelaria;2021;0.8;No risk
+8;Atlántico;8141;Candelaria;2022;0.0;No risk
+8;Atlántico;8141;Candelaria;2023;0.0;No risk
+8;Atlántico;8296;Galapa;2021;1.2;No risk
+8;Atlántico;8296;Galapa;2022;0.0;No risk
+8;Atlántico;8296;Galapa;2023;0.0;No risk
+8;Atlántico;8372;Juan de Acosta;2021;0.0;No risk
+8;Atlántico;8372;Juan de Acosta;2022;0.0;No risk
+8;Atlántico;8372;Juan de Acosta;2023;0.0;No risk
+8;Atlántico;8421;Luruaco;2021;11.5;Low risk
+8;Atlántico;8421;Luruaco;2022;7.2;Low risk
+8;Atlántico;8421;Luruaco;2023;5.7;Low risk
+8;Atlántico;8433;Malambo;2021;35.2;High risk
+8;Atlántico;8433;Malambo;2022;40.4;High risk
+8;Atlántico;8433;Malambo;2023;24.5;Medium risk
+8;Atlántico;8436;Manatí;2021;0.0;No risk
+8;Atlántico;8436;Manatí;2022;0.0;No risk
+8;Atlántico;8436;Manatí;2023;0.0;No risk
+8;Atlántico;8549;Piojó;2021;2.2;No risk
+8;Atlántico;8549;Piojó;2022;0.0;No risk
+8;Atlántico;8549;Piojó;2023;0.0;No risk
+8;Atlántico;8558;Polonuevo;2021;0.0;No risk
+8;Atlántico;8558;Polonuevo;2022;0.0;No risk
+8;Atlántico;8558;Polonuevo;2023;0.0;No risk
+8;Atlántico;8560;Ponedera;2021;8.6;Low risk
+8;Atlántico;8560;Ponedera;2022;4.0;No risk
+8;Atlántico;8560;Ponedera;2023;13.2;Low risk
+8;Atlántico;8573;Puerto Colombia;2021;0.0;No risk
+8;Atlántico;8573;Puerto Colombia;2022;0.0;No risk
+8;Atlántico;8573;Puerto Colombia;2023;0.0;No risk
+8;Atlántico;8606;Repelón;2021;20.8;Medium risk
+8;Atlántico;8606;Repelón;2022;19.6;Medium risk
+8;Atlántico;8606;Repelón;2023;28.4;Medium risk
+8;Atlántico;8638;Sabanalarga;2021;12.6;Low risk
+8;Atlántico;8638;Sabanalarga;2022;16.9;Medium risk
+8;Atlántico;8638;Sabanalarga;2023;12.8;Low risk
+8;Atlántico;8675;Santa Lucía;2021;2.3;No risk
+8;Atlántico;8675;Santa Lucía;2022;0.0;No risk
+8;Atlántico;8675;Santa Lucía;2023;0.0;No risk
+8;Atlántico;8832;Tubará;2021;9.9;Low risk
+8;Atlántico;8832;Tubará;2022;9.6;Low risk
+8;Atlántico;8832;Tubará;2023;9.4;Low risk
+11;Bogotá, D.C.;11001;Bogotá, D.C.;2021;21.7;Medium risk
+11;Bogotá, D.C.;11001;Bogotá, D.C.;2022;17.5;Medium risk
+11;Bogotá, D.C.;11001;Bogotá, D.C.;2023;16.3;Medium risk
+13;Bolívar;13001;Cartagena de Indias;2021;0.0;No risk
+13;Bolívar;13001;Cartagena de Indias;2022;0.0;No risk
+13;Bolívar;13001;Cartagena de Indias;2023;0.0;No risk
+13;Bolívar;13062;Arroyohondo;2021;11.0;Low risk
+13;Bolívar;13062;Arroyohondo;2022;33.3;Medium risk
+13;Bolívar;13062;Arroyohondo;2023;6.3;Low risk
+13;Bolívar;13074;Barranco de Loba;2021;20.0;Medium risk
+13;Bolívar;13074;Barranco de Loba;2022;0.8;No risk
+13;Bolívar;13074;Barranco de Loba;2023;0.0;No risk
+13;Bolívar;13248;El Guamo;2023;0.0;No risk
+13;Bolívar;13433;Mahates;2021;46.1;High risk
+13;Bolívar;13433;Mahates;2022;27.8;Medium risk
+13;Bolívar;13433;Mahates;2023;35.6;High risk
+13;Bolívar;13442;María La Baja;2021;0.0;No risk
+13;Bolívar;13442;María La Baja;2022;12.8;Low risk
+13;Bolívar;13442;María La Baja;2023;25.0;Medium risk
+13;Bolívar;13458;Montecristo;2021;100.0;Sanitaryly not feasible
+13;Bolívar;13458;Montecristo;2022;67.2;High risk
+13;Bolívar;13650;San Fernando;2021;37.5;High risk
+13;Bolívar;13657;San Juan Nepomuceno;2021;39.6;High risk
+13;Bolívar;13657;San Juan Nepomuceno;2022;0.0;No risk
+13;Bolívar;13657;San Juan Nepomuceno;2023;18.8;Medium risk
+13;Bolívar;13838;Turbana;2021;12.0;Low risk
+13;Bolívar;13838;Turbana;2022;10.4;Low risk
+13;Bolívar;13838;Turbana;2023;14.4;Medium risk
+13;Bolívar;13873;Villanueva;2021;0.0;No risk
+13;Bolívar;13873;Villanueva;2022;7.7;Low risk
+13;Bolívar;13873;Villanueva;2023;5.4;Low risk
+13;Bolívar;13894;Zambrano;2022;18.8;Medium risk
+13;Bolívar;13894;Zambrano;2023;45.8;High risk
+15;Boyacá;15001;Tunja;2021;10.6;Low risk
+15;Boyacá;15001;Tunja;2022;12.7;Low risk
+15;Boyacá;15001;Tunja;2023;9.2;Low risk
+15;Boyacá;15022;Almeida;2021;23.4;Medium risk
+15;Boyacá;15022;Almeida;2022;2.8;No risk
+15;Boyacá;15022;Almeida;2023;40.6;High risk
+15;Boyacá;15047;Aquitania;2021;0.0;No risk
+15;Boyacá;15047;Aquitania;2022;0.0;No risk
+15;Boyacá;15047;Aquitania;2023;0.0;No risk
+15;Boyacá;15090;Berbeo;2021;84.4;Sanitaryly not feasible
+15;Boyacá;15090;Berbeo;2022;76.0;High risk
+15;Boyacá;15090;Berbeo;2023;80.0;High risk
+15;Boyacá;15092;Betéitiva;2022;20.7;Medium risk
+15;Boyacá;15092;Betéitiva;2023;0.0;No risk
+15;Boyacá;15106;Briceño;2021;83.6;Sanitaryly not feasible
+15;Boyacá;15106;Briceño;2022;90.4;Sanitaryly not feasible
+15;Boyacá;15106;Briceño;2023;65.2;High risk
+15;Boyacá;15114;Busbanzá;2021;1.9;No risk
+15;Boyacá;15114;Busbanzá;2022;11.2;Low risk
+15;Boyacá;15114;Busbanzá;2023;10.1;Low risk
+15;Boyacá;15131;Caldas;2021;93.9;Sanitaryly not feasible
+15;Boyacá;15131;Caldas;2022;93.5;Sanitaryly not feasible
+15;Boyacá;15131;Caldas;2023;88.4;Sanitaryly not feasible
+15;Boyacá;15135;Campohermoso;2021;6.8;Low risk
+15;Boyacá;15135;Campohermoso;2022;0.0;No risk
+15;Boyacá;15135;Campohermoso;2023;13.4;Low risk
+15;Boyacá;15176;Chiquinquirá;2023;0.0;No risk
+15;Boyacá;15183;Chita;2021;35.5;High risk
+15;Boyacá;15183;Chita;2022;19.8;Medium risk
+15;Boyacá;15183;Chita;2023;15.8;Medium risk
+15;Boyacá;15185;Chitaraque;2021;50.4;High risk
+15;Boyacá;15185;Chitaraque;2022;5.4;Low risk
+15;Boyacá;15185;Chitaraque;2023;8.6;Low risk
+15;Boyacá;15187;Chivatá;2021;1.4;No risk
+15;Boyacá;15187;Chivatá;2022;3.5;No risk
+15;Boyacá;15187;Chivatá;2023;1.7;No risk
+15;Boyacá;15212;Coper;2021;71.7;High risk
+15;Boyacá;15212;Coper;2022;28.4;Medium risk
+15;Boyacá;15212;Coper;2023;41.1;High risk
+15;Boyacá;15215;Corrales;2021;37.9;High risk
+15;Boyacá;15215;Corrales;2022;26.8;Medium risk
+15;Boyacá;15215;Corrales;2023;16.3;Medium risk
+15;Boyacá;15223;Cubará;2021;73.3;High risk
+15;Boyacá;15223;Cubará;2022;64.7;High risk
+15;Boyacá;15223;Cubará;2023;63.6;High risk
+15;Boyacá;15224;Cucaita;2021;26.4;Medium risk
+15;Boyacá;15224;Cucaita;2022;90.2;Sanitaryly not feasible
+15;Boyacá;15224;Cucaita;2023;80.2;Sanitaryly not feasible
+15;Boyacá;15226;Cuítiva;2021;5.0;No risk
+15;Boyacá;15226;Cuítiva;2022;3.6;No risk
+15;Boyacá;15226;Cuítiva;2023;1.2;No risk
+15;Boyacá;15232;Chíquiza;2021;5.7;Low risk
+15;Boyacá;15232;Chíquiza;2022;5.3;Low risk
+15;Boyacá;15232;Chíquiza;2023;0.7;No risk
+15;Boyacá;15238;Duitama;2021;3.1;No risk
+15;Boyacá;15238;Duitama;2022;5.4;Low risk
+15;Boyacá;15238;Duitama;2023;1.8;No risk
+15;Boyacá;15244;El Cocuy;2021;0.6;No risk
+15;Boyacá;15244;El Cocuy;2022;1.8;No risk
+15;Boyacá;15244;El Cocuy;2023;0.6;No risk
+15;Boyacá;15276;Floresta;2021;20.9;Medium risk
+15;Boyacá;15276;Floresta;2022;21.7;Medium risk
+15;Boyacá;15276;Floresta;2023;36.7;High risk
+15;Boyacá;15325;Guayatá;2021;13.4;Low risk
+15;Boyacá;15325;Guayatá;2022;28.1;Medium risk
+15;Boyacá;15325;Guayatá;2023;17.4;Medium risk
+15;Boyacá;15368;Jericó;2021;93.3;Sanitaryly not feasible
+15;Boyacá;15368;Jericó;2023;54.3;High risk
+15;Boyacá;15377;Labranzagrande;2021;68.2;High risk
+15;Boyacá;15377;Labranzagrande;2022;67.5;High risk
+15;Boyacá;15377;Labranzagrande;2023;61.1;High risk
+15;Boyacá;15401;La Victoria;2021;0.0;No risk
+15;Boyacá;15401;La Victoria;2022;1.8;No risk
+15;Boyacá;15401;La Victoria;2023;5.9;Low risk
+15;Boyacá;15407;Villa de Leyva;2021;6.8;Low risk
+15;Boyacá;15407;Villa de Leyva;2022;10.3;Low risk
+15;Boyacá;15407;Villa de Leyva;2023;20.9;Medium risk
+15;Boyacá;15442;Maripí;2021;12.5;Low risk
+15;Boyacá;15442;Maripí;2022;15.2;Medium risk
+15;Boyacá;15442;Maripí;2023;0.8;No risk
+15;Boyacá;15476;Motavita;2021;23.4;Medium risk
+15;Boyacá;15476;Motavita;2022;20.3;Medium risk
+15;Boyacá;15476;Motavita;2023;8.7;Low risk
+15;Boyacá;15480;Muzo;2021;77.5;High risk
+15;Boyacá;15480;Muzo;2022;60.7;High risk
+15;Boyacá;15480;Muzo;2023;63.4;High risk
+15;Boyacá;15491;Nobsa;2021;1.3;No risk
+15;Boyacá;15491;Nobsa;2022;1.6;No risk
+15;Boyacá;15491;Nobsa;2023;3.3;No risk
+15;Boyacá;15500;Oicatá;2021;5.1;Low risk
+15;Boyacá;15500;Oicatá;2022;6.0;Low risk
+15;Boyacá;15500;Oicatá;2023;3.5;No risk
+15;Boyacá;15511;Pachavita;2021;75.7;High risk
+15;Boyacá;15511;Pachavita;2022;87.4;Sanitaryly not feasible
+15;Boyacá;15511;Pachavita;2023;92.9;Sanitaryly not feasible
+15;Boyacá;15516;Paipa;2021;5.9;Low risk
+15;Boyacá;15516;Paipa;2022;16.5;Medium risk
+15;Boyacá;15516;Paipa;2023;4.5;No risk
+15;Boyacá;15518;Pajarito;2021;2.7;No risk
+15;Boyacá;15518;Pajarito;2022;3.5;No risk
+15;Boyacá;15518;Pajarito;2023;0.0;No risk
+15;Boyacá;15531;Pauna;2021;71.5;High risk
+15;Boyacá;15531;Pauna;2022;78.1;High risk
+15;Boyacá;15531;Pauna;2023;78.3;High risk
+15;Boyacá;15533;Paya;2021;2.4;No risk
+15;Boyacá;15533;Paya;2022;7.5;Low risk
+15;Boyacá;15533;Paya;2023;1.5;No risk
+15;Boyacá;15550;Pisba;2021;0.0;No risk
+15;Boyacá;15550;Pisba;2022;2.3;No risk
+15;Boyacá;15550;Pisba;2023;2.7;No risk
+15;Boyacá;15580;Quípama;2021;13.6;Low risk
+15;Boyacá;15580;Quípama;2022;8.6;Low risk
+15;Boyacá;15580;Quípama;2023;18.5;Medium risk
+15;Boyacá;15599;Ramiriquí;2021;1.2;No risk
+15;Boyacá;15599;Ramiriquí;2022;0.6;No risk
+15;Boyacá;15599;Ramiriquí;2023;0.0;No risk
+15;Boyacá;15660;San Eduardo;2021;77.9;High risk
+15;Boyacá;15660;San Eduardo;2022;78.9;High risk
+15;Boyacá;15660;San Eduardo;2023;79.0;High risk
+15;Boyacá;15681;San Pablo de Borbur;2021;0.0;No risk
+15;Boyacá;15681;San Pablo de Borbur;2022;6.2;Low risk
+15;Boyacá;15681;San Pablo de Borbur;2023;20.9;Medium risk
+15;Boyacá;15690;Santa María;2021;4.4;No risk
+15;Boyacá;15690;Santa María;2022;6.0;Low risk
+15;Boyacá;15690;Santa María;2023;6.4;Low risk
+15;Boyacá;15693;Santa Rosa de Viterbo;2021;9.1;Low risk
+15;Boyacá;15693;Santa Rosa de Viterbo;2022;6.0;Low risk
+15;Boyacá;15693;Santa Rosa de Viterbo;2023;25.9;Medium risk
+15;Boyacá;15723;Sativasur;2021;2.4;No risk
+15;Boyacá;15723;Sativasur;2022;12.1;Low risk
+15;Boyacá;15723;Sativasur;2023;4.9;No risk
+15;Boyacá;15740;Siachoque;2021;66.2;High risk
+15;Boyacá;15740;Siachoque;2022;22.3;Medium risk
+15;Boyacá;15740;Siachoque;2023;94.3;Sanitaryly not feasible
+15;Boyacá;15759;Sogamoso;2021;4.3;No risk
+15;Boyacá;15759;Sogamoso;2022;0.0;No risk
+15;Boyacá;15759;Sogamoso;2023;0.2;No risk
+15;Boyacá;15761;Somondoco;2021;79.0;High risk
+15;Boyacá;15761;Somondoco;2022;63.9;High risk
+15;Boyacá;15761;Somondoco;2023;95.7;Sanitaryly not feasible
+15;Boyacá;15762;Sora;2021;20.9;Medium risk
+15;Boyacá;15762;Sora;2022;45.8;High risk
+15;Boyacá;15762;Sora;2023;17.4;Medium risk
+15;Boyacá;15764;Soracá;2021;32.2;Medium risk
+15;Boyacá;15764;Soracá;2022;13.7;Low risk
+15;Boyacá;15764;Soracá;2023;4.3;No risk
+15;Boyacá;15776;Sutamarchán;2021;94.7;Sanitaryly not feasible
+15;Boyacá;15776;Sutamarchán;2022;93.9;Sanitaryly not feasible
+15;Boyacá;15776;Sutamarchán;2023;88.9;Sanitaryly not feasible
+15;Boyacá;15778;Sutatenza;2021;20.1;Medium risk
+15;Boyacá;15778;Sutatenza;2022;51.8;High risk
+15;Boyacá;15778;Sutatenza;2023;31.4;Medium risk
+15;Boyacá;15804;Tibaná;2021;0.0;No risk
+15;Boyacá;15810;Tipacoque;2021;66.8;High risk
+15;Boyacá;15810;Tipacoque;2022;56.6;High risk
+15;Boyacá;15810;Tipacoque;2023;78.7;High risk
+15;Boyacá;15820;Tópaga;2021;42.3;High risk
+15;Boyacá;15820;Tópaga;2022;36.2;High risk
+15;Boyacá;15820;Tópaga;2023;21.9;Medium risk
+15;Boyacá;15822;Tota;2021;12.8;Low risk
+15;Boyacá;15822;Tota;2022;12.1;Low risk
+15;Boyacá;15822;Tota;2023;42.6;High risk
+15;Boyacá;15839;Tutazá;2021;35.5;High risk
+15;Boyacá;15839;Tutazá;2022;24.2;Medium risk
+15;Boyacá;15839;Tutazá;2023;31.6;Medium risk
+15;Boyacá;15879;Viracachá;2021;15.9;Medium risk
+15;Boyacá;15879;Viracachá;2022;35.4;High risk
+15;Boyacá;15879;Viracachá;2023;25.0;Medium risk
+17;Caldas;17001;Manizales;2021;13.3;Low risk
+17;Caldas;17001;Manizales;2022;13.4;Low risk
+17;Caldas;17001;Manizales;2023;7.5;Low risk
+17;Caldas;17042;Anserma;2021;86.1;Sanitaryly not feasible
+17;Caldas;17042;Anserma;2022;63.8;High risk
+17;Caldas;17042;Anserma;2023;52.5;High risk
+17;Caldas;17050;Aranzazu;2021;85.8;Sanitaryly not feasible
+17;Caldas;17050;Aranzazu;2022;71.0;High risk
+17;Caldas;17050;Aranzazu;2023;97.6;Sanitaryly not feasible
+17;Caldas;17174;Chinchiná;2021;67.2;High risk
+17;Caldas;17174;Chinchiná;2022;77.4;High risk
+17;Caldas;17174;Chinchiná;2023;79.5;High risk
+17;Caldas;17272;Filadelfia;2021;60.2;High risk
+17;Caldas;17272;Filadelfia;2022;38.7;High risk
+17;Caldas;17272;Filadelfia;2023;71.0;High risk
+17;Caldas;17380;La Dorada;2021;11.1;Low risk
+17;Caldas;17380;La Dorada;2022;10.0;Low risk
+17;Caldas;17380;La Dorada;2023;9.2;Low risk
+17;Caldas;17388;La Merced;2021;63.4;High risk
+17;Caldas;17388;La Merced;2022;86.5;Sanitaryly not feasible
+17;Caldas;17388;La Merced;2023;59.5;High risk
+17;Caldas;17433;Manzanares;2021;71.0;High risk
+17;Caldas;17433;Manzanares;2022;71.0;High risk
+17;Caldas;17433;Manzanares;2023;59.5;High risk
+17;Caldas;17486;Neira;2021;25.0;Medium risk
+17;Caldas;17486;Neira;2022;46.5;High risk
+17;Caldas;17486;Neira;2023;15.7;Medium risk
+17;Caldas;17495;Norcasia;2021;71.0;High risk
+17;Caldas;17495;Norcasia;2022;71.0;High risk
+17;Caldas;17495;Norcasia;2023;59.5;High risk
+17;Caldas;17513;Pácora;2021;93.5;Sanitaryly not feasible
+17;Caldas;17513;Pácora;2022;89.4;Sanitaryly not feasible
+17;Caldas;17513;Pácora;2023;93.0;Sanitaryly not feasible
+17;Caldas;17524;Palestina;2021;83.2;Sanitaryly not feasible
+17;Caldas;17524;Palestina;2022;57.3;High risk
+17;Caldas;17524;Palestina;2023;51.4;High risk
+17;Caldas;17541;Pensilvania;2021;74.7;High risk
+17;Caldas;17541;Pensilvania;2022;67.1;High risk
+17;Caldas;17541;Pensilvania;2023;64.0;High risk
+17;Caldas;17614;Riosucio;2021;72.6;High risk
+17;Caldas;17614;Riosucio;2022;69.1;High risk
+17;Caldas;17614;Riosucio;2023;68.6;High risk
+17;Caldas;17616;Risaralda;2021;67.0;High risk
+17;Caldas;17616;Risaralda;2022;58.7;High risk
+17;Caldas;17616;Risaralda;2023;70.8;High risk
+17;Caldas;17653;Salamina;2021;67.1;High risk
+17;Caldas;17653;Salamina;2022;71.1;High risk
+17;Caldas;17653;Salamina;2023;72.9;High risk
+17;Caldas;17662;Samaná;2021;74.2;High risk
+17;Caldas;17662;Samaná;2022;65.8;High risk
+17;Caldas;17662;Samaná;2023;69.3;High risk
+17;Caldas;17665;San José;2021;77.8;High risk
+17;Caldas;17665;San José;2022;73.7;High risk
+17;Caldas;17665;San José;2023;76.1;High risk
+17;Caldas;17777;Supía;2021;87.0;Sanitaryly not feasible
+17;Caldas;17777;Supía;2022;87.7;Sanitaryly not feasible
+17;Caldas;17777;Supía;2023;85.4;Sanitaryly not feasible
+17;Caldas;17867;Victoria;2021;60.1;High risk
+17;Caldas;17867;Victoria;2022;51.9;High risk
+17;Caldas;17867;Victoria;2023;44.5;High risk
+17;Caldas;17873;Villamaría;2021;81.2;Sanitaryly not feasible
+17;Caldas;17873;Villamaría;2022;75.4;High risk
+17;Caldas;17873;Villamaría;2023;68.4;High risk
+17;Caldas;17877;Viterbo;2021;85.8;Sanitaryly not feasible
+17;Caldas;17877;Viterbo;2022;88.9;Sanitaryly not feasible
+17;Caldas;17877;Viterbo;2023;79.4;High risk
+18;Caquetá;18150;Cartagena del Chairá;2021;44.2;High risk
+18;Caquetá;18150;Cartagena del Chairá;2022;36.8;High risk
+18;Caquetá;18247;El Doncello;2021;0.0;No risk
+18;Caquetá;18247;El Doncello;2022;6.0;Low risk
+18;Caquetá;18256;El Paujíl;2021;7.0;Low risk
+18;Caquetá;18256;El Paujíl;2022;3.2;No risk
+18;Caquetá;18460;Milán;2021;9.7;Low risk
+18;Caquetá;18460;Milán;2022;0.0;No risk
+18;Caquetá;18592;Puerto Rico;2021;9.7;Low risk
+18;Caquetá;18592;Puerto Rico;2022;23.7;Medium risk
+18;Caquetá;18785;Solita;2021;42.0;High risk
+18;Caquetá;18785;Solita;2022;23.2;Medium risk
+19;Cauca;19022;Almaguer;2022;4.0;No risk
+19;Cauca;19110;Buenos Aires;2023;0.0;No risk
+19;Cauca;19130;Cajibío;2021;3.5;No risk
+19;Cauca;19130;Cajibío;2022;8.8;Low risk
+19;Cauca;19130;Cajibío;2023;1.0;No risk
+19;Cauca;19137;Caldono;2021;8.4;Low risk
+19;Cauca;19137;Caldono;2022;10.2;Low risk
+19;Cauca;19137;Caldono;2023;0.0;No risk
+19;Cauca;19212;Corinto;2021;0.0;No risk
+19;Cauca;19212;Corinto;2022;0.0;No risk
+19;Cauca;19212;Corinto;2023;0.0;No risk
+19;Cauca;19256;El Tambo;2023;0.0;No risk
+19;Cauca;19300;Guachené;2021;3.0;No risk
+19;Cauca;19300;Guachené;2022;4.7;No risk
+19;Cauca;19300;Guachené;2023;5.6;Low risk
+19;Cauca;19318;Guapi;2021;93.2;Sanitaryly not feasible
+19;Cauca;19355;Inzá;2021;2.2;No risk
+19;Cauca;19355;Inzá;2022;13.9;Low risk
+19;Cauca;19355;Inzá;2023;10.1;Low risk
+19;Cauca;19392;La Sierra;2021;8.5;Low risk
+19;Cauca;19392;La Sierra;2022;3.6;No risk
+19;Cauca;19397;La Vega;2021;47.7;High risk
+19;Cauca;19397;La Vega;2022;37.2;High risk
+19;Cauca;19397;La Vega;2023;57.3;High risk
+19;Cauca;19473;Morales;2021;4.0;No risk
+19;Cauca;19473;Morales;2022;0.0;No risk
+19;Cauca;19513;Padilla;2021;2.0;No risk
+19;Cauca;19513;Padilla;2022;5.7;Low risk
+19;Cauca;19513;Padilla;2023;4.5;No risk
+19;Cauca;19533;Piamonte;2021;33.2;Medium risk
+19;Cauca;19533;Piamonte;2022;18.8;Medium risk
+19;Cauca;19548;Piendamó - Tunía;2021;7.7;Low risk
+19;Cauca;19548;Piendamó - Tunía;2022;0.0;No risk
+19;Cauca;19548;Piendamó - Tunía;2023;3.1;No risk
+19;Cauca;19573;Puerto Tejada;2021;17.4;Medium risk
+19;Cauca;19573;Puerto Tejada;2022;9.6;Low risk
+19;Cauca;19573;Puerto Tejada;2023;0.3;No risk
+19;Cauca;19585;Puracé;2021;22.1;Medium risk
+19;Cauca;19585;Puracé;2023;18.5;Medium risk
+19;Cauca;19698;Santander de Quilichao;2021;9.1;Low risk
+19;Cauca;19698;Santander de Quilichao;2022;4.0;No risk
+19;Cauca;19698;Santander de Quilichao;2023;0.0;No risk
+19;Cauca;19807;Timbío;2022;1.7;No risk
+19;Cauca;19807;Timbío;2023;1.1;No risk
+19;Cauca;19845;Villa Rica;2021;14.9;Medium risk
+19;Cauca;19845;Villa Rica;2022;18.4;Medium risk
+19;Cauca;19845;Villa Rica;2023;9.1;Low risk
+20;Cesar;20032;Astrea;2021;67.5;High risk
+20;Cesar;20045;Becerril;2021;3.7;No risk
+20;Cesar;20045;Becerril;2022;43.1;High risk
+20;Cesar;20045;Becerril;2023;27.7;Medium risk
+20;Cesar;20175;Chimichagua;2021;38.7;High risk
+20;Cesar;20175;Chimichagua;2022;85.0;Sanitaryly not feasible
+20;Cesar;20250;El Paso;2021;48.9;High risk
+20;Cesar;20295;Gamarra;2021;0.0;No risk
+20;Cesar;20295;Gamarra;2022;27.6;Medium risk
+20;Cesar;20295;Gamarra;2023;22.2;Medium risk
+20;Cesar;20710;San Alberto;2022;27.6;Medium risk
+23;Córdoba;23300;Cotorra;2021;82.7;Sanitaryly not feasible
+23;Córdoba;23350;La Apartada;2021;1.5;No risk
+23;Córdoba;23555;Planeta Rica;2021;0.0;No risk
+23;Córdoba;23555;Planeta Rica;2023;21.1;Medium risk
+23;Córdoba;23574;Puerto Escondido;2021;60.2;High risk
+23;Córdoba;23670;San Andrés de Sotavento;2021;0.0;No risk
+23;Córdoba;23672;San Antero;2021;4.5;No risk
+23;Córdoba;23672;San Antero;2023;1.9;No risk
+23;Córdoba;23675;San Bernardo del Viento;2021;21.1;Medium risk
+23;Córdoba;23855;Valencia;2021;22.6;Medium risk
+23;Córdoba;23855;Valencia;2023;28.6;Medium risk
+25;Cundinamarca;25001;Agua de Dios;2021;0.0;No risk
+25;Cundinamarca;25001;Agua de Dios;2022;0.0;No risk
+25;Cundinamarca;25001;Agua de Dios;2023;3.0;No risk
+25;Cundinamarca;25019;Albán;2021;6.1;Low risk
+25;Cundinamarca;25019;Albán;2022;3.0;No risk
+25;Cundinamarca;25019;Albán;2023;13.4;Low risk
+25;Cundinamarca;25035;Anapoima;2021;7.7;Low risk
+25;Cundinamarca;25035;Anapoima;2022;2.2;No risk
+25;Cundinamarca;25035;Anapoima;2023;3.3;No risk
+25;Cundinamarca;25040;Anolaima;2021;25.4;Medium risk
+25;Cundinamarca;25040;Anolaima;2022;10.7;Low risk
+25;Cundinamarca;25040;Anolaima;2023;27.2;Medium risk
+25;Cundinamarca;25053;Arbeláez;2021;4.6;No risk
+25;Cundinamarca;25053;Arbeláez;2022;0.0;No risk
+25;Cundinamarca;25053;Arbeláez;2023;18.1;Medium risk
+25;Cundinamarca;25086;Beltrán;2021;11.7;Low risk
+25;Cundinamarca;25086;Beltrán;2022;6.5;Low risk
+25;Cundinamarca;25086;Beltrán;2023;10.3;Low risk
+25;Cundinamarca;25095;Bituima;2023;66.7;High risk
+25;Cundinamarca;25120;Cabrera;2023;9.1;Low risk
+25;Cundinamarca;25123;Cachipay;2021;17.1;Medium risk
+25;Cundinamarca;25123;Cachipay;2022;15.5;Medium risk
+25;Cundinamarca;25123;Cachipay;2023;11.6;Low risk
+25;Cundinamarca;25126;Cajicá;2021;1.1;No risk
+25;Cundinamarca;25126;Cajicá;2022;0.5;No risk
+25;Cundinamarca;25126;Cajicá;2023;1.4;No risk
+25;Cundinamarca;25154;Carmen de Carupa;2023;18.2;Medium risk
+25;Cundinamarca;25175;Chía;2021;0.1;No risk
+25;Cundinamarca;25175;Chía;2022;0.5;No risk
+25;Cundinamarca;25175;Chía;2023;1.7;No risk
+25;Cundinamarca;25178;Chipaque;2021;9.3;Low risk
+25;Cundinamarca;25178;Chipaque;2022;18.1;Medium risk
+25;Cundinamarca;25178;Chipaque;2023;26.0;Medium risk
+25;Cundinamarca;25200;Cogua;2021;17.4;Medium risk
+25;Cundinamarca;25200;Cogua;2022;25.5;Medium risk
+25;Cundinamarca;25200;Cogua;2023;8.5;Low risk
+25;Cundinamarca;25214;Cota;2021;7.5;Low risk
+25;Cundinamarca;25214;Cota;2022;12.8;Low risk
+25;Cundinamarca;25214;Cota;2023;3.7;No risk
+25;Cundinamarca;25224;Cucunubá;2021;9.3;Low risk
+25;Cundinamarca;25224;Cucunubá;2022;3.2;No risk
+25;Cundinamarca;25224;Cucunubá;2023;4.6;No risk
+25;Cundinamarca;25245;El Colegio;2021;3.7;No risk
+25;Cundinamarca;25245;El Colegio;2022;6.3;Low risk
+25;Cundinamarca;25245;El Colegio;2023;8.7;Low risk
+25;Cundinamarca;25258;El Peñón;2021;0.0;No risk
+25;Cundinamarca;25258;El Peñón;2022;0.0;No risk
+25;Cundinamarca;25258;El Peñón;2023;25.0;Medium risk
+25;Cundinamarca;25260;El Rosal;2021;0.0;No risk
+25;Cundinamarca;25260;El Rosal;2022;0.0;No risk
+25;Cundinamarca;25260;El Rosal;2023;6.0;Low risk
+25;Cundinamarca;25269;Facatativá;2021;0.0;No risk
+25;Cundinamarca;25269;Facatativá;2022;0.0;No risk
+25;Cundinamarca;25269;Facatativá;2023;0.0;No risk
+25;Cundinamarca;25279;Fómeque;2021;4.2;No risk
+25;Cundinamarca;25279;Fómeque;2022;14.8;Medium risk
+25;Cundinamarca;25279;Fómeque;2023;6.4;Low risk
+25;Cundinamarca;25286;Funza;2021;0.1;No risk
+25;Cundinamarca;25286;Funza;2022;0.0;No risk
+25;Cundinamarca;25286;Funza;2023;0.0;No risk
+25;Cundinamarca;25290;Fusagasugá;2021;3.2;No risk
+25;Cundinamarca;25290;Fusagasugá;2022;3.0;No risk
+25;Cundinamarca;25290;Fusagasugá;2023;2.0;No risk
+25;Cundinamarca;25295;Gachancipá;2021;8.1;Low risk
+25;Cundinamarca;25295;Gachancipá;2022;40.1;High risk
+25;Cundinamarca;25295;Gachancipá;2023;21.9;Medium risk
+25;Cundinamarca;25307;Girardot;2021;0.0;No risk
+25;Cundinamarca;25307;Girardot;2022;0.0;No risk
+25;Cundinamarca;25307;Girardot;2023;0.0;No risk
+25;Cundinamarca;25312;Granada;2021;3.8;No risk
+25;Cundinamarca;25312;Granada;2022;0.5;No risk
+25;Cundinamarca;25312;Granada;2023;2.8;No risk
+25;Cundinamarca;25317;Guachetá;2021;8.0;Low risk
+25;Cundinamarca;25317;Guachetá;2022;0.5;No risk
+25;Cundinamarca;25317;Guachetá;2023;5.1;Low risk
+25;Cundinamarca;25320;Guaduas;2021;8.2;Low risk
+25;Cundinamarca;25320;Guaduas;2022;5.4;Low risk
+25;Cundinamarca;25320;Guaduas;2023;3.8;No risk
+25;Cundinamarca;25322;Guasca;2021;8.3;Low risk
+25;Cundinamarca;25322;Guasca;2022;5.9;Low risk
+25;Cundinamarca;25322;Guasca;2023;11.0;Low risk
+25;Cundinamarca;25324;Guataquí;2021;0.0;No risk
+25;Cundinamarca;25324;Guataquí;2022;0.7;No risk
+25;Cundinamarca;25324;Guataquí;2023;0.0;No risk
+25;Cundinamarca;25328;Guayabal de Síquima;2021;0.0;No risk
+25;Cundinamarca;25328;Guayabal de Síquima;2022;9.1;Low risk
+25;Cundinamarca;25328;Guayabal de Síquima;2023;0.0;No risk
+25;Cundinamarca;25335;Guayabetal;2021;0.0;No risk
+25;Cundinamarca;25335;Guayabetal;2022;18.2;Medium risk
+25;Cundinamarca;25335;Guayabetal;2023;18.4;Medium risk
+25;Cundinamarca;25368;Jerusalén;2021;2.4;No risk
+25;Cundinamarca;25368;Jerusalén;2022;2.6;No risk
+25;Cundinamarca;25368;Jerusalén;2023;6.6;Low risk
+25;Cundinamarca;25372;Junín;2021;0.0;No risk
+25;Cundinamarca;25372;Junín;2022;9.1;Low risk
+25;Cundinamarca;25372;Junín;2023;0.0;No risk
+25;Cundinamarca;25377;La Calera;2021;12.7;Low risk
+25;Cundinamarca;25377;La Calera;2022;16.3;Medium risk
+25;Cundinamarca;25377;La Calera;2023;13.9;Low risk
+25;Cundinamarca;25386;La Mesa;2021;14.4;Medium risk
+25;Cundinamarca;25386;La Mesa;2022;18.8;Medium risk
+25;Cundinamarca;25386;La Mesa;2023;17.7;Medium risk
+25;Cundinamarca;25402;La Vega;2021;3.6;No risk
+25;Cundinamarca;25402;La Vega;2022;0.0;No risk
+25;Cundinamarca;25402;La Vega;2023;0.0;No risk
+25;Cundinamarca;25407;Lenguazaque;2021;20.1;Medium risk
+25;Cundinamarca;25407;Lenguazaque;2022;84.9;Sanitaryly not feasible
+25;Cundinamarca;25407;Lenguazaque;2023;49.1;High risk
+25;Cundinamarca;25426;Machetá;2021;19.0;Medium risk
+25;Cundinamarca;25426;Machetá;2022;40.8;High risk
+25;Cundinamarca;25426;Machetá;2023;10.9;Low risk
+25;Cundinamarca;25430;Madrid;2021;0.0;No risk
+25;Cundinamarca;25430;Madrid;2022;5.4;Low risk
+25;Cundinamarca;25430;Madrid;2023;5.3;Low risk
+25;Cundinamarca;25483;Nariño;2021;19.1;Medium risk
+25;Cundinamarca;25483;Nariño;2022;0.0;No risk
+25;Cundinamarca;25483;Nariño;2023;0.0;No risk
+25;Cundinamarca;25486;Nemocón;2021;0.0;No risk
+25;Cundinamarca;25486;Nemocón;2022;9.0;Low risk
+25;Cundinamarca;25486;Nemocón;2023;6.9;Low risk
+25;Cundinamarca;25488;Nilo;2021;8.3;Low risk
+25;Cundinamarca;25488;Nilo;2022;7.5;Low risk
+25;Cundinamarca;25488;Nilo;2023;6.2;Low risk
+25;Cundinamarca;25489;Nimaima;2021;0.8;No risk
+25;Cundinamarca;25489;Nimaima;2022;1.5;No risk
+25;Cundinamarca;25489;Nimaima;2023;3.7;No risk
+25;Cundinamarca;25491;Nocaima;2021;33.6;Medium risk
+25;Cundinamarca;25491;Nocaima;2022;0.0;No risk
+25;Cundinamarca;25491;Nocaima;2023;20.4;Medium risk
+25;Cundinamarca;25513;Pacho;2021;0.0;No risk
+25;Cundinamarca;25513;Pacho;2022;0.0;No risk
+25;Cundinamarca;25513;Pacho;2023;0.0;No risk
+25;Cundinamarca;25524;Pandi;2021;0.2;No risk
+25;Cundinamarca;25524;Pandi;2022;0.9;No risk
+25;Cundinamarca;25524;Pandi;2023;0.0;No risk
+25;Cundinamarca;25535;Pasca;2021;31.5;Medium risk
+25;Cundinamarca;25535;Pasca;2022;0.0;No risk
+25;Cundinamarca;25535;Pasca;2023;11.4;Low risk
+25;Cundinamarca;25592;Quebradanegra;2021;12.3;Low risk
+25;Cundinamarca;25592;Quebradanegra;2022;10.9;Low risk
+25;Cundinamarca;25592;Quebradanegra;2023;5.1;Low risk
+25;Cundinamarca;25612;Ricaurte;2021;7.5;Low risk
+25;Cundinamarca;25612;Ricaurte;2022;0.7;No risk
+25;Cundinamarca;25612;Ricaurte;2023;0.0;No risk
+25;Cundinamarca;25645;San Antonio del Tequendama;2021;3.6;No risk
+25;Cundinamarca;25645;San Antonio del Tequendama;2022;0.0;No risk
+25;Cundinamarca;25645;San Antonio del Tequendama;2023;12.1;Low risk
+25;Cundinamarca;25658;San Francisco;2021;16.8;Medium risk
+25;Cundinamarca;25658;San Francisco;2022;9.4;Low risk
+25;Cundinamarca;25658;San Francisco;2023;0.5;No risk
+25;Cundinamarca;25662;San Juan de Rioseco;2021;27.5;Medium risk
+25;Cundinamarca;25662;San Juan de Rioseco;2022;11.9;Low risk
+25;Cundinamarca;25662;San Juan de Rioseco;2023;12.0;Low risk
+25;Cundinamarca;25718;Sasaima;2021;3.5;No risk
+25;Cundinamarca;25718;Sasaima;2022;5.6;Low risk
+25;Cundinamarca;25718;Sasaima;2023;5.3;Low risk
+25;Cundinamarca;25736;Sesquilé;2021;25.5;Medium risk
+25;Cundinamarca;25736;Sesquilé;2022;16.8;Medium risk
+25;Cundinamarca;25736;Sesquilé;2023;22.7;Medium risk
+25;Cundinamarca;25740;Sibaté;2021;17.2;Medium risk
+25;Cundinamarca;25740;Sibaté;2022;24.2;Medium risk
+25;Cundinamarca;25740;Sibaté;2023;7.7;Low risk
+25;Cundinamarca;25743;Silvania;2021;53.5;High risk
+25;Cundinamarca;25743;Silvania;2022;41.2;High risk
+25;Cundinamarca;25743;Silvania;2023;37.6;High risk
+25;Cundinamarca;25745;Simijaca;2021;11.8;Low risk
+25;Cundinamarca;25745;Simijaca;2022;9.2;Low risk
+25;Cundinamarca;25745;Simijaca;2023;9.2;Low risk
+25;Cundinamarca;25754;Soacha;2021;6.8;Low risk
+25;Cundinamarca;25754;Soacha;2022;7.4;Low risk
+25;Cundinamarca;25754;Soacha;2023;9.7;Low risk
+25;Cundinamarca;25758;Sopó;2021;7.4;Low risk
+25;Cundinamarca;25758;Sopó;2022;14.8;Medium risk
+25;Cundinamarca;25758;Sopó;2023;14.5;Medium risk
+25;Cundinamarca;25769;Subachoque;2021;1.3;No risk
+25;Cundinamarca;25769;Subachoque;2022;1.0;No risk
+25;Cundinamarca;25769;Subachoque;2023;3.2;No risk
+25;Cundinamarca;25772;Suesca;2021;4.8;No risk
+25;Cundinamarca;25772;Suesca;2022;6.9;Low risk
+25;Cundinamarca;25772;Suesca;2023;13.3;Low risk
+25;Cundinamarca;25777;Supatá;2021;2.7;No risk
+25;Cundinamarca;25777;Supatá;2022;9.0;Low risk
+25;Cundinamarca;25777;Supatá;2023;0.3;No risk
+25;Cundinamarca;25781;Sutatausa;2021;4.7;No risk
+25;Cundinamarca;25781;Sutatausa;2022;7.7;Low risk
+25;Cundinamarca;25781;Sutatausa;2023;7.0;Low risk
+25;Cundinamarca;25785;Tabio;2021;2.1;No risk
+25;Cundinamarca;25785;Tabio;2022;1.3;No risk
+25;Cundinamarca;25785;Tabio;2023;1.7;No risk
+25;Cundinamarca;25793;Tausa;2021;3.1;No risk
+25;Cundinamarca;25793;Tausa;2022;10.8;Low risk
+25;Cundinamarca;25793;Tausa;2023;4.5;No risk
+25;Cundinamarca;25797;Tena;2021;14.0;Low risk
+25;Cundinamarca;25797;Tena;2022;25.8;Medium risk
+25;Cundinamarca;25797;Tena;2023;24.8;Medium risk
+25;Cundinamarca;25799;Tenjo;2021;5.3;Low risk
+25;Cundinamarca;25799;Tenjo;2022;5.2;Low risk
+25;Cundinamarca;25799;Tenjo;2023;2.2;No risk
+25;Cundinamarca;25805;Tibacuy;2021;0.2;No risk
+25;Cundinamarca;25805;Tibacuy;2022;0.3;No risk
+25;Cundinamarca;25805;Tibacuy;2023;0.1;No risk
+25;Cundinamarca;25807;Tibirita;2021;5.6;Low risk
+25;Cundinamarca;25807;Tibirita;2022;15.2;Medium risk
+25;Cundinamarca;25807;Tibirita;2023;5.0;No risk
+25;Cundinamarca;25815;Tocaima;2021;0.0;No risk
+25;Cundinamarca;25817;Tocancipá;2021;1.8;No risk
+25;Cundinamarca;25817;Tocancipá;2022;1.1;No risk
+25;Cundinamarca;25817;Tocancipá;2023;2.6;No risk
+25;Cundinamarca;25841;Ubaque;2021;10.4;Low risk
+25;Cundinamarca;25841;Ubaque;2022;12.2;Low risk
+25;Cundinamarca;25841;Ubaque;2023;17.2;Medium risk
+25;Cundinamarca;25843;Villa de San Diego de Ubaté;2021;6.0;Low risk
+25;Cundinamarca;25843;Villa de San Diego de Ubaté;2022;8.2;Low risk
+25;Cundinamarca;25843;Villa de San Diego de Ubaté;2023;1.7;No risk
+25;Cundinamarca;25845;Une;2021;0.0;No risk
+25;Cundinamarca;25845;Une;2022;0.0;No risk
+25;Cundinamarca;25845;Une;2023;18.9;Medium risk
+25;Cundinamarca;25873;Villapinzón;2021;11.5;Low risk
+25;Cundinamarca;25873;Villapinzón;2022;16.5;Medium risk
+25;Cundinamarca;25873;Villapinzón;2023;1.5;No risk
+25;Cundinamarca;25875;Villeta;2021;9.9;Low risk
+25;Cundinamarca;25875;Villeta;2022;0.6;No risk
+25;Cundinamarca;25875;Villeta;2023;33.9;Medium risk
+25;Cundinamarca;25885;Yacopí;2021;31.9;Medium risk
+25;Cundinamarca;25885;Yacopí;2023;65.9;High risk
+25;Cundinamarca;25898;Zipacón;2021;54.0;High risk
+25;Cundinamarca;25898;Zipacón;2022;47.0;High risk
+25;Cundinamarca;25898;Zipacón;2023;58.1;High risk
+25;Cundinamarca;25899;Zipaquirá;2021;6.1;Low risk
+25;Cundinamarca;25899;Zipaquirá;2022;0.0;No risk
+25;Cundinamarca;25899;Zipaquirá;2023;0.0;No risk
+41;Huila;41001;Neiva;2021;27.9;Medium risk
+41;Huila;41001;Neiva;2022;24.3;Medium risk
+41;Huila;41001;Neiva;2023;27.2;Medium risk
+41;Huila;41013;Agrado;2022;66.3;High risk
+41;Huila;41013;Agrado;2023;60.0;High risk
+41;Huila;41016;Aipe;2022;39.9;High risk
+41;Huila;41016;Aipe;2023;43.5;High risk
+41;Huila;41026;Altamira;2021;9.6;Low risk
+41;Huila;41026;Altamira;2022;5.9;Low risk
+41;Huila;41026;Altamira;2023;0.0;No risk
+41;Huila;41132;Campoalegre;2022;68.0;High risk
+41;Huila;41132;Campoalegre;2023;45.1;High risk
+41;Huila;41298;Garzón;2021;0.0;No risk
+41;Huila;41298;Garzón;2022;6.7;Low risk
+41;Huila;41298;Garzón;2023;12.2;Low risk
+41;Huila;41306;Gigante;2022;50.4;High risk
+41;Huila;41306;Gigante;2023;12.3;Low risk
+41;Huila;41349;Hobo;2022;67.1;High risk
+41;Huila;41349;Hobo;2023;51.1;High risk
+41;Huila;41359;Isnos;2022;62.5;High risk
+41;Huila;41359;Isnos;2023;58.0;High risk
+41;Huila;41378;La Argentina;2022;59.4;High risk
+41;Huila;41378;La Argentina;2023;66.8;High risk
+41;Huila;41396;La Plata;2022;71.0;High risk
+41;Huila;41396;La Plata;2023;64.0;High risk
+41;Huila;41483;Nátaga;2022;90.7;Sanitaryly not feasible
+41;Huila;41483;Nátaga;2023;57.3;High risk
+41;Huila;41503;Oporapa;2022;51.0;High risk
+41;Huila;41503;Oporapa;2023;73.6;High risk
+41;Huila;41518;Paicol;2022;57.3;High risk
+41;Huila;41518;Paicol;2023;69.5;High risk
+41;Huila;41524;Palermo;2022;16.6;Medium risk
+41;Huila;41524;Palermo;2023;30.1;Medium risk
+41;Huila;41530;Palestina;2021;0.6;No risk
+41;Huila;41530;Palestina;2022;47.7;High risk
+41;Huila;41530;Palestina;2023;27.5;Medium risk
+41;Huila;41548;Pital;2022;54.5;High risk
+41;Huila;41548;Pital;2023;63.0;High risk
+41;Huila;41551;Pitalito;2022;69.8;High risk
+41;Huila;41615;Rivera;2021;0.0;No risk
+41;Huila;41615;Rivera;2022;0.0;No risk
+41;Huila;41615;Rivera;2023;21.3;Medium risk
+41;Huila;41660;Saladoblanco;2021;0.0;No risk
+41;Huila;41660;Saladoblanco;2022;30.9;Medium risk
+41;Huila;41660;Saladoblanco;2023;29.2;Medium risk
+41;Huila;41668;San Agustín;2022;50.6;High risk
+41;Huila;41668;San Agustín;2023;36.8;High risk
+41;Huila;41676;Santa María;2022;89.2;Sanitaryly not feasible
+41;Huila;41676;Santa María;2023;60.8;High risk
+41;Huila;41791;Tarqui;2022;37.7;High risk
+41;Huila;41791;Tarqui;2023;73.6;High risk
+41;Huila;41797;Tesalia;2022;36.9;High risk
+41;Huila;41797;Tesalia;2023;35.2;High risk
+41;Huila;41799;Tello;2021;0.0;No risk
+41;Huila;41799;Tello;2022;48.0;High risk
+41;Huila;41799;Tello;2023;42.3;High risk
+41;Huila;41801;Teruel;2022;93.0;Sanitaryly not feasible
+41;Huila;41801;Teruel;2023;32.5;Medium risk
+41;Huila;41807;Timaná;2022;33.4;Medium risk
+41;Huila;41807;Timaná;2023;19.9;Medium risk
+41;Huila;41872;Villavieja;2022;3.2;No risk
+41;Huila;41872;Villavieja;2023;0.0;No risk
+44;La Guajira;44001;Riohacha;2023;47.0;High risk
+44;La Guajira;44035;Albania;2021;3.6;No risk
+44;La Guajira;44035;Albania;2022;5.1;Low risk
+44;La Guajira;44035;Albania;2023;4.0;No risk
+44;La Guajira;44090;Dibulla;2021;75.4;High risk
+44;La Guajira;44090;Dibulla;2022;76.7;High risk
+44;La Guajira;44430;Maicao;2022;26.1;Medium risk
+44;La Guajira;44430;Maicao;2023;0.7;No risk
+44;La Guajira;44560;Manaure;2021;18.6;Medium risk
+44;La Guajira;44560;Manaure;2022;12.4;Low risk
+44;La Guajira;44560;Manaure;2023;24.3;Medium risk
+47;Magdalena;47001;Santa Marta;2021;16.5;Medium risk
+47;Magdalena;47001;Santa Marta;2022;26.6;Medium risk
+47;Magdalena;47053;Aracataca;2022;0.0;No risk
+47;Magdalena;47058;Ariguaní;2022;23.9;Medium risk
+47;Magdalena;47058;Ariguaní;2023;29.7;Medium risk
+47;Magdalena;47189;Ciénaga;2021;6.2;Low risk
+47;Magdalena;47189;Ciénaga;2022;12.5;Low risk
+47;Magdalena;47288;Fundación;2021;3.1;No risk
+47;Magdalena;47288;Fundación;2022;0.0;No risk
+47;Magdalena;47288;Fundación;2023;1.6;No risk
+47;Magdalena;47460;Nueva Granada;2022;14.8;Medium risk
+47;Magdalena;47460;Nueva Granada;2023;37.5;High risk
+47;Magdalena;47570;Puebloviejo;2021;12.9;Low risk
+47;Magdalena;47570;Puebloviejo;2022;23.4;Medium risk
+47;Magdalena;47570;Puebloviejo;2023;10.0;Low risk
+47;Magdalena;47660;Sabanas de San Ángel;2023;0.0;No risk
+47;Magdalena;47675;Salamina;2021;22.2;Medium risk
+47;Magdalena;47675;Salamina;2022;10.1;Low risk
+47;Magdalena;47675;Salamina;2023;3.4;No risk
+47;Magdalena;47692;San Sebastián de Buenavista;2021;30.6;Medium risk
+47;Magdalena;47692;San Sebastián de Buenavista;2022;53.5;High risk
+47;Magdalena;47692;San Sebastián de Buenavista;2023;7.5;Low risk
+47;Magdalena;47707;Santa Ana;2023;100.0;Sanitaryly not feasible
+47;Magdalena;47960;Zapayán;2023;0.0;No risk
+47;Magdalena;47980;Zona Bananera;2021;2.7;No risk
+47;Magdalena;47980;Zona Bananera;2022;0.5;No risk
+47;Magdalena;47980;Zona Bananera;2023;0.0;No risk
+50;Meta;50001;Villavicencio;2021;0.0;No risk
+50;Meta;50001;Villavicencio;2022;0.0;No risk
+50;Meta;50001;Villavicencio;2023;21.0;Medium risk
+50;Meta;50006;Acacías;2021;0.3;No risk
+50;Meta;50006;Acacías;2022;24.4;Medium risk
+50;Meta;50006;Acacías;2023;27.5;Medium risk
+50;Meta;50110;Barranca de Upía;2023;0.0;No risk
+50;Meta;50150;Castilla La Nueva;2021;0.0;No risk
+50;Meta;50150;Castilla La Nueva;2023;0.0;No risk
+50;Meta;50223;Cubarral;2023;0.0;No risk
+50;Meta;50251;El Castillo;2023;0.0;No risk
+50;Meta;50270;El Dorado;2023;0.0;No risk
+50;Meta;50318;Guamal;2023;0.0;No risk
+50;Meta;50370;Uribe;2023;0.0;No risk
+50;Meta;50400;Lejanías;2023;0.0;No risk
+50;Meta;50606;Restrepo;2023;0.0;No risk
+50;Meta;50683;San Juan de Arama;2023;0.0;No risk
+52;Nariño;52001;Pasto;2021;0.0;No risk
+52;Nariño;52001;Pasto;2022;0.0;No risk
+52;Nariño;52001;Pasto;2023;0.0;No risk
+52;Nariño;52019;Albán;2021;15.1;Medium risk
+52;Nariño;52019;Albán;2022;15.4;Medium risk
+52;Nariño;52019;Albán;2023;3.8;No risk
+52;Nariño;52022;Aldana;2021;15.7;Medium risk
+52;Nariño;52022;Aldana;2022;18.0;Medium risk
+52;Nariño;52022;Aldana;2023;26.4;Medium risk
+52;Nariño;52036;Ancuya;2021;61.1;High risk
+52;Nariño;52036;Ancuya;2022;65.8;High risk
+52;Nariño;52036;Ancuya;2023;59.0;High risk
+52;Nariño;52051;Arboleda;2021;72.0;High risk
+52;Nariño;52051;Arboleda;2022;83.5;Sanitaryly not feasible
+52;Nariño;52051;Arboleda;2023;70.5;High risk
+52;Nariño;52207;Consacá;2022;3.7;No risk
+52;Nariño;52215;Córdoba;2021;19.0;Medium risk
+52;Nariño;52215;Córdoba;2022;24.2;Medium risk
+52;Nariño;52215;Córdoba;2023;27.1;Medium risk
+52;Nariño;52224;Cuaspud Carlosama;2021;30.6;Medium risk
+52;Nariño;52224;Cuaspud Carlosama;2022;24.8;Medium risk
+52;Nariño;52224;Cuaspud Carlosama;2023;38.5;High risk
+52;Nariño;52227;Cumbal;2021;0.0;No risk
+52;Nariño;52227;Cumbal;2022;6.4;Low risk
+52;Nariño;52227;Cumbal;2023;10.3;Low risk
+52;Nariño;52233;Cumbitara;2023;18.4;Medium risk
+52;Nariño;52240;Chachagüí;2021;22.2;Medium risk
+52;Nariño;52240;Chachagüí;2022;21.8;Medium risk
+52;Nariño;52240;Chachagüí;2023;38.7;High risk
+52;Nariño;52254;El Peñol;2021;13.4;Low risk
+52;Nariño;52254;El Peñol;2022;35.2;High risk
+52;Nariño;52254;El Peñol;2023;59.6;High risk
+52;Nariño;52320;Guaitarilla;2021;52.1;High risk
+52;Nariño;52320;Guaitarilla;2022;72.1;High risk
+52;Nariño;52320;Guaitarilla;2023;50.3;High risk
+52;Nariño;52323;Gualmatán;2021;15.7;Medium risk
+52;Nariño;52323;Gualmatán;2022;9.3;Low risk
+52;Nariño;52323;Gualmatán;2023;8.4;Low risk
+52;Nariño;52354;Imués;2021;0.0;No risk
+52;Nariño;52356;Ipiales;2021;60.6;High risk
+52;Nariño;52356;Ipiales;2022;67.7;High risk
+52;Nariño;52356;Ipiales;2023;75.4;High risk
+52;Nariño;52381;La Florida;2021;0.0;No risk
+52;Nariño;52381;La Florida;2022;9.6;Low risk
+52;Nariño;52381;La Florida;2023;0.0;No risk
+52;Nariño;52399;La Unión;2021;58.4;High risk
+52;Nariño;52399;La Unión;2022;72.4;High risk
+52;Nariño;52399;La Unión;2023;72.0;High risk
+52;Nariño;52411;Linares;2021;84.4;Sanitaryly not feasible
+52;Nariño;52411;Linares;2022;80.0;High risk
+52;Nariño;52411;Linares;2023;51.6;High risk
+52;Nariño;52427;Magüí;2021;84.1;Sanitaryly not feasible
+52;Nariño;52435;Mallama;2021;48.4;High risk
+52;Nariño;52435;Mallama;2022;63.1;High risk
+52;Nariño;52435;Mallama;2023;16.6;Medium risk
+52;Nariño;52480;Nariño;2021;0.0;No risk
+52;Nariño;52480;Nariño;2022;8.1;Low risk
+52;Nariño;52480;Nariño;2023;2.4;No risk
+52;Nariño;52612;Ricaurte;2021;50.1;High risk
+52;Nariño;52612;Ricaurte;2022;54.5;High risk
+52;Nariño;52612;Ricaurte;2023;68.7;High risk
+52;Nariño;52678;Samaniego;2021;72.5;High risk
+52;Nariño;52678;Samaniego;2022;76.9;High risk
+52;Nariño;52678;Samaniego;2023;72.6;High risk
+52;Nariño;52683;Sandoná;2021;3.0;No risk
+52;Nariño;52683;Sandoná;2022;5.8;Low risk
+52;Nariño;52683;Sandoná;2023;6.7;Low risk
+52;Nariño;52788;Tangua;2021;45.7;High risk
+52;Nariño;52788;Tangua;2022;19.1;Medium risk
+52;Nariño;52788;Tangua;2023;46.5;High risk
+52;Nariño;52835;San Andrés de Tumaco;2021;0.0;No risk
+52;Nariño;52835;San Andrés de Tumaco;2022;20.1;Medium risk
+52;Nariño;52835;San Andrés de Tumaco;2023;13.3;Low risk
+52;Nariño;52885;Yacuanquer;2021;2.5;No risk
+54;Norte de Santander;54001;San José de Cúcuta;2021;4.6;No risk
+54;Norte de Santander;54001;San José de Cúcuta;2022;0.0;No risk
+54;Norte de Santander;54001;San José de Cúcuta;2023;0.0;No risk
+54;Norte de Santander;54099;Bochalema;2021;32.1;Medium risk
+54;Norte de Santander;54109;Bucarasica;2021;80.0;High risk
+54;Norte de Santander;54109;Bucarasica;2022;82.3;Sanitaryly not feasible
+54;Norte de Santander;54109;Bucarasica;2023;88.5;Sanitaryly not feasible
+54;Norte de Santander;54128;Cáchira;2021;9.1;Low risk
+54;Norte de Santander;54128;Cáchira;2022;17.2;Medium risk
+54;Norte de Santander;54128;Cáchira;2023;0.0;No risk
+54;Norte de Santander;54172;Chinácota;2021;94.1;Sanitaryly not feasible
+54;Norte de Santander;54172;Chinácota;2022;87.0;Sanitaryly not feasible
+54;Norte de Santander;54172;Chinácota;2023;79.2;High risk
+54;Norte de Santander;54245;El Carmen;2021;1.5;No risk
+54;Norte de Santander;54245;El Carmen;2022;5.3;Low risk
+54;Norte de Santander;54261;El Zulia;2021;79.2;High risk
+54;Norte de Santander;54261;El Zulia;2022;38.5;High risk
+54;Norte de Santander;54261;El Zulia;2023;22.4;Medium risk
+54;Norte de Santander;54344;Hacarí;2021;91.1;Sanitaryly not feasible
+54;Norte de Santander;54344;Hacarí;2022;94.9;Sanitaryly not feasible
+54;Norte de Santander;54385;La Esperanza;2021;0.0;No risk
+54;Norte de Santander;54385;La Esperanza;2022;9.0;Low risk
+54;Norte de Santander;54385;La Esperanza;2023;22.4;Medium risk
+54;Norte de Santander;54520;Pamplonita;2021;0.0;No risk
+54;Norte de Santander;54520;Pamplonita;2022;9.0;Low risk
+54;Norte de Santander;54520;Pamplonita;2023;0.0;No risk
+54;Norte de Santander;54673;San Cayetano;2021;9.2;Low risk
+54;Norte de Santander;54673;San Cayetano;2022;0.0;No risk
+54;Norte de Santander;54673;San Cayetano;2023;3.0;No risk
+54;Norte de Santander;54720;Sardinata;2021;79.2;High risk
+54;Norte de Santander;54720;Sardinata;2022;82.5;Sanitaryly not feasible
+54;Norte de Santander;54800;Teorama;2022;91.1;Sanitaryly not feasible
+54;Norte de Santander;54820;Toledo;2021;9.2;Low risk
+54;Norte de Santander;54820;Toledo;2022;2.2;No risk
+63;Quindío;63001;Armenia;2021;1.1;No risk
+63;Quindío;63001;Armenia;2022;3.0;No risk
+63;Quindío;63001;Armenia;2023;0.4;No risk
+63;Quindío;63130;Calarcá;2021;0.0;No risk
+63;Quindío;63130;Calarcá;2022;1.8;No risk
+63;Quindío;63130;Calarcá;2023;0.0;No risk
+63;Quindío;63401;La Tebaida;2022;3.3;No risk
+63;Quindío;63401;La Tebaida;2023;12.9;Low risk
+63;Quindío;63594;Quimbaya;2021;0.0;No risk
+63;Quindío;63594;Quimbaya;2022;0.0;No risk
+63;Quindío;63594;Quimbaya;2023;0.0;No risk
+66;Risaralda;66001;Pereira;2021;20.1;Medium risk
+66;Risaralda;66001;Pereira;2022;23.1;Medium risk
+66;Risaralda;66001;Pereira;2023;22.3;Medium risk
+66;Risaralda;66045;Apía;2023;71.0;High risk
+66;Risaralda;66075;Balboa;2021;86.4;Sanitaryly not feasible
+66;Risaralda;66075;Balboa;2022;55.2;High risk
+66;Risaralda;66075;Balboa;2023;69.8;High risk
+66;Risaralda;66088;Belén de Umbría;2021;18.0;Medium risk
+66;Risaralda;66088;Belén de Umbría;2022;11.1;Low risk
+66;Risaralda;66088;Belén de Umbría;2023;19.2;Medium risk
+66;Risaralda;66170;Dosquebradas;2021;61.9;High risk
+66;Risaralda;66170;Dosquebradas;2022;92.1;Sanitaryly not feasible
+66;Risaralda;66170;Dosquebradas;2023;29.9;Medium risk
+66;Risaralda;66318;Guática;2021;71.0;High risk
+66;Risaralda;66318;Guática;2022;71.7;High risk
+66;Risaralda;66318;Guática;2023;81.2;Sanitaryly not feasible
+66;Risaralda;66400;La Virginia;2022;0.0;No risk
+66;Risaralda;66440;Marsella;2021;3.5;No risk
+66;Risaralda;66440;Marsella;2022;3.5;No risk
+66;Risaralda;66440;Marsella;2023;5.4;Low risk
+66;Risaralda;66456;Mistrató;2021;6.3;Low risk
+66;Risaralda;66456;Mistrató;2022;0.0;No risk
+66;Risaralda;66456;Mistrató;2023;5.3;Low risk
+66;Risaralda;66594;Quinchía;2022;75.5;High risk
+66;Risaralda;66594;Quinchía;2023;59.1;High risk
+66;Risaralda;66682;Santa Rosa de Cabal;2021;4.2;No risk
+66;Risaralda;66682;Santa Rosa de Cabal;2022;0.0;No risk
+66;Risaralda;66682;Santa Rosa de Cabal;2023;0.0;No risk
+66;Risaralda;66687;Santuario;2021;56.4;High risk
+66;Risaralda;66687;Santuario;2022;60.0;High risk
+66;Risaralda;66687;Santuario;2023;59.1;High risk
+68;Santander;68077;Barbosa;2021;0.7;No risk
+68;Santander;68077;Barbosa;2022;20.9;Medium risk
+68;Santander;68077;Barbosa;2023;24.4;Medium risk
+68;Santander;68079;Barichara;2023;95.5;Sanitaryly not feasible
+68;Santander;68190;Cimitarra;2023;7.5;Low risk
+68;Santander;68229;Curití;2021;0.0;No risk
+68;Santander;68229;Curití;2022;15.9;Medium risk
+68;Santander;68229;Curití;2023;0.0;No risk
+68;Santander;68235;El Carmen de Chucurí;2021;0.0;No risk
+68;Santander;68235;El Carmen de Chucurí;2022;56.3;High risk
+68;Santander;68235;El Carmen de Chucurí;2023;70.4;High risk
+68;Santander;68255;El Playón;2023;93.9;Sanitaryly not feasible
+68;Santander;68276;Floridablanca;2021;0.0;No risk
+68;Santander;68276;Floridablanca;2023;0.0;No risk
+68;Santander;68307;Girón;2021;1.4;No risk
+68;Santander;68307;Girón;2022;0.0;No risk
+68;Santander;68307;Girón;2023;0.7;No risk
+68;Santander;68370;Jordán;2022;92.4;Sanitaryly not feasible
+68;Santander;68370;Jordán;2023;97.6;Sanitaryly not feasible
+68;Santander;68397;La Paz;2023;47.7;High risk
+68;Santander;68406;Lebrija;2023;11.3;Low risk
+68;Santander;68524;Palmas del Socorro;2021;20.3;Medium risk
+68;Santander;68524;Palmas del Socorro;2022;36.8;High risk
+68;Santander;68524;Palmas del Socorro;2023;25.2;Medium risk
+68;Santander;68547;Piedecuesta;2021;1.1;No risk
+68;Santander;68547;Piedecuesta;2022;4.3;No risk
+68;Santander;68547;Piedecuesta;2023;1.8;No risk
+68;Santander;68615;Rionegro;2022;62.5;High risk
+68;Santander;68615;Rionegro;2023;71.7;High risk
+68;Santander;68655;Sabana de Torres;2023;30.8;Medium risk
+68;Santander;68689;San Vicente de Chucurí;2021;28.9;Medium risk
+68;Santander;68689;San Vicente de Chucurí;2022;31.7;Medium risk
+68;Santander;68689;San Vicente de Chucurí;2023;38.0;High risk
+68;Santander;68770;Suaita;2021;48.6;High risk
+68;Santander;68770;Suaita;2022;31.6;Medium risk
+68;Santander;68770;Suaita;2023;31.9;Medium risk
+68;Santander;68820;Tona;2023;32.3;Medium risk
+68;Santander;68872;Villanueva;2022;53.7;High risk
+68;Santander;68872;Villanueva;2023;94.6;Sanitaryly not feasible
+68;Santander;68895;Zapatoca;2023;43.9;High risk
+70;Sucre;70001;Sincelejo;2022;0.0;No risk
+70;Sucre;70001;Sincelejo;2023;37.5;High risk
+70;Sucre;70110;Buenavista;2021;100.0;Sanitaryly not feasible
+70;Sucre;70110;Buenavista;2023;100.0;Sanitaryly not feasible
+73;Tolima;73001;Ibagué;2021;49.5;High risk
+73;Tolima;73001;Ibagué;2022;56.8;High risk
+73;Tolima;73001;Ibagué;2023;50.0;High risk
+73;Tolima;73268;Espinal;2021;0.0;No risk
+73;Tolima;73268;Espinal;2022;0.0;No risk
+73;Tolima;73268;Espinal;2023;0.0;No risk
+73;Tolima;73283;Fresno;2022;0.0;No risk
+73;Tolima;73347;Herveo;2021;0.0;No risk
+73;Tolima;73347;Herveo;2022;0.0;No risk
+73;Tolima;73347;Herveo;2023;18.2;Medium risk
+73;Tolima;73547;Piedras;2021;1.9;No risk
+73;Tolima;73547;Piedras;2023;0.0;No risk
+73;Tolima;73678;San Luis;2021;21.6;Medium risk
+73;Tolima;73678;San Luis;2023;21.4;Medium risk
+76;Valle del Cauca;76001;Santiago de Cali;2021;0.0;No risk
+76;Valle del Cauca;76001;Santiago de Cali;2022;0.0;No risk
+76;Valle del Cauca;76001;Santiago de Cali;2023;0.0;No risk
+76;Valle del Cauca;76020;Alcalá;2021;10.7;Low risk
+76;Valle del Cauca;76036;Andalucía;2021;30.7;Medium risk
+76;Valle del Cauca;76036;Andalucía;2022;0.0;No risk
+76;Valle del Cauca;76036;Andalucía;2023;0.1;No risk
+76;Valle del Cauca;76041;Ansermanuevo;2021;0.1;No risk
+76;Valle del Cauca;76054;Argelia;2021;30.3;Medium risk
+76;Valle del Cauca;76100;Bolívar;2021;22.9;Medium risk
+76;Valle del Cauca;76100;Bolívar;2022;0.0;No risk
+76;Valle del Cauca;76100;Bolívar;2023;0.0;No risk
+76;Valle del Cauca;76109;Buenaventura;2021;3.3;No risk
+76;Valle del Cauca;76109;Buenaventura;2022;0.0;No risk
+76;Valle del Cauca;76109;Buenaventura;2023;0.8;No risk
+76;Valle del Cauca;76113;Bugalagrande;2021;25.9;Medium risk
+76;Valle del Cauca;76113;Bugalagrande;2022;28.2;Medium risk
+76;Valle del Cauca;76113;Bugalagrande;2023;7.4;Low risk
+76;Valle del Cauca;76122;Caicedonia;2021;28.7;Medium risk
+76;Valle del Cauca;76122;Caicedonia;2022;0.0;No risk
+76;Valle del Cauca;76122;Caicedonia;2023;0.0;No risk
+76;Valle del Cauca;76126;Calima;2021;48.6;High risk
+76;Valle del Cauca;76126;Calima;2022;89.0;Sanitaryly not feasible
+76;Valle del Cauca;76126;Calima;2023;85.3;Sanitaryly not feasible
+76;Valle del Cauca;76130;Candelaria;2021;12.5;Low risk
+76;Valle del Cauca;76130;Candelaria;2022;13.7;Low risk
+76;Valle del Cauca;76130;Candelaria;2023;11.4;Low risk
+76;Valle del Cauca;76233;Dagua;2021;5.9;Low risk
+76;Valle del Cauca;76233;Dagua;2022;25.9;Medium risk
+76;Valle del Cauca;76233;Dagua;2023;21.3;Medium risk
+76;Valle del Cauca;76243;El Águila;2021;0.0;No risk
+76;Valle del Cauca;76246;El Cairo;2021;45.3;High risk
+76;Valle del Cauca;76248;El Cerrito;2021;0.0;No risk
+76;Valle del Cauca;76250;El Dovio;2021;53.9;High risk
+76;Valle del Cauca;76275;Florida;2021;0.0;No risk
+76;Valle del Cauca;76306;Ginebra;2021;0.0;No risk
+76;Valle del Cauca;76306;Ginebra;2022;86.5;Sanitaryly not feasible
+76;Valle del Cauca;76306;Ginebra;2023;26.8;Medium risk
+76;Valle del Cauca;76318;Guacarí;2021;50.9;High risk
+76;Valle del Cauca;76318;Guacarí;2022;35.2;High risk
+76;Valle del Cauca;76318;Guacarí;2023;43.3;High risk
+76;Valle del Cauca;76364;Jamundí;2021;19.7;Medium risk
+76;Valle del Cauca;76364;Jamundí;2022;21.8;Medium risk
+76;Valle del Cauca;76364;Jamundí;2023;15.9;Medium risk
+76;Valle del Cauca;76377;La Cumbre;2021;41.2;High risk
+76;Valle del Cauca;76400;La Unión;2021;0.0;No risk
+76;Valle del Cauca;76403;La Victoria;2021;28.0;Medium risk
+76;Valle del Cauca;76497;Obando;2021;34.5;Medium risk
+76;Valle del Cauca;76497;Obando;2022;85.9;Sanitaryly not feasible
+76;Valle del Cauca;76497;Obando;2023;86.1;Sanitaryly not feasible
+76;Valle del Cauca;76520;Palmira;2021;4.1;No risk
+76;Valle del Cauca;76520;Palmira;2022;8.6;Low risk
+76;Valle del Cauca;76520;Palmira;2023;8.3;Low risk
+76;Valle del Cauca;76563;Pradera;2021;0.0;No risk
+76;Valle del Cauca;76606;Restrepo;2021;57.8;High risk
+76;Valle del Cauca;76606;Restrepo;2022;0.0;No risk
+76;Valle del Cauca;76606;Restrepo;2023;0.0;No risk
+76;Valle del Cauca;76616;Riofrío;2021;43.3;High risk
+76;Valle del Cauca;76622;Roldanillo;2021;0.0;No risk
+76;Valle del Cauca;76670;San Pedro;2021;59.2;High risk
+76;Valle del Cauca;76736;Sevilla;2021;40.5;High risk
+76;Valle del Cauca;76823;Toro;2021;0.0;No risk
+76;Valle del Cauca;76828;Trujillo;2021;56.5;High risk
+76;Valle del Cauca;76834;Tuluá;2021;5.0;No risk
+76;Valle del Cauca;76834;Tuluá;2022;3.1;No risk
+76;Valle del Cauca;76834;Tuluá;2023;2.4;No risk
+76;Valle del Cauca;76863;Versalles;2021;54.2;High risk
+76;Valle del Cauca;76890;Yotoco;2021;57.4;High risk
+76;Valle del Cauca;76890;Yotoco;2022;39.2;High risk
+76;Valle del Cauca;76890;Yotoco;2023;30.6;Medium risk
+76;Valle del Cauca;76892;Yumbo;2021;9.8;Low risk
+76;Valle del Cauca;76892;Yumbo;2022;0.6;No risk
+76;Valle del Cauca;76892;Yumbo;2023;12.6;Low risk
+76;Valle del Cauca;76895;Zarzal;2021;9.2;Low risk
+76;Valle del Cauca;76895;Zarzal;2022;0.0;No risk
+76;Valle del Cauca;76895;Zarzal;2023;0.0;No risk
+81;Arauca;81001;Arauca;2021;11.9;Low risk
+81;Arauca;81001;Arauca;2022;20.9;Medium risk
+81;Arauca;81065;Arauquita;2021;20.5;Medium risk
+81;Arauca;81065;Arauquita;2022;26.1;Medium risk
+81;Arauca;81065;Arauquita;2023;11.5;Low risk
+81;Arauca;81736;Saravena;2021;52.2;High risk
+81;Arauca;81736;Saravena;2022;47.8;High risk
+81;Arauca;81736;Saravena;2023;15.1;Medium risk
+85;Casanare;85001;Yopal;2021;1.8;No risk
+85;Casanare;85001;Yopal;2022;1.6;No risk
+85;Casanare;85001;Yopal;2023;1.5;No risk
+85;Casanare;85125;Hato Corozal;2023;50.2;High risk
+85;Casanare;85225;Nunchía;2021;5.4;Low risk
+85;Casanare;85225;Nunchía;2022;0.3;No risk
+85;Casanare;85225;Nunchía;2023;21.6;Medium risk
+85;Casanare;85230;Orocué;2021;21.0;Medium risk
+85;Casanare;85230;Orocué;2022;40.1;High risk
+85;Casanare;85230;Orocué;2023;26.1;Medium risk
+85;Casanare;85300;Sabanalarga;2021;0.9;No risk
+85;Casanare;85300;Sabanalarga;2023;27.0;Medium risk
+85;Casanare;85325;San Luis de Palenque;2021;14.4;Medium risk
+85;Casanare;85325;San Luis de Palenque;2022;6.9;Low risk
+85;Casanare;85325;San Luis de Palenque;2023;11.1;Low risk
+85;Casanare;85410;Tauramena;2021;22.8;Medium risk
+85;Casanare;85410;Tauramena;2022;12.7;Low risk
+85;Casanare;85410;Tauramena;2023;26.9;Medium risk
+85;Casanare;85430;Trinidad;2023;0.0;No risk
+85;Casanare;85440;Villanueva;2021;19.2;Medium risk
+85;Casanare;85440;Villanueva;2022;0.0;No risk
+85;Casanare;85440;Villanueva;2023;1.2;No risk
+86;Putumayo;86001;Mocoa;2021;10.5;Low risk
+86;Putumayo;86001;Mocoa;2022;0.0;No risk
+86;Putumayo;86001;Mocoa;2023;2.1;No risk
+86;Putumayo;86219;Colón;2021;10.5;Low risk
+86;Putumayo;86568;Puerto Asís;2021;55.9;High risk
+86;Putumayo;86568;Puerto Asís;2022;90.2;Sanitaryly not feasible
+86;Putumayo;86568;Puerto Asís;2023;69.8;High risk
+86;Putumayo;86569;Puerto Caicedo;2021;0.0;No risk
+86;Putumayo;86569;Puerto Caicedo;2022;0.0;No risk
+86;Putumayo;86569;Puerto Caicedo;2023;2.2;No risk
+86;Putumayo;86571;Puerto Guzmán;2021;0.2;No risk
+86;Putumayo;86571;Puerto Guzmán;2022;3.9;No risk
+86;Putumayo;86571;Puerto Guzmán;2023;5.2;Low risk
+86;Putumayo;86573;Puerto Leguízamo;2021;10.5;Low risk
+86;Putumayo;86573;Puerto Leguízamo;2022;7.0;Low risk
+86;Putumayo;86749;Sibundoy;2021;37.3;High risk
+86;Putumayo;86749;Sibundoy;2022;18.9;Medium risk
+86;Putumayo;86755;San Francisco;2021;0.0;No risk
+86;Putumayo;86757;San Miguel;2022;69.7;High risk
+86;Putumayo;86757;San Miguel;2023;97.9;Sanitaryly not feasible
+88;Archipiélago de San Andrés, Providencia y Santa Catalina;88001;San Andrés;2021;3.7;No risk
+88;Archipiélago de San Andrés, Providencia y Santa Catalina;88001;San Andrés;2022;4.4;No risk
+88;Archipiélago de San Andrés, Providencia y Santa Catalina;88001;San Andrés;2023;7.4;Low risk
+88;Archipiélago de San Andrés, Providencia y Santa Catalina;88564;Providencia;2021;18.2;Medium risk
+95;Guaviare;95025;El Retorno;2021;16.7;Medium risk
+95;Guaviare;95025;El Retorno;2022;8.4;Low risk
+95;Guaviare;95025;El Retorno;2023;3.2;No risk
