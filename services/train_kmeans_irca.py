@@ -51,7 +51,7 @@ PCA_PLOT      = REPORTS_DIR / "kmeans_irca_pca.png"
 METRICS_FILE  = REPORTS_DIR / "kmeans_irca_metrics.txt"
 
 # Risk levels used to map each cluster to a dominant risk profile after training.
-HIGH_RISK_LEVELS = ["Alto riesgo", "Inviable sanitariamente"]
+HIGH_RISK_LEVELS = ["High Risk", "Sanitaryly not feasible"]
 
 
 # 2. Load the dataset

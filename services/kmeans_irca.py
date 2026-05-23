@@ -23,7 +23,7 @@ MODEL_PATH    = MODELS_DIR  / "kmeans_irca_model.pkl"
 SCALER_PATH   = MODELS_DIR  / "kmeans_irca_scaler.pkl"
 METRICS_PATH  = REPORTS_DIR / "kmeans_irca_metrics.txt"
 
-HIGH_RISK_LEVELS = ["Alto riesgo", "Inviable sanitariamente"]
+HIGH_RISK_LEVELS = ["High Risk", "Sanitaryly not feasible"]
 
 
 def _load_dataframe() -> pd.DataFrame:
@@ -92,14 +92,14 @@ def model_metrics() -> dict:
 def _cluster_label(mean_irca: float) -> str:
     """Map a cluster centroid IRCA to a human-readable risk profile."""
     if mean_irca < 5:
-        return "Sin riesgo · safe water"
+        return "No Risk · safe water"
     if mean_irca < 14:
-        return "Bajo riesgo · monitor"
+        return "Low Risk · monitor"
     if mean_irca < 35:
         return "Riesgo medio · improve"
     if mean_irca < 80:
-        return "Alto riesgo · act"
-    return "Inviable · critical"
+        return "High Risk · act"
+    return "Sanitaryly not feasible · critical"
 
 
 def cluster_breakdown() -> list[dict]:

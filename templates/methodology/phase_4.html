@@ -397,41 +397,121 @@
                      ============================================================ -->
                 <article id="lda-eval" class="phase-block">
                     <h2>3 · LDA evaluation</h2>
-                    <p class="phase-subtitle">Supervised binary · IRCA rural dataset</p>
+                    <p class="phase-subtitle">Supervised binary · Water quality for human consumption dataset</p>
 
-                    <div class="about__card" style="background:#fef3c7; border-color:#fbbf24;">
-                        <div class="about__icon">⏳</div>
-                        <h3 class="about__card-title">Section in progress</h3>
-                        <p>
-                            LDA metrics will be added here once the teammate
-                            training script lands in the repository. The layout
-                            mirrors the Logistic Regression block so the
-                            comparison stays consistent.
-                        </p>
-                    </div>
+                    <p>
+                        LDA is evaluated on the same held-out 20 % test fold, using the same
+                        stratified split (<code>random_state=42</code>), so the numbers are
+                        directly comparable to Logistic Regression.
+                    </p>
 
                     <h3 class="phase-subtitle">Headline metrics</h3>
                     <div class="stats-row">
                         <div class="stat-card">
-                            <div class="stat-card__value">—</div>
+                            <div class="stat-card__value">{{ "%.2f"|format(lda_eval.accuracy * 100) }}%</div>
                             <div class="stat-card__label">Accuracy</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-card__value">—</div>
+                            <div class="stat-card__value">{{ "%.3f"|format(lda_eval.roc_auc) }}</div>
                             <div class="stat-card__label">ROC AUC</div>
                         </div>
+                        {% for cls in lda_eval.per_class %}
+                        {% if cls.name == "High risk" %}
                         <div class="stat-card">
-                            <div class="stat-card__value">—</div>
+                            <div class="stat-card__value">{{ "%.3f"|format(cls.recall) }}</div>
                             <div class="stat-card__label">Recall (High risk)</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-card__value">—</div>
+                            <div class="stat-card__value">{{ "%.3f"|format(cls.precision) }}</div>
                             <div class="stat-card__label">Precision (High risk)</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-card__value">—</div>
+                            <div class="stat-card__value">{{ "%.3f"|format(cls.f1) }}</div>
                             <div class="stat-card__label">F1 (High risk)</div>
                         </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    <h3 class="phase-subtitle">Per-class breakdown</h3>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Class</th>
+                                <th style="padding:.5rem;">Precision</th>
+                                <th style="padding:.5rem;">Recall</th>
+                                <th style="padding:.5rem;">F1</th>
+                                <th style="padding:.5rem;">Support</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for cls in lda_eval.per_class %}
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>{{ cls.name }}</strong></td>
+                                <td style="padding:.5rem;">{{ "%.4f"|format(cls.precision) }}</td>
+                                <td style="padding:.5rem;">{{ "%.4f"|format(cls.recall) }}</td>
+                                <td style="padding:.5rem;">{{ "%.4f"|format(cls.f1) }}</td>
+                                <td style="padding:.5rem;">{{ cls.support }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <h3 class="phase-subtitle">Confusion matrix</h3>
+                    <div style="overflow-x:auto; margin-top:.75rem;">
+                    <table style="border-collapse:collapse; font-size:.9rem; margin:0 auto;">
+                        <thead>
+                            <tr>
+                                <th style="padding:.5rem;"></th>
+                                <th style="padding:.5rem; background:#f1f5f9;">Pred: No high risk</th>
+                                <th style="padding:.5rem; background:#f1f5f9;">Pred: High risk</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding:.5rem; background:#f1f5f9;"><strong>Actual: No high risk</strong></td>
+                                <td style="padding:.5rem; text-align:center; background:#dcfce7; font-weight:bold;">{{ lda_eval.confusion_matrix.tn }}<br><small>TN</small></td>
+                                <td style="padding:.5rem; text-align:center; background:#fee2e2;">{{ lda_eval.confusion_matrix.fp }}<br><small>FP</small></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:.5rem; background:#f1f5f9;"><strong>Actual: High risk</strong></td>
+                                <td style="padding:.5rem; text-align:center; background:#fee2e2;">{{ lda_eval.confusion_matrix.fn }}<br><small>FN</small></td>
+                                <td style="padding:.5rem; text-align:center; background:#dcfce7; font-weight:bold;">{{ lda_eval.confusion_matrix.tp }}<br><small>TP</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <h3 class="phase-subtitle">Visualizations</h3>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top:1rem;">
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='lda_confusion_matrix.png') }}"
+                                 alt="Confusion matrix — LDA"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                Confusion matrix on the {{ lda_eval.test_size }}-row test set.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='lda_roc_curve.png') }}"
+                                 alt="ROC curve — LDA"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                ROC curve — AUC = {{ "%.3f"|format(lda_eval.roc_auc) }}.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div style="margin-top:1.5rem;">
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='lda_discriminant_plot.png') }}"
+                                 alt="LDA LD1 projection"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                Class distribution on LD1. The overlap region explains the model's recall limitations on the minority class.
+                            </figcaption>
+                        </figure>
                     </div>
                 </article>
 
@@ -461,31 +541,31 @@
                             <tr style="border-bottom:1px solid #e2e8f0;">
                                 <td style="padding:.5rem;">Accuracy</td>
                                 <td style="padding:.5rem;">{{ "%.2f"|format(logistic_eval.accuracy * 100) }}%</td>
-                                <td style="padding:.5rem; color:#94a3b8;">—</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(lda_eval.accuracy * 100) }}%</td>
                                 <td style="padding:.5rem;">Higher</td>
                             </tr>
                             <tr style="border-bottom:1px solid #e2e8f0;">
                                 <td style="padding:.5rem;">ROC AUC</td>
                                 <td style="padding:.5rem;">{{ "%.3f"|format(logistic_eval.roc_auc) }}</td>
-                                <td style="padding:.5rem; color:#94a3b8;">—</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(lda_eval.roc_auc) }}</td>
                                 <td style="padding:.5rem;">Higher</td>
                             </tr>
                             <tr style="border-bottom:1px solid #e2e8f0;">
                                 <td style="padding:.5rem;">Precision (High risk)</td>
                                 <td style="padding:.5rem;">{{ "%.3f"|format(logistic_eval.per_class[1].precision) }}</td>
-                                <td style="padding:.5rem; color:#94a3b8;">—</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(lda_eval.per_class[1].precision) }}</td>
                                 <td style="padding:.5rem;">Higher</td>
                             </tr>
                             <tr style="border-bottom:1px solid #e2e8f0;">
                                 <td style="padding:.5rem;">Recall (High risk)</td>
                                 <td style="padding:.5rem;">{{ "%.3f"|format(logistic_eval.per_class[1].recall) }}</td>
-                                <td style="padding:.5rem; color:#94a3b8;">—</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(lda_eval.per_class[1].recall) }}</td>
                                 <td style="padding:.5rem;">Higher</td>
                             </tr>
                             <tr>
                                 <td style="padding:.5rem;">F1 (High risk)</td>
                                 <td style="padding:.5rem;">{{ "%.3f"|format(logistic_eval.per_class[1].f1) }}</td>
-                                <td style="padding:.5rem; color:#94a3b8;">—</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(lda_eval.per_class[1].f1) }}</td>
                                 <td style="padding:.5rem;">Higher</td>
                             </tr>
                         </tbody>
@@ -495,10 +575,36 @@
                     <h3 class="phase-subtitle" style="margin-top:1.5rem;">Unsupervised model</h3>
                     <p>
                         K-Means is reported separately: its metrics are intrinsic
-                        and cannot be put on the same axis as accuracy or F1. The
-                        numbers will appear here once the teammate's K-Means
-                        training script is integrated.
+                        and cannot be put on the same axis as accuracy or F1.
                     </p>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem; margin-top:.5rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Metric</th>
+                                <th style="padding:.5rem;">K-Means (K={{ kmeans_eval.metrics.best_k }})</th>
+                                <th style="padding:.5rem;">Interpretation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;">Silhouette</td>
+                                <td style="padding:.5rem;">{{ "%.4f"|format(kmeans_eval.metrics.silhouette) }}</td>
+                                <td style="padding:.5rem;">[-1, 1] — higher is better</td>
+                            </tr>
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;">Davies-Bouldin</td>
+                                <td style="padding:.5rem;">{{ "%.4f"|format(kmeans_eval.metrics.davies_bouldin) }}</td>
+                                <td style="padding:.5rem;">[0, ∞) — lower is better</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:.5rem;">Calinski-Harabasz</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(kmeans_eval.metrics.calinski_harabasz) }}</td>
+                                <td style="padding:.5rem;">[0, ∞) — higher is better</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
                 </article>
 
                 <!-- ============================================================
@@ -521,41 +627,42 @@
                         <div class="about__icon">★</div>
                         <h3 class="about__card-title">Selected model — Logistic Regression</h3>
                         <p>
-                            Pending the final LDA numbers, Logistic Regression is
-                            the current selection for deployment because:
+                            Logistic Regression outperforms LDA on the metrics that matter
+                            most for a public-health decision-support tool:
                         </p>
                         <ul class="phase-list">
-                            <li>
-                                <strong>Probability calibration.</strong> The
-                                model emits a well-defined probability between 0
-                                and 1, which the prediction UI shows directly to
-                                the user.
-                            </li>
                             <li>
                                 <strong>Recall on the dangerous class.</strong>
                                 Catches
                                 <strong>{{ "%.0f"|format(logistic_eval.per_class[1].recall * 100) }}%</strong>
-                                of the High risk municipalities in the test fold,
-                                which is the metric that matters for a public-health
-                                decision-support tool.
+                                of the High risk municipalities vs
+                                <strong>{{ "%.0f"|format(lda_eval.per_class[1].recall * 100) }}%</strong>
+                                for LDA — a critical advantage when false negatives
+                                mean leaving unsafe water undetected.
                             </li>
                             <li>
-                                <strong>Interpretability.</strong> Linear
-                                coefficients per department give a transparent
-                                explanation of why a prediction came out the way
-                                it did.
+                                <strong>ROC AUC.</strong> {{ "%.3f"|format(logistic_eval.roc_auc) }}
+                                vs {{ "%.3f"|format(lda_eval.roc_auc) }} for LDA — Logistic
+                                Regression separates the classes more reliably across all
+                                probability thresholds.
                             </li>
                             <li>
-                                <strong>ROC AUC = {{ "%.3f"|format(logistic_eval.roc_auc) }}</strong>
-                                — clearly better than random (0.5), confirming
-                                the model is learning real geographic signal.
+                                <strong>Probability calibration.</strong> The model emits
+                                a well-defined probability between 0 and 1, which the
+                                prediction UI shows directly to the user.
+                            </li>
+                            <li>
+                                <strong>Interpretability.</strong> Linear coefficients per
+                                department give a transparent explanation of why a
+                                prediction came out the way it did.
                             </li>
                         </ul>
                         <p>
-                            Once the LDA metrics are available we revisit this
-                            decision: if LDA matches or beats Logistic on recall
-                            and AUC <em>and</em> remains interpretable, we
-                            switch.
+                            LDA still provides useful insight: the LD1 projection confirms
+                            that the two classes overlap substantially in the feature space,
+                            and the generative model's assumption of equal covariances is
+                            likely violated by the geography-driven data — which explains
+                            the gap in recall between the two classifiers.
                         </p>
                     </div>
                 </article>

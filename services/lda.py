@@ -1,8 +1,8 @@
-"""Logistic Regression service.
+"""Linear Discriminant Analysis service.
 
-Loads the trained Logistic Regression model and exposes helpers to query
-its metadata, metrics, and to run predictions. Keep all model-specific
-logic here so routes stay thin.
+Loads the trained LDA model and exposes helpers to query its metadata,
+metrics, and to run predictions. Keep all model-specific logic here so
+routes stay thin.
 """
 
 from pathlib import Path
@@ -24,11 +24,11 @@ MODELS_DIR   = PROJECT_ROOT / "models"
 REPORTS_DIR  = PROJECT_ROOT / "reports"
 
 CSV_PATH     = DATA_DIR    / "water_quality_for_human_consumption.csv"
-MODEL_PATH   = MODELS_DIR  / "logistic_model.pkl"
-SCALER_PATH  = MODELS_DIR  / "logistic_scaler.pkl"
-METRICS_PATH = REPORTS_DIR / "logistic_metrics.txt"
+MODEL_PATH   = MODELS_DIR  / "lda_model.pkl"
+SCALER_PATH  = MODELS_DIR  / "lda_scaler.pkl"
+METRICS_PATH = REPORTS_DIR / "lda_metrics.txt"
 
-HIGH_RISK_LEVELS = ["High Risk", "Sanitaryly not feasible"]
+HIGH_RISK_LEVELS = ["Alto riesgo", "Inviable sanitariamente"]
 TARGET_NAMES     = ["No high risk", "High risk"]
 
 
@@ -40,12 +40,7 @@ def _load_dataframe() -> pd.DataFrame:
 
 
 def _build_features(df: pd.DataFrame, feature_cols: list[str]) -> pd.DataFrame:
-    """Recreate the same feature matrix used during training.
-
-    The model was trained on one-hot encoded department codes plus the year.
-    We rebuild it the same way and align the columns with the trained
-    feature order so that unseen department codes get a column of zeros.
-    """
+    """Recreate the same feature matrix used during training."""
     department_dummies = pd.get_dummies(
         df["DepartamentoCodigo"].astype(str), prefix="dept", dtype=int
     )
@@ -54,9 +49,9 @@ def _build_features(df: pd.DataFrame, feature_cols: list[str]) -> pd.DataFrame:
 
 
 _DATAFRAME    = _load_dataframe()
-_MODEL        = joblib.load(MODEL_PATH)
-_SCALER       = joblib.load(SCALER_PATH)
-_FEATURE_COLS = list(_SCALER.feature_names_in_)
+_MODEL        = joblib.load(MODEL_PATH)   if MODEL_PATH.exists()  else None
+_SCALER       = joblib.load(SCALER_PATH)  if SCALER_PATH.exists() else None
+_FEATURE_COLS = list(_SCALER.feature_names_in_) if _SCALER is not None else []
 
 
 def dataframe() -> pd.DataFrame:
@@ -101,30 +96,10 @@ def metrics() -> dict:
     }
 
 
-def departments() -> list[dict]:
-    """Distinct departments with their codes, for prediction dropdowns."""
-    df = _DATAFRAME
-    grouped = (
-        df.groupby("DepartamentoCodigo")["Departamento"]
-        .agg(lambda values: values.mode().iat[0])
-        .reset_index()
-        .sort_values("Departamento")
-    )
-    return [
-        {"code": int(row["DepartamentoCodigo"]), "name": row["Departamento"]}
-        for _, row in grouped.iterrows()
-    ]
-
-
-def years() -> list[int]:
-    return sorted(int(y) for y in _DATAFRAME["Año"].unique())
-
-
 def stats() -> dict:
     df = _DATAFRAME
     positives = int(df["target"].sum())
     total = int(len(df))
-
     sample_predictions = predict_samples(n=8)
 
     return {
@@ -133,27 +108,9 @@ def stats() -> dict:
         "negative_count":    total - positives,
         "positive_pct":      round(positives / total * 100, 1) if total else 0.0,
         "departments_count": int(df["Departamento"].nunique()),
-        "years":             years(),
+        "years":             sorted(int(y) for y in df["Año"].unique()),
         "metrics":           metrics(),
         "sample_predictions": sample_predictions,
-    }
-
-
-def predict(department_code: int, year: int) -> dict:
-    """Predict the high-risk probability for a given department and year."""
-    row = pd.DataFrame(
-        [{"DepartamentoCodigo": int(department_code), "Año": int(year)}]
-    )
-    X = _build_features(row, _FEATURE_COLS)
-    X_scaled = _SCALER.transform(X)
-    proba = float(_MODEL.predict_proba(X_scaled)[0, 1])
-    label = int(_MODEL.predict(X_scaled)[0])
-    return {
-        "department_code": int(department_code),
-        "year":            int(year),
-        "probability":     round(proba, 4),
-        "prediction":      TARGET_NAMES[label],
-        "is_high_risk":    bool(label),
     }
 
 
@@ -209,25 +166,22 @@ def detailed_metrics() -> dict:
 
 
 def predict_samples(n: int = 8) -> list[dict]:
-    """Run predictions on a small, deterministic sample of the dataset.
-
-    Used to show console-style prediction examples in the Flask view.
-    """
+    """Run predictions on a small, deterministic sample of the dataset."""
     df = _DATAFRAME.sample(n=min(n, len(_DATAFRAME)), random_state=42)
     X = _build_features(df, _FEATURE_COLS)
     X_scaled = _SCALER.transform(X)
     probabilities = _MODEL.predict_proba(X_scaled)[:, 1]
-    predictions = _MODEL.predict(X_scaled)
+    predictions   = _MODEL.predict(X_scaled)
 
     out = []
     for (_, row), proba, pred in zip(df.iterrows(), probabilities, predictions):
         out.append({
-            "department":  row["Departamento"],
+            "department":   row["Departamento"],
             "municipality": row["Municipio"],
-            "year":        int(row["Año"]),
-            "actual":      TARGET_NAMES[int(row["target"])],
-            "predicted":   TARGET_NAMES[int(pred)],
-            "probability": round(float(proba), 4),
-            "correct":     bool(int(row["target"]) == int(pred)),
+            "year":         int(row["Año"]),
+            "actual":       TARGET_NAMES[int(row["target"])],
+            "predicted":    TARGET_NAMES[int(pred)],
+            "probability":  round(float(proba), 4),
+            "correct":      bool(int(row["target"]) == int(pred)),
         })
     return out

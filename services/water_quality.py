@@ -1,11 +1,6 @@
-"""Water quality (IRCArural) dataset service.
-
-Loads the cleaned rural drinking-water risk dataset and exposes helpers
-to query it. Keep all dataset-specific logic here so routes stay thin.
-"""
+"""Water quality (IRCArural) dataset service."""
 
 from pathlib import Path
-
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -13,11 +8,11 @@ DATA_DIR = PROJECT_ROOT / 'data'
 CSV_PATH = DATA_DIR / 'water_quality_for_human_consumption.csv'
 
 RISK_LEVEL_ORDER = [
-    'Sin riesgo',
-    'Bajo riesgo',
-    'Riesgo medio',
-    'Alto riesgo',
-    'Inviable sanitariamente',
+    'No Risk',
+    'Low Risk',
+    'Medium Risk',
+    'High Risk',
+    'Sanitaryly not feasible',
 ]
 
 

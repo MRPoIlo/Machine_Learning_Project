@@ -6,6 +6,7 @@ from services import water_quality
 from services import precipitation
 from services import logistic_regression
 from services import kmeans_irca
+from services import lda as lda_service
 
 app = Flask(__name__)
 
@@ -31,8 +32,9 @@ def phase_2():
 def phase_3():
       return render_template(
           'methodology/phase_3.html',
-          kmeans_eval=kmeans_irca.detailed_metrics(),   # ← AGREGAR
+          kmeans_eval=kmeans_irca.detailed_metrics(),
           logistic_stats=logistic_regression.stats(),
+          lda_stats=lda_service.stats(),
       )
 
 
@@ -40,9 +42,11 @@ def phase_3():
 def phase_4():
       return render_template(
           'methodology/phase_4.html',
-          kmeans_eval=kmeans_irca.detailed_metrics(),   # ← AGREGAR
+          kmeans_eval=kmeans_irca.detailed_metrics(),
           logistic_stats=logistic_regression.stats(),
           logistic_eval=logistic_regression.detailed_metrics(),
+          lda_eval=lda_service.detailed_metrics(),
+          lda_stats=lda_service.stats(),
       )
 
 
@@ -91,6 +95,11 @@ def phase_5():
 @app.route('/api/dataset/water-quality')
 def api_water_quality():
     return jsonify(water_quality.records())
+
+
+@app.route('/api/dataset/lda-water-quality')
+def api_lda_water_quality():
+    return jsonify(lda_service.records())
 
 
 @app.route('/api/dataset/precipitation')
