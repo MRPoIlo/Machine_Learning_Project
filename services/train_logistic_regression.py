@@ -36,7 +36,7 @@ from sklearn.metrics import (
 
 
 ROOT        = Path(__file__).resolve().parent.parent
-CSV_PATH    = ROOT / "data"    / "water_quality_rural.csv"
+CSV_PATH    = ROOT / "data"    / "water_quality_for_human_consumption.csv"
 MODELS_DIR  = ROOT / "models"
 REPORTS_DIR = ROOT / "reports"
 

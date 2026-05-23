@@ -23,7 +23,7 @@ DATA_DIR     = PROJECT_ROOT / "data"
 MODELS_DIR   = PROJECT_ROOT / "models"
 REPORTS_DIR  = PROJECT_ROOT / "reports"
 
-CSV_PATH     = DATA_DIR    / "water_quality_rural.csv"
+CSV_PATH     = DATA_DIR    / "water_quality_for_human_consumption.csv"
 MODEL_PATH   = MODELS_DIR  / "logistic_model.pkl"
 SCALER_PATH  = MODELS_DIR  / "logistic_scaler.pkl"
 METRICS_PATH = REPORTS_DIR / "logistic_metrics.txt"

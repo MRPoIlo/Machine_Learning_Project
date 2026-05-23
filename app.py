@@ -30,7 +30,6 @@ def phase_2():
 def phase_3():
     return render_template(
         'methodology/phase_3.html',
-        kmeans_stats=precipitation.stats(),
         logistic_stats=logistic_regression.stats(),
     )
 
@@ -39,7 +38,6 @@ def phase_3():
 def phase_4():
     return render_template(
         'methodology/phase_4.html',
-        kmeans_stats=precipitation.stats(),
         logistic_stats=logistic_regression.stats(),
         logistic_eval=logistic_regression.detailed_metrics(),
     )
