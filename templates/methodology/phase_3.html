@@ -41,7 +41,7 @@
                     <li><a href="#kmeans">1 · K-Means Clustering</a></li>
                     <li><a href="#logistic">2 · Logistic Regression</a></li>
                     <li><a href="#lda">3 · Linear Discriminant Analysis</a></li>
-                    <li><a href="#dataset-preview">Dataset preview</a></li>
+                    <li><a href="#dataset-preview">IRCA dataset preview</a></li>
                     <li><a href="#deliverables">Deliverables</a></li>
                 </ul>
                 <div class="phase-toc__nav">
@@ -91,139 +91,22 @@
                 </article>
 
                 <!-- ============================================================
-                     MODEL 1 · K-MEANS (UNSUPERVISED, PRECIPITATION DATASET)
+                     MODEL 1 · K-MEANS (UNSUPERVISED, IRCA DATASET)
                      ============================================================ -->
                 <article id="kmeans" class="phase-block">
                     <h2>1 · K-Means Clustering</h2>
-                    <p class="phase-subtitle">Unsupervised model · precipitation dataset</p>
+                    <p class="phase-subtitle">Unsupervised model · IRCA rural dataset</p>
 
-                    <p>
-                        K-Means groups the 33 weather stations into clusters of similar
-                        precipitation behaviour and geographic position, with no labels.
-                        The pipeline pairs feature engineering, robust scaling,
-                        dimensionality reduction with PCA, and multiple validation metrics.
-                    </p>
-
-                    <h3 class="phase-subtitle">Dataset</h3>
-                    <div class="stats-row">
-                        <div class="stat-card">
-                            <div class="stat-card__value">{{ "{:,}".format(kmeans_stats.total_rows) }}</div>
-                            <div class="stat-card__label">Observations</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-card__value">{{ kmeans_stats.stations }}</div>
-                            <div class="stat-card__label">Stations</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-card__value">{{ kmeans_stats.municipalities }}</div>
-                            <div class="stat-card__label">Municipalities</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-card__value">{{ kmeans_stats.departments }}</div>
-                            <div class="stat-card__label">Departments</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-card__value">{{ kmeans_stats.precipitation_mean }}</div>
-                            <div class="stat-card__label">Mean rainfall (mm)</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-card__value">{{ kmeans_stats.precipitation_max }}</div>
-                            <div class="stat-card__label">Max rainfall (mm)</div>
-                        </div>
-                    </div>
-
-                    <h3 class="phase-subtitle">Pipeline</h3>
-                    <ul class="phase-list">
-                        <li>
-                            <strong>Feature engineering:</strong> mean, median, variance,
-                            standard deviation, precipitation range, interquartile range,
-                            skewness, rainy-day ratio, latitude, longitude, cyclic temporal
-                            variables and observation reliability — 23 features per station.
-                        </li>
-                        <li>
-                            <strong>Scaling:</strong> <code>RobustScaler</code> to reduce the
-                            impact of extreme precipitation outliers.
-                        </li>
-                        <li>
-                            <strong>Dimensionality reduction:</strong> PCA preserves 95% of
-                            the explained variance and removes redundant correlations.
-                        </li>
-                        <li>
-                            <strong>Algorithm:</strong> <code>MiniBatchKMeans</code> for
-                            efficiency, with the elbow method and silhouette score guiding
-                            the choice of <strong>K = 4</strong>.
-                        </li>
-                        <li>
-                            <strong>Validation:</strong> silhouette, Davies-Bouldin and
-                            Calinski-Harabasz scores.
-                        </li>
-                        <li>
-                            <strong>Reproducibility:</strong> <code>random_state=42</code>.
-                        </li>
-                    </ul>
-
-                    <h3 class="phase-subtitle">Results</h3>
-                    <div class="stats-row">
-                        <div class="stat-card">
-                            <div class="stat-card__value">{{ kmeans_stats.n_clusters }}</div>
-                            <div class="stat-card__label">Clusters found</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-card__value">{{ kmeans_stats.silhouette_score | default("—") }}</div>
-                            <div class="stat-card__label">Silhouette score</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-card__value">{{ kmeans_stats.stations }}</div>
-                            <div class="stat-card__label">Stations clustered</div>
-                        </div>
-                    </div>
-
-                    <h3 class="phase-subtitle">Visualizations</h3>
-                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top:1rem;">
-                        <figure>
-                            <img src="{{ url_for('reports_file', filename='elbow_curve.png') }}"
-                                 alt="Elbow curve and silhouette score"
-                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
-                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
-                                Elbow method and silhouette score across K values.
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="{{ url_for('reports_file', filename='clusters_pca.png') }}"
-                                 alt="Clusters projected on PCA components"
-                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
-                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
-                                Clusters projected on the first two PCA components.
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <h3 class="phase-subtitle" style="margin-top:2rem;">Cluster breakdown</h3>
-                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
-                        {% set cluster_labels = {
-                            0: "Typical precipitation",
-                            1: "High rainfall",
-                            2: "Extreme rainfall",
-                            3: "Dry zone"
-                        } %}
-                        {% for cluster_id in range(kmeans_stats.n_clusters) %}
-                            {% set stations = kmeans_stats.clusters | selectattr("cluster", "equalto", cluster_id) | list %}
-                            <div class="about__card">
-                                <div class="about__icon">C{{ cluster_id }}</div>
-                                <h3 class="about__card-title">
-                                    Cluster {{ cluster_id }} — {{ cluster_labels[cluster_id] }}
-                                </h3>
-                                <p>{{ stations | length }} stations.</p>
-                                <ul class="phase-list" style="margin-top:0.75rem;">
-                                    {% for s in stations %}
-                                    <li>
-                                        <strong>{{ s.name }}</strong><br>
-                                        <small>{{ s.municipality }}, {{ s.department }} — {{ s.mean_precipitation }} mm avg</small>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        {% endfor %}
+                    <div class="about__card" style="background:#fef3c7; border-color:#fbbf24;">
+                        <div class="about__icon">⏳</div>
+                        <h3 class="about__card-title">Section in progress</h3>
+                        <p>
+                            K-Means clustering on the IRCA dataset is being integrated by a
+                            teammate. The trained model, scaler, metrics and template snippet
+                            will be plugged into this section as soon as their training
+                            script lands in the repository. The layout mirrors the Logistic
+                            Regression block so comparisons stay consistent.
+                        </p>
                     </div>
                 </article>
 
@@ -443,7 +326,7 @@
                 <article id="deliverables" class="phase-block">
                     <h2>Deliverables</h2>
                     <ul class="phase-list">
-                        <li>Cleaned IRCA rural dataset (<code>data/water_quality_rural.csv</code>).</li>
+                        <li>Water quality for human consumption dataset (<code>data/water_quality_for_human_consumption.csv</code>).</li>
                         <li>Cleaned precipitation dataset (<code>data/precipitation_clean.csv</code>).</li>
                         <li>Station-level feature matrix (<code>data/features_advanced.csv</code>).</li>
                         <li>Trained K-Means model (<code>models/kmeans_model.pkl</code>) with scaler and PCA.</li>
@@ -469,6 +352,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         if (typeof createDataTable !== 'function') return;
+
         createDataTable({
             target: '#phase3DataTable',
             dataUrl: "{{ url_for('api_water_quality') }}",

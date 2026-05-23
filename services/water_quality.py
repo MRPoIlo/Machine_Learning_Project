@@ -10,7 +10,7 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / 'data'
-CSV_PATH = DATA_DIR / 'water_quality_rural.csv'
+CSV_PATH = DATA_DIR / 'water_quality_for_human_consumption.csv'
 
 RISK_LEVEL_ORDER = [
     'Sin riesgo',

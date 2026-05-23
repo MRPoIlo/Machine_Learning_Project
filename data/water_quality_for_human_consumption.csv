@@ -1,0 +1,1717 @@
+﻿DepartamentoCodigo;Departamento;MunicipioCodigo;Municipio;Año;IRCArural;Nivel de riesgo rural
+11;Bogotá, D.C.;11001;Bogotá, D.C.;2,024;14.8;Riesgo medio
+13;Bolívar;13001;Cartagena de Indias;2,024;2.4;Sin riesgo
+13;Bolívar;13062;Arroyohondo;2,024;6.3;Bajo riesgo
+13;Bolívar;13074;Barranco de Loba;2,024;32.3;Riesgo medio
+13;Bolívar;13248;El Guamo;2,024;0;Sin riesgo
+13;Bolívar;13430;Magangué;2,024;13.9;Bajo riesgo
+13;Bolívar;13433;Mahates;2,024;29.8;Riesgo medio
+13;Bolívar;13442;María La Baja;2,024;1.2;Sin riesgo
+13;Bolívar;13458;Montecristo;2,024;12.5;Bajo riesgo
+13;Bolívar;13657;San Juan Nepomuceno;2,024;33.3;Riesgo medio
+13;Bolívar;13838;Turbana;2,024;0;Sin riesgo
+13;Bolívar;13873;Villanueva;2,024;0;Sin riesgo
+13;Bolívar;13894;Zambrano;2,024;26.6;Riesgo medio
+15;Boyacá;15001;Tunja;2,024;10.9;Bajo riesgo
+15;Boyacá;15022;Almeida;2,024;32.5;Riesgo medio
+15;Boyacá;15047;Aquitania;2,024;6.2;Bajo riesgo
+15;Boyacá;15090;Berbeo;2,024;69.4;Alto riesgo
+15;Boyacá;15106;Briceño;2,024;72.3;Alto riesgo
+15;Boyacá;15131;Caldas;2,024;94.9;Inviable sanitariamente
+15;Boyacá;15135;Campohermoso;2,024;8.3;Bajo riesgo
+15;Boyacá;15183;Chita;2,024;23.7;Riesgo medio
+15;Boyacá;15185;Chitaraque;2,024;10.7;Bajo riesgo
+15;Boyacá;15187;Chivatá;2,024;9.1;Bajo riesgo
+15;Boyacá;15212;Coper;2,024;74.4;Alto riesgo
+15;Boyacá;15215;Corrales;2,024;38;Alto riesgo
+15;Boyacá;15223;Cubará;2,024;43.9;Alto riesgo
+15;Boyacá;15224;Cucaita;2,024;24.3;Riesgo medio
+15;Boyacá;15226;Cuítiva;2,024;9.3;Bajo riesgo
+15;Boyacá;15232;Chíquiza;2,024;7.2;Bajo riesgo
+15;Boyacá;15238;Duitama;2,024;0.4;Sin riesgo
+15;Boyacá;15244;El Cocuy;2,024;0;Sin riesgo
+15;Boyacá;15276;Floresta;2,024;12.6;Bajo riesgo
+15;Boyacá;15299;Garagoa;2,024;0;Sin riesgo
+15;Boyacá;15325;Guayatá;2,024;0;Sin riesgo
+15;Boyacá;15377;Labranzagrande;2,024;56.7;Alto riesgo
+15;Boyacá;15401;La Victoria;2,024;12.1;Bajo riesgo
+15;Boyacá;15407;Villa de Leyva;2,024;7.2;Bajo riesgo
+15;Boyacá;15442;Maripí;2,024;6.6;Bajo riesgo
+15;Boyacá;15476;Motavita;2,024;12.1;Bajo riesgo
+15;Boyacá;15480;Muzo;2,024;58.5;Alto riesgo
+15;Boyacá;15491;Nobsa;2,024;4.4;Sin riesgo
+15;Boyacá;15500;Oicatá;2,024;39.7;Alto riesgo
+15;Boyacá;15511;Pachavita;2,024;87.2;Inviable sanitariamente
+15;Boyacá;15516;Paipa;2,024;6.5;Bajo riesgo
+15;Boyacá;15518;Pajarito;2,024;14;Bajo riesgo
+15;Boyacá;15531;Pauna;2,024;81.5;Inviable sanitariamente
+15;Boyacá;15533;Paya;2,024;8.5;Bajo riesgo
+15;Boyacá;15550;Pisba;2,024;15.4;Riesgo medio
+15;Boyacá;15580;Quípama;2,024;6.3;Bajo riesgo
+15;Boyacá;15599;Ramiriquí;2,024;0.8;Sin riesgo
+15;Boyacá;15600;Ráquira;2,024;10.6;Bajo riesgo
+15;Boyacá;15638;Sáchica;2,024;8.7;Bajo riesgo
+15;Boyacá;15660;San Eduardo;2,024;81;Inviable sanitariamente
+15;Boyacá;15676;San Miguel de Sema;2,024;10;Bajo riesgo
+15;Boyacá;15681;San Pablo de Borbur;2,024;0;Sin riesgo
+15;Boyacá;15690;Santa María;2,024;0;Sin riesgo
+15;Boyacá;15693;Santa Rosa de Viterbo;2,024;4.2;Sin riesgo
+15;Boyacá;15723;Sativasur;2,024;7.2;Bajo riesgo
+15;Boyacá;15740;Siachoque;2,024;14.5;Riesgo medio
+15;Boyacá;15759;Sogamoso;2,024;1.2;Sin riesgo
+15;Boyacá;15762;Sora;2,024;30.1;Riesgo medio
+15;Boyacá;15764;Soracá;2,024;23.6;Riesgo medio
+15;Boyacá;15776;Sutamarchán;2,024;86.4;Inviable sanitariamente
+15;Boyacá;15778;Sutatenza;2,024;28.4;Riesgo medio
+15;Boyacá;15810;Tipacoque;2,024;69.3;Alto riesgo
+15;Boyacá;15820;Tópaga;2,024;40.8;Alto riesgo
+15;Boyacá;15822;Tota;2,024;22;Riesgo medio
+15;Boyacá;15839;Tutazá;2,024;45.2;Alto riesgo
+15;Boyacá;15879;Viracachá;2,024;60;Alto riesgo
+17;Caldas;17001;Manizales;2,024;62.9;Alto riesgo
+17;Caldas;17042;Anserma;2,024;29;Riesgo medio
+17;Caldas;17050;Aranzazu;2,024;78.7;Alto riesgo
+17;Caldas;17174;Chinchiná;2,024;64.5;Alto riesgo
+17;Caldas;17272;Filadelfia;2,024;38.7;Alto riesgo
+17;Caldas;17380;La Dorada;2,024;7.6;Bajo riesgo
+17;Caldas;17388;La Merced;2,024;85.5;Inviable sanitariamente
+17;Caldas;17433;Manzanares;2,024;71;Alto riesgo
+17;Caldas;17486;Neira;2,024;6.8;Bajo riesgo
+17;Caldas;17513;Pácora;2,024;71;Alto riesgo
+17;Caldas;17524;Palestina;2,024;56.4;Alto riesgo
+17;Caldas;17541;Pensilvania;2,024;63.3;Alto riesgo
+17;Caldas;17614;Riosucio;2,024;72.9;Alto riesgo
+17;Caldas;17616;Risaralda;2,024;64.5;Alto riesgo
+17;Caldas;17653;Salamina;2,024;66.9;Alto riesgo
+17;Caldas;17662;Samaná;2,024;71.6;Alto riesgo
+17;Caldas;17665;San José;2,024;67.6;Alto riesgo
+17;Caldas;17777;Supía;2,024;73.7;Alto riesgo
+17;Caldas;17867;Victoria;2,024;35.1;Alto riesgo
+17;Caldas;17873;Villamaría;2,024;54.8;Alto riesgo
+17;Caldas;17877;Viterbo;2,024;74.4;Alto riesgo
+19;Cauca;19022;Almaguer;2,024;0;Sin riesgo
+19;Cauca;19130;Cajibío;2,024;0;Sin riesgo
+19;Cauca;19137;Caldono;2,024;33.1;Riesgo medio
+19;Cauca;19256;El Tambo;2,024;0;Sin riesgo
+19;Cauca;19300;Guachené;2,024;0;Sin riesgo
+19;Cauca;19318;Guapi;2,024;0;Sin riesgo
+19;Cauca;19355;Inzá;2,024;24.8;Riesgo medio
+19;Cauca;19513;Padilla;2,024;24.8;Riesgo medio
+19;Cauca;19548;Piendamó - Tunía;2,024;0;Sin riesgo
+19;Cauca;19573;Puerto Tejada;2,024;4;Sin riesgo
+19;Cauca;19585;Puracé;2,024;12.3;Bajo riesgo
+19;Cauca;19698;Santander de Quilichao;2,024;0;Sin riesgo
+19;Cauca;19807;Timbío;2,024;3.2;Sin riesgo
+19;Cauca;19845;Villa Rica;2,024;0.4;Sin riesgo
+20;Cesar;20011;Aguachica;2,024;0;Sin riesgo
+20;Cesar;20032;Astrea;2,024;39.8;Alto riesgo
+20;Cesar;20045;Becerril;2,024;22.1;Riesgo medio
+20;Cesar;20060;Bosconia;2,024;43.2;Alto riesgo
+20;Cesar;20295;Gamarra;2,024;36.1;Alto riesgo
+20;Cesar;20710;San Alberto;2,024;0;Sin riesgo
+23;Córdoba;23672;San Antero;2,024;21.7;Riesgo medio
+25;Cundinamarca;25001;Agua de Dios;2,024;3;Sin riesgo
+25;Cundinamarca;25019;Albán;2,024;12.5;Bajo riesgo
+25;Cundinamarca;25035;Anapoima;2,024;3.7;Sin riesgo
+25;Cundinamarca;25040;Anolaima;2,024;14.1;Riesgo medio
+25;Cundinamarca;25053;Arbeláez;2,024;23.8;Riesgo medio
+25;Cundinamarca;25086;Beltrán;2,024;12.7;Bajo riesgo
+25;Cundinamarca;25120;Cabrera;2,024;18.7;Riesgo medio
+25;Cundinamarca;25123;Cachipay;2,024;8;Bajo riesgo
+25;Cundinamarca;25126;Cajicá;2,024;3.1;Sin riesgo
+25;Cundinamarca;25175;Chía;2,024;3.5;Sin riesgo
+25;Cundinamarca;25178;Chipaque;2,024;9.9;Bajo riesgo
+25;Cundinamarca;25200;Cogua;2,024;13.1;Bajo riesgo
+25;Cundinamarca;25214;Cota;2,024;3.8;Sin riesgo
+25;Cundinamarca;25224;Cucunubá;2,024;11.8;Bajo riesgo
+25;Cundinamarca;25245;El Colegio;2,024;10.7;Bajo riesgo
+25;Cundinamarca;25258;El Peñón;2,024;0;Sin riesgo
+25;Cundinamarca;25260;El Rosal;2,024;0;Sin riesgo
+25;Cundinamarca;25269;Facatativá;2,024;0;Sin riesgo
+25;Cundinamarca;25286;Funza;2,024;1;Sin riesgo
+25;Cundinamarca;25290;Fusagasugá;2,024;2.9;Sin riesgo
+25;Cundinamarca;25295;Gachancipá;2,024;4.6;Sin riesgo
+25;Cundinamarca;25307;Girardot;2,024;2.6;Sin riesgo
+25;Cundinamarca;25312;Granada;2,024;1.4;Sin riesgo
+25;Cundinamarca;25317;Guachetá;2,024;4.1;Sin riesgo
+25;Cundinamarca;25320;Guaduas;2,024;7.7;Bajo riesgo
+25;Cundinamarca;25322;Guasca;2,024;6.2;Bajo riesgo
+25;Cundinamarca;25324;Guataquí;2,024;0;Sin riesgo
+25;Cundinamarca;25328;Guayabal de Síquima;2,024;0;Sin riesgo
+25;Cundinamarca;25368;Jerusalén;2,024;5.7;Bajo riesgo
+25;Cundinamarca;25372;Junín;2,024;0.6;Sin riesgo
+25;Cundinamarca;25377;La Calera;2,024;12.4;Bajo riesgo
+25;Cundinamarca;25386;La Mesa;2,024;16.2;Riesgo medio
+25;Cundinamarca;25402;La Vega;2,024;22.6;Riesgo medio
+25;Cundinamarca;25407;Lenguazaque;2,024;73.1;Alto riesgo
+25;Cundinamarca;25426;Machetá;2,024;14.7;Riesgo medio
+25;Cundinamarca;25430;Madrid;2,024;1.4;Sin riesgo
+25;Cundinamarca;25486;Nemocón;2,024;9.2;Bajo riesgo
+25;Cundinamarca;25488;Nilo;2,024;4.6;Sin riesgo
+25;Cundinamarca;25489;Nimaima;2,024;1.2;Sin riesgo
+25;Cundinamarca;25491;Nocaima;2,024;31.3;Riesgo medio
+25;Cundinamarca;25513;Pacho;2,024;0;Sin riesgo
+25;Cundinamarca;25524;Pandi;2,024;6.2;Bajo riesgo
+25;Cundinamarca;25535;Pasca;2,024;18.7;Riesgo medio
+25;Cundinamarca;25592;Quebradanegra;2,024;14.4;Riesgo medio
+25;Cundinamarca;25612;Ricaurte;2,024;0;Sin riesgo
+25;Cundinamarca;25645;San Antonio del Tequendama;2,024;5.8;Bajo riesgo
+25;Cundinamarca;25658;San Francisco;2,024;0.4;Sin riesgo
+25;Cundinamarca;25662;San Juan de Rioseco;2,024;0;Sin riesgo
+25;Cundinamarca;25718;Sasaima;2,024;3.1;Sin riesgo
+25;Cundinamarca;25736;Sesquilé;2,024;11.6;Bajo riesgo
+25;Cundinamarca;25740;Sibaté;2,024;10.7;Bajo riesgo
+25;Cundinamarca;25743;Silvania;2,024;42.9;Alto riesgo
+25;Cundinamarca;25745;Simijaca;2,024;27;Riesgo medio
+25;Cundinamarca;25754;Soacha;2,024;4.2;Sin riesgo
+25;Cundinamarca;25758;Sopó;2,024;4.9;Sin riesgo
+25;Cundinamarca;25769;Subachoque;2,024;7.2;Bajo riesgo
+25;Cundinamarca;25772;Suesca;2,024;3.9;Sin riesgo
+25;Cundinamarca;25777;Supatá;2,024;0.2;Sin riesgo
+25;Cundinamarca;25781;Sutatausa;2,024;4.6;Sin riesgo
+25;Cundinamarca;25785;Tabio;2,024;2.2;Sin riesgo
+25;Cundinamarca;25793;Tausa;2,024;21.1;Riesgo medio
+25;Cundinamarca;25797;Tena;2,024;24.6;Riesgo medio
+25;Cundinamarca;25799;Tenjo;2,024;8.1;Bajo riesgo
+25;Cundinamarca;25805;Tibacuy;2,024;0.2;Sin riesgo
+25;Cundinamarca;25807;Tibirita;2,024;8.6;Bajo riesgo
+25;Cundinamarca;25817;Tocancipá;2,024;0.3;Sin riesgo
+25;Cundinamarca;25841;Ubaque;2,024;6.8;Bajo riesgo
+25;Cundinamarca;25843;Villa de San Diego de Ubaté;2,024;0;Sin riesgo
+25;Cundinamarca;25845;Une;2,024;1.2;Sin riesgo
+25;Cundinamarca;25873;Villapinzón;2,024;5.2;Bajo riesgo
+25;Cundinamarca;25875;Villeta;2,024;9.3;Bajo riesgo
+25;Cundinamarca;25885;Yacopí;2,024;64.1;Alto riesgo
+25;Cundinamarca;25898;Zipacón;2,024;64.6;Alto riesgo
+25;Cundinamarca;25899;Zipaquirá;2,024;7.6;Bajo riesgo
+41;Huila;41001;Neiva;2,024;9.8;Bajo riesgo
+41;Huila;41013;Agrado;2,024;90.3;Inviable sanitariamente
+41;Huila;41026;Altamira;2,024;9.7;Bajo riesgo
+41;Huila;41298;Garzón;2,024;0;Sin riesgo
+41;Huila;41524;Palermo;2,024;10.3;Bajo riesgo
+41;Huila;41530;Palestina;2,024;1.2;Sin riesgo
+41;Huila;41615;Rivera;2,024;0;Sin riesgo
+41;Huila;41660;Saladoblanco;2,024;0;Sin riesgo
+44;La Guajira;44001;Riohacha;2,024;6.3;Bajo riesgo
+44;La Guajira;44035;Albania;2,024;29.5;Riesgo medio
+44;La Guajira;44090;Dibulla;2,024;43.5;Alto riesgo
+44;La Guajira;44560;Manaure;2,024;11.3;Bajo riesgo
+44;La Guajira;44847;Uribia;2,024;39.7;Alto riesgo
+47;Magdalena;47030;Algarrobo;2,024;37.5;Alto riesgo
+47;Magdalena;47058;Ariguaní;2,024;7.5;Bajo riesgo
+47;Magdalena;47189;Ciénaga;2,024;37.5;Alto riesgo
+47;Magdalena;47288;Fundación;2,024;0;Sin riesgo
+47;Magdalena;47460;Nueva Granada;2,024;0;Sin riesgo
+47;Magdalena;47570;Puebloviejo;2,024;0;Sin riesgo
+47;Magdalena;47692;San Sebastián de Buenavista;2,024;0;Sin riesgo
+47;Magdalena;47960;Zapayán;2,024;18.8;Riesgo medio
+47;Magdalena;47980;Zona Bananera;2,024;0;Sin riesgo
+50;Meta;50001;Villavicencio;2,024;12.7;Bajo riesgo
+50;Meta;50006;Acacías;2,024;10.6;Bajo riesgo
+50;Meta;50150;Castilla La Nueva;2,024;19.9;Riesgo medio
+50;Meta;50251;El Castillo;2,024;0;Sin riesgo
+50;Meta;50318;Guamal;2,024;0;Sin riesgo
+52;Nariño;52001;Pasto;2,024;1.5;Sin riesgo
+52;Nariño;52022;Aldana;2,024;21.3;Riesgo medio
+52;Nariño;52036;Ancuya;2,024;57.5;Alto riesgo
+52;Nariño;52051;Arboleda;2,024;64.8;Alto riesgo
+52;Nariño;52215;Córdoba;2,024;23.5;Riesgo medio
+52;Nariño;52227;Cumbal;2,024;3.7;Sin riesgo
+52;Nariño;52240;Chachagüí;2,024;35;Riesgo medio
+52;Nariño;52254;El Peñol;2,024;19.4;Riesgo medio
+52;Nariño;52320;Guaitarilla;2,024;76.7;Alto riesgo
+52;Nariño;52323;Gualmatán;2,024;16;Riesgo medio
+52;Nariño;52356;Ipiales;2,024;72.5;Alto riesgo
+52;Nariño;52381;La Florida;2,024;1;Sin riesgo
+52;Nariño;52399;La Unión;2,024;75.1;Alto riesgo
+52;Nariño;52411;Linares;2,024;62.5;Alto riesgo
+52;Nariño;52427;Magüí;2,024;24.8;Riesgo medio
+52;Nariño;52435;Mallama;2,024;44.7;Alto riesgo
+52;Nariño;52480;Nariño;2,024;11.2;Bajo riesgo
+52;Nariño;52585;Pupiales;2,024;49.7;Alto riesgo
+52;Nariño;52612;Ricaurte;2,024;28.5;Riesgo medio
+52;Nariño;52678;Samaniego;2,024;62;Alto riesgo
+52;Nariño;52683;Sandoná;2,024;12.4;Bajo riesgo
+52;Nariño;52696;Santa Bárbara;2,024;53.5;Alto riesgo
+52;Nariño;52788;Tangua;2,024;61.2;Alto riesgo
+52;Nariño;52835;San Andrés de Tumaco;2,024;19.3;Riesgo medio
+54;Norte de Santander;54001;San José de Cúcuta;2,024;0;Sin riesgo
+54;Norte de Santander;54099;Bochalema;2,024;0;Sin riesgo
+54;Norte de Santander;54109;Bucarasica;2,024;79.1;Alto riesgo
+54;Norte de Santander;54128;Cáchira;2,024;46.5;Alto riesgo
+54;Norte de Santander;54172;Chinácota;2,024;60.8;Alto riesgo
+54;Norte de Santander;54261;El Zulia;2,024;0;Sin riesgo
+54;Norte de Santander;54673;San Cayetano;2,024;0;Sin riesgo
+63;Quindío;63001;Armenia;2,024;1.4;Sin riesgo
+63;Quindío;63130;Calarcá;2,024;0;Sin riesgo
+66;Risaralda;66001;Pereira;2,024;29.2;Riesgo medio
+66;Risaralda;66045;Apía;2,024;67.5;Alto riesgo
+66;Risaralda;66075;Balboa;2,024;76.3;Alto riesgo
+66;Risaralda;66088;Belén de Umbría;2,024;22.5;Riesgo medio
+66;Risaralda;66318;Guática;2,024;68.3;Alto riesgo
+66;Risaralda;66400;La Virginia;2,024;0;Sin riesgo
+66;Risaralda;66440;Marsella;2,024;32.8;Riesgo medio
+66;Risaralda;66456;Mistrató;2,024;7.2;Bajo riesgo
+66;Risaralda;66594;Quinchía;2,024;69;Alto riesgo
+66;Risaralda;66682;Santa Rosa de Cabal;2,024;3.7;Sin riesgo
+66;Risaralda;66687;Santuario;2,024;54.2;Alto riesgo
+68;Santander;68077;Barbosa;2,024;0;Sin riesgo
+68;Santander;68079;Barichara;2,024;94;Inviable sanitariamente
+68;Santander;68092;Betulia;2,024;0;Sin riesgo
+68;Santander;68190;Cimitarra;2,024;0;Sin riesgo
+68;Santander;68229;Curití;2,024;0;Sin riesgo
+68;Santander;68235;El Carmen de Chucurí;2,024;46.9;Alto riesgo
+68;Santander;68255;El Playón;2,024;84.9;Inviable sanitariamente
+68;Santander;68266;Enciso;2,024;1.5;Sin riesgo
+68;Santander;68276;Floridablanca;2,024;0;Sin riesgo
+68;Santander;68307;Girón;2,024;2.5;Sin riesgo
+68;Santander;68370;Jordán;2,024;74.4;Alto riesgo
+68;Santander;68406;Lebrija;2,024;13.6;Bajo riesgo
+68;Santander;68524;Palmas del Socorro;2,024;32.3;Riesgo medio
+68;Santander;68572;Puente Nacional;2,024;22.4;Riesgo medio
+68;Santander;68573;Puerto Parra;2,024;11.4;Bajo riesgo
+68;Santander;68615;Rionegro;2,024;67.4;Alto riesgo
+68;Santander;68655;Sabana de Torres;2,024;0;Sin riesgo
+68;Santander;68689;San Vicente de Chucurí;2,024;29.2;Riesgo medio
+68;Santander;68770;Suaita;2,024;33.9;Riesgo medio
+68;Santander;68820;Tona;2,024;52.6;Alto riesgo
+68;Santander;68872;Villanueva;2,024;92.4;Inviable sanitariamente
+68;Santander;68895;Zapatoca;2,024;30.2;Riesgo medio
+70;Sucre;70001;Sincelejo;2,024;6.3;Bajo riesgo
+70;Sucre;70110;Buenavista;2,024;0;Sin riesgo
+73;Tolima;73001;Ibagué;2,024;45.8;Alto riesgo
+73;Tolima;73268;Espinal;2,024;0;Sin riesgo
+73;Tolima;73678;San Luis;2,024;0;Sin riesgo
+76;Valle del Cauca;76001;Cali;2,024;2.5;Sin riesgo
+76;Valle del Cauca;76020;Alcalá;2,024;22.7;Riesgo medio
+76;Valle del Cauca;76036;Andalucía;2,024;0;Sin riesgo
+76;Valle del Cauca;76041;Ansermanuevo;2,024;17.6;Riesgo medio
+76;Valle del Cauca;76054;Argelia;2,024;60.9;Alto riesgo
+76;Valle del Cauca;76100;Bolívar;2,024;25.4;Riesgo medio
+76;Valle del Cauca;76109;Buenaventura;2,024;0;Sin riesgo
+76;Valle del Cauca;76113;Bugalagrande;2,024;11.7;Bajo riesgo
+76;Valle del Cauca;76122;Caicedonia;2,024;0;Sin riesgo
+76;Valle del Cauca;76126;Calima;2,024;50.8;Alto riesgo
+76;Valle del Cauca;76130;Candelaria;2,024;12.1;Bajo riesgo
+76;Valle del Cauca;76233;Dagua;2,024;10.3;Bajo riesgo
+76;Valle del Cauca;76243;El Águila;2,024;13;Bajo riesgo
+76;Valle del Cauca;76248;El Cerrito;2,024;1.7;Sin riesgo
+76;Valle del Cauca;76250;El Dovio;2,024;0;Sin riesgo
+76;Valle del Cauca;76275;Florida;2,024;0;Sin riesgo
+76;Valle del Cauca;76306;Ginebra;2,024;10.5;Bajo riesgo
+76;Valle del Cauca;76318;Guacarí;2,024;3.7;Sin riesgo
+76;Valle del Cauca;76364;Jamundí;2,024;21.3;Riesgo medio
+76;Valle del Cauca;76377;La Cumbre;2,024;6.2;Bajo riesgo
+76;Valle del Cauca;76400;La Unión;2,024;11.2;Bajo riesgo
+76;Valle del Cauca;76403;La Victoria;2,024;0;Sin riesgo
+76;Valle del Cauca;76497;Obando;2,024;49.7;Alto riesgo
+76;Valle del Cauca;76520;Palmira;2,024;8.4;Bajo riesgo
+76;Valle del Cauca;76563;Pradera;2,024;0;Sin riesgo
+76;Valle del Cauca;76606;Restrepo;2,024;0;Sin riesgo
+76;Valle del Cauca;76616;Riofrío;2,024;18;Riesgo medio
+76;Valle del Cauca;76622;Roldanillo;2,024;0.1;Sin riesgo
+76;Valle del Cauca;76670;San Pedro;2,024;1.4;Sin riesgo
+76;Valle del Cauca;76736;Sevilla;2,024;25.4;Riesgo medio
+76;Valle del Cauca;76823;Toro;2,024;21.7;Riesgo medio
+76;Valle del Cauca;76828;Trujillo;2,024;21.8;Riesgo medio
+76;Valle del Cauca;76834;Tuluá;2,024;7.1;Bajo riesgo
+76;Valle del Cauca;76845;Ulloa;2,024;0;Sin riesgo
+76;Valle del Cauca;76863;Versalles;2,024;65;Alto riesgo
+76;Valle del Cauca;76890;Yotoco;2,024;40.6;Alto riesgo
+76;Valle del Cauca;76892;Yumbo;2,024;13;Bajo riesgo
+76;Valle del Cauca;76895;Zarzal;2,024;3.8;Sin riesgo
+81;Arauca;81001;Arauca;2,024;35.2;Alto riesgo
+81;Arauca;81065;Arauquita;2,024;21.4;Riesgo medio
+81;Arauca;81736;Saravena;2,024;49.5;Alto riesgo
+85;Casanare;85001;Yopal;2,024;3.2;Sin riesgo
+85;Casanare;85325;San Luis de Palenque;2,024;0.5;Sin riesgo
+85;Casanare;85410;Tauramena;2,024;20.7;Riesgo medio
+86;Putumayo;86571;Puerto Guzmán;2,024;20.7;Riesgo medio
+88;Archipiélago de San Andrés, Providencia Y Santa Catalina;88001;San Andrés;2,024;8.5;Bajo riesgo
+91;Amazonas;91540;Puerto Nariño;2,024;2.4;Sin riesgo
+95;Guaviare;95025;El Retorno;2,024;12.9;Bajo riesgo
+5;Antioquia;5001;Medellín;2,024;3;Sin riesgo
+5;Antioquia;5030;Amagá;2,024;62;Alto riesgo
+5;Antioquia;5034;Andes;2,024;8.4;Bajo riesgo
+5;Antioquia;5036;Angelópolis;2,024;61;Alto riesgo
+5;Antioquia;5038;Angostura;2,024;16.3;Riesgo medio
+5;Antioquia;5040;Anorí;2,024;0.6;Sin riesgo
+5;Antioquia;5042;Santa Fé de Antioquia;2,024;19.8;Riesgo medio
+5;Antioquia;5044;Anzá;2,024;96.4;Inviable sanitariamente
+5;Antioquia;5045;Apartadó;2,024;13.8;Bajo riesgo
+5;Antioquia;5055;Argelia;2,024;0;Sin riesgo
+5;Antioquia;5079;Barbosa;2,024;49;Alto riesgo
+5;Antioquia;5086;Belmira;2,024;38.5;Alto riesgo
+5;Antioquia;5091;Betania;2,024;26.9;Riesgo medio
+5;Antioquia;5093;Betulia;2,024;26.9;Riesgo medio
+5;Antioquia;5101;Ciudad Bolívar;2,024;42.7;Alto riesgo
+5;Antioquia;5129;Caldas;2,024;57.6;Alto riesgo
+5;Antioquia;5145;Caramanta;2,024;89.4;Inviable sanitariamente
+5;Antioquia;5147;Carepa;2,024;32;Riesgo medio
+5;Antioquia;5148;El Carmen de Viboral;2,024;5.9;Bajo riesgo
+5;Antioquia;5197;Cocorná;2,024;29.3;Riesgo medio
+5;Antioquia;5212;Copacabana;2,024;14;Bajo riesgo
+5;Antioquia;5237;Donmatías;2,024;97.4;Inviable sanitariamente
+5;Antioquia;5240;Ebéjico;2,024;24.1;Riesgo medio
+5;Antioquia;5250;El Bagre;2,024;100;Inviable sanitariamente
+5;Antioquia;5264;Entrerríos;2,024;11.4;Bajo riesgo
+5;Antioquia;5266;Envigado;2,024;7.3;Bajo riesgo
+5;Antioquia;5282;Fredonia;2,024;0;Sin riesgo
+5;Antioquia;5284;Frontino;2,024;32.5;Riesgo medio
+5;Antioquia;5306;Giraldo;2,024;97.4;Inviable sanitariamente
+5;Antioquia;5308;Girardota;2,024;27.9;Riesgo medio
+5;Antioquia;5315;Guadalupe;2,024;0;Sin riesgo
+5;Antioquia;5318;Guarne;2,024;0.2;Sin riesgo
+5;Antioquia;5321;Guatapé;2,024;0;Sin riesgo
+5;Antioquia;5347;Heliconia;2,024;97.4;Inviable sanitariamente
+5;Antioquia;5353;Hispania;2,024;13.4;Bajo riesgo
+5;Antioquia;5360;Itagüí;2,024;15.2;Riesgo medio
+5;Antioquia;5364;Jardín;2,024;0;Sin riesgo
+5;Antioquia;5368;Jericó;2,024;13.3;Bajo riesgo
+5;Antioquia;5376;La Ceja;2,024;38.1;Alto riesgo
+5;Antioquia;5380;La Estrella;2,024;1.5;Sin riesgo
+5;Antioquia;5400;La Unión;2,024;25.2;Riesgo medio
+5;Antioquia;5411;Liborina;2,024;79.1;Alto riesgo
+5;Antioquia;5425;Maceo;2,024;53.1;Alto riesgo
+5;Antioquia;5440;Marinilla;2,024;6.2;Bajo riesgo
+5;Antioquia;5490;Necoclí;2,024;0;Sin riesgo
+5;Antioquia;5501;Olaya;2,024;1.5;Sin riesgo
+5;Antioquia;5585;Puerto Nare;2,024;16;Riesgo medio
+5;Antioquia;5591;Puerto Triunfo;2,024;13.9;Bajo riesgo
+5;Antioquia;5604;Remedios;2,024;0;Sin riesgo
+5;Antioquia;5607;Retiro;2,024;16.3;Riesgo medio
+5;Antioquia;5615;Rionegro;2,024;6.8;Bajo riesgo
+5;Antioquia;5631;Sabaneta;2,024;7.4;Bajo riesgo
+5;Antioquia;5642;Salgar;2,024;84.2;Inviable sanitariamente
+5;Antioquia;5652;San Francisco;2,024;0;Sin riesgo
+5;Antioquia;5656;San Jerónimo;2,024;53.2;Alto riesgo
+5;Antioquia;5660;San Luis;2,024;42;Alto riesgo
+5;Antioquia;5664;San Pedro de Los Milagros;2,024;5.6;Bajo riesgo
+5;Antioquia;5674;San Vicente Ferrer;2,024;12.5;Bajo riesgo
+5;Antioquia;5679;Santa Bárbara;2,024;32.5;Riesgo medio
+5;Antioquia;5686;Santa Rosa de Osos;2,024;0;Sin riesgo
+5;Antioquia;5756;Sonsón;2,024;35.4;Alto riesgo
+5;Antioquia;5761;Sopetrán;2,024;0;Sin riesgo
+5;Antioquia;5789;Támesis;2,024;63.9;Alto riesgo
+5;Antioquia;5790;Tarazá;2,024;0;Sin riesgo
+5;Antioquia;5792;Tarso;2,024;0;Sin riesgo
+5;Antioquia;5809;Titiribí;2,024;88.3;Inviable sanitariamente
+5;Antioquia;5837;Turbo;2,024;0;Sin riesgo
+5;Antioquia;5847;Urrao;2,024;70.8;Alto riesgo
+5;Antioquia;5858;Vegachí;2,024;35.4;Alto riesgo
+5;Antioquia;5861;Venecia;2,024;0;Sin riesgo
+5;Antioquia;5887;Yarumal;2,024;29.5;Riesgo medio
+8;Atlántico;8001;Barranquilla;2,024;0;Sin riesgo
+8;Atlántico;8078;Baranoa;2,024;36.1;Alto riesgo
+8;Atlántico;8137;Campo de La Cruz;2,024;9.2;Bajo riesgo
+8;Atlántico;8141;Candelaria;2,024;0;Sin riesgo
+8;Atlántico;8296;Galapa;2,024;0;Sin riesgo
+8;Atlántico;8372;Juan de Acosta;2,024;0;Sin riesgo
+8;Atlántico;8421;Luruaco;2,024;9.4;Bajo riesgo
+8;Atlántico;8433;Malambo;2,024;33.6;Riesgo medio
+8;Atlántico;8436;Manatí;2,024;0;Sin riesgo
+8;Atlántico;8549;Piojó;2,024;0;Sin riesgo
+8;Atlántico;8558;Polonuevo;2,024;0;Sin riesgo
+8;Atlántico;8560;Ponedera;2,024;13.7;Bajo riesgo
+8;Atlántico;8573;Puerto Colombia;2,024;0;Sin riesgo
+8;Atlántico;8606;Repelón;2,024;6.5;Bajo riesgo
+8;Atlántico;8638;Sabanalarga;2,024;4.9;Sin riesgo
+8;Atlántico;8675;Santa Lucía;2,024;0;Sin riesgo
+8;Atlántico;8832;Tubará;2,024;9.8;Bajo riesgo
+5;Antioquia;5001;Medellín;2,021;4.2;Sin riesgo
+5;Antioquia;5001;Medellín;2,022;6.8;Bajo riesgo
+5;Antioquia;5001;Medellín;2,023;2.9;Sin riesgo
+5;Antioquia;5030;Amagá;2,021;66.8;Alto riesgo
+5;Antioquia;5030;Amagá;2,022;64.9;Alto riesgo
+5;Antioquia;5030;Amagá;2,023;61.9;Alto riesgo
+5;Antioquia;5034;Andes;2,021;0.0;Sin riesgo
+5;Antioquia;5034;Andes;2,022;1.4;Sin riesgo
+5;Antioquia;5034;Andes;2,023;0.0;Sin riesgo
+5;Antioquia;5036;Angelópolis;2,021;82.8;Inviable sanitariamente
+5;Antioquia;5036;Angelópolis;2,022;78.7;Alto riesgo
+5;Antioquia;5036;Angelópolis;2,023;65.8;Alto riesgo
+5;Antioquia;5038;Angostura;2,021;29.9;Riesgo medio
+5;Antioquia;5038;Angostura;2,022;27.7;Riesgo medio
+5;Antioquia;5038;Angostura;2,023;26.4;Riesgo medio
+5;Antioquia;5040;Anorí;2,021;0.0;Sin riesgo
+5;Antioquia;5040;Anorí;2,022;0.0;Sin riesgo
+5;Antioquia;5040;Anorí;2,023;0.8;Sin riesgo
+5;Antioquia;5042;Santa Fé de Antioquia;2,021;96.4;Inviable sanitariamente
+5;Antioquia;5042;Santa Fé de Antioquia;2,023;12.9;Bajo riesgo
+5;Antioquia;5044;Anzá;2,022;87.3;Inviable sanitariamente
+5;Antioquia;5044;Anzá;2,023;90.3;Inviable sanitariamente
+5;Antioquia;5045;Apartadó;2,021;8.6;Bajo riesgo
+5;Antioquia;5045;Apartadó;2,022;11.2;Bajo riesgo
+5;Antioquia;5045;Apartadó;2,023;0.0;Sin riesgo
+5;Antioquia;5055;Argelia;2,021;2.4;Sin riesgo
+5;Antioquia;5055;Argelia;2,022;1.6;Sin riesgo
+5;Antioquia;5055;Argelia;2,023;0.0;Sin riesgo
+5;Antioquia;5079;Barbosa;2,021;54.4;Alto riesgo
+5;Antioquia;5079;Barbosa;2,022;39.9;Alto riesgo
+5;Antioquia;5079;Barbosa;2,023;50.8;Alto riesgo
+5;Antioquia;5086;Belmira;2,021;54.1;Alto riesgo
+5;Antioquia;5086;Belmira;2,022;24.0;Riesgo medio
+5;Antioquia;5086;Belmira;2,023;33.3;Riesgo medio
+5;Antioquia;5091;Betania;2,021;14.1;Riesgo medio
+5;Antioquia;5091;Betania;2,022;12.5;Bajo riesgo
+5;Antioquia;5091;Betania;2,023;10.8;Bajo riesgo
+5;Antioquia;5093;Betulia;2,022;13.1;Bajo riesgo
+5;Antioquia;5093;Betulia;2,023;17.9;Riesgo medio
+5;Antioquia;5101;Ciudad Bolívar;2,021;5.3;Bajo riesgo
+5;Antioquia;5101;Ciudad Bolívar;2,022;18.6;Riesgo medio
+5;Antioquia;5101;Ciudad Bolívar;2,023;22.0;Riesgo medio
+5;Antioquia;5113;Buriticá;2,021;78.9;Alto riesgo
+5;Antioquia;5120;Cáceres;2,021;97.4;Inviable sanitariamente
+5;Antioquia;5120;Cáceres;2,022;97.4;Inviable sanitariamente
+5;Antioquia;5120;Cáceres;2,023;70.8;Alto riesgo
+5;Antioquia;5125;Caicedo;2,021;100.0;Inviable sanitariamente
+5;Antioquia;5125;Caicedo;2,022;68.8;Alto riesgo
+5;Antioquia;5125;Caicedo;2,023;68.8;Alto riesgo
+5;Antioquia;5129;Caldas;2,021;11.0;Bajo riesgo
+5;Antioquia;5129;Caldas;2,022;6.5;Bajo riesgo
+5;Antioquia;5129;Caldas;2,023;1.6;Sin riesgo
+5;Antioquia;5145;Caramanta;2,022;86.2;Inviable sanitariamente
+5;Antioquia;5145;Caramanta;2,023;97.0;Inviable sanitariamente
+5;Antioquia;5148;El Carmen de Viboral;2,021;5.5;Bajo riesgo
+5;Antioquia;5148;El Carmen de Viboral;2,022;8.7;Bajo riesgo
+5;Antioquia;5148;El Carmen de Viboral;2,023;5.9;Bajo riesgo
+5;Antioquia;5197;Cocorná;2,021;55.0;Alto riesgo
+5;Antioquia;5197;Cocorná;2,022;48.0;Alto riesgo
+5;Antioquia;5197;Cocorná;2,023;12.8;Bajo riesgo
+5;Antioquia;5209;Concordia;2,021;96.4;Inviable sanitariamente
+5;Antioquia;5209;Concordia;2,022;70.8;Alto riesgo
+5;Antioquia;5212;Copacabana;2,021;6.5;Bajo riesgo
+5;Antioquia;5212;Copacabana;2,022;22.0;Riesgo medio
+5;Antioquia;5212;Copacabana;2,023;14.4;Riesgo medio
+5;Antioquia;5237;Donmatías;2,021;100.0;Inviable sanitariamente
+5;Antioquia;5237;Donmatías;2,022;100.0;Inviable sanitariamente
+5;Antioquia;5237;Donmatías;2,023;98.2;Inviable sanitariamente
+5;Antioquia;5240;Ebéjico;2,021;79.2;Alto riesgo
+5;Antioquia;5240;Ebéjico;2,022;80.3;Inviable sanitariamente
+5;Antioquia;5240;Ebéjico;2,023;49.5;Alto riesgo
+5;Antioquia;5250;El Bagre;2,021;9.0;Bajo riesgo
+5;Antioquia;5250;El Bagre;2,023;99.0;Inviable sanitariamente
+5;Antioquia;5264;Entrerríos;2,021;14.8;Riesgo medio
+5;Antioquia;5264;Entrerríos;2,022;11.3;Bajo riesgo
+5;Antioquia;5264;Entrerríos;2,023;21.9;Riesgo medio
+5;Antioquia;5266;Envigado;2,021;8.4;Bajo riesgo
+5;Antioquia;5266;Envigado;2,022;7.8;Bajo riesgo
+5;Antioquia;5266;Envigado;2,023;6.0;Bajo riesgo
+5;Antioquia;5282;Fredonia;2,021;0.0;Sin riesgo
+5;Antioquia;5282;Fredonia;2,022;64.0;Alto riesgo
+5;Antioquia;5282;Fredonia;2,023;0.0;Sin riesgo
+5;Antioquia;5284;Frontino;2,023;100.0;Inviable sanitariamente
+5;Antioquia;5306;Giraldo;2,021;25.0;Riesgo medio
+5;Antioquia;5306;Giraldo;2,023;48.7;Alto riesgo
+5;Antioquia;5308;Girardota;2,021;23.2;Riesgo medio
+5;Antioquia;5308;Girardota;2,022;26.8;Riesgo medio
+5;Antioquia;5308;Girardota;2,023;21.3;Riesgo medio
+5;Antioquia;5310;Gómez Plata;2,021;0.0;Sin riesgo
+5;Antioquia;5310;Gómez Plata;2,022;0.0;Sin riesgo
+5;Antioquia;5310;Gómez Plata;2,023;0.0;Sin riesgo
+5;Antioquia;5315;Guadalupe;2,022;0.0;Sin riesgo
+5;Antioquia;5315;Guadalupe;2,023;0.0;Sin riesgo
+5;Antioquia;5318;Guarne;2,021;5.1;Bajo riesgo
+5;Antioquia;5318;Guarne;2,022;4.2;Sin riesgo
+5;Antioquia;5318;Guarne;2,023;9.9;Bajo riesgo
+5;Antioquia;5321;Guatapé;2,022;0.0;Sin riesgo
+5;Antioquia;5321;Guatapé;2,023;28.9;Riesgo medio
+5;Antioquia;5347;Heliconia;2,021;64.9;Alto riesgo
+5;Antioquia;5347;Heliconia;2,022;79.7;Alto riesgo
+5;Antioquia;5347;Heliconia;2,023;64.9;Alto riesgo
+5;Antioquia;5353;Hispania;2,021;38.3;Alto riesgo
+5;Antioquia;5353;Hispania;2,022;24.6;Riesgo medio
+5;Antioquia;5353;Hispania;2,023;29.8;Riesgo medio
+5;Antioquia;5360;Itagüí;2,022;22.5;Riesgo medio
+5;Antioquia;5360;Itagüí;2,023;21.4;Riesgo medio
+5;Antioquia;5364;Jardín;2,021;0.0;Sin riesgo
+5;Antioquia;5364;Jardín;2,022;13.2;Bajo riesgo
+5;Antioquia;5364;Jardín;2,023;4.5;Sin riesgo
+5;Antioquia;5368;Jericó;2,021;26.6;Riesgo medio
+5;Antioquia;5368;Jericó;2,022;38.5;Alto riesgo
+5;Antioquia;5368;Jericó;2,023;49.0;Alto riesgo
+5;Antioquia;5376;La Ceja;2,021;46.5;Alto riesgo
+5;Antioquia;5376;La Ceja;2,022;59.1;Alto riesgo
+5;Antioquia;5376;La Ceja;2,023;21.1;Riesgo medio
+5;Antioquia;5380;La Estrella;2,021;0.0;Sin riesgo
+5;Antioquia;5380;La Estrella;2,022;12.5;Bajo riesgo
+5;Antioquia;5380;La Estrella;2,023;2.5;Sin riesgo
+5;Antioquia;5400;La Unión;2,022;31.8;Riesgo medio
+5;Antioquia;5400;La Unión;2,023;21.1;Riesgo medio
+5;Antioquia;5411;Liborina;2,021;88.0;Inviable sanitariamente
+5;Antioquia;5411;Liborina;2,022;50.1;Alto riesgo
+5;Antioquia;5411;Liborina;2,023;80.0;Alto riesgo
+5;Antioquia;5425;Maceo;2,021;66.3;Alto riesgo
+5;Antioquia;5425;Maceo;2,022;49.4;Alto riesgo
+5;Antioquia;5425;Maceo;2,023;42.9;Alto riesgo
+5;Antioquia;5440;Marinilla;2,021;7.7;Bajo riesgo
+5;Antioquia;5440;Marinilla;2,022;6.3;Bajo riesgo
+5;Antioquia;5440;Marinilla;2,023;0.5;Sin riesgo
+5;Antioquia;5490;Necoclí;2,021;0.0;Sin riesgo
+5;Antioquia;5490;Necoclí;2,022;0.0;Sin riesgo
+5;Antioquia;5501;Olaya;2,022;0.0;Sin riesgo
+5;Antioquia;5541;Peñol;2,021;13.6;Bajo riesgo
+5;Antioquia;5541;Peñol;2,022;13.3;Bajo riesgo
+5;Antioquia;5541;Peñol;2,023;12.0;Bajo riesgo
+5;Antioquia;5585;Puerto Nare;2,021;3.2;Sin riesgo
+5;Antioquia;5585;Puerto Nare;2,023;0.0;Sin riesgo
+5;Antioquia;5591;Puerto Triunfo;2,021;7.5;Bajo riesgo
+5;Antioquia;5591;Puerto Triunfo;2,022;6.0;Bajo riesgo
+5;Antioquia;5591;Puerto Triunfo;2,023;24.0;Riesgo medio
+5;Antioquia;5604;Remedios;2,021;2.1;Sin riesgo
+5;Antioquia;5604;Remedios;2,022;0.0;Sin riesgo
+5;Antioquia;5604;Remedios;2,023;1.0;Sin riesgo
+5;Antioquia;5607;Retiro;2,021;14.8;Riesgo medio
+5;Antioquia;5607;Retiro;2,022;20.5;Riesgo medio
+5;Antioquia;5607;Retiro;2,023;7.0;Bajo riesgo
+5;Antioquia;5615;Rionegro;2,021;7.0;Bajo riesgo
+5;Antioquia;5615;Rionegro;2,022;7.9;Bajo riesgo
+5;Antioquia;5615;Rionegro;2,023;3.4;Sin riesgo
+5;Antioquia;5631;Sabaneta;2,021;14.9;Riesgo medio
+5;Antioquia;5631;Sabaneta;2,022;1.3;Sin riesgo
+5;Antioquia;5631;Sabaneta;2,023;3.8;Sin riesgo
+5;Antioquia;5642;Salgar;2,023;31.6;Riesgo medio
+5;Antioquia;5652;San Francisco;2,022;0.0;Sin riesgo
+5;Antioquia;5652;San Francisco;2,023;0.0;Sin riesgo
+5;Antioquia;5656;San Jerónimo;2,021;35.5;Alto riesgo
+5;Antioquia;5656;San Jerónimo;2,022;38.8;Alto riesgo
+5;Antioquia;5656;San Jerónimo;2,023;39.8;Alto riesgo
+5;Antioquia;5660;San Luis;2,021;53.1;Alto riesgo
+5;Antioquia;5660;San Luis;2,022;53.1;Alto riesgo
+5;Antioquia;5660;San Luis;2,023;42.0;Alto riesgo
+5;Antioquia;5664;San Pedro de Los Milagros;2,021;25.7;Riesgo medio
+5;Antioquia;5664;San Pedro de Los Milagros;2,022;31.8;Riesgo medio
+5;Antioquia;5664;San Pedro de Los Milagros;2,023;12.0;Bajo riesgo
+5;Antioquia;5670;San Roque;2,021;92.1;Inviable sanitariamente
+5;Antioquia;5670;San Roque;2,022;96.4;Inviable sanitariamente
+5;Antioquia;5674;San Vicente Ferrer;2,021;0.0;Sin riesgo
+5;Antioquia;5674;San Vicente Ferrer;2,022;7.6;Bajo riesgo
+5;Antioquia;5674;San Vicente Ferrer;2,023;16.4;Riesgo medio
+5;Antioquia;5679;Santa Bárbara;2,021;8.3;Bajo riesgo
+5;Antioquia;5679;Santa Bárbara;2,022;9.1;Bajo riesgo
+5;Antioquia;5679;Santa Bárbara;2,023;14.7;Riesgo medio
+5;Antioquia;5686;Santa Rosa de Osos;2,021;23.6;Riesgo medio
+5;Antioquia;5686;Santa Rosa de Osos;2,022;0.0;Sin riesgo
+5;Antioquia;5686;Santa Rosa de Osos;2,023;12.6;Bajo riesgo
+5;Antioquia;5756;Sonsón;2,021;14.6;Riesgo medio
+5;Antioquia;5756;Sonsón;2,022;100.0;Inviable sanitariamente
+5;Antioquia;5756;Sonsón;2,023;70.8;Alto riesgo
+5;Antioquia;5761;Sopetrán;2,021;6.3;Bajo riesgo
+5;Antioquia;5761;Sopetrán;2,022;3.0;Sin riesgo
+5;Antioquia;5761;Sopetrán;2,023;0.0;Sin riesgo
+5;Antioquia;5789;Támesis;2,021;48.2;Alto riesgo
+5;Antioquia;5789;Támesis;2,022;54.0;Alto riesgo
+5;Antioquia;5789;Támesis;2,023;57.1;Alto riesgo
+5;Antioquia;5790;Tarazá;2,021;1.8;Sin riesgo
+5;Antioquia;5790;Tarazá;2,022;0.0;Sin riesgo
+5;Antioquia;5790;Tarazá;2,023;0.0;Sin riesgo
+5;Antioquia;5792;Tarso;2,022;0.0;Sin riesgo
+5;Antioquia;5792;Tarso;2,023;0.0;Sin riesgo
+5;Antioquia;5809;Titiribí;2,021;78.0;Alto riesgo
+5;Antioquia;5809;Titiribí;2,022;85.1;Inviable sanitariamente
+5;Antioquia;5809;Titiribí;2,023;96.8;Inviable sanitariamente
+5;Antioquia;5837;Turbo;2,021;1.6;Sin riesgo
+5;Antioquia;5837;Turbo;2,022;0.0;Sin riesgo
+5;Antioquia;5837;Turbo;2,023;5.3;Bajo riesgo
+5;Antioquia;5847;Urrao;2,022;96.4;Inviable sanitariamente
+5;Antioquia;5847;Urrao;2,023;85.4;Inviable sanitariamente
+5;Antioquia;5858;Vegachí;2,021;48.2;Alto riesgo
+5;Antioquia;5858;Vegachí;2,022;18.8;Riesgo medio
+5;Antioquia;5858;Vegachí;2,023;27.3;Riesgo medio
+5;Antioquia;5861;Venecia;2,021;0.0;Sin riesgo
+5;Antioquia;5861;Venecia;2,022;6.0;Bajo riesgo
+5;Antioquia;5861;Venecia;2,023;0.0;Sin riesgo
+5;Antioquia;5887;Yarumal;2,021;14.6;Riesgo medio
+5;Antioquia;5887;Yarumal;2,022;14.3;Riesgo medio
+5;Antioquia;5887;Yarumal;2,023;22.3;Riesgo medio
+5;Antioquia;5893;Yondó;2,021;82.6;Inviable sanitariamente
+5;Antioquia;5893;Yondó;2,022;97.4;Inviable sanitariamente
+5;Antioquia;5893;Yondó;2,023;88.0;Inviable sanitariamente
+8;Atlántico;8001;Barranquilla;2,021;0.0;Sin riesgo
+8;Atlántico;8001;Barranquilla;2,022;0.0;Sin riesgo
+8;Atlántico;8001;Barranquilla;2,023;0.0;Sin riesgo
+8;Atlántico;8078;Baranoa;2,021;35.1;Alto riesgo
+8;Atlántico;8078;Baranoa;2,022;38.6;Alto riesgo
+8;Atlántico;8078;Baranoa;2,023;38.3;Alto riesgo
+8;Atlántico;8137;Campo de La Cruz;2,021;4.1;Sin riesgo
+8;Atlántico;8137;Campo de La Cruz;2,022;1.8;Sin riesgo
+8;Atlántico;8137;Campo de La Cruz;2,023;0.0;Sin riesgo
+8;Atlántico;8141;Candelaria;2,021;0.8;Sin riesgo
+8;Atlántico;8141;Candelaria;2,022;0.0;Sin riesgo
+8;Atlántico;8141;Candelaria;2,023;0.0;Sin riesgo
+8;Atlántico;8296;Galapa;2,021;1.2;Sin riesgo
+8;Atlántico;8296;Galapa;2,022;0.0;Sin riesgo
+8;Atlántico;8296;Galapa;2,023;0.0;Sin riesgo
+8;Atlántico;8372;Juan de Acosta;2,021;0.0;Sin riesgo
+8;Atlántico;8372;Juan de Acosta;2,022;0.0;Sin riesgo
+8;Atlántico;8372;Juan de Acosta;2,023;0.0;Sin riesgo
+8;Atlántico;8421;Luruaco;2,021;11.5;Bajo riesgo
+8;Atlántico;8421;Luruaco;2,022;7.2;Bajo riesgo
+8;Atlántico;8421;Luruaco;2,023;5.7;Bajo riesgo
+8;Atlántico;8433;Malambo;2,021;35.2;Alto riesgo
+8;Atlántico;8433;Malambo;2,022;40.4;Alto riesgo
+8;Atlántico;8433;Malambo;2,023;24.5;Riesgo medio
+8;Atlántico;8436;Manatí;2,021;0.0;Sin riesgo
+8;Atlántico;8436;Manatí;2,022;0.0;Sin riesgo
+8;Atlántico;8436;Manatí;2,023;0.0;Sin riesgo
+8;Atlántico;8549;Piojó;2,021;2.2;Sin riesgo
+8;Atlántico;8549;Piojó;2,022;0.0;Sin riesgo
+8;Atlántico;8549;Piojó;2,023;0.0;Sin riesgo
+8;Atlántico;8558;Polonuevo;2,021;0.0;Sin riesgo
+8;Atlántico;8558;Polonuevo;2,022;0.0;Sin riesgo
+8;Atlántico;8558;Polonuevo;2,023;0.0;Sin riesgo
+8;Atlántico;8560;Ponedera;2,021;8.6;Bajo riesgo
+8;Atlántico;8560;Ponedera;2,022;4.0;Sin riesgo
+8;Atlántico;8560;Ponedera;2,023;13.2;Bajo riesgo
+8;Atlántico;8573;Puerto Colombia;2,021;0.0;Sin riesgo
+8;Atlántico;8573;Puerto Colombia;2,022;0.0;Sin riesgo
+8;Atlántico;8573;Puerto Colombia;2,023;0.0;Sin riesgo
+8;Atlántico;8606;Repelón;2,021;20.8;Riesgo medio
+8;Atlántico;8606;Repelón;2,022;19.6;Riesgo medio
+8;Atlántico;8606;Repelón;2,023;28.4;Riesgo medio
+8;Atlántico;8638;Sabanalarga;2,021;12.6;Bajo riesgo
+8;Atlántico;8638;Sabanalarga;2,022;16.9;Riesgo medio
+8;Atlántico;8638;Sabanalarga;2,023;12.8;Bajo riesgo
+8;Atlántico;8675;Santa Lucía;2,021;2.3;Sin riesgo
+8;Atlántico;8675;Santa Lucía;2,022;0.0;Sin riesgo
+8;Atlántico;8675;Santa Lucía;2,023;0.0;Sin riesgo
+8;Atlántico;8832;Tubará;2,021;9.9;Bajo riesgo
+8;Atlántico;8832;Tubará;2,022;9.6;Bajo riesgo
+8;Atlántico;8832;Tubará;2,023;9.4;Bajo riesgo
+11;Bogotá, D.C.;11001;Bogotá, D.C.;2,021;21.7;Riesgo medio
+11;Bogotá, D.C.;11001;Bogotá, D.C.;2,022;17.5;Riesgo medio
+11;Bogotá, D.C.;11001;Bogotá, D.C.;2,023;16.3;Riesgo medio
+13;Bolívar;13001;Cartagena de Indias;2,021;0.0;Sin riesgo
+13;Bolívar;13001;Cartagena de Indias;2,022;0.0;Sin riesgo
+13;Bolívar;13001;Cartagena de Indias;2,023;0.0;Sin riesgo
+13;Bolívar;13062;Arroyohondo;2,021;11.0;Bajo riesgo
+13;Bolívar;13062;Arroyohondo;2,022;33.3;Riesgo medio
+13;Bolívar;13062;Arroyohondo;2,023;6.3;Bajo riesgo
+13;Bolívar;13074;Barranco de Loba;2,021;20.0;Riesgo medio
+13;Bolívar;13074;Barranco de Loba;2,022;0.8;Sin riesgo
+13;Bolívar;13074;Barranco de Loba;2,023;0.0;Sin riesgo
+13;Bolívar;13248;El Guamo;2,023;0.0;Sin riesgo
+13;Bolívar;13433;Mahates;2,021;46.1;Alto riesgo
+13;Bolívar;13433;Mahates;2,022;27.8;Riesgo medio
+13;Bolívar;13433;Mahates;2,023;35.6;Alto riesgo
+13;Bolívar;13442;María La Baja;2,021;0.0;Sin riesgo
+13;Bolívar;13442;María La Baja;2,022;12.8;Bajo riesgo
+13;Bolívar;13442;María La Baja;2,023;25.0;Riesgo medio
+13;Bolívar;13458;Montecristo;2,021;100.0;Inviable sanitariamente
+13;Bolívar;13458;Montecristo;2,022;67.2;Alto riesgo
+13;Bolívar;13650;San Fernando;2,021;37.5;Alto riesgo
+13;Bolívar;13657;San Juan Nepomuceno;2,021;39.6;Alto riesgo
+13;Bolívar;13657;San Juan Nepomuceno;2,022;0.0;Sin riesgo
+13;Bolívar;13657;San Juan Nepomuceno;2,023;18.8;Riesgo medio
+13;Bolívar;13838;Turbana;2,021;12.0;Bajo riesgo
+13;Bolívar;13838;Turbana;2,022;10.4;Bajo riesgo
+13;Bolívar;13838;Turbana;2,023;14.4;Riesgo medio
+13;Bolívar;13873;Villanueva;2,021;0.0;Sin riesgo
+13;Bolívar;13873;Villanueva;2,022;7.7;Bajo riesgo
+13;Bolívar;13873;Villanueva;2,023;5.4;Bajo riesgo
+13;Bolívar;13894;Zambrano;2,022;18.8;Riesgo medio
+13;Bolívar;13894;Zambrano;2,023;45.8;Alto riesgo
+15;Boyacá;15001;Tunja;2,021;10.6;Bajo riesgo
+15;Boyacá;15001;Tunja;2,022;12.7;Bajo riesgo
+15;Boyacá;15001;Tunja;2,023;9.2;Bajo riesgo
+15;Boyacá;15022;Almeida;2,021;23.4;Riesgo medio
+15;Boyacá;15022;Almeida;2,022;2.8;Sin riesgo
+15;Boyacá;15022;Almeida;2,023;40.6;Alto riesgo
+15;Boyacá;15047;Aquitania;2,021;0.0;Sin riesgo
+15;Boyacá;15047;Aquitania;2,022;0.0;Sin riesgo
+15;Boyacá;15047;Aquitania;2,023;0.0;Sin riesgo
+15;Boyacá;15090;Berbeo;2,021;84.4;Inviable sanitariamente
+15;Boyacá;15090;Berbeo;2,022;76.0;Alto riesgo
+15;Boyacá;15090;Berbeo;2,023;80.0;Alto riesgo
+15;Boyacá;15092;Betéitiva;2,022;20.7;Riesgo medio
+15;Boyacá;15092;Betéitiva;2,023;0.0;Sin riesgo
+15;Boyacá;15106;Briceño;2,021;83.6;Inviable sanitariamente
+15;Boyacá;15106;Briceño;2,022;90.4;Inviable sanitariamente
+15;Boyacá;15106;Briceño;2,023;65.2;Alto riesgo
+15;Boyacá;15114;Busbanzá;2,021;1.9;Sin riesgo
+15;Boyacá;15114;Busbanzá;2,022;11.2;Bajo riesgo
+15;Boyacá;15114;Busbanzá;2,023;10.1;Bajo riesgo
+15;Boyacá;15131;Caldas;2,021;93.9;Inviable sanitariamente
+15;Boyacá;15131;Caldas;2,022;93.5;Inviable sanitariamente
+15;Boyacá;15131;Caldas;2,023;88.4;Inviable sanitariamente
+15;Boyacá;15135;Campohermoso;2,021;6.8;Bajo riesgo
+15;Boyacá;15135;Campohermoso;2,022;0.0;Sin riesgo
+15;Boyacá;15135;Campohermoso;2,023;13.4;Bajo riesgo
+15;Boyacá;15176;Chiquinquirá;2,023;0.0;Sin riesgo
+15;Boyacá;15183;Chita;2,021;35.5;Alto riesgo
+15;Boyacá;15183;Chita;2,022;19.8;Riesgo medio
+15;Boyacá;15183;Chita;2,023;15.8;Riesgo medio
+15;Boyacá;15185;Chitaraque;2,021;50.4;Alto riesgo
+15;Boyacá;15185;Chitaraque;2,022;5.4;Bajo riesgo
+15;Boyacá;15185;Chitaraque;2,023;8.6;Bajo riesgo
+15;Boyacá;15187;Chivatá;2,021;1.4;Sin riesgo
+15;Boyacá;15187;Chivatá;2,022;3.5;Sin riesgo
+15;Boyacá;15187;Chivatá;2,023;1.7;Sin riesgo
+15;Boyacá;15212;Coper;2,021;71.7;Alto riesgo
+15;Boyacá;15212;Coper;2,022;28.4;Riesgo medio
+15;Boyacá;15212;Coper;2,023;41.1;Alto riesgo
+15;Boyacá;15215;Corrales;2,021;37.9;Alto riesgo
+15;Boyacá;15215;Corrales;2,022;26.8;Riesgo medio
+15;Boyacá;15215;Corrales;2,023;16.3;Riesgo medio
+15;Boyacá;15223;Cubará;2,021;73.3;Alto riesgo
+15;Boyacá;15223;Cubará;2,022;64.7;Alto riesgo
+15;Boyacá;15223;Cubará;2,023;63.6;Alto riesgo
+15;Boyacá;15224;Cucaita;2,021;26.4;Riesgo medio
+15;Boyacá;15224;Cucaita;2,022;90.2;Inviable sanitariamente
+15;Boyacá;15224;Cucaita;2,023;80.2;Inviable sanitariamente
+15;Boyacá;15226;Cuítiva;2,021;5.0;Sin riesgo
+15;Boyacá;15226;Cuítiva;2,022;3.6;Sin riesgo
+15;Boyacá;15226;Cuítiva;2,023;1.2;Sin riesgo
+15;Boyacá;15232;Chíquiza;2,021;5.7;Bajo riesgo
+15;Boyacá;15232;Chíquiza;2,022;5.3;Bajo riesgo
+15;Boyacá;15232;Chíquiza;2,023;0.7;Sin riesgo
+15;Boyacá;15238;Duitama;2,021;3.1;Sin riesgo
+15;Boyacá;15238;Duitama;2,022;5.4;Bajo riesgo
+15;Boyacá;15238;Duitama;2,023;1.8;Sin riesgo
+15;Boyacá;15244;El Cocuy;2,021;0.6;Sin riesgo
+15;Boyacá;15244;El Cocuy;2,022;1.8;Sin riesgo
+15;Boyacá;15244;El Cocuy;2,023;0.6;Sin riesgo
+15;Boyacá;15276;Floresta;2,021;20.9;Riesgo medio
+15;Boyacá;15276;Floresta;2,022;21.7;Riesgo medio
+15;Boyacá;15276;Floresta;2,023;36.7;Alto riesgo
+15;Boyacá;15325;Guayatá;2,021;13.4;Bajo riesgo
+15;Boyacá;15325;Guayatá;2,022;28.1;Riesgo medio
+15;Boyacá;15325;Guayatá;2,023;17.4;Riesgo medio
+15;Boyacá;15368;Jericó;2,021;93.3;Inviable sanitariamente
+15;Boyacá;15368;Jericó;2,023;54.3;Alto riesgo
+15;Boyacá;15377;Labranzagrande;2,021;68.2;Alto riesgo
+15;Boyacá;15377;Labranzagrande;2,022;67.5;Alto riesgo
+15;Boyacá;15377;Labranzagrande;2,023;61.1;Alto riesgo
+15;Boyacá;15401;La Victoria;2,021;0.0;Sin riesgo
+15;Boyacá;15401;La Victoria;2,022;1.8;Sin riesgo
+15;Boyacá;15401;La Victoria;2,023;5.9;Bajo riesgo
+15;Boyacá;15407;Villa de Leyva;2,021;6.8;Bajo riesgo
+15;Boyacá;15407;Villa de Leyva;2,022;10.3;Bajo riesgo
+15;Boyacá;15407;Villa de Leyva;2,023;20.9;Riesgo medio
+15;Boyacá;15442;Maripí;2,021;12.5;Bajo riesgo
+15;Boyacá;15442;Maripí;2,022;15.2;Riesgo medio
+15;Boyacá;15442;Maripí;2,023;0.8;Sin riesgo
+15;Boyacá;15476;Motavita;2,021;23.4;Riesgo medio
+15;Boyacá;15476;Motavita;2,022;20.3;Riesgo medio
+15;Boyacá;15476;Motavita;2,023;8.7;Bajo riesgo
+15;Boyacá;15480;Muzo;2,021;77.5;Alto riesgo
+15;Boyacá;15480;Muzo;2,022;60.7;Alto riesgo
+15;Boyacá;15480;Muzo;2,023;63.4;Alto riesgo
+15;Boyacá;15491;Nobsa;2,021;1.3;Sin riesgo
+15;Boyacá;15491;Nobsa;2,022;1.6;Sin riesgo
+15;Boyacá;15491;Nobsa;2,023;3.3;Sin riesgo
+15;Boyacá;15500;Oicatá;2,021;5.1;Bajo riesgo
+15;Boyacá;15500;Oicatá;2,022;6.0;Bajo riesgo
+15;Boyacá;15500;Oicatá;2,023;3.5;Sin riesgo
+15;Boyacá;15511;Pachavita;2,021;75.7;Alto riesgo
+15;Boyacá;15511;Pachavita;2,022;87.4;Inviable sanitariamente
+15;Boyacá;15511;Pachavita;2,023;92.9;Inviable sanitariamente
+15;Boyacá;15516;Paipa;2,021;5.9;Bajo riesgo
+15;Boyacá;15516;Paipa;2,022;16.5;Riesgo medio
+15;Boyacá;15516;Paipa;2,023;4.5;Sin riesgo
+15;Boyacá;15518;Pajarito;2,021;2.7;Sin riesgo
+15;Boyacá;15518;Pajarito;2,022;3.5;Sin riesgo
+15;Boyacá;15518;Pajarito;2,023;0.0;Sin riesgo
+15;Boyacá;15531;Pauna;2,021;71.5;Alto riesgo
+15;Boyacá;15531;Pauna;2,022;78.1;Alto riesgo
+15;Boyacá;15531;Pauna;2,023;78.3;Alto riesgo
+15;Boyacá;15533;Paya;2,021;2.4;Sin riesgo
+15;Boyacá;15533;Paya;2,022;7.5;Bajo riesgo
+15;Boyacá;15533;Paya;2,023;1.5;Sin riesgo
+15;Boyacá;15550;Pisba;2,021;0.0;Sin riesgo
+15;Boyacá;15550;Pisba;2,022;2.3;Sin riesgo
+15;Boyacá;15550;Pisba;2,023;2.7;Sin riesgo
+15;Boyacá;15580;Quípama;2,021;13.6;Bajo riesgo
+15;Boyacá;15580;Quípama;2,022;8.6;Bajo riesgo
+15;Boyacá;15580;Quípama;2,023;18.5;Riesgo medio
+15;Boyacá;15599;Ramiriquí;2,021;1.2;Sin riesgo
+15;Boyacá;15599;Ramiriquí;2,022;0.6;Sin riesgo
+15;Boyacá;15599;Ramiriquí;2,023;0.0;Sin riesgo
+15;Boyacá;15660;San Eduardo;2,021;77.9;Alto riesgo
+15;Boyacá;15660;San Eduardo;2,022;78.9;Alto riesgo
+15;Boyacá;15660;San Eduardo;2,023;79.0;Alto riesgo
+15;Boyacá;15681;San Pablo de Borbur;2,021;0.0;Sin riesgo
+15;Boyacá;15681;San Pablo de Borbur;2,022;6.2;Bajo riesgo
+15;Boyacá;15681;San Pablo de Borbur;2,023;20.9;Riesgo medio
+15;Boyacá;15690;Santa María;2,021;4.4;Sin riesgo
+15;Boyacá;15690;Santa María;2,022;6.0;Bajo riesgo
+15;Boyacá;15690;Santa María;2,023;6.4;Bajo riesgo
+15;Boyacá;15693;Santa Rosa de Viterbo;2,021;9.1;Bajo riesgo
+15;Boyacá;15693;Santa Rosa de Viterbo;2,022;6.0;Bajo riesgo
+15;Boyacá;15693;Santa Rosa de Viterbo;2,023;25.9;Riesgo medio
+15;Boyacá;15723;Sativasur;2,021;2.4;Sin riesgo
+15;Boyacá;15723;Sativasur;2,022;12.1;Bajo riesgo
+15;Boyacá;15723;Sativasur;2,023;4.9;Sin riesgo
+15;Boyacá;15740;Siachoque;2,021;66.2;Alto riesgo
+15;Boyacá;15740;Siachoque;2,022;22.3;Riesgo medio
+15;Boyacá;15740;Siachoque;2,023;94.3;Inviable sanitariamente
+15;Boyacá;15759;Sogamoso;2,021;4.3;Sin riesgo
+15;Boyacá;15759;Sogamoso;2,022;0.0;Sin riesgo
+15;Boyacá;15759;Sogamoso;2,023;0.2;Sin riesgo
+15;Boyacá;15761;Somondoco;2,021;79.0;Alto riesgo
+15;Boyacá;15761;Somondoco;2,022;63.9;Alto riesgo
+15;Boyacá;15761;Somondoco;2,023;95.7;Inviable sanitariamente
+15;Boyacá;15762;Sora;2,021;20.9;Riesgo medio
+15;Boyacá;15762;Sora;2,022;45.8;Alto riesgo
+15;Boyacá;15762;Sora;2,023;17.4;Riesgo medio
+15;Boyacá;15764;Soracá;2,021;32.2;Riesgo medio
+15;Boyacá;15764;Soracá;2,022;13.7;Bajo riesgo
+15;Boyacá;15764;Soracá;2,023;4.3;Sin riesgo
+15;Boyacá;15776;Sutamarchán;2,021;94.7;Inviable sanitariamente
+15;Boyacá;15776;Sutamarchán;2,022;93.9;Inviable sanitariamente
+15;Boyacá;15776;Sutamarchán;2,023;88.9;Inviable sanitariamente
+15;Boyacá;15778;Sutatenza;2,021;20.1;Riesgo medio
+15;Boyacá;15778;Sutatenza;2,022;51.8;Alto riesgo
+15;Boyacá;15778;Sutatenza;2,023;31.4;Riesgo medio
+15;Boyacá;15804;Tibaná;2,021;0.0;Sin riesgo
+15;Boyacá;15810;Tipacoque;2,021;66.8;Alto riesgo
+15;Boyacá;15810;Tipacoque;2,022;56.6;Alto riesgo
+15;Boyacá;15810;Tipacoque;2,023;78.7;Alto riesgo
+15;Boyacá;15820;Tópaga;2,021;42.3;Alto riesgo
+15;Boyacá;15820;Tópaga;2,022;36.2;Alto riesgo
+15;Boyacá;15820;Tópaga;2,023;21.9;Riesgo medio
+15;Boyacá;15822;Tota;2,021;12.8;Bajo riesgo
+15;Boyacá;15822;Tota;2,022;12.1;Bajo riesgo
+15;Boyacá;15822;Tota;2,023;42.6;Alto riesgo
+15;Boyacá;15839;Tutazá;2,021;35.5;Alto riesgo
+15;Boyacá;15839;Tutazá;2,022;24.2;Riesgo medio
+15;Boyacá;15839;Tutazá;2,023;31.6;Riesgo medio
+15;Boyacá;15879;Viracachá;2,021;15.9;Riesgo medio
+15;Boyacá;15879;Viracachá;2,022;35.4;Alto riesgo
+15;Boyacá;15879;Viracachá;2,023;25.0;Riesgo medio
+17;Caldas;17001;Manizales;2,021;13.3;Bajo riesgo
+17;Caldas;17001;Manizales;2,022;13.4;Bajo riesgo
+17;Caldas;17001;Manizales;2,023;7.5;Bajo riesgo
+17;Caldas;17042;Anserma;2,021;86.1;Inviable sanitariamente
+17;Caldas;17042;Anserma;2,022;63.8;Alto riesgo
+17;Caldas;17042;Anserma;2,023;52.5;Alto riesgo
+17;Caldas;17050;Aranzazu;2,021;85.8;Inviable sanitariamente
+17;Caldas;17050;Aranzazu;2,022;71.0;Alto riesgo
+17;Caldas;17050;Aranzazu;2,023;97.6;Inviable sanitariamente
+17;Caldas;17174;Chinchiná;2,021;67.2;Alto riesgo
+17;Caldas;17174;Chinchiná;2,022;77.4;Alto riesgo
+17;Caldas;17174;Chinchiná;2,023;79.5;Alto riesgo
+17;Caldas;17272;Filadelfia;2,021;60.2;Alto riesgo
+17;Caldas;17272;Filadelfia;2,022;38.7;Alto riesgo
+17;Caldas;17272;Filadelfia;2,023;71.0;Alto riesgo
+17;Caldas;17380;La Dorada;2,021;11.1;Bajo riesgo
+17;Caldas;17380;La Dorada;2,022;10.0;Bajo riesgo
+17;Caldas;17380;La Dorada;2,023;9.2;Bajo riesgo
+17;Caldas;17388;La Merced;2,021;63.4;Alto riesgo
+17;Caldas;17388;La Merced;2,022;86.5;Inviable sanitariamente
+17;Caldas;17388;La Merced;2,023;59.5;Alto riesgo
+17;Caldas;17433;Manzanares;2,021;71.0;Alto riesgo
+17;Caldas;17433;Manzanares;2,022;71.0;Alto riesgo
+17;Caldas;17433;Manzanares;2,023;59.5;Alto riesgo
+17;Caldas;17486;Neira;2,021;25.0;Riesgo medio
+17;Caldas;17486;Neira;2,022;46.5;Alto riesgo
+17;Caldas;17486;Neira;2,023;15.7;Riesgo medio
+17;Caldas;17495;Norcasia;2,021;71.0;Alto riesgo
+17;Caldas;17495;Norcasia;2,022;71.0;Alto riesgo
+17;Caldas;17495;Norcasia;2,023;59.5;Alto riesgo
+17;Caldas;17513;Pácora;2,021;93.5;Inviable sanitariamente
+17;Caldas;17513;Pácora;2,022;89.4;Inviable sanitariamente
+17;Caldas;17513;Pácora;2,023;93.0;Inviable sanitariamente
+17;Caldas;17524;Palestina;2,021;83.2;Inviable sanitariamente
+17;Caldas;17524;Palestina;2,022;57.3;Alto riesgo
+17;Caldas;17524;Palestina;2,023;51.4;Alto riesgo
+17;Caldas;17541;Pensilvania;2,021;74.7;Alto riesgo
+17;Caldas;17541;Pensilvania;2,022;67.1;Alto riesgo
+17;Caldas;17541;Pensilvania;2,023;64.0;Alto riesgo
+17;Caldas;17614;Riosucio;2,021;72.6;Alto riesgo
+17;Caldas;17614;Riosucio;2,022;69.1;Alto riesgo
+17;Caldas;17614;Riosucio;2,023;68.6;Alto riesgo
+17;Caldas;17616;Risaralda;2,021;67.0;Alto riesgo
+17;Caldas;17616;Risaralda;2,022;58.7;Alto riesgo
+17;Caldas;17616;Risaralda;2,023;70.8;Alto riesgo
+17;Caldas;17653;Salamina;2,021;67.1;Alto riesgo
+17;Caldas;17653;Salamina;2,022;71.1;Alto riesgo
+17;Caldas;17653;Salamina;2,023;72.9;Alto riesgo
+17;Caldas;17662;Samaná;2,021;74.2;Alto riesgo
+17;Caldas;17662;Samaná;2,022;65.8;Alto riesgo
+17;Caldas;17662;Samaná;2,023;69.3;Alto riesgo
+17;Caldas;17665;San José;2,021;77.8;Alto riesgo
+17;Caldas;17665;San José;2,022;73.7;Alto riesgo
+17;Caldas;17665;San José;2,023;76.1;Alto riesgo
+17;Caldas;17777;Supía;2,021;87.0;Inviable sanitariamente
+17;Caldas;17777;Supía;2,022;87.7;Inviable sanitariamente
+17;Caldas;17777;Supía;2,023;85.4;Inviable sanitariamente
+17;Caldas;17867;Victoria;2,021;60.1;Alto riesgo
+17;Caldas;17867;Victoria;2,022;51.9;Alto riesgo
+17;Caldas;17867;Victoria;2,023;44.5;Alto riesgo
+17;Caldas;17873;Villamaría;2,021;81.2;Inviable sanitariamente
+17;Caldas;17873;Villamaría;2,022;75.4;Alto riesgo
+17;Caldas;17873;Villamaría;2,023;68.4;Alto riesgo
+17;Caldas;17877;Viterbo;2,021;85.8;Inviable sanitariamente
+17;Caldas;17877;Viterbo;2,022;88.9;Inviable sanitariamente
+17;Caldas;17877;Viterbo;2,023;79.4;Alto riesgo
+18;Caquetá;18150;Cartagena del Chairá;2,021;44.2;Alto riesgo
+18;Caquetá;18150;Cartagena del Chairá;2,022;36.8;Alto riesgo
+18;Caquetá;18247;El Doncello;2,021;0.0;Sin riesgo
+18;Caquetá;18247;El Doncello;2,022;6.0;Bajo riesgo
+18;Caquetá;18256;El Paujíl;2,021;7.0;Bajo riesgo
+18;Caquetá;18256;El Paujíl;2,022;3.2;Sin riesgo
+18;Caquetá;18460;Milán;2,021;9.7;Bajo riesgo
+18;Caquetá;18460;Milán;2,022;0.0;Sin riesgo
+18;Caquetá;18592;Puerto Rico;2,021;9.7;Bajo riesgo
+18;Caquetá;18592;Puerto Rico;2,022;23.7;Riesgo medio
+18;Caquetá;18785;Solita;2,021;42.0;Alto riesgo
+18;Caquetá;18785;Solita;2,022;23.2;Riesgo medio
+19;Cauca;19022;Almaguer;2,022;4.0;Sin riesgo
+19;Cauca;19110;Buenos Aires;2,023;0.0;Sin riesgo
+19;Cauca;19130;Cajibío;2,021;3.5;Sin riesgo
+19;Cauca;19130;Cajibío;2,022;8.8;Bajo riesgo
+19;Cauca;19130;Cajibío;2,023;1.0;Sin riesgo
+19;Cauca;19137;Caldono;2,021;8.4;Bajo riesgo
+19;Cauca;19137;Caldono;2,022;10.2;Bajo riesgo
+19;Cauca;19137;Caldono;2,023;0.0;Sin riesgo
+19;Cauca;19212;Corinto;2,021;0.0;Sin riesgo
+19;Cauca;19212;Corinto;2,022;0.0;Sin riesgo
+19;Cauca;19212;Corinto;2,023;0.0;Sin riesgo
+19;Cauca;19256;El Tambo;2,023;0.0;Sin riesgo
+19;Cauca;19300;Guachené;2,021;3.0;Sin riesgo
+19;Cauca;19300;Guachené;2,022;4.7;Sin riesgo
+19;Cauca;19300;Guachené;2,023;5.6;Bajo riesgo
+19;Cauca;19318;Guapi;2,021;93.2;Inviable sanitariamente
+19;Cauca;19355;Inzá;2,021;2.2;Sin riesgo
+19;Cauca;19355;Inzá;2,022;13.9;Bajo riesgo
+19;Cauca;19355;Inzá;2,023;10.1;Bajo riesgo
+19;Cauca;19392;La Sierra;2,021;8.5;Bajo riesgo
+19;Cauca;19392;La Sierra;2,022;3.6;Sin riesgo
+19;Cauca;19397;La Vega;2,021;47.7;Alto riesgo
+19;Cauca;19397;La Vega;2,022;37.2;Alto riesgo
+19;Cauca;19397;La Vega;2,023;57.3;Alto riesgo
+19;Cauca;19473;Morales;2,021;4.0;Sin riesgo
+19;Cauca;19473;Morales;2,022;0.0;Sin riesgo
+19;Cauca;19513;Padilla;2,021;2.0;Sin riesgo
+19;Cauca;19513;Padilla;2,022;5.7;Bajo riesgo
+19;Cauca;19513;Padilla;2,023;4.5;Sin riesgo
+19;Cauca;19533;Piamonte;2,021;33.2;Riesgo medio
+19;Cauca;19533;Piamonte;2,022;18.8;Riesgo medio
+19;Cauca;19548;Piendamó - Tunía;2,021;7.7;Bajo riesgo
+19;Cauca;19548;Piendamó - Tunía;2,022;0.0;Sin riesgo
+19;Cauca;19548;Piendamó - Tunía;2,023;3.1;Sin riesgo
+19;Cauca;19573;Puerto Tejada;2,021;17.4;Riesgo medio
+19;Cauca;19573;Puerto Tejada;2,022;9.6;Bajo riesgo
+19;Cauca;19573;Puerto Tejada;2,023;0.3;Sin riesgo
+19;Cauca;19585;Puracé;2,021;22.1;Riesgo medio
+19;Cauca;19585;Puracé;2,023;18.5;Riesgo medio
+19;Cauca;19698;Santander de Quilichao;2,021;9.1;Bajo riesgo
+19;Cauca;19698;Santander de Quilichao;2,022;4.0;Sin riesgo
+19;Cauca;19698;Santander de Quilichao;2,023;0.0;Sin riesgo
+19;Cauca;19807;Timbío;2,022;1.7;Sin riesgo
+19;Cauca;19807;Timbío;2,023;1.1;Sin riesgo
+19;Cauca;19845;Villa Rica;2,021;14.9;Riesgo medio
+19;Cauca;19845;Villa Rica;2,022;18.4;Riesgo medio
+19;Cauca;19845;Villa Rica;2,023;9.1;Bajo riesgo
+20;Cesar;20032;Astrea;2,021;67.5;Alto riesgo
+20;Cesar;20045;Becerril;2,021;3.7;Sin riesgo
+20;Cesar;20045;Becerril;2,022;43.1;Alto riesgo
+20;Cesar;20045;Becerril;2,023;27.7;Riesgo medio
+20;Cesar;20175;Chimichagua;2,021;38.7;Alto riesgo
+20;Cesar;20175;Chimichagua;2,022;85.0;Inviable sanitariamente
+20;Cesar;20250;El Paso;2,021;48.9;Alto riesgo
+20;Cesar;20295;Gamarra;2,021;0.0;Sin riesgo
+20;Cesar;20295;Gamarra;2,022;27.6;Riesgo medio
+20;Cesar;20295;Gamarra;2,023;22.2;Riesgo medio
+20;Cesar;20710;San Alberto;2,022;27.6;Riesgo medio
+23;Córdoba;23300;Cotorra;2,021;82.7;Inviable sanitariamente
+23;Córdoba;23350;La Apartada;2,021;1.5;Sin riesgo
+23;Córdoba;23555;Planeta Rica;2,021;0.0;Sin riesgo
+23;Córdoba;23555;Planeta Rica;2,023;21.1;Riesgo medio
+23;Córdoba;23574;Puerto Escondido;2,021;60.2;Alto riesgo
+23;Córdoba;23670;San Andrés de Sotavento;2,021;0.0;Sin riesgo
+23;Córdoba;23672;San Antero;2,021;4.5;Sin riesgo
+23;Córdoba;23672;San Antero;2,023;1.9;Sin riesgo
+23;Córdoba;23675;San Bernardo del Viento;2,021;21.1;Riesgo medio
+23;Córdoba;23855;Valencia;2,021;22.6;Riesgo medio
+23;Córdoba;23855;Valencia;2,023;28.6;Riesgo medio
+25;Cundinamarca;25001;Agua de Dios;2,021;0.0;Sin riesgo
+25;Cundinamarca;25001;Agua de Dios;2,022;0.0;Sin riesgo
+25;Cundinamarca;25001;Agua de Dios;2,023;3.0;Sin riesgo
+25;Cundinamarca;25019;Albán;2,021;6.1;Bajo riesgo
+25;Cundinamarca;25019;Albán;2,022;3.0;Sin riesgo
+25;Cundinamarca;25019;Albán;2,023;13.4;Bajo riesgo
+25;Cundinamarca;25035;Anapoima;2,021;7.7;Bajo riesgo
+25;Cundinamarca;25035;Anapoima;2,022;2.2;Sin riesgo
+25;Cundinamarca;25035;Anapoima;2,023;3.3;Sin riesgo
+25;Cundinamarca;25040;Anolaima;2,021;25.4;Riesgo medio
+25;Cundinamarca;25040;Anolaima;2,022;10.7;Bajo riesgo
+25;Cundinamarca;25040;Anolaima;2,023;27.2;Riesgo medio
+25;Cundinamarca;25053;Arbeláez;2,021;4.6;Sin riesgo
+25;Cundinamarca;25053;Arbeláez;2,022;0.0;Sin riesgo
+25;Cundinamarca;25053;Arbeláez;2,023;18.1;Riesgo medio
+25;Cundinamarca;25086;Beltrán;2,021;11.7;Bajo riesgo
+25;Cundinamarca;25086;Beltrán;2,022;6.5;Bajo riesgo
+25;Cundinamarca;25086;Beltrán;2,023;10.3;Bajo riesgo
+25;Cundinamarca;25095;Bituima;2,023;66.7;Alto riesgo
+25;Cundinamarca;25120;Cabrera;2,023;9.1;Bajo riesgo
+25;Cundinamarca;25123;Cachipay;2,021;17.1;Riesgo medio
+25;Cundinamarca;25123;Cachipay;2,022;15.5;Riesgo medio
+25;Cundinamarca;25123;Cachipay;2,023;11.6;Bajo riesgo
+25;Cundinamarca;25126;Cajicá;2,021;1.1;Sin riesgo
+25;Cundinamarca;25126;Cajicá;2,022;0.5;Sin riesgo
+25;Cundinamarca;25126;Cajicá;2,023;1.4;Sin riesgo
+25;Cundinamarca;25154;Carmen de Carupa;2,023;18.2;Riesgo medio
+25;Cundinamarca;25175;Chía;2,021;0.1;Sin riesgo
+25;Cundinamarca;25175;Chía;2,022;0.5;Sin riesgo
+25;Cundinamarca;25175;Chía;2,023;1.7;Sin riesgo
+25;Cundinamarca;25178;Chipaque;2,021;9.3;Bajo riesgo
+25;Cundinamarca;25178;Chipaque;2,022;18.1;Riesgo medio
+25;Cundinamarca;25178;Chipaque;2,023;26.0;Riesgo medio
+25;Cundinamarca;25200;Cogua;2,021;17.4;Riesgo medio
+25;Cundinamarca;25200;Cogua;2,022;25.5;Riesgo medio
+25;Cundinamarca;25200;Cogua;2,023;8.5;Bajo riesgo
+25;Cundinamarca;25214;Cota;2,021;7.5;Bajo riesgo
+25;Cundinamarca;25214;Cota;2,022;12.8;Bajo riesgo
+25;Cundinamarca;25214;Cota;2,023;3.7;Sin riesgo
+25;Cundinamarca;25224;Cucunubá;2,021;9.3;Bajo riesgo
+25;Cundinamarca;25224;Cucunubá;2,022;3.2;Sin riesgo
+25;Cundinamarca;25224;Cucunubá;2,023;4.6;Sin riesgo
+25;Cundinamarca;25245;El Colegio;2,021;3.7;Sin riesgo
+25;Cundinamarca;25245;El Colegio;2,022;6.3;Bajo riesgo
+25;Cundinamarca;25245;El Colegio;2,023;8.7;Bajo riesgo
+25;Cundinamarca;25258;El Peñón;2,021;0.0;Sin riesgo
+25;Cundinamarca;25258;El Peñón;2,022;0.0;Sin riesgo
+25;Cundinamarca;25258;El Peñón;2,023;25.0;Riesgo medio
+25;Cundinamarca;25260;El Rosal;2,021;0.0;Sin riesgo
+25;Cundinamarca;25260;El Rosal;2,022;0.0;Sin riesgo
+25;Cundinamarca;25260;El Rosal;2,023;6.0;Bajo riesgo
+25;Cundinamarca;25269;Facatativá;2,021;0.0;Sin riesgo
+25;Cundinamarca;25269;Facatativá;2,022;0.0;Sin riesgo
+25;Cundinamarca;25269;Facatativá;2,023;0.0;Sin riesgo
+25;Cundinamarca;25279;Fómeque;2,021;4.2;Sin riesgo
+25;Cundinamarca;25279;Fómeque;2,022;14.8;Riesgo medio
+25;Cundinamarca;25279;Fómeque;2,023;6.4;Bajo riesgo
+25;Cundinamarca;25286;Funza;2,021;0.1;Sin riesgo
+25;Cundinamarca;25286;Funza;2,022;0.0;Sin riesgo
+25;Cundinamarca;25286;Funza;2,023;0.0;Sin riesgo
+25;Cundinamarca;25290;Fusagasugá;2,021;3.2;Sin riesgo
+25;Cundinamarca;25290;Fusagasugá;2,022;3.0;Sin riesgo
+25;Cundinamarca;25290;Fusagasugá;2,023;2.0;Sin riesgo
+25;Cundinamarca;25295;Gachancipá;2,021;8.1;Bajo riesgo
+25;Cundinamarca;25295;Gachancipá;2,022;40.1;Alto riesgo
+25;Cundinamarca;25295;Gachancipá;2,023;21.9;Riesgo medio
+25;Cundinamarca;25307;Girardot;2,021;0.0;Sin riesgo
+25;Cundinamarca;25307;Girardot;2,022;0.0;Sin riesgo
+25;Cundinamarca;25307;Girardot;2,023;0.0;Sin riesgo
+25;Cundinamarca;25312;Granada;2,021;3.8;Sin riesgo
+25;Cundinamarca;25312;Granada;2,022;0.5;Sin riesgo
+25;Cundinamarca;25312;Granada;2,023;2.8;Sin riesgo
+25;Cundinamarca;25317;Guachetá;2,021;8.0;Bajo riesgo
+25;Cundinamarca;25317;Guachetá;2,022;0.5;Sin riesgo
+25;Cundinamarca;25317;Guachetá;2,023;5.1;Bajo riesgo
+25;Cundinamarca;25320;Guaduas;2,021;8.2;Bajo riesgo
+25;Cundinamarca;25320;Guaduas;2,022;5.4;Bajo riesgo
+25;Cundinamarca;25320;Guaduas;2,023;3.8;Sin riesgo
+25;Cundinamarca;25322;Guasca;2,021;8.3;Bajo riesgo
+25;Cundinamarca;25322;Guasca;2,022;5.9;Bajo riesgo
+25;Cundinamarca;25322;Guasca;2,023;11.0;Bajo riesgo
+25;Cundinamarca;25324;Guataquí;2,021;0.0;Sin riesgo
+25;Cundinamarca;25324;Guataquí;2,022;0.7;Sin riesgo
+25;Cundinamarca;25324;Guataquí;2,023;0.0;Sin riesgo
+25;Cundinamarca;25328;Guayabal de Síquima;2,021;0.0;Sin riesgo
+25;Cundinamarca;25328;Guayabal de Síquima;2,022;9.1;Bajo riesgo
+25;Cundinamarca;25328;Guayabal de Síquima;2,023;0.0;Sin riesgo
+25;Cundinamarca;25335;Guayabetal;2,021;0.0;Sin riesgo
+25;Cundinamarca;25335;Guayabetal;2,022;18.2;Riesgo medio
+25;Cundinamarca;25335;Guayabetal;2,023;18.4;Riesgo medio
+25;Cundinamarca;25368;Jerusalén;2,021;2.4;Sin riesgo
+25;Cundinamarca;25368;Jerusalén;2,022;2.6;Sin riesgo
+25;Cundinamarca;25368;Jerusalén;2,023;6.6;Bajo riesgo
+25;Cundinamarca;25372;Junín;2,021;0.0;Sin riesgo
+25;Cundinamarca;25372;Junín;2,022;9.1;Bajo riesgo
+25;Cundinamarca;25372;Junín;2,023;0.0;Sin riesgo
+25;Cundinamarca;25377;La Calera;2,021;12.7;Bajo riesgo
+25;Cundinamarca;25377;La Calera;2,022;16.3;Riesgo medio
+25;Cundinamarca;25377;La Calera;2,023;13.9;Bajo riesgo
+25;Cundinamarca;25386;La Mesa;2,021;14.4;Riesgo medio
+25;Cundinamarca;25386;La Mesa;2,022;18.8;Riesgo medio
+25;Cundinamarca;25386;La Mesa;2,023;17.7;Riesgo medio
+25;Cundinamarca;25402;La Vega;2,021;3.6;Sin riesgo
+25;Cundinamarca;25402;La Vega;2,022;0.0;Sin riesgo
+25;Cundinamarca;25402;La Vega;2,023;0.0;Sin riesgo
+25;Cundinamarca;25407;Lenguazaque;2,021;20.1;Riesgo medio
+25;Cundinamarca;25407;Lenguazaque;2,022;84.9;Inviable sanitariamente
+25;Cundinamarca;25407;Lenguazaque;2,023;49.1;Alto riesgo
+25;Cundinamarca;25426;Machetá;2,021;19.0;Riesgo medio
+25;Cundinamarca;25426;Machetá;2,022;40.8;Alto riesgo
+25;Cundinamarca;25426;Machetá;2,023;10.9;Bajo riesgo
+25;Cundinamarca;25430;Madrid;2,021;0.0;Sin riesgo
+25;Cundinamarca;25430;Madrid;2,022;5.4;Bajo riesgo
+25;Cundinamarca;25430;Madrid;2,023;5.3;Bajo riesgo
+25;Cundinamarca;25483;Nariño;2,021;19.1;Riesgo medio
+25;Cundinamarca;25483;Nariño;2,022;0.0;Sin riesgo
+25;Cundinamarca;25483;Nariño;2,023;0.0;Sin riesgo
+25;Cundinamarca;25486;Nemocón;2,021;0.0;Sin riesgo
+25;Cundinamarca;25486;Nemocón;2,022;9.0;Bajo riesgo
+25;Cundinamarca;25486;Nemocón;2,023;6.9;Bajo riesgo
+25;Cundinamarca;25488;Nilo;2,021;8.3;Bajo riesgo
+25;Cundinamarca;25488;Nilo;2,022;7.5;Bajo riesgo
+25;Cundinamarca;25488;Nilo;2,023;6.2;Bajo riesgo
+25;Cundinamarca;25489;Nimaima;2,021;0.8;Sin riesgo
+25;Cundinamarca;25489;Nimaima;2,022;1.5;Sin riesgo
+25;Cundinamarca;25489;Nimaima;2,023;3.7;Sin riesgo
+25;Cundinamarca;25491;Nocaima;2,021;33.6;Riesgo medio
+25;Cundinamarca;25491;Nocaima;2,022;0.0;Sin riesgo
+25;Cundinamarca;25491;Nocaima;2,023;20.4;Riesgo medio
+25;Cundinamarca;25513;Pacho;2,021;0.0;Sin riesgo
+25;Cundinamarca;25513;Pacho;2,022;0.0;Sin riesgo
+25;Cundinamarca;25513;Pacho;2,023;0.0;Sin riesgo
+25;Cundinamarca;25524;Pandi;2,021;0.2;Sin riesgo
+25;Cundinamarca;25524;Pandi;2,022;0.9;Sin riesgo
+25;Cundinamarca;25524;Pandi;2,023;0.0;Sin riesgo
+25;Cundinamarca;25535;Pasca;2,021;31.5;Riesgo medio
+25;Cundinamarca;25535;Pasca;2,022;0.0;Sin riesgo
+25;Cundinamarca;25535;Pasca;2,023;11.4;Bajo riesgo
+25;Cundinamarca;25592;Quebradanegra;2,021;12.3;Bajo riesgo
+25;Cundinamarca;25592;Quebradanegra;2,022;10.9;Bajo riesgo
+25;Cundinamarca;25592;Quebradanegra;2,023;5.1;Bajo riesgo
+25;Cundinamarca;25612;Ricaurte;2,021;7.5;Bajo riesgo
+25;Cundinamarca;25612;Ricaurte;2,022;0.7;Sin riesgo
+25;Cundinamarca;25612;Ricaurte;2,023;0.0;Sin riesgo
+25;Cundinamarca;25645;San Antonio del Tequendama;2,021;3.6;Sin riesgo
+25;Cundinamarca;25645;San Antonio del Tequendama;2,022;0.0;Sin riesgo
+25;Cundinamarca;25645;San Antonio del Tequendama;2,023;12.1;Bajo riesgo
+25;Cundinamarca;25658;San Francisco;2,021;16.8;Riesgo medio
+25;Cundinamarca;25658;San Francisco;2,022;9.4;Bajo riesgo
+25;Cundinamarca;25658;San Francisco;2,023;0.5;Sin riesgo
+25;Cundinamarca;25662;San Juan de Rioseco;2,021;27.5;Riesgo medio
+25;Cundinamarca;25662;San Juan de Rioseco;2,022;11.9;Bajo riesgo
+25;Cundinamarca;25662;San Juan de Rioseco;2,023;12.0;Bajo riesgo
+25;Cundinamarca;25718;Sasaima;2,021;3.5;Sin riesgo
+25;Cundinamarca;25718;Sasaima;2,022;5.6;Bajo riesgo
+25;Cundinamarca;25718;Sasaima;2,023;5.3;Bajo riesgo
+25;Cundinamarca;25736;Sesquilé;2,021;25.5;Riesgo medio
+25;Cundinamarca;25736;Sesquilé;2,022;16.8;Riesgo medio
+25;Cundinamarca;25736;Sesquilé;2,023;22.7;Riesgo medio
+25;Cundinamarca;25740;Sibaté;2,021;17.2;Riesgo medio
+25;Cundinamarca;25740;Sibaté;2,022;24.2;Riesgo medio
+25;Cundinamarca;25740;Sibaté;2,023;7.7;Bajo riesgo
+25;Cundinamarca;25743;Silvania;2,021;53.5;Alto riesgo
+25;Cundinamarca;25743;Silvania;2,022;41.2;Alto riesgo
+25;Cundinamarca;25743;Silvania;2,023;37.6;Alto riesgo
+25;Cundinamarca;25745;Simijaca;2,021;11.8;Bajo riesgo
+25;Cundinamarca;25745;Simijaca;2,022;9.2;Bajo riesgo
+25;Cundinamarca;25745;Simijaca;2,023;9.2;Bajo riesgo
+25;Cundinamarca;25754;Soacha;2,021;6.8;Bajo riesgo
+25;Cundinamarca;25754;Soacha;2,022;7.4;Bajo riesgo
+25;Cundinamarca;25754;Soacha;2,023;9.7;Bajo riesgo
+25;Cundinamarca;25758;Sopó;2,021;7.4;Bajo riesgo
+25;Cundinamarca;25758;Sopó;2,022;14.8;Riesgo medio
+25;Cundinamarca;25758;Sopó;2,023;14.5;Riesgo medio
+25;Cundinamarca;25769;Subachoque;2,021;1.3;Sin riesgo
+25;Cundinamarca;25769;Subachoque;2,022;1.0;Sin riesgo
+25;Cundinamarca;25769;Subachoque;2,023;3.2;Sin riesgo
+25;Cundinamarca;25772;Suesca;2,021;4.8;Sin riesgo
+25;Cundinamarca;25772;Suesca;2,022;6.9;Bajo riesgo
+25;Cundinamarca;25772;Suesca;2,023;13.3;Bajo riesgo
+25;Cundinamarca;25777;Supatá;2,021;2.7;Sin riesgo
+25;Cundinamarca;25777;Supatá;2,022;9.0;Bajo riesgo
+25;Cundinamarca;25777;Supatá;2,023;0.3;Sin riesgo
+25;Cundinamarca;25781;Sutatausa;2,021;4.7;Sin riesgo
+25;Cundinamarca;25781;Sutatausa;2,022;7.7;Bajo riesgo
+25;Cundinamarca;25781;Sutatausa;2,023;7.0;Bajo riesgo
+25;Cundinamarca;25785;Tabio;2,021;2.1;Sin riesgo
+25;Cundinamarca;25785;Tabio;2,022;1.3;Sin riesgo
+25;Cundinamarca;25785;Tabio;2,023;1.7;Sin riesgo
+25;Cundinamarca;25793;Tausa;2,021;3.1;Sin riesgo
+25;Cundinamarca;25793;Tausa;2,022;10.8;Bajo riesgo
+25;Cundinamarca;25793;Tausa;2,023;4.5;Sin riesgo
+25;Cundinamarca;25797;Tena;2,021;14.0;Bajo riesgo
+25;Cundinamarca;25797;Tena;2,022;25.8;Riesgo medio
+25;Cundinamarca;25797;Tena;2,023;24.8;Riesgo medio
+25;Cundinamarca;25799;Tenjo;2,021;5.3;Bajo riesgo
+25;Cundinamarca;25799;Tenjo;2,022;5.2;Bajo riesgo
+25;Cundinamarca;25799;Tenjo;2,023;2.2;Sin riesgo
+25;Cundinamarca;25805;Tibacuy;2,021;0.2;Sin riesgo
+25;Cundinamarca;25805;Tibacuy;2,022;0.3;Sin riesgo
+25;Cundinamarca;25805;Tibacuy;2,023;0.1;Sin riesgo
+25;Cundinamarca;25807;Tibirita;2,021;5.6;Bajo riesgo
+25;Cundinamarca;25807;Tibirita;2,022;15.2;Riesgo medio
+25;Cundinamarca;25807;Tibirita;2,023;5.0;Sin riesgo
+25;Cundinamarca;25815;Tocaima;2,021;0.0;Sin riesgo
+25;Cundinamarca;25817;Tocancipá;2,021;1.8;Sin riesgo
+25;Cundinamarca;25817;Tocancipá;2,022;1.1;Sin riesgo
+25;Cundinamarca;25817;Tocancipá;2,023;2.6;Sin riesgo
+25;Cundinamarca;25841;Ubaque;2,021;10.4;Bajo riesgo
+25;Cundinamarca;25841;Ubaque;2,022;12.2;Bajo riesgo
+25;Cundinamarca;25841;Ubaque;2,023;17.2;Riesgo medio
+25;Cundinamarca;25843;Villa de San Diego de Ubaté;2,021;6.0;Bajo riesgo
+25;Cundinamarca;25843;Villa de San Diego de Ubaté;2,022;8.2;Bajo riesgo
+25;Cundinamarca;25843;Villa de San Diego de Ubaté;2,023;1.7;Sin riesgo
+25;Cundinamarca;25845;Une;2,021;0.0;Sin riesgo
+25;Cundinamarca;25845;Une;2,022;0.0;Sin riesgo
+25;Cundinamarca;25845;Une;2,023;18.9;Riesgo medio
+25;Cundinamarca;25873;Villapinzón;2,021;11.5;Bajo riesgo
+25;Cundinamarca;25873;Villapinzón;2,022;16.5;Riesgo medio
+25;Cundinamarca;25873;Villapinzón;2,023;1.5;Sin riesgo
+25;Cundinamarca;25875;Villeta;2,021;9.9;Bajo riesgo
+25;Cundinamarca;25875;Villeta;2,022;0.6;Sin riesgo
+25;Cundinamarca;25875;Villeta;2,023;33.9;Riesgo medio
+25;Cundinamarca;25885;Yacopí;2,021;31.9;Riesgo medio
+25;Cundinamarca;25885;Yacopí;2,023;65.9;Alto riesgo
+25;Cundinamarca;25898;Zipacón;2,021;54.0;Alto riesgo
+25;Cundinamarca;25898;Zipacón;2,022;47.0;Alto riesgo
+25;Cundinamarca;25898;Zipacón;2,023;58.1;Alto riesgo
+25;Cundinamarca;25899;Zipaquirá;2,021;6.1;Bajo riesgo
+25;Cundinamarca;25899;Zipaquirá;2,022;0.0;Sin riesgo
+25;Cundinamarca;25899;Zipaquirá;2,023;0.0;Sin riesgo
+41;Huila;41001;Neiva;2,021;27.9;Riesgo medio
+41;Huila;41001;Neiva;2,022;24.3;Riesgo medio
+41;Huila;41001;Neiva;2,023;27.2;Riesgo medio
+41;Huila;41013;Agrado;2,022;66.3;Alto riesgo
+41;Huila;41013;Agrado;2,023;60.0;Alto riesgo
+41;Huila;41016;Aipe;2,022;39.9;Alto riesgo
+41;Huila;41016;Aipe;2,023;43.5;Alto riesgo
+41;Huila;41026;Altamira;2,021;9.6;Bajo riesgo
+41;Huila;41026;Altamira;2,022;5.9;Bajo riesgo
+41;Huila;41026;Altamira;2,023;0.0;Sin riesgo
+41;Huila;41132;Campoalegre;2,022;68.0;Alto riesgo
+41;Huila;41132;Campoalegre;2,023;45.1;Alto riesgo
+41;Huila;41298;Garzón;2,021;0.0;Sin riesgo
+41;Huila;41298;Garzón;2,022;6.7;Bajo riesgo
+41;Huila;41298;Garzón;2,023;12.2;Bajo riesgo
+41;Huila;41306;Gigante;2,022;50.4;Alto riesgo
+41;Huila;41306;Gigante;2,023;12.3;Bajo riesgo
+41;Huila;41349;Hobo;2,022;67.1;Alto riesgo
+41;Huila;41349;Hobo;2,023;51.1;Alto riesgo
+41;Huila;41359;Isnos;2,022;62.5;Alto riesgo
+41;Huila;41359;Isnos;2,023;58.0;Alto riesgo
+41;Huila;41378;La Argentina;2,022;59.4;Alto riesgo
+41;Huila;41378;La Argentina;2,023;66.8;Alto riesgo
+41;Huila;41396;La Plata;2,022;71.0;Alto riesgo
+41;Huila;41396;La Plata;2,023;64.0;Alto riesgo
+41;Huila;41483;Nátaga;2,022;90.7;Inviable sanitariamente
+41;Huila;41483;Nátaga;2,023;57.3;Alto riesgo
+41;Huila;41503;Oporapa;2,022;51.0;Alto riesgo
+41;Huila;41503;Oporapa;2,023;73.6;Alto riesgo
+41;Huila;41518;Paicol;2,022;57.3;Alto riesgo
+41;Huila;41518;Paicol;2,023;69.5;Alto riesgo
+41;Huila;41524;Palermo;2,022;16.6;Riesgo medio
+41;Huila;41524;Palermo;2,023;30.1;Riesgo medio
+41;Huila;41530;Palestina;2,021;0.6;Sin riesgo
+41;Huila;41530;Palestina;2,022;47.7;Alto riesgo
+41;Huila;41530;Palestina;2,023;27.5;Riesgo medio
+41;Huila;41548;Pital;2,022;54.5;Alto riesgo
+41;Huila;41548;Pital;2,023;63.0;Alto riesgo
+41;Huila;41551;Pitalito;2,022;69.8;Alto riesgo
+41;Huila;41615;Rivera;2,021;0.0;Sin riesgo
+41;Huila;41615;Rivera;2,022;0.0;Sin riesgo
+41;Huila;41615;Rivera;2,023;21.3;Riesgo medio
+41;Huila;41660;Saladoblanco;2,021;0.0;Sin riesgo
+41;Huila;41660;Saladoblanco;2,022;30.9;Riesgo medio
+41;Huila;41660;Saladoblanco;2,023;29.2;Riesgo medio
+41;Huila;41668;San Agustín;2,022;50.6;Alto riesgo
+41;Huila;41668;San Agustín;2,023;36.8;Alto riesgo
+41;Huila;41676;Santa María;2,022;89.2;Inviable sanitariamente
+41;Huila;41676;Santa María;2,023;60.8;Alto riesgo
+41;Huila;41791;Tarqui;2,022;37.7;Alto riesgo
+41;Huila;41791;Tarqui;2,023;73.6;Alto riesgo
+41;Huila;41797;Tesalia;2,022;36.9;Alto riesgo
+41;Huila;41797;Tesalia;2,023;35.2;Alto riesgo
+41;Huila;41799;Tello;2,021;0.0;Sin riesgo
+41;Huila;41799;Tello;2,022;48.0;Alto riesgo
+41;Huila;41799;Tello;2,023;42.3;Alto riesgo
+41;Huila;41801;Teruel;2,022;93.0;Inviable sanitariamente
+41;Huila;41801;Teruel;2,023;32.5;Riesgo medio
+41;Huila;41807;Timaná;2,022;33.4;Riesgo medio
+41;Huila;41807;Timaná;2,023;19.9;Riesgo medio
+41;Huila;41872;Villavieja;2,022;3.2;Sin riesgo
+41;Huila;41872;Villavieja;2,023;0.0;Sin riesgo
+44;La Guajira;44001;Riohacha;2,023;47.0;Alto riesgo
+44;La Guajira;44035;Albania;2,021;3.6;Sin riesgo
+44;La Guajira;44035;Albania;2,022;5.1;Bajo riesgo
+44;La Guajira;44035;Albania;2,023;4.0;Sin riesgo
+44;La Guajira;44090;Dibulla;2,021;75.4;Alto riesgo
+44;La Guajira;44090;Dibulla;2,022;76.7;Alto riesgo
+44;La Guajira;44430;Maicao;2,022;26.1;Riesgo medio
+44;La Guajira;44430;Maicao;2,023;0.7;Sin riesgo
+44;La Guajira;44560;Manaure;2,021;18.6;Riesgo medio
+44;La Guajira;44560;Manaure;2,022;12.4;Bajo riesgo
+44;La Guajira;44560;Manaure;2,023;24.3;Riesgo medio
+47;Magdalena;47001;Santa Marta;2,021;16.5;Riesgo medio
+47;Magdalena;47001;Santa Marta;2,022;26.6;Riesgo medio
+47;Magdalena;47053;Aracataca;2,022;0.0;Sin riesgo
+47;Magdalena;47058;Ariguaní;2,022;23.9;Riesgo medio
+47;Magdalena;47058;Ariguaní;2,023;29.7;Riesgo medio
+47;Magdalena;47189;Ciénaga;2,021;6.2;Bajo riesgo
+47;Magdalena;47189;Ciénaga;2,022;12.5;Bajo riesgo
+47;Magdalena;47288;Fundación;2,021;3.1;Sin riesgo
+47;Magdalena;47288;Fundación;2,022;0.0;Sin riesgo
+47;Magdalena;47288;Fundación;2,023;1.6;Sin riesgo
+47;Magdalena;47460;Nueva Granada;2,022;14.8;Riesgo medio
+47;Magdalena;47460;Nueva Granada;2,023;37.5;Alto riesgo
+47;Magdalena;47570;Puebloviejo;2,021;12.9;Bajo riesgo
+47;Magdalena;47570;Puebloviejo;2,022;23.4;Riesgo medio
+47;Magdalena;47570;Puebloviejo;2,023;10.0;Bajo riesgo
+47;Magdalena;47660;Sabanas de San Ángel;2,023;0.0;Sin riesgo
+47;Magdalena;47675;Salamina;2,021;22.2;Riesgo medio
+47;Magdalena;47675;Salamina;2,022;10.1;Bajo riesgo
+47;Magdalena;47675;Salamina;2,023;3.4;Sin riesgo
+47;Magdalena;47692;San Sebastián de Buenavista;2,021;30.6;Riesgo medio
+47;Magdalena;47692;San Sebastián de Buenavista;2,022;53.5;Alto riesgo
+47;Magdalena;47692;San Sebastián de Buenavista;2,023;7.5;Bajo riesgo
+47;Magdalena;47707;Santa Ana;2,023;100.0;Inviable sanitariamente
+47;Magdalena;47960;Zapayán;2,023;0.0;Sin riesgo
+47;Magdalena;47980;Zona Bananera;2,021;2.7;Sin riesgo
+47;Magdalena;47980;Zona Bananera;2,022;0.5;Sin riesgo
+47;Magdalena;47980;Zona Bananera;2,023;0.0;Sin riesgo
+50;Meta;50001;Villavicencio;2,021;0.0;Sin riesgo
+50;Meta;50001;Villavicencio;2,022;0.0;Sin riesgo
+50;Meta;50001;Villavicencio;2,023;21.0;Riesgo medio
+50;Meta;50006;Acacías;2,021;0.3;Sin riesgo
+50;Meta;50006;Acacías;2,022;24.4;Riesgo medio
+50;Meta;50006;Acacías;2,023;27.5;Riesgo medio
+50;Meta;50110;Barranca de Upía;2,023;0.0;Sin riesgo
+50;Meta;50150;Castilla La Nueva;2,021;0.0;Sin riesgo
+50;Meta;50150;Castilla La Nueva;2,023;0.0;Sin riesgo
+50;Meta;50223;Cubarral;2,023;0.0;Sin riesgo
+50;Meta;50251;El Castillo;2,023;0.0;Sin riesgo
+50;Meta;50270;El Dorado;2,023;0.0;Sin riesgo
+50;Meta;50318;Guamal;2,023;0.0;Sin riesgo
+50;Meta;50370;Uribe;2,023;0.0;Sin riesgo
+50;Meta;50400;Lejanías;2,023;0.0;Sin riesgo
+50;Meta;50606;Restrepo;2,023;0.0;Sin riesgo
+50;Meta;50683;San Juan de Arama;2,023;0.0;Sin riesgo
+52;Nariño;52001;Pasto;2,021;0.0;Sin riesgo
+52;Nariño;52001;Pasto;2,022;0.0;Sin riesgo
+52;Nariño;52001;Pasto;2,023;0.0;Sin riesgo
+52;Nariño;52019;Albán;2,021;15.1;Riesgo medio
+52;Nariño;52019;Albán;2,022;15.4;Riesgo medio
+52;Nariño;52019;Albán;2,023;3.8;Sin riesgo
+52;Nariño;52022;Aldana;2,021;15.7;Riesgo medio
+52;Nariño;52022;Aldana;2,022;18.0;Riesgo medio
+52;Nariño;52022;Aldana;2,023;26.4;Riesgo medio
+52;Nariño;52036;Ancuya;2,021;61.1;Alto riesgo
+52;Nariño;52036;Ancuya;2,022;65.8;Alto riesgo
+52;Nariño;52036;Ancuya;2,023;59.0;Alto riesgo
+52;Nariño;52051;Arboleda;2,021;72.0;Alto riesgo
+52;Nariño;52051;Arboleda;2,022;83.5;Inviable sanitariamente
+52;Nariño;52051;Arboleda;2,023;70.5;Alto riesgo
+52;Nariño;52207;Consacá;2,022;3.7;Sin riesgo
+52;Nariño;52215;Córdoba;2,021;19.0;Riesgo medio
+52;Nariño;52215;Córdoba;2,022;24.2;Riesgo medio
+52;Nariño;52215;Córdoba;2,023;27.1;Riesgo medio
+52;Nariño;52224;Cuaspud Carlosama;2,021;30.6;Riesgo medio
+52;Nariño;52224;Cuaspud Carlosama;2,022;24.8;Riesgo medio
+52;Nariño;52224;Cuaspud Carlosama;2,023;38.5;Alto riesgo
+52;Nariño;52227;Cumbal;2,021;0.0;Sin riesgo
+52;Nariño;52227;Cumbal;2,022;6.4;Bajo riesgo
+52;Nariño;52227;Cumbal;2,023;10.3;Bajo riesgo
+52;Nariño;52233;Cumbitara;2,023;18.4;Riesgo medio
+52;Nariño;52240;Chachagüí;2,021;22.2;Riesgo medio
+52;Nariño;52240;Chachagüí;2,022;21.8;Riesgo medio
+52;Nariño;52240;Chachagüí;2,023;38.7;Alto riesgo
+52;Nariño;52254;El Peñol;2,021;13.4;Bajo riesgo
+52;Nariño;52254;El Peñol;2,022;35.2;Alto riesgo
+52;Nariño;52254;El Peñol;2,023;59.6;Alto riesgo
+52;Nariño;52320;Guaitarilla;2,021;52.1;Alto riesgo
+52;Nariño;52320;Guaitarilla;2,022;72.1;Alto riesgo
+52;Nariño;52320;Guaitarilla;2,023;50.3;Alto riesgo
+52;Nariño;52323;Gualmatán;2,021;15.7;Riesgo medio
+52;Nariño;52323;Gualmatán;2,022;9.3;Bajo riesgo
+52;Nariño;52323;Gualmatán;2,023;8.4;Bajo riesgo
+52;Nariño;52354;Imués;2,021;0.0;Sin riesgo
+52;Nariño;52356;Ipiales;2,021;60.6;Alto riesgo
+52;Nariño;52356;Ipiales;2,022;67.7;Alto riesgo
+52;Nariño;52356;Ipiales;2,023;75.4;Alto riesgo
+52;Nariño;52381;La Florida;2,021;0.0;Sin riesgo
+52;Nariño;52381;La Florida;2,022;9.6;Bajo riesgo
+52;Nariño;52381;La Florida;2,023;0.0;Sin riesgo
+52;Nariño;52399;La Unión;2,021;58.4;Alto riesgo
+52;Nariño;52399;La Unión;2,022;72.4;Alto riesgo
+52;Nariño;52399;La Unión;2,023;72.0;Alto riesgo
+52;Nariño;52411;Linares;2,021;84.4;Inviable sanitariamente
+52;Nariño;52411;Linares;2,022;80.0;Alto riesgo
+52;Nariño;52411;Linares;2,023;51.6;Alto riesgo
+52;Nariño;52427;Magüí;2,021;84.1;Inviable sanitariamente
+52;Nariño;52435;Mallama;2,021;48.4;Alto riesgo
+52;Nariño;52435;Mallama;2,022;63.1;Alto riesgo
+52;Nariño;52435;Mallama;2,023;16.6;Riesgo medio
+52;Nariño;52480;Nariño;2,021;0.0;Sin riesgo
+52;Nariño;52480;Nariño;2,022;8.1;Bajo riesgo
+52;Nariño;52480;Nariño;2,023;2.4;Sin riesgo
+52;Nariño;52612;Ricaurte;2,021;50.1;Alto riesgo
+52;Nariño;52612;Ricaurte;2,022;54.5;Alto riesgo
+52;Nariño;52612;Ricaurte;2,023;68.7;Alto riesgo
+52;Nariño;52678;Samaniego;2,021;72.5;Alto riesgo
+52;Nariño;52678;Samaniego;2,022;76.9;Alto riesgo
+52;Nariño;52678;Samaniego;2,023;72.6;Alto riesgo
+52;Nariño;52683;Sandoná;2,021;3.0;Sin riesgo
+52;Nariño;52683;Sandoná;2,022;5.8;Bajo riesgo
+52;Nariño;52683;Sandoná;2,023;6.7;Bajo riesgo
+52;Nariño;52788;Tangua;2,021;45.7;Alto riesgo
+52;Nariño;52788;Tangua;2,022;19.1;Riesgo medio
+52;Nariño;52788;Tangua;2,023;46.5;Alto riesgo
+52;Nariño;52835;San Andrés de Tumaco;2,021;0.0;Sin riesgo
+52;Nariño;52835;San Andrés de Tumaco;2,022;20.1;Riesgo medio
+52;Nariño;52835;San Andrés de Tumaco;2,023;13.3;Bajo riesgo
+52;Nariño;52885;Yacuanquer;2,021;2.5;Sin riesgo
+54;Norte de Santander;54001;San José de Cúcuta;2,021;4.6;Sin riesgo
+54;Norte de Santander;54001;San José de Cúcuta;2,022;0.0;Sin riesgo
+54;Norte de Santander;54001;San José de Cúcuta;2,023;0.0;Sin riesgo
+54;Norte de Santander;54099;Bochalema;2,021;32.1;Riesgo medio
+54;Norte de Santander;54109;Bucarasica;2,021;80.0;Alto riesgo
+54;Norte de Santander;54109;Bucarasica;2,022;82.3;Inviable sanitariamente
+54;Norte de Santander;54109;Bucarasica;2,023;88.5;Inviable sanitariamente
+54;Norte de Santander;54128;Cáchira;2,021;9.1;Bajo riesgo
+54;Norte de Santander;54128;Cáchira;2,022;17.2;Riesgo medio
+54;Norte de Santander;54128;Cáchira;2,023;0.0;Sin riesgo
+54;Norte de Santander;54172;Chinácota;2,021;94.1;Inviable sanitariamente
+54;Norte de Santander;54172;Chinácota;2,022;87.0;Inviable sanitariamente
+54;Norte de Santander;54172;Chinácota;2,023;79.2;Alto riesgo
+54;Norte de Santander;54245;El Carmen;2,021;1.5;Sin riesgo
+54;Norte de Santander;54245;El Carmen;2,022;5.3;Bajo riesgo
+54;Norte de Santander;54261;El Zulia;2,021;79.2;Alto riesgo
+54;Norte de Santander;54261;El Zulia;2,022;38.5;Alto riesgo
+54;Norte de Santander;54261;El Zulia;2,023;22.4;Riesgo medio
+54;Norte de Santander;54344;Hacarí;2,021;91.1;Inviable sanitariamente
+54;Norte de Santander;54344;Hacarí;2,022;94.9;Inviable sanitariamente
+54;Norte de Santander;54385;La Esperanza;2,021;0.0;Sin riesgo
+54;Norte de Santander;54385;La Esperanza;2,022;9.0;Bajo riesgo
+54;Norte de Santander;54385;La Esperanza;2,023;22.4;Riesgo medio
+54;Norte de Santander;54520;Pamplonita;2,021;0.0;Sin riesgo
+54;Norte de Santander;54520;Pamplonita;2,022;9.0;Bajo riesgo
+54;Norte de Santander;54520;Pamplonita;2,023;0.0;Sin riesgo
+54;Norte de Santander;54673;San Cayetano;2,021;9.2;Bajo riesgo
+54;Norte de Santander;54673;San Cayetano;2,022;0.0;Sin riesgo
+54;Norte de Santander;54673;San Cayetano;2,023;3.0;Sin riesgo
+54;Norte de Santander;54720;Sardinata;2,021;79.2;Alto riesgo
+54;Norte de Santander;54720;Sardinata;2,022;82.5;Inviable sanitariamente
+54;Norte de Santander;54800;Teorama;2,022;91.1;Inviable sanitariamente
+54;Norte de Santander;54820;Toledo;2,021;9.2;Bajo riesgo
+54;Norte de Santander;54820;Toledo;2,022;2.2;Sin riesgo
+63;Quindío;63001;Armenia;2,021;1.1;Sin riesgo
+63;Quindío;63001;Armenia;2,022;3.0;Sin riesgo
+63;Quindío;63001;Armenia;2,023;0.4;Sin riesgo
+63;Quindío;63130;Calarcá;2,021;0.0;Sin riesgo
+63;Quindío;63130;Calarcá;2,022;1.8;Sin riesgo
+63;Quindío;63130;Calarcá;2,023;0.0;Sin riesgo
+63;Quindío;63401;La Tebaida;2,022;3.3;Sin riesgo
+63;Quindío;63401;La Tebaida;2,023;12.9;Bajo riesgo
+63;Quindío;63594;Quimbaya;2,021;0.0;Sin riesgo
+63;Quindío;63594;Quimbaya;2,022;0.0;Sin riesgo
+63;Quindío;63594;Quimbaya;2,023;0.0;Sin riesgo
+66;Risaralda;66001;Pereira;2,021;20.1;Riesgo medio
+66;Risaralda;66001;Pereira;2,022;23.1;Riesgo medio
+66;Risaralda;66001;Pereira;2,023;22.3;Riesgo medio
+66;Risaralda;66045;Apía;2,023;71.0;Alto riesgo
+66;Risaralda;66075;Balboa;2,021;86.4;Inviable sanitariamente
+66;Risaralda;66075;Balboa;2,022;55.2;Alto riesgo
+66;Risaralda;66075;Balboa;2,023;69.8;Alto riesgo
+66;Risaralda;66088;Belén de Umbría;2,021;18.0;Riesgo medio
+66;Risaralda;66088;Belén de Umbría;2,022;11.1;Bajo riesgo
+66;Risaralda;66088;Belén de Umbría;2,023;19.2;Riesgo medio
+66;Risaralda;66170;Dosquebradas;2,021;61.9;Alto riesgo
+66;Risaralda;66170;Dosquebradas;2,022;92.1;Inviable sanitariamente
+66;Risaralda;66170;Dosquebradas;2,023;29.9;Riesgo medio
+66;Risaralda;66318;Guática;2,021;71.0;Alto riesgo
+66;Risaralda;66318;Guática;2,022;71.7;Alto riesgo
+66;Risaralda;66318;Guática;2,023;81.2;Inviable sanitariamente
+66;Risaralda;66400;La Virginia;2,022;0.0;Sin riesgo
+66;Risaralda;66440;Marsella;2,021;3.5;Sin riesgo
+66;Risaralda;66440;Marsella;2,022;3.5;Sin riesgo
+66;Risaralda;66440;Marsella;2,023;5.4;Bajo riesgo
+66;Risaralda;66456;Mistrató;2,021;6.3;Bajo riesgo
+66;Risaralda;66456;Mistrató;2,022;0.0;Sin riesgo
+66;Risaralda;66456;Mistrató;2,023;5.3;Bajo riesgo
+66;Risaralda;66594;Quinchía;2,022;75.5;Alto riesgo
+66;Risaralda;66594;Quinchía;2,023;59.1;Alto riesgo
+66;Risaralda;66682;Santa Rosa de Cabal;2,021;4.2;Sin riesgo
+66;Risaralda;66682;Santa Rosa de Cabal;2,022;0.0;Sin riesgo
+66;Risaralda;66682;Santa Rosa de Cabal;2,023;0.0;Sin riesgo
+66;Risaralda;66687;Santuario;2,021;56.4;Alto riesgo
+66;Risaralda;66687;Santuario;2,022;60.0;Alto riesgo
+66;Risaralda;66687;Santuario;2,023;59.1;Alto riesgo
+68;Santander;68077;Barbosa;2,021;0.7;Sin riesgo
+68;Santander;68077;Barbosa;2,022;20.9;Riesgo medio
+68;Santander;68077;Barbosa;2,023;24.4;Riesgo medio
+68;Santander;68079;Barichara;2,023;95.5;Inviable sanitariamente
+68;Santander;68190;Cimitarra;2,023;7.5;Bajo riesgo
+68;Santander;68229;Curití;2,021;0.0;Sin riesgo
+68;Santander;68229;Curití;2,022;15.9;Riesgo medio
+68;Santander;68229;Curití;2,023;0.0;Sin riesgo
+68;Santander;68235;El Carmen de Chucurí;2,021;0.0;Sin riesgo
+68;Santander;68235;El Carmen de Chucurí;2,022;56.3;Alto riesgo
+68;Santander;68235;El Carmen de Chucurí;2,023;70.4;Alto riesgo
+68;Santander;68255;El Playón;2,023;93.9;Inviable sanitariamente
+68;Santander;68276;Floridablanca;2,021;0.0;Sin riesgo
+68;Santander;68276;Floridablanca;2,023;0.0;Sin riesgo
+68;Santander;68307;Girón;2,021;1.4;Sin riesgo
+68;Santander;68307;Girón;2,022;0.0;Sin riesgo
+68;Santander;68307;Girón;2,023;0.7;Sin riesgo
+68;Santander;68370;Jordán;2,022;92.4;Inviable sanitariamente
+68;Santander;68370;Jordán;2,023;97.6;Inviable sanitariamente
+68;Santander;68397;La Paz;2,023;47.7;Alto riesgo
+68;Santander;68406;Lebrija;2,023;11.3;Bajo riesgo
+68;Santander;68524;Palmas del Socorro;2,021;20.3;Riesgo medio
+68;Santander;68524;Palmas del Socorro;2,022;36.8;Alto riesgo
+68;Santander;68524;Palmas del Socorro;2,023;25.2;Riesgo medio
+68;Santander;68547;Piedecuesta;2,021;1.1;Sin riesgo
+68;Santander;68547;Piedecuesta;2,022;4.3;Sin riesgo
+68;Santander;68547;Piedecuesta;2,023;1.8;Sin riesgo
+68;Santander;68615;Rionegro;2,022;62.5;Alto riesgo
+68;Santander;68615;Rionegro;2,023;71.7;Alto riesgo
+68;Santander;68655;Sabana de Torres;2,023;30.8;Riesgo medio
+68;Santander;68689;San Vicente de Chucurí;2,021;28.9;Riesgo medio
+68;Santander;68689;San Vicente de Chucurí;2,022;31.7;Riesgo medio
+68;Santander;68689;San Vicente de Chucurí;2,023;38.0;Alto riesgo
+68;Santander;68770;Suaita;2,021;48.6;Alto riesgo
+68;Santander;68770;Suaita;2,022;31.6;Riesgo medio
+68;Santander;68770;Suaita;2,023;31.9;Riesgo medio
+68;Santander;68820;Tona;2,023;32.3;Riesgo medio
+68;Santander;68872;Villanueva;2,022;53.7;Alto riesgo
+68;Santander;68872;Villanueva;2,023;94.6;Inviable sanitariamente
+68;Santander;68895;Zapatoca;2,023;43.9;Alto riesgo
+70;Sucre;70001;Sincelejo;2,022;0.0;Sin riesgo
+70;Sucre;70001;Sincelejo;2,023;37.5;Alto riesgo
+70;Sucre;70110;Buenavista;2,021;100.0;Inviable sanitariamente
+70;Sucre;70110;Buenavista;2,023;100.0;Inviable sanitariamente
+73;Tolima;73001;Ibagué;2,021;49.5;Alto riesgo
+73;Tolima;73001;Ibagué;2,022;56.8;Alto riesgo
+73;Tolima;73001;Ibagué;2,023;50.0;Alto riesgo
+73;Tolima;73268;Espinal;2,021;0.0;Sin riesgo
+73;Tolima;73268;Espinal;2,022;0.0;Sin riesgo
+73;Tolima;73268;Espinal;2,023;0.0;Sin riesgo
+73;Tolima;73283;Fresno;2,022;0.0;Sin riesgo
+73;Tolima;73347;Herveo;2,021;0.0;Sin riesgo
+73;Tolima;73347;Herveo;2,022;0.0;Sin riesgo
+73;Tolima;73347;Herveo;2,023;18.2;Riesgo medio
+73;Tolima;73547;Piedras;2,021;1.9;Sin riesgo
+73;Tolima;73547;Piedras;2,023;0.0;Sin riesgo
+73;Tolima;73678;San Luis;2,021;21.6;Riesgo medio
+73;Tolima;73678;San Luis;2,023;21.4;Riesgo medio
+76;Valle del Cauca;76001;Santiago de Cali;2,021;0.0;Sin riesgo
+76;Valle del Cauca;76001;Santiago de Cali;2,022;0.0;Sin riesgo
+76;Valle del Cauca;76001;Santiago de Cali;2,023;0.0;Sin riesgo
+76;Valle del Cauca;76020;Alcalá;2,021;10.7;Bajo riesgo
+76;Valle del Cauca;76036;Andalucía;2,021;30.7;Riesgo medio
+76;Valle del Cauca;76036;Andalucía;2,022;0.0;Sin riesgo
+76;Valle del Cauca;76036;Andalucía;2,023;0.1;Sin riesgo
+76;Valle del Cauca;76041;Ansermanuevo;2,021;0.1;Sin riesgo
+76;Valle del Cauca;76054;Argelia;2,021;30.3;Riesgo medio
+76;Valle del Cauca;76100;Bolívar;2,021;22.9;Riesgo medio
+76;Valle del Cauca;76100;Bolívar;2,022;0.0;Sin riesgo
+76;Valle del Cauca;76100;Bolívar;2,023;0.0;Sin riesgo
+76;Valle del Cauca;76109;Buenaventura;2,021;3.3;Sin riesgo
+76;Valle del Cauca;76109;Buenaventura;2,022;0.0;Sin riesgo
+76;Valle del Cauca;76109;Buenaventura;2,023;0.8;Sin riesgo
+76;Valle del Cauca;76113;Bugalagrande;2,021;25.9;Riesgo medio
+76;Valle del Cauca;76113;Bugalagrande;2,022;28.2;Riesgo medio
+76;Valle del Cauca;76113;Bugalagrande;2,023;7.4;Bajo riesgo
+76;Valle del Cauca;76122;Caicedonia;2,021;28.7;Riesgo medio
+76;Valle del Cauca;76122;Caicedonia;2,022;0.0;Sin riesgo
+76;Valle del Cauca;76122;Caicedonia;2,023;0.0;Sin riesgo
+76;Valle del Cauca;76126;Calima;2,021;48.6;Alto riesgo
+76;Valle del Cauca;76126;Calima;2,022;89.0;Inviable sanitariamente
+76;Valle del Cauca;76126;Calima;2,023;85.3;Inviable sanitariamente
+76;Valle del Cauca;76130;Candelaria;2,021;12.5;Bajo riesgo
+76;Valle del Cauca;76130;Candelaria;2,022;13.7;Bajo riesgo
+76;Valle del Cauca;76130;Candelaria;2,023;11.4;Bajo riesgo
+76;Valle del Cauca;76233;Dagua;2,021;5.9;Bajo riesgo
+76;Valle del Cauca;76233;Dagua;2,022;25.9;Riesgo medio
+76;Valle del Cauca;76233;Dagua;2,023;21.3;Riesgo medio
+76;Valle del Cauca;76243;El Águila;2,021;0.0;Sin riesgo
+76;Valle del Cauca;76246;El Cairo;2,021;45.3;Alto riesgo
+76;Valle del Cauca;76248;El Cerrito;2,021;0.0;Sin riesgo
+76;Valle del Cauca;76250;El Dovio;2,021;53.9;Alto riesgo
+76;Valle del Cauca;76275;Florida;2,021;0.0;Sin riesgo
+76;Valle del Cauca;76306;Ginebra;2,021;0.0;Sin riesgo
+76;Valle del Cauca;76306;Ginebra;2,022;86.5;Inviable sanitariamente
+76;Valle del Cauca;76306;Ginebra;2,023;26.8;Riesgo medio
+76;Valle del Cauca;76318;Guacarí;2,021;50.9;Alto riesgo
+76;Valle del Cauca;76318;Guacarí;2,022;35.2;Alto riesgo
+76;Valle del Cauca;76318;Guacarí;2,023;43.3;Alto riesgo
+76;Valle del Cauca;76364;Jamundí;2,021;19.7;Riesgo medio
+76;Valle del Cauca;76364;Jamundí;2,022;21.8;Riesgo medio
+76;Valle del Cauca;76364;Jamundí;2,023;15.9;Riesgo medio
+76;Valle del Cauca;76377;La Cumbre;2,021;41.2;Alto riesgo
+76;Valle del Cauca;76400;La Unión;2,021;0.0;Sin riesgo
+76;Valle del Cauca;76403;La Victoria;2,021;28.0;Riesgo medio
+76;Valle del Cauca;76497;Obando;2,021;34.5;Riesgo medio
+76;Valle del Cauca;76497;Obando;2,022;85.9;Inviable sanitariamente
+76;Valle del Cauca;76497;Obando;2,023;86.1;Inviable sanitariamente
+76;Valle del Cauca;76520;Palmira;2,021;4.1;Sin riesgo
+76;Valle del Cauca;76520;Palmira;2,022;8.6;Bajo riesgo
+76;Valle del Cauca;76520;Palmira;2,023;8.3;Bajo riesgo
+76;Valle del Cauca;76563;Pradera;2,021;0.0;Sin riesgo
+76;Valle del Cauca;76606;Restrepo;2,021;57.8;Alto riesgo
+76;Valle del Cauca;76606;Restrepo;2,022;0.0;Sin riesgo
+76;Valle del Cauca;76606;Restrepo;2,023;0.0;Sin riesgo
+76;Valle del Cauca;76616;Riofrío;2,021;43.3;Alto riesgo
+76;Valle del Cauca;76622;Roldanillo;2,021;0.0;Sin riesgo
+76;Valle del Cauca;76670;San Pedro;2,021;59.2;Alto riesgo
+76;Valle del Cauca;76736;Sevilla;2,021;40.5;Alto riesgo
+76;Valle del Cauca;76823;Toro;2,021;0.0;Sin riesgo
+76;Valle del Cauca;76828;Trujillo;2,021;56.5;Alto riesgo
+76;Valle del Cauca;76834;Tuluá;2,021;5.0;Sin riesgo
+76;Valle del Cauca;76834;Tuluá;2,022;3.1;Sin riesgo
+76;Valle del Cauca;76834;Tuluá;2,023;2.4;Sin riesgo
+76;Valle del Cauca;76863;Versalles;2,021;54.2;Alto riesgo
+76;Valle del Cauca;76890;Yotoco;2,021;57.4;Alto riesgo
+76;Valle del Cauca;76890;Yotoco;2,022;39.2;Alto riesgo
+76;Valle del Cauca;76890;Yotoco;2,023;30.6;Riesgo medio
+76;Valle del Cauca;76892;Yumbo;2,021;9.8;Bajo riesgo
+76;Valle del Cauca;76892;Yumbo;2,022;0.6;Sin riesgo
+76;Valle del Cauca;76892;Yumbo;2,023;12.6;Bajo riesgo
+76;Valle del Cauca;76895;Zarzal;2,021;9.2;Bajo riesgo
+76;Valle del Cauca;76895;Zarzal;2,022;0.0;Sin riesgo
+76;Valle del Cauca;76895;Zarzal;2,023;0.0;Sin riesgo
+81;Arauca;81001;Arauca;2,021;11.9;Bajo riesgo
+81;Arauca;81001;Arauca;2,022;20.9;Riesgo medio
+81;Arauca;81065;Arauquita;2,021;20.5;Riesgo medio
+81;Arauca;81065;Arauquita;2,022;26.1;Riesgo medio
+81;Arauca;81065;Arauquita;2,023;11.5;Bajo riesgo
+81;Arauca;81736;Saravena;2,021;52.2;Alto riesgo
+81;Arauca;81736;Saravena;2,022;47.8;Alto riesgo
+81;Arauca;81736;Saravena;2,023;15.1;Riesgo medio
+85;Casanare;85001;Yopal;2,021;1.8;Sin riesgo
+85;Casanare;85001;Yopal;2,022;1.6;Sin riesgo
+85;Casanare;85001;Yopal;2,023;1.5;Sin riesgo
+85;Casanare;85125;Hato Corozal;2,023;50.2;Alto riesgo
+85;Casanare;85225;Nunchía;2,021;5.4;Bajo riesgo
+85;Casanare;85225;Nunchía;2,022;0.3;Sin riesgo
+85;Casanare;85225;Nunchía;2,023;21.6;Riesgo medio
+85;Casanare;85230;Orocué;2,021;21.0;Riesgo medio
+85;Casanare;85230;Orocué;2,022;40.1;Alto riesgo
+85;Casanare;85230;Orocué;2,023;26.1;Riesgo medio
+85;Casanare;85300;Sabanalarga;2,021;0.9;Sin riesgo
+85;Casanare;85300;Sabanalarga;2,023;27.0;Riesgo medio
+85;Casanare;85325;San Luis de Palenque;2,021;14.4;Riesgo medio
+85;Casanare;85325;San Luis de Palenque;2,022;6.9;Bajo riesgo
+85;Casanare;85325;San Luis de Palenque;2,023;11.1;Bajo riesgo
+85;Casanare;85410;Tauramena;2,021;22.8;Riesgo medio
+85;Casanare;85410;Tauramena;2,022;12.7;Bajo riesgo
+85;Casanare;85410;Tauramena;2,023;26.9;Riesgo medio
+85;Casanare;85430;Trinidad;2,023;0.0;Sin riesgo
+85;Casanare;85440;Villanueva;2,021;19.2;Riesgo medio
+85;Casanare;85440;Villanueva;2,022;0.0;Sin riesgo
+85;Casanare;85440;Villanueva;2,023;1.2;Sin riesgo
+86;Putumayo;86001;Mocoa;2,021;10.5;Bajo riesgo
+86;Putumayo;86001;Mocoa;2,022;0.0;Sin riesgo
+86;Putumayo;86001;Mocoa;2,023;2.1;Sin riesgo
+86;Putumayo;86219;Colón;2,021;10.5;Bajo riesgo
+86;Putumayo;86568;Puerto Asís;2,021;55.9;Alto riesgo
+86;Putumayo;86568;Puerto Asís;2,022;90.2;Inviable sanitariamente
+86;Putumayo;86568;Puerto Asís;2,023;69.8;Alto riesgo
+86;Putumayo;86569;Puerto Caicedo;2,021;0.0;Sin riesgo
+86;Putumayo;86569;Puerto Caicedo;2,022;0.0;Sin riesgo
+86;Putumayo;86569;Puerto Caicedo;2,023;2.2;Sin riesgo
+86;Putumayo;86571;Puerto Guzmán;2,021;0.2;Sin riesgo
+86;Putumayo;86571;Puerto Guzmán;2,022;3.9;Sin riesgo
+86;Putumayo;86571;Puerto Guzmán;2,023;5.2;Bajo riesgo
+86;Putumayo;86573;Puerto Leguízamo;2,021;10.5;Bajo riesgo
+86;Putumayo;86573;Puerto Leguízamo;2,022;7.0;Bajo riesgo
+86;Putumayo;86749;Sibundoy;2,021;37.3;Alto riesgo
+86;Putumayo;86749;Sibundoy;2,022;18.9;Riesgo medio
+86;Putumayo;86755;San Francisco;2,021;0.0;Sin riesgo
+86;Putumayo;86757;San Miguel;2,022;69.7;Alto riesgo
+86;Putumayo;86757;San Miguel;2,023;97.9;Inviable sanitariamente
+88;Archipiélago de San Andrés, Providencia y Santa Catalina;88001;San Andrés;2,021;3.7;Sin riesgo
+88;Archipiélago de San Andrés, Providencia y Santa Catalina;88001;San Andrés;2,022;4.4;Sin riesgo
+88;Archipiélago de San Andrés, Providencia y Santa Catalina;88001;San Andrés;2,023;7.4;Bajo riesgo
+88;Archipiélago de San Andrés, Providencia y Santa Catalina;88564;Providencia;2,021;18.2;Riesgo medio
+95;Guaviare;95025;El Retorno;2,021;16.7;Riesgo medio
+95;Guaviare;95025;El Retorno;2,022;8.4;Bajo riesgo
+95;Guaviare;95025;El Retorno;2,023;3.2;Sin riesgo
