@@ -160,23 +160,105 @@
                     </table>
                     </div>
                 </article>
-
-                <!-- ============================================================
-                     K-MEANS EVALUATION
+                    <!-- ============================================================
+                                         K-MEANS EVALUATION
                      ============================================================ -->
                 <article id="kmeans-eval" class="phase-block">
                     <h2>1 · K-Means evaluation</h2>
-                    <p class="phase-subtitle">Unsupervised · IRCA rural dataset</p>
+                    <p class="phase-subtitle">
+                        Unsupervised · IRCA rural dataset ·
+                        {{ "{:,}".format(kmeans_eval.metrics.train_size) }} rows ·
+                        {{ kmeans_eval.metrics.n_features }} features
+                    </p>
 
-                    <div class="about__card" style="background:#fef3c7; border-color:#fbbf24;">
-                        <div class="about__icon">⏳</div>
-                        <h3 class="about__card-title">Section in progress</h3>
-                        <p>
-                            K-Means evaluation metrics (silhouette, Davies-Bouldin,
-                            Calinski-Harabasz) and the per-cluster breakdown will be added
-                            here once the teammate training script lands in the repository.
-                        </p>
+                    <p>
+                        K-Means was trained with K = {{ kmeans_eval.metrics.best_k }} on the
+                        <strong>same IRCA dataset</strong> Logistic Regression uses, after
+                        a <code>StandardScaler</code>. The intrinsic metrics below come
+                        straight from the training script and are computed on the scaled
+                        feature space the model was fit on.
+                    </p>
+
+                    <h3 class="phase-subtitle">Headline metrics</h3>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ kmeans_eval.metrics.best_k }}</div>
+                            <div class="stat-card__label">Clusters (K)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.4f"|format(kmeans_eval.metrics.silhouette) }}</div>
+                            <div class="stat-card__label">Silhouette</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.4f"|format(kmeans_eval.metrics.davies_bouldin) }}</div>
+                            <div class="stat-card__label">Davies-Bouldin</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(kmeans_eval.metrics.calinski_harabasz) }}</div>
+                            <div class="stat-card__label">Calinski-Harabasz</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.1f"|format(kmeans_eval.metrics.pca_variance_total * 100) }}%</div>
+                            <div class="stat-card__label">PCA variance</div>
+                        </div>
                     </div>
+
+                    <h3 class="phase-subtitle">Per-cluster breakdown</h3>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Cluster</th>
+                                <th style="padding:.5rem;">Profile</th>
+                                <th style="padding:.5rem;">Rows</th>
+                                <th style="padding:.5rem;">Mean IRCA</th>
+                                <th style="padding:.5rem;">Std</th>
+                                <th style="padding:.5rem;">Min</th>
+                                <th style="padding:.5rem;">Max</th>
+                                <th style="padding:.5rem;">% High risk</th>
+                                <th style="padding:.5rem;">Munis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for c in kmeans_eval.cluster_breakdown %}
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>C{{ c.cluster }}</strong></td>
+                                <td style="padding:.5rem;">{{ c.label }}</td>
+                                <td style="padding:.5rem;">{{ c.size }}</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(c.mean_irca) }}</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(c.std_irca) }}</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(c.min_irca) }}</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(c.max_irca) }}</td>
+                                <td style="padding:.5rem;">{{ c.high_risk_pct }}%</td>
+                                <td style="padding:.5rem;">{{ c.n_municipalities }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <h3 class="phase-subtitle">Cluster visualisation</h3>
+                    <figure>
+                        <img src="{{ url_for('reports_file', filename='kmeans_irca_pca.png') }}"
+                             alt="Clusters projected on PCA components"
+                             style="width:100%; max-width:640px; display:block; margin:0 auto; border-radius:8px; border:1px solid #e2e8f0;">
+                        <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                            Clusters projected on the first two PCA components.
+                        </figcaption>
+                    </figure>
+
+                    <h3 class="phase-subtitle">Reading</h3>
+                    <p>
+                        Silhouette of <strong>{{ "%.4f"|format(kmeans_eval.metrics.silhouette) }}</strong>
+                        is positive but modest — the IRCA feature space has overlap between
+                        risk profiles, so the boundaries between clusters are soft.
+                        Davies-Bouldin of <strong>{{ "%.4f"|format(kmeans_eval.metrics.davies_bouldin) }}</strong>
+                        confirms this: clusters are present but not strongly separated.
+                        Interpret K-Means here as a way to surface <em>natural risk
+                        profiles</em> rather than a hard classifier. The full pipeline,
+                        training configuration and console examples live on the
+                        <a href="{{ url_for('phase_3') }}#kmeans">Model Engineering page</a>.
+                    </p>
                 </article>
 
                 <!-- ============================================================

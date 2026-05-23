@@ -97,18 +97,220 @@
                     <h2>1 · K-Means Clustering</h2>
                     <p class="phase-subtitle">Unsupervised model · IRCA rural dataset</p>
 
-                    <div class="about__card" style="background:#fef3c7; border-color:#fbbf24;">
-                        <div class="about__icon">⏳</div>
-                        <h3 class="about__card-title">Section in progress</h3>
-                        <p>
-                            K-Means clustering on the IRCA dataset is being integrated by a
-                            teammate. The trained model, scaler, metrics and template snippet
-                            will be plugged into this section as soon as their training
-                            script lands in the repository. The layout mirrors the Logistic
-                            Regression block so comparisons stay consistent.
-                        </p>
+                    <p>
+                        K-Means is an unsupervised clustering algorithm that groups records
+                        into <em>K</em> clusters by minimising the squared distance between
+                        each point and its cluster centroid. We apply it to the
+                        <strong>same rural drinking-water dataset</strong> Logistic Regression
+                        uses, so both models are trained on identical rows and the results
+                        can be compared side by side.
+                    </p>
+
+                    <h3 class="phase-subtitle">Problem framing</h3>
+                    <p>
+                        Unlike Logistic Regression, K-Means has no target variable. It looks
+                        at the feature space and asks: <em>which records naturally group
+                        together?</em> We use it to discover <strong>profiles of municipal
+                        water quality</strong> — clusters of records that share department,
+                        year and IRCA fingerprint. Because there is no target to leak into,
+                        <strong><code>IRCArural</code> is allowed as a feature</strong> here
+                        (it was excluded in Logistic for that reason). The optimal number of
+                        clusters K is chosen automatically by the silhouette score.
+                    </p>
+
+                    <h3 class="phase-subtitle">Dataset split</h3>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "{:,}".format(kmeans_eval.metrics.train_size) }}</div>
+                            <div class="stat-card__label">Total records</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ kmeans_eval.metrics.n_features }}</div>
+                            <div class="stat-card__label">Features</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ kmeans_eval.metrics.best_k }}</div>
+                            <div class="stat-card__label">Clusters (K)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ kmeans_eval.n_clusters }}</div>
+                            <div class="stat-card__label">Clusters found</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "{:,}".format(kmeans_eval.total_rows) }}</div>
+                            <div class="stat-card__label">Rows clustered</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">42</div>
+                            <div class="stat-card__label">random_state</div>
+                        </div>
+                    </div>
+
+                    <h3 class="phase-subtitle">Feature engineering</h3>
+                    <ul class="phase-list">
+                        <li>
+                            <strong>One-hot encoding of <code>DepartamentoCodigo</code>:</strong>
+                            29 binary columns, identical to the encoding used by Logistic
+                            Regression. The code is preferred over the department name
+                            because the same department appears with two spellings.
+                        </li>
+                        <li>
+                            <strong>Temporal feature:</strong> <code>Año</code> kept as a
+                            numeric variable to capture the 2021–2024 trend.
+                        </li>
+                        <li>
+                            <strong>Risk signal:</strong> <code>IRCArural</code> kept as a
+                            numeric feature. Allowed because K-Means is unsupervised — there
+                            is no target to leak into.
+                        </li>
+                        <li>
+                            <strong>Dropped:</strong> <code>MunicipioCodigo</code> (508 unique
+                            values would explode the feature space) and the categorical risk
+                            label (we want clusters to be derived from raw data, not from the
+                            outcome).
+                        </li>
+                        <li>
+                            <strong>Scaling:</strong> <code>StandardScaler</code> on the full
+                            feature matrix so all 31 features share a comparable scale before
+                            the distance-based clustering.
+                        </li>
+                    </ul>
+
+                    <h3 class="phase-subtitle">Training configuration</h3>
+                    <ul class="phase-list">
+                        <li><strong>Algorithm:</strong> <code>sklearn.cluster.KMeans</code> with Lloyd's algorithm.</li>
+                        <li><strong>K search range:</strong> <code>K = 2 … 8</code>, scored with the silhouette coefficient.</li>
+                        <li><strong>Best K:</strong> <code>{{ kmeans_eval.metrics.best_k }}</code>, the value that maximised silhouette on the scaled feature matrix.</li>
+                        <li><strong>Initialisation:</strong> <code>n_init=10</code> — the algorithm runs ten times with different centroids and keeps the run with the lowest inertia.</li>
+                        <li><strong>Random state:</strong> <code>42</code> for reproducible cluster labels across runs.</li>
+                        <li><strong>PCA (visualisation only):</strong> <code>n_components=2</code> on the scaled matrix to plot clusters; first two components explain {% for v in kmeans_eval.metrics.pca_variance %}{{ "%.1f"|format(v * 100) }}%{% if not loop.last %} + {% endif %}{% endfor %} of the variance.</li>
+                    </ul>
+
+                    <h3 class="phase-subtitle">Validation metrics</h3>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.4f"|format(kmeans_eval.metrics.silhouette) }}</div>
+                            <div class="stat-card__label">Silhouette</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.4f"|format(kmeans_eval.metrics.davies_bouldin) }}</div>
+                            <div class="stat-card__label">Davies-Bouldin</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(kmeans_eval.metrics.calinski_harabasz) }}</div>
+                            <div class="stat-card__label">Calinski-Harabasz</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ kmeans_eval.metrics.best_k }}</div>
+                            <div class="stat-card__label">Optimal K</div>
+                        </div>
+                    </div>
+                    <pre style="background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:8px; overflow-x:auto; font-size:.85rem; margin-top:1rem;">silhouette         : {{ "%.4f"|format(kmeans_eval.metrics.silhouette) }}    (range [-1, 1], higher is better)
+                        davies_bouldin     : {{ "%.4f"|format(kmeans_eval.metrics.davies_bouldin) }}    (range [0, inf), lower is better)
+                        calinski_harabasz  : {{ "%.4f"|format(kmeans_eval.metrics.calinski_harabasz) }}   (range [0, inf), higher is better)
+                        best_k             : {{ kmeans_eval.metrics.best_k }}
+                        n_features         : {{ kmeans_eval.metrics.n_features }}
+                        train_size         : {{ kmeans_eval.metrics.train_size }}</pre>
+
+                    <h3 class="phase-subtitle">Visualizations</h3>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top:1rem;">
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='kmeans_irca_elbow.png') }}"
+                                 alt="Elbow and silhouette across K values"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                Inertia and silhouette across K — used to pick K = {{ kmeans_eval.metrics.best_k }}.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='kmeans_irca_pca.png') }}"
+                                 alt="Clusters projected on PCA components"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                Clusters projected on the first two principal components.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <h3 class="phase-subtitle">Per-cluster breakdown</h3>
+                    <p>
+                        Cluster profile in the original IRCA scale, sorted by cluster id.
+                        <code>% High risk</code> is the share of rows in the cluster whose
+                        label is <em>Alto riesgo</em> or <em>Inviable sanitariamente</em>
+                        (same positive class Logistic Regression predicts).
+                    </p>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Cluster</th>
+                                <th style="padding:.5rem;">Profile</th>
+                                <th style="padding:.5rem;">Rows</th>
+                                <th style="padding:.5rem;">Mean IRCA</th>
+                                <th style="padding:.5rem;">Std</th>
+                                <th style="padding:.5rem;">Min</th>
+                                <th style="padding:.5rem;">Max</th>
+                                <th style="padding:.5rem;">% High risk</th>
+                                <th style="padding:.5rem;">Munis</th>
+                                <th style="padding:.5rem;">Top departments</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for c in kmeans_eval.cluster_breakdown %}
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>C{{ c.cluster }}</strong></td>
+                                <td style="padding:.5rem;">{{ c.label }}</td>
+                                <td style="padding:.5rem;">{{ c.size }}</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(c.mean_irca) }}</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(c.std_irca) }}</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(c.min_irca) }}</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(c.max_irca) }}</td>
+                                <td style="padding:.5rem;">{{ c.high_risk_pct }}%</td>
+                                <td style="padding:.5rem;">{{ c.n_municipalities }}</td>
+                                <td style="padding:.5rem;">{{ c.top_departments | join(", ") }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <h3 class="phase-subtitle" style="margin-top:2rem;">Console clustering examples</h3>
+                    <p>
+                        Eight random rows drawn from the IRCA dataset and pushed through the
+                        scaler → KMeans pipeline. The "Cluster" column is the label assigned
+                        by the trained model and "Profile" is the human-readable mapping
+                        based on the cluster's mean IRCA.
+                    </p>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem; margin-top:.75rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Department</th>
+                                <th style="padding:.5rem;">Municipality</th>
+                                <th style="padding:.5rem;">Year</th>
+                                <th style="padding:.5rem;">IRCA</th>
+                                <th style="padding:.5rem;">Actual risk level</th>
+                                <th style="padding:.5rem;">Cluster</th>
+                                <th style="padding:.5rem;">Profile</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for p in kmeans_eval.sample_predictions %}
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;">{{ p.department }}</td>
+                                <td style="padding:.5rem;">{{ p.municipality }}</td>
+                                <td style="padding:.5rem;">{{ p.year }}</td>
+                                <td style="padding:.5rem;">{{ "%.2f"|format(p.irca) }}</td>
+                                <td style="padding:.5rem;">{{ p.risk_level }}</td>
+                                <td style="padding:.5rem;"><strong>C{{ p.cluster }}</strong></td>
+                                <td style="padding:.5rem;">{{ p.cluster_label }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
                     </div>
                 </article>
+
 
                 <!-- ============================================================
                      MODEL 2 · LOGISTIC REGRESSION (SUPERVISED, IRCA DATASET)

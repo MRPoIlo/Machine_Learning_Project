@@ -5,6 +5,7 @@ from flask import Flask, jsonify, render_template, request, send_from_directory
 from services import water_quality
 from services import precipitation
 from services import logistic_regression
+from services import kmeans_irca
 
 app = Flask(__name__)
 
@@ -28,19 +29,21 @@ def phase_2():
 
 @app.route('/methodology/phase-3')
 def phase_3():
-    return render_template(
-        'methodology/phase_3.html',
-        logistic_stats=logistic_regression.stats(),
-    )
+      return render_template(
+          'methodology/phase_3.html',
+          kmeans_eval=kmeans_irca.detailed_metrics(),   # ← AGREGAR
+          logistic_stats=logistic_regression.stats(),
+      )
 
 
 @app.route('/methodology/phase-4')
 def phase_4():
-    return render_template(
-        'methodology/phase_4.html',
-        logistic_stats=logistic_regression.stats(),
-        logistic_eval=logistic_regression.detailed_metrics(),
-    )
+      return render_template(
+          'methodology/phase_4.html',
+          kmeans_eval=kmeans_irca.detailed_metrics(),   # ← AGREGAR
+          logistic_stats=logistic_regression.stats(),
+          logistic_eval=logistic_regression.detailed_metrics(),
+      )
 
 
 @app.route('/methodology/phase-5', methods=['GET', 'POST'])
