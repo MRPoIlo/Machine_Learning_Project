@@ -35,6 +35,7 @@ def phase_3():
           kmeans_eval=kmeans_irca.detailed_metrics(),
           logistic_stats=logistic_regression.stats(),
           lda_stats=lda_service.stats(),
+          lda_eval=lda_service.detailed_metrics(),
       )
 
 

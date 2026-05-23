@@ -460,28 +460,57 @@
                     </div>
 
                     <h3 class="phase-subtitle">Confusion matrix</h3>
-                    <div style="overflow-x:auto; margin-top:.75rem;">
-                    <table style="border-collapse:collapse; font-size:.9rem; margin:0 auto;">
-                        <thead>
-                            <tr>
-                                <th style="padding:.5rem;"></th>
-                                <th style="padding:.5rem; background:#f1f5f9;">Pred: No high risk</th>
-                                <th style="padding:.5rem; background:#f1f5f9;">Pred: High risk</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="padding:.5rem; background:#f1f5f9;"><strong>Actual: No high risk</strong></td>
-                                <td style="padding:.5rem; text-align:center; background:#dcfce7; font-weight:bold;">{{ lda_eval.confusion_matrix.tn }}<br><small>TN</small></td>
-                                <td style="padding:.5rem; text-align:center; background:#fee2e2;">{{ lda_eval.confusion_matrix.fp }}<br><small>FP</small></td>
-                            </tr>
-                            <tr>
-                                <td style="padding:.5rem; background:#f1f5f9;"><strong>Actual: High risk</strong></td>
-                                <td style="padding:.5rem; text-align:center; background:#fee2e2;">{{ lda_eval.confusion_matrix.fn }}<br><small>FN</small></td>
-                                <td style="padding:.5rem; text-align:center; background:#dcfce7; font-weight:bold;">{{ lda_eval.confusion_matrix.tp }}<br><small>TP</small></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top:1rem;">
+                        <div>
+                            <table style="width:100%; border-collapse:collapse; text-align:center;">
+                                <thead>
+                                    <tr>
+                                        <th style="padding:.5rem;"></th>
+                                        <th style="padding:.6rem; background:#f1f5f9; font-size:.85rem;">Pred: No high risk</th>
+                                        <th style="padding:.6rem; background:#f1f5f9; font-size:.85rem;">Pred: High risk</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th style="padding:.6rem; background:#f1f5f9; text-align:left; font-size:.85rem;">Actual: No high risk</th>
+                                        <td style="padding:.8rem; border:1px solid #cbd5e1; background:#dcfce7;">
+                                            <strong style="font-size:1.4rem; display:block;">{{ lda_eval.confusion_matrix.tn }}</strong>
+                                            <small style="color:#15803d;">True Negative</small><br>
+                                            <small style="color:#64748b;">{{ "%.1f"|format(lda_eval.confusion_matrix.tn / lda_eval.test_size * 100) }}% of test set</small>
+                                        </td>
+                                        <td style="padding:.8rem; border:1px solid #cbd5e1; background:#fee2e2;">
+                                            <strong style="font-size:1.4rem; display:block;">{{ lda_eval.confusion_matrix.fp }}</strong>
+                                            <small style="color:#b91c1c;">False Positive</small><br>
+                                            <small style="color:#64748b;">{{ "%.1f"|format(lda_eval.confusion_matrix.fp / lda_eval.test_size * 100) }}% of test set</small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="padding:.6rem; background:#f1f5f9; text-align:left; font-size:.85rem;">Actual: High risk</th>
+                                        <td style="padding:.8rem; border:1px solid #cbd5e1; background:#fee2e2;">
+                                            <strong style="font-size:1.4rem; display:block;">{{ lda_eval.confusion_matrix.fn }}</strong>
+                                            <small style="color:#b91c1c;">False Negative</small><br>
+                                            <small style="color:#64748b;">{{ "%.1f"|format(lda_eval.confusion_matrix.fn / lda_eval.test_size * 100) }}% of test set</small>
+                                        </td>
+                                        <td style="padding:.8rem; border:1px solid #cbd5e1; background:#dcfce7;">
+                                            <strong style="font-size:1.4rem; display:block;">{{ lda_eval.confusion_matrix.tp }}</strong>
+                                            <small style="color:#15803d;">True Positive</small><br>
+                                            <small style="color:#64748b;">{{ "%.1f"|format(lda_eval.confusion_matrix.tp / lda_eval.test_size * 100) }}% of test set</small>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p style="font-size:.82rem; color:#64748b; margin-top:.6rem;">
+                                Total test rows: <strong>{{ lda_eval.test_size }}</strong> · Positives (High risk): <strong>{{ lda_eval.positive_test_count }}</strong>
+                            </p>
+                        </div>
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='lda_confusion_matrix.png') }}"
+                                 alt="Confusion matrix — LDA"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                Heatmap rendering of the same matrix.
+                            </figcaption>
+                        </figure>
                     </div>
 
                     <h3 class="phase-subtitle">Visualizations</h3>

@@ -28,7 +28,7 @@ MODEL_PATH   = MODELS_DIR  / "lda_model.pkl"
 SCALER_PATH  = MODELS_DIR  / "lda_scaler.pkl"
 METRICS_PATH = REPORTS_DIR / "lda_metrics.txt"
 
-HIGH_RISK_LEVELS = ["Alto riesgo", "Inviable sanitariamente"]
+HIGH_RISK_LEVELS = ["High Risk", "Sanitaryly not feasible"]
 TARGET_NAMES     = ["No high risk", "High risk"]
 
 

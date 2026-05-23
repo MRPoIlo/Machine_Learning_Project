@@ -598,15 +598,106 @@
                     <h3 class="phase-subtitle">Validation metrics</h3>
                     <div class="stats-row">
                         <div class="stat-card">
-                            <div class="stat-card__value">{{ "%.2f"|format(lda_stats.metrics.accuracy * 100) }}%</div>
+                            <div class="stat-card__value">{{ "%.2f"|format(lda_eval.accuracy * 100) }}%</div>
                             <div class="stat-card__label">Accuracy</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-card__value">{{ "%.3f"|format(lda_stats.metrics.roc_auc) }}</div>
+                            <div class="stat-card__value">{{ "%.3f"|format(lda_eval.roc_auc) }}</div>
                             <div class="stat-card__label">ROC AUC</div>
                         </div>
+                        {% for cls in lda_eval.per_class %}{% if cls.name == "High risk" %}
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(cls.recall * 100) }}%</div>
+                            <div class="stat-card__label">Recall (High risk)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(cls.precision * 100) }}%</div>
+                            <div class="stat-card__label">Precision (High risk)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.3f"|format(cls.f1) }}</div>
+                            <div class="stat-card__label">F1 (High risk)</div>
+                        </div>
+                        {% endif %}{% endfor %}
                     </div>
-                    <pre style="background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:8px; overflow-x:auto; font-size:.85rem; margin-top:1rem;">{% for line in lda_stats.metrics.report_lines %}{{ line }}
+
+                    <h3 class="phase-subtitle">Per-class breakdown</h3>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Class</th>
+                                <th style="padding:.5rem;">Precision</th>
+                                <th style="padding:.5rem;">Recall</th>
+                                <th style="padding:.5rem;">F1-Score</th>
+                                <th style="padding:.5rem;">Support</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for cls in lda_eval.per_class %}
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>{{ cls.name }}</strong></td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(cls.precision) }}</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(cls.recall) }}</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(cls.f1) }}</td>
+                                <td style="padding:.5rem;">{{ cls.support }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <h3 class="phase-subtitle" style="margin-top:1.5rem;">Confusion matrix</h3>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; margin-top:.75rem;">
+                        <div>
+                            <table style="width:100%; border-collapse:collapse; text-align:center; font-size:.9rem;">
+                                <thead>
+                                    <tr>
+                                        <th style="padding:.5rem;"></th>
+                                        <th style="padding:.5rem; background:#f1f5f9;">Pred: No high risk</th>
+                                        <th style="padding:.5rem; background:#f1f5f9;">Pred: High risk</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th style="padding:.5rem; background:#f1f5f9; text-align:left;">Actual: No high risk</th>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#dcfce7;">
+                                            <strong style="font-size:1.3rem;">{{ lda_eval.confusion_matrix.tn }}</strong><br>
+                                            <small>True Negative</small>
+                                        </td>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#fee2e2;">
+                                            <strong style="font-size:1.3rem;">{{ lda_eval.confusion_matrix.fp }}</strong><br>
+                                            <small>False Positive</small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="padding:.5rem; background:#f1f5f9; text-align:left;">Actual: High risk</th>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#fee2e2;">
+                                            <strong style="font-size:1.3rem;">{{ lda_eval.confusion_matrix.fn }}</strong><br>
+                                            <small>False Negative</small>
+                                        </td>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#dcfce7;">
+                                            <strong style="font-size:1.3rem;">{{ lda_eval.confusion_matrix.tp }}</strong><br>
+                                            <small>True Positive</small>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p style="font-size:.82rem; color:#64748b; margin-top:.6rem;">
+                                Test set: {{ lda_eval.test_size }} rows · {{ lda_eval.positive_test_count }} positives (High risk)
+                            </p>
+                        </div>
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='lda_confusion_matrix.png') }}"
+                                 alt="Confusion matrix — LDA"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                Heatmap of the same confusion matrix.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <pre style="background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:8px; overflow-x:auto; font-size:.85rem; margin-top:1.5rem;">{% for line in lda_stats.metrics.report_lines %}{{ line }}
 {% endfor %}</pre>
 
                     <h3 class="phase-subtitle">Visualizations</h3>
