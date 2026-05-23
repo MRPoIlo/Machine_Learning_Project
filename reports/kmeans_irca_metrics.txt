@@ -1,0 +1,7 @@
+silhouette: 0.0418
+davies_bouldin: 2.1563
+calinski_harabasz: 69.8232
+best_k: 4
+train_size: 1716
+features: dept_11, dept_13, dept_15, dept_17, dept_18, dept_19, dept_20, dept_23, dept_25, dept_41, dept_44, dept_47, dept_5, dept_50, dept_52, dept_54, dept_63, dept_66, dept_68, dept_70, dept_73, dept_76, dept_8, dept_81, dept_85, dept_86, dept_88, dept_91, dept_95, Año, IRCArural
+pca_explained_variance: 0.0499, 0.0381
