@@ -1,5 +1,5 @@
-accuracy: 0.5988
-roc_auc: 0.6836
+accuracy: 0.7209
+roc_auc: 0.6841
 positive_class: high_risk (High Risk + Sanitaryly not feasible)
 features: dept_11, dept_13, dept_15, dept_17, dept_18, dept_19, dept_20, dept_23, dept_25, dept_41, dept_44, dept_47, dept_5, dept_50, dept_52, dept_54, dept_63, dept_66, dept_68, dept_70, dept_73, dept_76, dept_8, dept_81, dept_85, dept_86, dept_88, dept_91, dept_95, Año
 train_size: 1372
@@ -8,10 +8,10 @@ test_size: 344
 classification_report:
               precision    recall  f1-score   support
 
-No high risk       0.86      0.53      0.66       247
-   High risk       0.39      0.77      0.52        97
+No high risk       0.76      0.89      0.82       247
+   High risk       0.51      0.29      0.37        97
 
-    accuracy                           0.60       344
-   macro avg       0.62      0.65      0.59       344
-weighted avg       0.73      0.60      0.62       344
+    accuracy                           0.72       344
+   macro avg       0.64      0.59      0.59       344
+weighted avg       0.69      0.72      0.69       344
 

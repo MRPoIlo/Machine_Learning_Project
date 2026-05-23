@@ -76,7 +76,7 @@
                             <p>
                                 Supervised binary classifier. Predicts whether a rural
                                 municipality falls in the unsafe water class
-                                <em>(Alto riesgo / Inviable sanitariamente)</em>.
+                                <em>(High Risk / Sanitaryly not feasible)</em>.
                             </p>
                         </article>
                         <article class="about__card">
@@ -236,7 +236,7 @@
                     <p>
                         Cluster profile in the original IRCA scale, sorted by cluster id.
                         <code>% High risk</code> is the share of rows in the cluster whose
-                        label is <em>Alto riesgo</em> or <em>Inviable sanitariamente</em>
+                        label is <em>High Risk</em> or <em>Sanitaryly not feasible</em>
                         (same positive class Logistic Regression predicts).
                     </p>
                     <div style="overflow-x:auto;">
@@ -335,14 +335,14 @@
                     </p>
                     <ul class="phase-list">
                         <li>
-                            <strong>High risk (1):</strong> <em>Alto riesgo</em> +
-                            <em>Inviable sanitariamente</em>. These are the cases where
+                            <strong>High risk (1):</strong> <em>High Risk</em> +
+                            <em>Sanitaryly not feasible</em>. These are the cases where
                             rural drinking water is actually unsafe and policy action is
                             required.
                         </li>
                         <li>
-                            <strong>No high risk (0):</strong> <em>Sin riesgo</em>,
-                            <em>Bajo riesgo</em>, <em>Riesgo medio</em>. Water is within
+                            <strong>No high risk (0):</strong> <em>No Risk</em>,
+                            <em>Low Risk</em>, <em>Medium Risk</em>. Water is within
                             acceptable bounds even if monitoring is still needed.
                         </li>
                     </ul>
@@ -490,37 +490,293 @@
                 </article>
 
                 <!-- ============================================================
-                     MODEL 3 · LDA (PLACEHOLDER FOR TEAMMATE)
+                     MODEL 3 · LDA (SUPERVISED, WATER QUALITY DATASET)
                      ============================================================ -->
                 <article id="lda" class="phase-block">
                     <h2>3 · Linear Discriminant Analysis</h2>
-                    <p class="phase-subtitle">Supervised model · IRCA rural dataset</p>
+                    <p class="phase-subtitle">Supervised model · Water quality for human consumption dataset</p>
 
                     <p>
                         Linear Discriminant Analysis is a generative supervised classifier.
-                        It models the distribution of each class as a Gaussian with shared
-                        covariance and assigns each point to the class with the highest
-                        posterior probability. It complements Logistic Regression with a
-                        variance-aware view of the same data.
+                        It models the distribution of each class as a multivariate Gaussian
+                        with a <strong>shared covariance matrix</strong> and assigns each
+                        point to the class with the highest posterior probability via Bayes'
+                        theorem. Unlike Logistic Regression — which discriminates directly —
+                        LDA first models the data distribution of each class and then derives
+                        the decision boundary from those distributions.
                     </p>
 
-                    <div class="about__card" style="background:#fef3c7; border-color:#fbbf24;">
-                        <div class="about__icon">⏳</div>
-                        <h3 class="about__card-title">Section in progress</h3>
-                        <p>
-                            This model is being trained by a teammate and will be plugged
-                            into this section as soon as the training script and metrics are
-                            available. The layout mirrors the Logistic Regression block so
-                            comparisons stay consistent.
-                        </p>
+                    <h3 class="phase-subtitle">Problem framing</h3>
+                    <p>
+                        We apply LDA to the <strong>same binary classification problem</strong>
+                        as Logistic Regression: predict whether a rural municipality's water
+                        falls in the unsafe class (<em>High Risk / Sanitaryly not feasible</em>).
+                        Using identical features and the same 80/20 stratified split lets us
+                        compare both classifiers directly.
+                    </p>
+                    <ul class="phase-list">
+                        <li>
+                            <strong>High risk (1):</strong> <em>High Risk</em> +
+                            <em>Sanitaryly not feasible</em> — water is actually unsafe
+                            and requires policy action.
+                        </li>
+                        <li>
+                            <strong>No high risk (0):</strong> <em>No Risk</em>,
+                            <em>Low Risk</em>, <em>Medium Risk</em> — within
+                            acceptable bounds even if monitoring continues.
+                        </li>
+                        <li>
+                            <strong><code>IRCArural</code> excluded</strong> for the same
+                            reason as Logistic Regression: the risk level is computed
+                            deterministically from that index, so including it would be
+                            target leakage.
+                        </li>
+                    </ul>
+
+                    <h3 class="phase-subtitle">Dataset split</h3>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "{:,}".format(lda_stats.total_rows) }}</div>
+                            <div class="stat-card__label">Total records</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ lda_stats.metrics.train_size }}</div>
+                            <div class="stat-card__label">Training rows (80%)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ lda_stats.metrics.test_size }}</div>
+                            <div class="stat-card__label">Test rows (20%)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ lda_stats.positive_count }}</div>
+                            <div class="stat-card__label">High risk (positive)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ lda_stats.negative_count }}</div>
+                            <div class="stat-card__label">No high risk (negative)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ lda_stats.positive_pct }}%</div>
+                            <div class="stat-card__label">Positive ratio</div>
+                        </div>
+                    </div>
+
+                    <h3 class="phase-subtitle">Feature engineering</h3>
+                    <ul class="phase-list">
+                        <li>
+                            <strong>One-hot encoding of <code>DepartamentoCodigo</code>:</strong>
+                            identical to Logistic Regression — 30 binary columns, one per
+                            department code. Codes are preferred over names due to duplicate
+                            spellings in the dataset.
+                        </li>
+                        <li>
+                            <strong>Temporal feature:</strong> <code>Año</code> kept numeric
+                            to capture the 2021–2024 trend.
+                        </li>
+                        <li>
+                            <strong>Dropped:</strong> <code>MunicipioCodigo</code> (508 unique
+                            values) and <code>IRCArural</code> (target leakage).
+                        </li>
+                        <li>
+                            <strong>Scaling:</strong> <code>StandardScaler</code> on the full
+                            feature matrix. LDA is sensitive to scale differences because it
+                            computes class means and a pooled covariance; standardisation
+                            prevents high-variance features from dominating the discriminant.
+                        </li>
+                    </ul>
+
+                    <h3 class="phase-subtitle">Training configuration</h3>
+                    <ul class="phase-list">
+                        <li><strong>Algorithm:</strong> <code>sklearn.discriminant_analysis.LinearDiscriminantAnalysis</code></li>
+                        <li><strong>Solver:</strong> <code>svd</code> (Singular Value Decomposition) — avoids computing the full covariance matrix explicitly; numerically stable for wide feature matrices.</li>
+                        <li><strong>Split:</strong> <code>train_test_split</code> with <code>test_size=0.2</code> and <code>stratify=y</code></li>
+                        <li><strong>Random state:</strong> <code>42</code> for reproducibility</li>
+                        <li><strong>Priors:</strong> estimated from the training data (class proportions).</li>
+                        <li><strong>Discriminant components:</strong> for a binary problem, LDA produces a single linear discriminant axis (LD1) that maximises class separation.</li>
+                    </ul>
+
+                    <h3 class="phase-subtitle">Validation metrics</h3>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(lda_eval.accuracy * 100) }}%</div>
+                            <div class="stat-card__label">Accuracy</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.3f"|format(lda_eval.roc_auc) }}</div>
+                            <div class="stat-card__label">ROC AUC</div>
+                        </div>
+                        {% for cls in lda_eval.per_class %}{% if cls.name == "High risk" %}
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(cls.recall * 100) }}%</div>
+                            <div class="stat-card__label">Recall (High risk)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.2f"|format(cls.precision * 100) }}%</div>
+                            <div class="stat-card__label">Precision (High risk)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__value">{{ "%.3f"|format(cls.f1) }}</div>
+                            <div class="stat-card__label">F1 (High risk)</div>
+                        </div>
+                        {% endif %}{% endfor %}
+                    </div>
+
+                    <h3 class="phase-subtitle">Per-class breakdown</h3>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Class</th>
+                                <th style="padding:.5rem;">Precision</th>
+                                <th style="padding:.5rem;">Recall</th>
+                                <th style="padding:.5rem;">F1-Score</th>
+                                <th style="padding:.5rem;">Support</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for cls in lda_eval.per_class %}
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;"><strong>{{ cls.name }}</strong></td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(cls.precision) }}</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(cls.recall) }}</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(cls.f1) }}</td>
+                                <td style="padding:.5rem;">{{ cls.support }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <h3 class="phase-subtitle" style="margin-top:1.5rem;">Confusion matrix</h3>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; margin-top:.75rem;">
+                        <div>
+                            <table style="width:100%; border-collapse:collapse; text-align:center; font-size:.9rem;">
+                                <thead>
+                                    <tr>
+                                        <th style="padding:.5rem;"></th>
+                                        <th style="padding:.5rem; background:#f1f5f9;">Pred: No high risk</th>
+                                        <th style="padding:.5rem; background:#f1f5f9;">Pred: High risk</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th style="padding:.5rem; background:#f1f5f9; text-align:left;">Actual: No high risk</th>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#dcfce7;">
+                                            <strong style="font-size:1.3rem;">{{ lda_eval.confusion_matrix.tn }}</strong><br>
+                                            <small>True Negative</small>
+                                        </td>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#fee2e2;">
+                                            <strong style="font-size:1.3rem;">{{ lda_eval.confusion_matrix.fp }}</strong><br>
+                                            <small>False Positive</small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="padding:.5rem; background:#f1f5f9; text-align:left;">Actual: High risk</th>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#fee2e2;">
+                                            <strong style="font-size:1.3rem;">{{ lda_eval.confusion_matrix.fn }}</strong><br>
+                                            <small>False Negative</small>
+                                        </td>
+                                        <td style="padding:.6rem; border:1px solid #cbd5e1; background:#dcfce7;">
+                                            <strong style="font-size:1.3rem;">{{ lda_eval.confusion_matrix.tp }}</strong><br>
+                                            <small>True Positive</small>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p style="font-size:.82rem; color:#64748b; margin-top:.6rem;">
+                                Test set: {{ lda_eval.test_size }} rows · {{ lda_eval.positive_test_count }} positives (High risk)
+                            </p>
+                        </div>
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='lda_confusion_matrix.png') }}"
+                                 alt="Confusion matrix — LDA"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                Heatmap of the same confusion matrix.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <pre style="background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:8px; overflow-x:auto; font-size:.85rem; margin-top:1.5rem;">{% for line in lda_stats.metrics.report_lines %}{{ line }}
+{% endfor %}</pre>
+
+                    <h3 class="phase-subtitle">Visualizations</h3>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top:1rem;">
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='lda_confusion_matrix.png') }}"
+                                 alt="Confusion matrix — LDA"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                Confusion matrix on the test set.
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='lda_roc_curve.png') }}"
+                                 alt="ROC curve — LDA"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                ROC curve — area under the curve = {{ "%.3f"|format(lda_stats.metrics.roc_auc) }}.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div style="margin-top:1.5rem;">
+                        <figure>
+                            <img src="{{ url_for('reports_file', filename='lda_discriminant_plot.png') }}"
+                                 alt="LDA LD1 projection"
+                                 style="width:100%; border-radius:8px; border:1px solid #e2e8f0;">
+                            <figcaption style="text-align:center; font-size:.85rem; color:#475569; margin-top:.5rem;">
+                                Class distribution projected on LD1 (the single linear discriminant axis).
+                                Overlap between the two classes reflects the difficulty of the classification problem.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <h3 class="phase-subtitle">Console prediction examples</h3>
+                    <p>
+                        Eight random rows drawn from the dataset and fed through the trained
+                        LDA model. The probability column is the model's estimated posterior
+                        probability of belonging to the High risk class.
+                    </p>
+                    <div style="overflow-x:auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:.9rem; margin-top:.75rem;">
+                        <thead>
+                            <tr style="background:#f1f5f9; text-align:left;">
+                                <th style="padding:.5rem;">Department</th>
+                                <th style="padding:.5rem;">Municipality</th>
+                                <th style="padding:.5rem;">Year</th>
+                                <th style="padding:.5rem;">Actual</th>
+                                <th style="padding:.5rem;">Predicted</th>
+                                <th style="padding:.5rem;">P(high risk)</th>
+                                <th style="padding:.5rem;">Hit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for p in lda_stats.sample_predictions %}
+                            <tr style="border-bottom:1px solid #e2e8f0;">
+                                <td style="padding:.5rem;">{{ p.department }}</td>
+                                <td style="padding:.5rem;">{{ p.municipality }}</td>
+                                <td style="padding:.5rem;">{{ p.year }}</td>
+                                <td style="padding:.5rem;">{{ p.actual }}</td>
+                                <td style="padding:.5rem;">{{ p.predicted }}</td>
+                                <td style="padding:.5rem;">{{ "%.3f"|format(p.probability) }}</td>
+                                <td style="padding:.5rem;">
+                                    {% if p.correct %}<span style="color:#16a34a;">✓</span>{% else %}<span style="color:#dc2626;">✗</span>{% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
                     </div>
                 </article>
 
                 <article id="dataset-preview" class="phase-block">
-                    <h2>Dataset preview</h2>
+                    <h2>Dataset preview · Water quality for human consumption</h2>
                     <p>
-                        IRCA rural records used by the supervised models. Search by
-                        department or municipality and sort by any column.
+                        The <code>water_quality_for_human_consumption.csv</code> dataset used
+                        to train the LDA model. Contains {{ "{:,}".format(lda_stats.total_rows) }} records
+                        from {{ lda_stats.departments_count }} Colombian departments across
+                        {% for y in lda_stats.years %}{{ y }}{% if not loop.last %}, {% endif %}{% endfor %}.
+                        Search by department or municipality and sort by any column.
                     </p>
                     <div id="phase3DataTable"></div>
                 </article>
@@ -557,7 +813,7 @@
 
         createDataTable({
             target: '#phase3DataTable',
-            dataUrl: "{{ url_for('api_water_quality') }}",
+            dataUrl: "{{ url_for('api_lda_water_quality') }}",
             pageSize: 25,
             columns: [
                 { key: 'Departamento',          label: 'Department' },
@@ -569,7 +825,7 @@
             filters: [
                 { key: 'Año', label: 'years', type: 'number' },
                 { key: 'Nivel de riesgo rural', label: 'risk levels', order: [
-                    'Sin riesgo', 'Bajo riesgo', 'Riesgo medio', 'Alto riesgo', 'Inviable sanitariamente'
+                    'No Risk', 'Low Risk', 'Medium Risk', 'High Risk', 'Sanitaryly not feasible'
                 ]},
                 { key: 'Departamento', label: 'departments' }
             ]

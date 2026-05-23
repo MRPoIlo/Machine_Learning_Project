@@ -43,11 +43,11 @@
     }
 
     const RISK_LEVEL = {
-        'Sin riesgo': 1,
-        'Bajo riesgo': 2,
-        'Riesgo medio': 3,
-        'Alto riesgo': 4,
-        'Inviable sanitariamente': 5,
+        'No Risk': 1,
+        'Low Risk': 2,
+        'Medium Risk': 3,
+        'High Risk': 4,
+        'Sanitaryly not feasible': 5,
     };
 
     function renderRiskMeter(label) {
